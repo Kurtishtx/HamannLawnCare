@@ -152,6 +152,22 @@ export default function LawnCareServices() {
       </section>
 
       {/* CTA */}
+            <section style={{ background: 'var(--cream)' }}>
+        <div className="wrap">
+          <p className="eyebrow">From Our Blog</p>
+          <h2 className="sec-h">Learn More About <span className="o">Lawn Care</span></h2>
+          <div className="bi-grid" style={{ marginTop: 36 }}>
+            <a className="bi-card" href="/blogs/life-cycle-why-breaking-reproduction-is-the-key-to-control"><h3>Life Cycle Why Breaking Reproduction Is the Key to Control</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/micronutrients-and-soil-health-the-missing-piece-in-most-lawn-programs"><h3>Micronutrients and Soil Health the Missing Piece in Most Lawn Programs</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/spring-lawn-treatments-the-most-important-application-of-the-year"><h3>Spring Lawn Treatments the Most Important Application of the Year</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/the-complete-year-round-lawn-treatment-schedule"><h3>The Complete Year Round Lawn Treatment Schedule</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-to-measure-your-lawn-accurately-before-any-treatment-and-why-most-homeowners-get-it-wrong"><h3>How to Measure Your Lawn Accurately Before Any Treatment and Why Most Homeowners Get It Wrong</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-professional-lawn-care-creates-a-healthier-stronger-yard"><h3>How Professional Lawn Care Creates a Healthier Stronger Yard</h3><span>Read more &rarr;</span></a>
+          </div>
+          <p style={{ textAlign: 'center', marginTop: 28 }}><a href="/blogs" style={{ color: 'var(--orange-dk)', fontWeight: 800 }}>View all lawn &amp; pest articles &rarr;</a></p>
+        </div>
+      </section>
+
       <section className="cta-band">
         <div className="wrap">
           <h2>Get The Lawn Your Neighbors Wish They Had</h2>

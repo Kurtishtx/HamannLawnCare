@@ -140,6 +140,22 @@ export default function MosquitoControlServices() {
       </section>
 
       {/* CTA */}
+            <section style={{ background: 'var(--cream)' }}>
+        <div className="wrap">
+          <p className="eyebrow">From Our Blog</p>
+          <h2 className="sec-h">Learn More About <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 36 }}>
+            <a className="bi-card" href="/blogs/why-mosquitoes-take-over-your-yard-and-how-to-stop-them"><h3>Why Mosquitoes Take Over Your Yard and How to Stop Them</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-professional-mosquito-treatments-actually-work"><h3>How Professional Mosquito Treatments Actually Work</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-mosquito-treatments-are-the-key-to-long-lasting-mosquito-control"><h3>Why Mosquito Treatments Are the Key to Long Lasting Mosquito Control</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-mosquito-spraying-is-essential-for-reducing-mosquito-populations"><h3>Why Mosquito Spraying Is Essential for Reducing Mosquito Populations</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/mosquito-yard-treatment-how-our-barrier-protection-works"><h3>Mosquito Yard Treatment How Our Barrier Protection Works</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/mosquito-prevention-tips-a-simple-guide-for-homeowners"><h3>Mosquito Prevention Tips a Simple Guide for Homeowners</h3><span>Read more &rarr;</span></a>
+          </div>
+          <p style={{ textAlign: 'center', marginTop: 28 }}><a href="/blogs" style={{ color: 'var(--orange-dk)', fontWeight: 800 }}>View all lawn &amp; pest articles &rarr;</a></p>
+        </div>
+      </section>
+
       <section className="cta-band">
         <div className="wrap">
           <h2>Get Professional Mosquito Control Today</h2>

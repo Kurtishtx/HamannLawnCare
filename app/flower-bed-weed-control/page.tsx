@@ -126,6 +126,22 @@ export default function FlowerBedWeedControl() {
       </section>
 
       {/* CTA */}
+            <section style={{ background: 'var(--cream)' }}>
+        <div className="wrap">
+          <p className="eyebrow">From Our Blog</p>
+          <h2 className="sec-h">Learn More About <span className="o">Flower-Bed Weed Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 36 }}>
+            <a className="bi-card" href="/blogs/how-to-stop-weeds-in-flower-beds-in-north-texas"><h3>How to Stop Weeds in Flower Beds in North Texas</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/best-pre-emergent-for-flower-beds-in-texas-heat"><h3>Best Pre Emergent for Flower Beds in Texas Heat</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/post-emergent-weed-control-for-flower-beds-what-actually-works"><h3>Post Emergent Weed Control for Flower Beds What Actually Works</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-hand-pulling-weeds-does-not-work-in-flower-beds"><h3>Why Hand Pulling Weeds Does Not Work in Flower Beds</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-to-prevent-nutgrass-in-flower-beds-in-north-texas"><h3>How to Prevent Nutgrass in Flower Beds in North Texas</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/safe-weed-control-for-flower-beds-around-shrubs-and-ornamentals"><h3>Safe Weed Control for Flower Beds Around Shrubs and Ornamentals</h3><span>Read more &rarr;</span></a>
+          </div>
+          <p style={{ textAlign: 'center', marginTop: 28 }}><a href="/blogs" style={{ color: 'var(--orange-dk)', fontWeight: 800 }}>View all lawn &amp; pest articles &rarr;</a></p>
+        </div>
+      </section>
+
       <section className="cta-band">
         <div className="wrap">
           <h2>Stop Fighting Weeds. Start Winning.</h2>

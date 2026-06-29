@@ -142,6 +142,22 @@ export default function FleaControl() {
       </section>
 
       {/* CTA */}
+            <section style={{ background: 'var(--cream)' }}>
+        <div className="wrap">
+          <p className="eyebrow">From Our Blog</p>
+          <h2 className="sec-h">Learn More About <span className="o">Flea Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 36 }}>
+            <a className="bi-card" href="/blogs/how-flea-treatments-work-adulticide-igr-and-residual-protection-explained"><h3>How Flea Treatments Work Adulticide Igr and Residual Protection Explained</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-long-flea-treatments-last-and-what-affects-their-duration"><h3>How Long Flea Treatments Last and What Affects Their Duration</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-fleas-keep-coming-back-the-real-causes-of-reinfestations"><h3>Why Fleas Keep Coming Back the Real Causes of Reinfestations</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/indoor-vs-outdoor-flea-control-what-homeowners-need-to-know"><h3>Indoor vs Outdoor Flea Control What Homeowners Need to Know</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-weather-shade-and-wildlife-affect-flea-pressure-in-your-yard"><h3>How Weather Shade and Wildlife Affect Flea Pressure in Your Yard</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/flea-eggs-larvae-and-pupae-where-they-hide-in-your-yard"><h3>Flea Eggs Larvae and Pupae Where They Hide in Your Yard</h3><span>Read more &rarr;</span></a>
+          </div>
+          <p style={{ textAlign: 'center', marginTop: 28 }}><a href="/blogs" style={{ color: 'var(--orange-dk)', fontWeight: 800 }}>View all lawn &amp; pest articles &rarr;</a></p>
+        </div>
+      </section>
+
       <section className="cta-band">
         <div className="wrap">
           <h2>Get Professional Flea Control Today</h2>

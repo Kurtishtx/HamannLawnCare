@@ -194,6 +194,22 @@ export default function WeedControlAndFertilizerServices() {
       </section>
 
       {/* CTA */}
+            <section style={{ background: 'var(--cream)' }}>
+        <div className="wrap">
+          <p className="eyebrow">From Our Blog</p>
+          <h2 className="sec-h">Learn More About <span className="o">Weed Control &amp; Fertilization</span></h2>
+          <div className="bi-grid" style={{ marginTop: 36 }}>
+            <a className="bi-card" href="/blogs/how-to-identify-the-most-common-weeds-in-your-lawn"><h3>How to Identify the Most Common Weeds in Your Lawn</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-weeds-come-back-every-year-and-how-lawn-treatments-stop-them"><h3>Why Weeds Come Back Every Year and How Lawn Treatments Stop Them</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/bold-anchor-for-linking-weed-control-and-fertilization"><h3>Bold Anchor for Linking Weed Control and Fertilization</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/seasonal-weed-pressure-when-your-lawn-is-most-vulnerable"><h3>Seasonal Weed Pressure When Your Lawn Is Most Vulnerable</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-professional-weed-control-applications-actually-work"><h3>How Professional Weed Control Applications Actually Work</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/the-science-behind-lawn-fertilization-what-your-grass-really-needs"><h3>The Science Behind Lawn Fertilization What Your Grass Really Needs</h3><span>Read more &rarr;</span></a>
+          </div>
+          <p style={{ textAlign: 'center', marginTop: 28 }}><a href="/blogs" style={{ color: 'var(--orange-dk)', fontWeight: 800 }}>View all lawn &amp; pest articles &rarr;</a></p>
+        </div>
+      </section>
+
       <section className="cta-band">
         <div className="wrap">
           <h2>Ready For A Healthier, Greener, Weed-Free Lawn?</h2>

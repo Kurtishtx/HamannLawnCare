@@ -140,6 +140,22 @@ export default function LawnDiseaseAndFungusControl() {
       </section>
 
       {/* CTA */}
+            <section style={{ background: 'var(--cream)' }}>
+        <div className="wrap">
+          <p className="eyebrow">From Our Blog</p>
+          <h2 className="sec-h">Learn More About <span className="o">Lawn Disease &amp; Fungus</span></h2>
+          <div className="bi-grid" style={{ marginTop: 36 }}>
+            <a className="bi-card" href="/blogs/how-lawn-diseases-develop-and-why-early-treatment-is-critical"><h3>How Lawn Diseases Develop and Why Early Treatment Is Critical</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-to-identify-the-most-common-lawn-diseases-in-north-texas"><h3>How to Identify the Most Common Lawn Diseases in North Texas</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/brown-spots-vs-yellow-spots-what-your-lawn-is-really-telling-you"><h3>Brown Spots vs Yellow Spots What Your Lawn Is Really Telling You</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-to-tell-if-your-lawn-has-a-fungus-or-just-heat-stress"><h3>How to Tell If Your Lawn Has a Fungus Or Just Heat Stress</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/the-early-warning-signs-of-lawn-disease-most-homeowners-miss"><h3>The Early Warning Signs of Lawn Disease Most Homeowners Miss</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/brown-patch-fungus-causes-symptoms-and-fastest-treatment-options"><h3>Brown Patch Fungus Causes Symptoms and Fastest Treatment Options</h3><span>Read more &rarr;</span></a>
+          </div>
+          <p style={{ textAlign: 'center', marginTop: 28 }}><a href="/blogs" style={{ color: 'var(--orange-dk)', fontWeight: 800 }}>View all lawn &amp; pest articles &rarr;</a></p>
+        </div>
+      </section>
+
       <section className="cta-band">
         <div className="wrap">
           <h2>Ready To Stop Lawn Disease Fast?</h2>
