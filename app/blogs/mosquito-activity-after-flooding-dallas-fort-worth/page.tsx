@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>Mosquito Explosions After Flooding in Dallas-Fort Worth: Timeline and Peaks</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; January 10, 2026</div>
         </div>
       </header>
 
@@ -83,6 +84,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/mosquito-activity-after-flooding-dallas-fort-worth`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/mosquito-activity-after-flooding-dallas-fort-worth&text=Mosquito%20Explosions%20After%20Flooding%20in%20Dallas-Fort%20Worth%3A%20Timeline%20and%20Peaks`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Mosquito%20Explosions%20After%20Flooding%20in%20Dallas-Fort%20Worth%3A%20Timeline%20and%20Peaks&body=https://hamannweedcontrol.com/blogs/mosquito-activity-after-flooding-dallas-fort-worth`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/how-mosquitoes-survive-without-blood"><h3>How Long Mosquitoes Can Survive Without a Blood Meal</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/mosquito-predators-natural-enemies-texas"><h3>Natural Mosquito Predators Found in North Texas: What Actually Eats Them</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-mosquitoes-buzz-near-your-ears"><h3>Why Mosquitoes Buzz Near Your Ears: The Biology Behind the Annoying Sound</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/mosquito-compound-eye-vision-capability"><h3>What Mosquitoes Can See: Understanding Their Compound Eye Vision</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Mosquito Explosions After Flooding in Dallas-Fort Worth: Timeline and Peaks\",\"datePublished\":\"2026-01-10\",\"dateModified\":\"2026-01-10\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/mosquito-activity-after-flooding-dallas-fort-worth\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Mosquito Explosions After Flooding in Dallas-Fort Worth: Timeline and Peaks\"}]}" }} />
+
     </main>
   );
 }

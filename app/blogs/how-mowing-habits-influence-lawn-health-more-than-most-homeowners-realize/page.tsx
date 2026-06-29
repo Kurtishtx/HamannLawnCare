@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Lawn Health &amp; Care</span>
           <h1>How Mowing Habits Influence Lawn Health More Than Most Homeowners Realize</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Lawn Care</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/lawn-care-services">Lawn Health &amp; Care</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Lawn Health &amp; Care &middot; March 18, 2025</div>
         </div>
       </header>
 
@@ -79,6 +80,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/how-mowing-habits-influence-lawn-health-more-than-most-homeowners-realize`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/how-mowing-habits-influence-lawn-health-more-than-most-homeowners-realize&text=How%20Mowing%20Habits%20Influence%20Lawn%20Health%20More%20Than%20Most%20Homeowners%20Realize`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=How%20Mowing%20Habits%20Influence%20Lawn%20Health%20More%20Than%20Most%20Homeowners%20Realize&body=https://hamannweedcontrol.com/blogs/how-mowing-habits-influence-lawn-health-more-than-most-homeowners-realize`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Lawn Health &amp; Care</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/how-soil-moisture-levels-influence-lawn-health-and-why-consistency-matters"><h3>How Soil Moisture Levels Influence Lawn Health and Why Consistency Matters</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-north-texas-lawns-struggle-and-how-professional-treatments-fix-it"><h3>Why North Texas Lawns Struggle and How Professional Treatments Fix It</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/the-real-reason-your-lawn-never-gets-thick"><h3>The Real Reason Your Lawn Never Gets Thick</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-to-keep-your-lawn-green-in-extreme-texas-heat"><h3>How to Keep Your Lawn Green in Extreme Texas Heat</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"How Mowing Habits Influence Lawn Health More Than Most Homeowners Realize\",\"datePublished\":\"2025-03-18\",\"dateModified\":\"2025-03-18\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/how-mowing-habits-influence-lawn-health-more-than-most-homeowners-realize\",\"articleSection\":\"Lawn Health & Care\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Lawn Health & Care\",\"item\":\"https://hamannweedcontrol.com/lawn-care-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"How Mowing Habits Influence Lawn Health More Than Most Homeowners Realize\"}]}" }} />
+
     </main>
   );
 }

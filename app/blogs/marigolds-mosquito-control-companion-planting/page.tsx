@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>Marigolds and Mosquito Control: What Companion Planting Can and Cannot Do</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; February 5, 2026</div>
         </div>
       </header>
 
@@ -70,6 +71,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/marigolds-mosquito-control-companion-planting`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/marigolds-mosquito-control-companion-planting&text=Marigolds%20and%20Mosquito%20Control%3A%20What%20Companion%20Planting%20Can%20and%20Cannot%20Do`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Marigolds%20and%20Mosquito%20Control%3A%20What%20Companion%20Planting%20Can%20and%20Cannot%20Do&body=https://hamannweedcontrol.com/blogs/marigolds-mosquito-control-companion-planting`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/tarps-and-covers-mosquito-water-collection"><h3>Tarps and Ground Covers: Why They Collect Water and Breed Mosquitoes</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/pet-water-bowls-mosquito-control-tips"><h3>Pet Water Bowls Outdoors: How to Stop Them Becoming Mosquito Breeding Sites</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/clogged-downspouts-mosquito-breeding"><h3>Clogged Downspouts and Mosquito Pressure: The Connection Homeowners Miss</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/flower-pot-saucers-mosquito-larvae"><h3>Flower Pot Saucers and Mosquito Larvae: Small Containers, Big Problems</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Marigolds and Mosquito Control: What Companion Planting Can and Cannot Do\",\"datePublished\":\"2026-02-05\",\"dateModified\":\"2026-02-05\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/marigolds-mosquito-control-companion-planting\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Marigolds and Mosquito Control: What Companion Planting Can and Cannot Do\"}]}" }} />
+
     </main>
   );
 }

@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Lawn Health &amp; Care</span>
           <h1>Topdressing vs. Soil Amendments: What Is the Difference?</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Lawn Health</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/lawn-care-services">Lawn Health &amp; Care</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Lawn Health &amp; Care &middot; May 2, 2025</div>
         </div>
       </header>
 
@@ -84,6 +85,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/topdressing-vs-soil-amendments-what-is-the-difference`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/topdressing-vs-soil-amendments-what-is-the-difference&text=Topdressing%20vs%20Soil%20Amendments%20What%20Is%20the%20Difference`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Topdressing%20vs%20Soil%20Amendments%20What%20Is%20the%20Difference&body=https://hamannweedcontrol.com/blogs/topdressing-vs-soil-amendments-what-is-the-difference`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Lawn Health &amp; Care</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/why-some-lawns-stay-healthy-during-heavy-rain-while-others-fall-apart"><h3>Why Some Lawns Stay Healthy During Heavy Rain While Others Fall Apart</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-grass-recovers-from-stress"><h3>How Grass Recovers From Stress</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-your-grass-is-turning-brown-overnight-top-causes-explained"><h3>Why Your Grass Is Turning Brown Overnight Top Causes Explained</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/life-cycle-why-breaking-reproduction-is-the-key-to-control"><h3>Life Cycle Why Breaking Reproduction Is the Key to Control</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Topdressing vs Soil Amendments What Is the Difference\",\"datePublished\":\"2025-05-02\",\"dateModified\":\"2025-05-02\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/topdressing-vs-soil-amendments-what-is-the-difference\",\"articleSection\":\"Lawn Health & Care\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Lawn Health & Care\",\"item\":\"https://hamannweedcontrol.com/lawn-care-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Topdressing vs Soil Amendments What Is the Difference\"}]}" }} />
+
     </main>
   );
 }

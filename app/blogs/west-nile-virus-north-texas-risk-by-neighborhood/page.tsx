@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>West Nile Virus Risk by Neighborhood in North Texas: What DFW Data Shows</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; March 27, 2026</div>
         </div>
       </header>
 
@@ -68,6 +69,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/west-nile-virus-north-texas-risk-by-neighborhood`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/west-nile-virus-north-texas-risk-by-neighborhood&text=West%20Nile%20Virus%20Risk%20by%20Neighborhood%20in%20North%20Texas%3A%20What%20DFW%20Data%20Shows`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=West%20Nile%20Virus%20Risk%20by%20Neighborhood%20in%20North%20Texas%3A%20What%20DFW%20Data%20Shows&body=https://hamannweedcontrol.com/blogs/west-nile-virus-north-texas-risk-by-neighborhood`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/outdoor-fan-mosquito-prevention-patios"><h3>Using Outdoor Fans to Prevent Mosquitoes on Your Patio: Does It Work</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/outdoor-lighting-mosquito-attraction-led-vs-yellow"><h3>Outdoor Lighting and Mosquitoes: LED vs Yellow Bug Lights for North Texas Yards</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/yard-drainage-improvements-reduce-mosquitoes"><h3>Yard Drainage Improvements That Permanently Reduce Mosquito Breeding</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/mulch-depth-mosquito-habitat-landscaping"><h3>How Mulch Depth and Type Creates Mosquito Habitat in Your Landscaping</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"West Nile Virus Risk by Neighborhood in North Texas: What DFW Data Shows\",\"datePublished\":\"2026-03-27\",\"dateModified\":\"2026-03-27\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/west-nile-virus-north-texas-risk-by-neighborhood\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"West Nile Virus Risk by Neighborhood in North Texas: What DFW Data Shows\"}]}" }} />
+
     </main>
   );
 }

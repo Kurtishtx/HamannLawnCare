@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>Adjusting Your Lawn Watering Schedule to Reduce Mosquito Breeding in Texas</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; February 19, 2026</div>
         </div>
       </header>
 
@@ -70,6 +71,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/lawn-watering-schedule-reduce-mosquitoes`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/lawn-watering-schedule-reduce-mosquitoes&text=Adjusting%20Your%20Lawn%20Watering%20Schedule%20to%20Reduce%20Mosquito%20Breeding%20in%20Texas`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Adjusting%20Your%20Lawn%20Watering%20Schedule%20to%20Reduce%20Mosquito%20Breeding%20in%20Texas&body=https://hamannweedcontrol.com/blogs/lawn-watering-schedule-reduce-mosquitoes`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/hollow-fence-posts-mosquito-breeding"><h3>Hollow Fence Posts as Mosquito Breeding Sites: An Often-Overlooked Source</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/low-spots-yard-drainage-mosquito-pressure"><h3>Low Spots in Your Yard: How Poor Grading Creates Chronic Mosquito Problems</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/grill-cover-mosquito-water-collection"><h3>Grill Covers and Mosquito Water Collection: Checking Backyard Appliances</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/mosquito-breeding-audit-checklist-homeowners"><h3>Complete Mosquito Breeding Site Audit: A Room-by-Room Outdoor Checklist</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Adjusting Your Lawn Watering Schedule to Reduce Mosquito Breeding in Texas\",\"datePublished\":\"2026-02-19\",\"dateModified\":\"2026-02-19\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/lawn-watering-schedule-reduce-mosquitoes\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Adjusting Your Lawn Watering Schedule to Reduce Mosquito Breeding in Texas\"}]}" }} />
+
     </main>
   );
 }

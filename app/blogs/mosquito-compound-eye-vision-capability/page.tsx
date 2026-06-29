@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>What Mosquitoes Can See: Understanding Their Compound Eye Vision</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; November 14, 2025</div>
         </div>
       </header>
 
@@ -65,6 +66,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/mosquito-compound-eye-vision-capability`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/mosquito-compound-eye-vision-capability&text=What%20Mosquitoes%20Can%20See%3A%20Understanding%20Their%20Compound%20Eye%20Vision`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=What%20Mosquitoes%20Can%20See%3A%20Understanding%20Their%20Compound%20Eye%20Vision&body=https://hamannweedcontrol.com/blogs/mosquito-compound-eye-vision-capability`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/how-mosquitoes-find-hosts-in-the-dark"><h3>How Mosquitoes Find Hosts in the Dark</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-some-yards-stay-mosquito-free-naturally"><h3>Why Some Yards Stay Mosquito Free Naturally</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-landscaping-design-affects-mosquito-populations"><h3>How Landscaping Design Affects Mosquito Populations</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-mosquitoes-avoid-windy-areas"><h3>Why Mosquitoes Avoid Windy Areas</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"What Mosquitoes Can See: Understanding Their Compound Eye Vision\",\"datePublished\":\"2025-11-14\",\"dateModified\":\"2025-11-14\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/mosquito-compound-eye-vision-capability\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"What Mosquitoes Can See: Understanding Their Compound Eye Vision\"}]}" }} />
+
     </main>
   );
 }

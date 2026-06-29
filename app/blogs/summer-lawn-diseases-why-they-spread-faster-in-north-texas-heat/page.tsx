@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Lawn Disease &amp; Fungus</span>
           <h1>Summer Lawn Diseases Why They Spread Faster in North Texas Heat</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Lawn Disease &amp; Fungus</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/lawn-disease-and-fungus-control">Lawn Disease &amp; Fungus</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Lawn Disease &amp; Fungus &middot; July 29, 2025</div>
         </div>
       </header>
 
@@ -71,6 +72,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/summer-lawn-diseases-why-they-spread-faster-in-north-texas-heat`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/summer-lawn-diseases-why-they-spread-faster-in-north-texas-heat&text=Summer%20Lawn%20Diseases%20Why%20They%20Spread%20Faster%20in%20North%20Texas%20Heat`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Summer%20Lawn%20Diseases%20Why%20They%20Spread%20Faster%20in%20North%20Texas%20Heat&body=https://hamannweedcontrol.com/blogs/summer-lawn-diseases-why-they-spread-faster-in-north-texas-heat`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Lawn Disease &amp; Fungus</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/how-shade-and-poor-airflow-create-the-perfect-conditions-for-lawn-fungus"><h3>How Shade and Poor Airflow Create the Perfect Conditions for Lawn Fungus</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-some-lawns-get-fungus-and-others-don-t-even-with-the-same-care-routine"><h3>Why Some Lawns Get Fungus and Others Don T Even With the Same Care Routine</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/the-difference-between-lawn-fungus-and-drought-stress-and-why-homeowners-mix-them-up"><h3>The Difference Between Lawn Fungus and Drought Stress and Why Homeowners Mix Them Up</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-humidity-supercharges-lawn-fungus-in-north-texas"><h3>How Humidity Supercharges Lawn Fungus in North Texas</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Summer Lawn Diseases Why They Spread Faster in North Texas Heat\",\"datePublished\":\"2025-07-29\",\"dateModified\":\"2025-07-29\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/summer-lawn-diseases-why-they-spread-faster-in-north-texas-heat\",\"articleSection\":\"Lawn Disease & Fungus\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Lawn Disease & Fungus\",\"item\":\"https://hamannweedcontrol.com/lawn-disease-and-fungus-control\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Summer Lawn Diseases Why They Spread Faster in North Texas Heat\"}]}" }} />
+
     </main>
   );
 }

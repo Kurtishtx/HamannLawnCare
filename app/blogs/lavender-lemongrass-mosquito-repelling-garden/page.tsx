@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>Lavender and Lemongrass in Your Garden: Mosquito Deterrent or Decoration</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; February 3, 2026</div>
         </div>
       </header>
 
@@ -73,6 +74,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/lavender-lemongrass-mosquito-repelling-garden`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/lavender-lemongrass-mosquito-repelling-garden&text=Lavender%20and%20Lemongrass%20in%20Your%20Garden%3A%20Mosquito%20Deterrent%20or%20Decoration`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Lavender%20and%20Lemongrass%20in%20Your%20Garden%3A%20Mosquito%20Deterrent%20or%20Decoration&body=https://hamannweedcontrol.com/blogs/lavender-lemongrass-mosquito-repelling-garden`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/kids-toys-mosquito-breeding-outdoor-yard"><h3>Outdoor Kids Toys as Mosquito Breeding Sites: What to Check After Rain</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/tarps-and-covers-mosquito-water-collection"><h3>Tarps and Ground Covers: Why They Collect Water and Breed Mosquitoes</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/pet-water-bowls-mosquito-control-tips"><h3>Pet Water Bowls Outdoors: How to Stop Them Becoming Mosquito Breeding Sites</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/clogged-downspouts-mosquito-breeding"><h3>Clogged Downspouts and Mosquito Pressure: The Connection Homeowners Miss</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Lavender and Lemongrass in Your Garden: Mosquito Deterrent or Decoration\",\"datePublished\":\"2026-02-03\",\"dateModified\":\"2026-02-03\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/lavender-lemongrass-mosquito-repelling-garden\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Lavender and Lemongrass in Your Garden: Mosquito Deterrent or Decoration\"}]}" }} />
+
     </main>
   );
 }

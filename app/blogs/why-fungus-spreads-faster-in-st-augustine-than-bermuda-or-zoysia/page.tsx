@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Lawn Disease &amp; Fungus</span>
           <h1>Why Fungus Spreads Faster in St Augustine Than Bermuda Or Zoysia</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Lawn Disease &amp; Fungus</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/lawn-disease-and-fungus-control">Lawn Disease &amp; Fungus</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Lawn Disease &amp; Fungus &middot; August 13, 2025</div>
         </div>
       </header>
 
@@ -104,6 +105,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/why-fungus-spreads-faster-in-st-augustine-than-bermuda-or-zoysia`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/why-fungus-spreads-faster-in-st-augustine-than-bermuda-or-zoysia&text=Why%20Fungus%20Spreads%20Faster%20in%20St%20Augustine%20Than%20Bermuda%20Or%20Zoysia`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Why%20Fungus%20Spreads%20Faster%20in%20St%20Augustine%20Than%20Bermuda%20Or%20Zoysia&body=https://hamannweedcontrol.com/blogs/why-fungus-spreads-faster-in-st-augustine-than-bermuda-or-zoysia`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Lawn Disease &amp; Fungus</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/the-real-reason-fungus-keeps-killing-the-same-grass-type-in-your-yard"><h3>The Real Reason Fungus Keeps Killing the Same Grass Type in Your Yard</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-lawn-fungus-survives-winter-and-comes-back-stronger-in-spring"><h3>How Lawn Fungus Survives Winter and Comes Back Stronger in Spring</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-fungus-treatments-fail-even-when-you-apply-them-correctly"><h3>Why Fungus Treatments Fail Even When You Apply Them Correctly</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-lawn-fungus-spreads-through-your-yard-and-how-to-stop-it-from-moving"><h3>How Lawn Fungus Spreads Through Your Yard and How to Stop It From Moving</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Why Fungus Spreads Faster in St Augustine Than Bermuda Or Zoysia\",\"datePublished\":\"2025-08-13\",\"dateModified\":\"2025-08-13\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/why-fungus-spreads-faster-in-st-augustine-than-bermuda-or-zoysia\",\"articleSection\":\"Lawn Disease & Fungus\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Lawn Disease & Fungus\",\"item\":\"https://hamannweedcontrol.com/lawn-disease-and-fungus-control\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Why Fungus Spreads Faster in St Augustine Than Bermuda Or Zoysia\"}]}" }} />
+
     </main>
   );
 }

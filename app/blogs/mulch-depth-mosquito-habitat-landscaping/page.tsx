@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>How Mulch Depth and Type Creates Mosquito Habitat in Your Landscaping</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; January 29, 2026</div>
         </div>
       </header>
 
@@ -80,6 +81,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/mulch-depth-mosquito-habitat-landscaping`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/mulch-depth-mosquito-habitat-landscaping&text=How%20Mulch%20Depth%20and%20Type%20Creates%20Mosquito%20Habitat%20in%20Your%20Landscaping`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=How%20Mulch%20Depth%20and%20Type%20Creates%20Mosquito%20Habitat%20in%20Your%20Landscaping&body=https://hamannweedcontrol.com/blogs/mulch-depth-mosquito-habitat-landscaping`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/tree-holes-cavities-mosquito-breeding-yards"><h3>Tree Holes as Mosquito Nurseries: How to Identify and Treat Them</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/french-drain-mosquito-problems-texas"><h3>French Drains and Mosquitoes: When Your Drainage System Backfires</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/rain-barrel-mosquito-prevention"><h3>Rain Barrels and Mosquito Control: How to Harvest Rainwater Without Breeding Bugs</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/kids-toys-mosquito-breeding-outdoor-yard"><h3>Outdoor Kids Toys as Mosquito Breeding Sites: What to Check After Rain</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"How Mulch Depth and Type Creates Mosquito Habitat in Your Landscaping\",\"datePublished\":\"2026-01-29\",\"dateModified\":\"2026-01-29\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/mulch-depth-mosquito-habitat-landscaping\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"How Mulch Depth and Type Creates Mosquito Habitat in Your Landscaping\"}]}" }} />
+
     </main>
   );
 }

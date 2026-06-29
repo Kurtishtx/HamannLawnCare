@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>Why Mosquito Treatments Are the Key to Long Lasting Mosquito Control</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; December 4, 2024</div>
         </div>
       </header>
 
@@ -62,6 +63,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/why-mosquito-treatments-are-the-key-to-long-lasting-mosquito-control`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/why-mosquito-treatments-are-the-key-to-long-lasting-mosquito-control&text=Why%20Mosquito%20Treatments%20Are%20the%20Key%20to%20Long%20Lasting%20Mosquito%20Control`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Why%20Mosquito%20Treatments%20Are%20the%20Key%20to%20Long%20Lasting%20Mosquito%20Control&body=https://hamannweedcontrol.com/blogs/why-mosquito-treatments-are-the-key-to-long-lasting-mosquito-control`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/mosquito-prevention-tips-a-simple-guide-for-homeowners"><h3>Mosquito Prevention Tips a Simple Guide for Homeowners</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/mosquito-season-in-texas-when-they-start-peak-and-slow-down"><h3>Mosquito Season in Texas When They Start Peak and Slow Down</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/diy-mosquito-control-vs-professional-mosquito-treatment"><h3>Diy Mosquito Control vs Professional Mosquito Treatment</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/mosquito-breeding-sites-how-they-multiply-and-how-to-stop-them"><h3>Mosquito Breeding Sites How They Multiply and How to Stop Them</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Why Mosquito Treatments Are the Key to Long Lasting Mosquito Control\",\"datePublished\":\"2024-12-04\",\"dateModified\":\"2024-12-04\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/why-mosquito-treatments-are-the-key-to-long-lasting-mosquito-control\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Why Mosquito Treatments Are the Key to Long Lasting Mosquito Control\"}]}" }} />
+
     </main>
   );
 }

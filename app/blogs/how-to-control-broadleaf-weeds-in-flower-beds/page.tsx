@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Flower-Bed Weed Control</span>
           <h1>How to Control Broadleaf Weeds in Flower Beds</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Flower-Bed Weed Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/flower-bed-weed-control">Flower-Bed Weed Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Flower-Bed Weed Control &middot; September 18, 2025</div>
         </div>
       </header>
 
@@ -73,6 +74,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/how-to-control-broadleaf-weeds-in-flower-beds`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/how-to-control-broadleaf-weeds-in-flower-beds&text=How%20to%20Control%20Broadleaf%20Weeds%20in%20Flower%20Beds`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=How%20to%20Control%20Broadleaf%20Weeds%20in%20Flower%20Beds&body=https://hamannweedcontrol.com/blogs/how-to-control-broadleaf-weeds-in-flower-beds`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Flower-Bed Weed Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/why-hand-pulling-weeds-does-not-work-in-flower-beds"><h3>Why Hand Pulling Weeds Does Not Work in Flower Beds</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-to-prevent-nutgrass-in-flower-beds-in-north-texas"><h3>How to Prevent Nutgrass in Flower Beds in North Texas</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/safe-weed-control-for-flower-beds-around-shrubs-and-ornamentals"><h3>Safe Weed Control for Flower Beds Around Shrubs and Ornamentals</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/seasonal-weed-control-schedule-for-flower-beds-in-arlington-texas"><h3>Seasonal Weed Control Schedule for Flower Beds in Arlington Texas</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"How to Control Broadleaf Weeds in Flower Beds\",\"datePublished\":\"2025-09-18\",\"dateModified\":\"2025-09-18\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/how-to-control-broadleaf-weeds-in-flower-beds\",\"articleSection\":\"Flower-Bed Weed Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Flower-Bed Weed Control\",\"item\":\"https://hamannweedcontrol.com/flower-bed-weed-control\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"How to Control Broadleaf Weeds in Flower Beds\"}]}" }} />
+
     </main>
   );
 }

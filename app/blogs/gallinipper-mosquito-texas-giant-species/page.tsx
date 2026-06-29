@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>Gallinipper Mosquitoes in Texas: Facts About the Giant Biting Species</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; September 29, 2025</div>
         </div>
       </header>
 
@@ -67,6 +68,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/gallinipper-mosquito-texas-giant-species`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/gallinipper-mosquito-texas-giant-species&text=Gallinipper%20Mosquitoes%20in%20Texas%3A%20Facts%20About%20the%20Giant%20Biting%20Species`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Gallinipper%20Mosquitoes%20in%20Texas%3A%20Facts%20About%20the%20Giant%20Biting%20Species&body=https://hamannweedcontrol.com/blogs/gallinipper-mosquito-texas-giant-species`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/mosquito-service-guarantee-what-it-means"><h3>Mosquito Service Guarantees: What They Cover and What to Watch Out For</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/commercial-vs-residential-mosquito-control-differences"><h3>Commercial vs Residential Mosquito Control: How the Approach Differs</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/monthly-vs-every-21-days-mosquito-service-schedule"><h3>Monthly vs Every-21-Days Mosquito Service: Which Schedule Controls Better</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/mosquito-control-bundled-lawn-pest-service"><h3>Bundling Mosquito Control With Lawn and Pest Service: Cost and Convenience Benefits</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Gallinipper Mosquitoes in Texas: Facts About the Giant Biting Species\",\"datePublished\":\"2025-09-29\",\"dateModified\":\"2025-09-29\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/gallinipper-mosquito-texas-giant-species\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Gallinipper Mosquitoes in Texas: Facts About the Giant Biting Species\"}]}" }} />
+
     </main>
   );
 }

@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Weed Control &amp; Fertilizer</span>
           <h1>How Lawn Spraying Complements Mowing to Create a Weed Resistant Lawn</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Weed Control &amp; Fertilizer</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/weed-control-and-fertilizer-services">Weed Control &amp; Fertilizer</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Weed Control &amp; Fertilizer &middot; June 28, 2025</div>
         </div>
       </header>
 
@@ -63,6 +64,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/how-lawn-spraying-complements-mowing-to-create-a-weed-resistant-lawn`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/how-lawn-spraying-complements-mowing-to-create-a-weed-resistant-lawn&text=How%20Lawn%20Spraying%20Complements%20Mowing%20to%20Create%20a%20Weed%20Resistant%20Lawn`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=How%20Lawn%20Spraying%20Complements%20Mowing%20to%20Create%20a%20Weed%20Resistant%20Lawn&body=https://hamannweedcontrol.com/blogs/how-lawn-spraying-complements-mowing-to-create-a-weed-resistant-lawn`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Weed Control &amp; Fertilizer</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/why-consistent-lawn-treatments-prevent-weeds-better-than-spot-spraying"><h3>Why Consistent Lawn Treatments Prevent Weeds Better Than Spot Spraying</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-lawn-spraying-targets-weeds-at-the-right-time-for-maximum-effectiveness"><h3>How Lawn Spraying Targets Weeds At the Right Time for Maximum Effectiveness</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-professional-lawn-treatments-deliver-better-longer-lasting-weed-control"><h3>Why Professional Lawn Treatments Deliver Better Longer Lasting Weed Control</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-professional-lawn-programs-outperform-single-step-weed-control"><h3>Why Professional Lawn Programs Outperform Single Step Weed Control</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"How Lawn Spraying Complements Mowing to Create a Weed Resistant Lawn\",\"datePublished\":\"2025-06-28\",\"dateModified\":\"2025-06-28\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/how-lawn-spraying-complements-mowing-to-create-a-weed-resistant-lawn\",\"articleSection\":\"Weed Control & Fertilizer\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Weed Control & Fertilizer\",\"item\":\"https://hamannweedcontrol.com/weed-control-and-fertilizer-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"How Lawn Spraying Complements Mowing to Create a Weed Resistant Lawn\"}]}" }} />
+
     </main>
   );
 }

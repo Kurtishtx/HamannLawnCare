@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>Do Different Mosquito Species Target Different Blood Types</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; October 9, 2025</div>
         </div>
       </header>
 
@@ -168,6 +169,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/mosquito-species-that-prefer-blood-types`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/mosquito-species-that-prefer-blood-types&text=Do%20Different%20Mosquito%20Species%20Target%20Different%20Blood%20Types`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Do%20Different%20Mosquito%20Species%20Target%20Different%20Blood%20Types&body=https://hamannweedcontrol.com/blogs/mosquito-species-that-prefer-blood-types`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/why-mosquitoes-take-over-your-yard-and-how-to-stop-them"><h3>Why Mosquitoes Take Over Your Yard and How to Stop Them</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-professional-mosquito-treatments-actually-work"><h3>How Professional Mosquito Treatments Actually Work</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-mosquito-treatments-are-the-key-to-long-lasting-mosquito-control"><h3>Why Mosquito Treatments Are the Key to Long Lasting Mosquito Control</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-mosquito-spraying-is-essential-for-reducing-mosquito-populations"><h3>Why Mosquito Spraying Is Essential for Reducing Mosquito Populations</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Do Different Mosquito Species Target Different Blood Types\",\"datePublished\":\"2025-10-09\",\"dateModified\":\"2025-10-09\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/mosquito-species-that-prefer-blood-types\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Do Different Mosquito Species Target Different Blood Types\"}]}" }} />
+
     </main>
   );
 }

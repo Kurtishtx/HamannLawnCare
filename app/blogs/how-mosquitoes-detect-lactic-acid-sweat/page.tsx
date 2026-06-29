@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>How Mosquitoes Use Lactic Acid and Sweat to Zero In on Victims</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; November 16, 2025</div>
         </div>
       </header>
 
@@ -71,6 +72,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/how-mosquitoes-detect-lactic-acid-sweat`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/how-mosquitoes-detect-lactic-acid-sweat&text=How%20Mosquitoes%20Use%20Lactic%20Acid%20and%20Sweat%20to%20Zero%20In%20on%20Victims`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=How%20Mosquitoes%20Use%20Lactic%20Acid%20and%20Sweat%20to%20Zero%20In%20on%20Victims&body=https://hamannweedcontrol.com/blogs/how-mosquitoes-detect-lactic-acid-sweat`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/why-some-yards-stay-mosquito-free-naturally"><h3>Why Some Yards Stay Mosquito Free Naturally</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-landscaping-design-affects-mosquito-populations"><h3>How Landscaping Design Affects Mosquito Populations</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-mosquitoes-avoid-windy-areas"><h3>Why Mosquitoes Avoid Windy Areas</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-mosquitoes-detect-body-heat-and-scent"><h3>How Mosquitoes Detect Body Heat and Scent</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"How Mosquitoes Use Lactic Acid and Sweat to Zero In on Victims\",\"datePublished\":\"2025-11-16\",\"dateModified\":\"2025-11-16\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/how-mosquitoes-detect-lactic-acid-sweat\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"How Mosquitoes Use Lactic Acid and Sweat to Zero In on Victims\"}]}" }} />
+
     </main>
   );
 }

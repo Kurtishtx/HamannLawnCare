@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Weed Control &amp; Fertilizer</span>
           <h1>Seasonal Weed Pressure When Your Lawn Is Most Vulnerable</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Lawn Care</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/weed-control-and-fertilizer-services">Weed Control &amp; Fertilizer</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Weed Control &amp; Fertilizer &middot; May 30, 2025</div>
         </div>
       </header>
 
@@ -59,6 +60,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/seasonal-weed-pressure-when-your-lawn-is-most-vulnerable`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/seasonal-weed-pressure-when-your-lawn-is-most-vulnerable&text=Seasonal%20Weed%20Pressure%20When%20Your%20Lawn%20Is%20Most%20Vulnerable`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Seasonal%20Weed%20Pressure%20When%20Your%20Lawn%20Is%20Most%20Vulnerable&body=https://hamannweedcontrol.com/blogs/seasonal-weed-pressure-when-your-lawn-is-most-vulnerable`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Weed Control &amp; Fertilizer</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/how-poor-soil-structure-leads-to-weeds-and-thin-grass"><h3>How Poor Soil Structure Leads to Weeds and Thin Grass</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-to-identify-the-most-common-weeds-in-your-lawn"><h3>How to Identify the Most Common Weeds in Your Lawn</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-weeds-come-back-every-year-and-how-lawn-treatments-stop-them"><h3>Why Weeds Come Back Every Year and How Lawn Treatments Stop Them</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-professional-weed-control-applications-actually-work"><h3>How Professional Weed Control Applications Actually Work</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Seasonal Weed Pressure When Your Lawn Is Most Vulnerable\",\"datePublished\":\"2025-05-30\",\"dateModified\":\"2025-05-30\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/seasonal-weed-pressure-when-your-lawn-is-most-vulnerable\",\"articleSection\":\"Weed Control & Fertilizer\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Weed Control & Fertilizer\",\"item\":\"https://hamannweedcontrol.com/weed-control-and-fertilizer-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Seasonal Weed Pressure When Your Lawn Is Most Vulnerable\"}]}" }} />
+
     </main>
   );
 }

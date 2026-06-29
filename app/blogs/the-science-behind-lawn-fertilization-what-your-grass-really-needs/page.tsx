@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Weed Control &amp; Fertilizer</span>
           <h1>The Science Behind Lawn Fertilization What Your Grass Really Needs</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Lawn Care</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/weed-control-and-fertilizer-services">Weed Control &amp; Fertilizer</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Weed Control &amp; Fertilizer &middot; June 2, 2025</div>
         </div>
       </header>
 
@@ -62,6 +63,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/the-science-behind-lawn-fertilization-what-your-grass-really-needs`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/the-science-behind-lawn-fertilization-what-your-grass-really-needs&text=The%20Science%20Behind%20Lawn%20Fertilization%20What%20Your%20Grass%20Really%20Needs`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=The%20Science%20Behind%20Lawn%20Fertilization%20What%20Your%20Grass%20Really%20Needs&body=https://hamannweedcontrol.com/blogs/the-science-behind-lawn-fertilization-what-your-grass-really-needs`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Weed Control &amp; Fertilizer</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/why-weeds-come-back-every-year-and-how-lawn-treatments-stop-them"><h3>Why Weeds Come Back Every Year and How Lawn Treatments Stop Them</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/bold-anchor-for-linking-weed-control-and-fertilization"><h3>Bold Anchor for Linking Weed Control and Fertilization</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/seasonal-weed-pressure-when-your-lawn-is-most-vulnerable"><h3>Seasonal Weed Pressure When Your Lawn Is Most Vulnerable</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/nitrogen-phosphorus-potassium-understanding-lawn-fertilizer-labels"><h3>Nitrogen Phosphorus Potassium Understanding Lawn Fertilizer Labels</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"The Science Behind Lawn Fertilization What Your Grass Really Needs\",\"datePublished\":\"2025-06-02\",\"dateModified\":\"2025-06-02\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/the-science-behind-lawn-fertilization-what-your-grass-really-needs\",\"articleSection\":\"Weed Control & Fertilizer\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Weed Control & Fertilizer\",\"item\":\"https://hamannweedcontrol.com/weed-control-and-fertilizer-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"The Science Behind Lawn Fertilization What Your Grass Really Needs\"}]}" }} />
+
     </main>
   );
 }

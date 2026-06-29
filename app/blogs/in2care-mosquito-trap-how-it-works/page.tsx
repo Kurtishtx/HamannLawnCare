@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>In2Care Mosquito Traps: How This Bio-Control System Works in Texas Yards</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; March 1, 2026</div>
         </div>
       </header>
 
@@ -67,6 +68,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/in2care-mosquito-trap-how-it-works`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/in2care-mosquito-trap-how-it-works&text=In2Care%20Mosquito%20Traps%3A%20How%20This%20Bio-Control%20System%20Works%20in%20Texas%20Yards`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=In2Care%20Mosquito%20Traps%3A%20How%20This%20Bio-Control%20System%20Works%20in%20Texas%20Yards&body=https://hamannweedcontrol.com/blogs/in2care-mosquito-trap-how-it-works`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/mosquito-season-start-date-north-texas"><h3>When Does Mosquito Season Officially Start in North Texas Each Year</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/mosquito-activity-january-february-texas"><h3>Are Mosquitoes Active in January and February in Texas? What to Expect</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/mosquito-spring-emergence-march-april-dfw"><h3>Spring Mosquito Emergence in DFW: What March and April Look Like</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/peak-mosquito-month-north-texas-summer"><h3>The Peak Mosquito Month in North Texas and How to Prepare for It</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"In2Care Mosquito Traps: How This Bio-Control System Works in Texas Yards\",\"datePublished\":\"2026-03-01\",\"dateModified\":\"2026-03-01\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/in2care-mosquito-trap-how-it-works\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"In2Care Mosquito Traps: How This Bio-Control System Works in Texas Yards\"}]}" }} />
+
     </main>
   );
 }

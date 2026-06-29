@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Flea &amp; Tick Control</span>
           <h1>How Often You Should Treat Your Yard for Fleas</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Flea &amp; Tick Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/flea-and-tick-control">Flea &amp; Tick Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Flea &amp; Tick Control &middot; January 30, 2025</div>
         </div>
       </header>
 
@@ -70,6 +71,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/how-often-you-should-treat-your-yard-for-fleas`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/how-often-you-should-treat-your-yard-for-fleas&text=How%20Often%20You%20Should%20Treat%20Your%20Yard%20for%20Fleas`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=How%20Often%20You%20Should%20Treat%20Your%20Yard%20for%20Fleas&body=https://hamannweedcontrol.com/blogs/how-often-you-should-treat-your-yard-for-fleas`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Flea &amp; Tick Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/how-seasonal-weather-changes-flea-activity-throughout-the-year"><h3>How Seasonal Weather Changes Flea Activity Throughout the Year</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/environmental-factors-that-increase-flea-activity-in-your-yard"><h3>Environmental Factors That Increase Flea Activity in Your Yard</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/the-most-effective-flea-prevention-tips-for-homeowners"><h3>The Most Effective Flea Prevention Tips for Homeowners</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-fleas-keep-coming-back-the-real-causes-of-reinfestation"><h3>Why Fleas Keep Coming Back the Real Causes of Reinfestation</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"How Often You Should Treat Your Yard for Fleas\",\"datePublished\":\"2025-01-30\",\"dateModified\":\"2025-01-30\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/how-often-you-should-treat-your-yard-for-fleas\",\"articleSection\":\"Flea & Tick Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Flea & Tick Control\",\"item\":\"https://hamannweedcontrol.com/flea-and-tick-control\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"How Often You Should Treat Your Yard for Fleas\"}]}" }} />
+
     </main>
   );
 }

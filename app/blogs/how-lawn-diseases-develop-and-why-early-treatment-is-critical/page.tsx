@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Lawn Disease &amp; Fungus</span>
           <h1>How Lawn Diseases Develop and Why Early Treatment Is Critical</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Lawn Disease &amp; Fungus</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/lawn-disease-and-fungus-control">Lawn Disease &amp; Fungus</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Lawn Disease &amp; Fungus &middot; July 14, 2025</div>
         </div>
       </header>
 
@@ -165,6 +166,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/how-lawn-diseases-develop-and-why-early-treatment-is-critical`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/how-lawn-diseases-develop-and-why-early-treatment-is-critical&text=How%20Lawn%20Diseases%20Develop%20and%20Why%20Early%20Treatment%20Is%20Critical`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=How%20Lawn%20Diseases%20Develop%20and%20Why%20Early%20Treatment%20Is%20Critical&body=https://hamannweedcontrol.com/blogs/how-lawn-diseases-develop-and-why-early-treatment-is-critical`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Lawn Disease &amp; Fungus</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/the-early-warning-signs-of-lawn-disease-most-homeowners-miss"><h3>The Early Warning Signs of Lawn Disease Most Homeowners Miss</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/brown-patch-fungus-causes-symptoms-and-fastest-treatment-options"><h3>Brown Patch Fungus Causes Symptoms and Fastest Treatment Options</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/dollar-spot-disease-how-to-identify-and-stop-it-before-it-spreads"><h3>Dollar Spot Disease How to Identify and Stop It Before It Spreads</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/gray-leaf-spot-why-it-explodes-in-summer-and-how-to-control-it"><h3>Gray Leaf Spot Why It Explodes in Summer and How to Control It</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"How Lawn Diseases Develop and Why Early Treatment Is Critical\",\"datePublished\":\"2025-07-14\",\"dateModified\":\"2025-07-14\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/how-lawn-diseases-develop-and-why-early-treatment-is-critical\",\"articleSection\":\"Lawn Disease & Fungus\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Lawn Disease & Fungus\",\"item\":\"https://hamannweedcontrol.com/lawn-disease-and-fungus-control\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"How Lawn Diseases Develop and Why Early Treatment Is Critical\"}]}" }} />
+
     </main>
   );
 }

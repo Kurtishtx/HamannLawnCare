@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>Insect Growth Regulators for Mosquitoes: Breaking the Life Cycle at the Source</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; March 2, 2026</div>
         </div>
       </header>
 
@@ -80,6 +81,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/igr-insect-growth-regulator-mosquito-control`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/igr-insect-growth-regulator-mosquito-control&text=Insect%20Growth%20Regulators%20for%20Mosquitoes%3A%20Breaking%20the%20Life%20Cycle%20at%20the%20Source`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Insect%20Growth%20Regulators%20for%20Mosquitoes%3A%20Breaking%20the%20Life%20Cycle%20at%20the%20Source&body=https://hamannweedcontrol.com/blogs/igr-insect-growth-regulator-mosquito-control`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/mosquito-activity-january-february-texas"><h3>Are Mosquitoes Active in January and February in Texas? What to Expect</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/mosquito-spring-emergence-march-april-dfw"><h3>Spring Mosquito Emergence in DFW: What March and April Look Like</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/peak-mosquito-month-north-texas-summer"><h3>The Peak Mosquito Month in North Texas and How to Prepare for It</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/mosquito-pressure-after-tropical-storm-dfw"><h3>Mosquito Pressure After a Tropical Storm Reaches DFW: What to Expect</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Insect Growth Regulators for Mosquitoes: Breaking the Life Cycle at the Source\",\"datePublished\":\"2026-03-02\",\"dateModified\":\"2026-03-02\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/igr-insect-growth-regulator-mosquito-control\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Insect Growth Regulators for Mosquitoes: Breaking the Life Cycle at the Source\"}]}" }} />
+
     </main>
   );
 }

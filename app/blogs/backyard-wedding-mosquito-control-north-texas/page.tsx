@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>Backyard Weddings and Mosquito Control: Planning a Bug-Free Event in North Texas</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; May 16, 2026</div>
         </div>
       </header>
 
@@ -81,6 +82,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/backyard-wedding-mosquito-control-north-texas`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/backyard-wedding-mosquito-control-north-texas&text=Backyard%20Weddings%20and%20Mosquito%20Control%3A%20Planning%20a%20Bug-Free%20Event%20in%20North%20Texas`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Backyard%20Weddings%20and%20Mosquito%20Control%3A%20Planning%20a%20Bug-Free%20Event%20in%20North%20Texas&body=https://hamannweedcontrol.com/blogs/backyard-wedding-mosquito-control-north-texas`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/source-reduction-vs-adulticide-mosquito-strategy"><h3>Source Reduction vs Adulticide: Choosing the Right Mosquito Strategy for Your Yard</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/pyrethrin-vs-permethrin-natural-synthetic-mosquito"><h3>Pyrethrin vs Permethrin for Mosquitoes: Natural vs Synthetic Explained</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/spinosad-mosquito-larvicide-organic-option"><h3>Spinosad as a Mosquito Larvicide: Organic Options for Texas Homeowners</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/aerial-mosquito-treatment-neighborhood-dfw"><h3>Neighborhood Aerial Mosquito Spraying in DFW: How City Programs Work</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Backyard Weddings and Mosquito Control: Planning a Bug-Free Event in North Texas\",\"datePublished\":\"2026-05-16\",\"dateModified\":\"2026-05-16\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/backyard-wedding-mosquito-control-north-texas\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Backyard Weddings and Mosquito Control: Planning a Bug-Free Event in North Texas\"}]}" }} />
+
     </main>
   );
 }

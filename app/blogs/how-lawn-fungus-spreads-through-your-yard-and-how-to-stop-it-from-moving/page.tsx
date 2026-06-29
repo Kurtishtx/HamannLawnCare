@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Lawn Disease &amp; Fungus</span>
           <h1>How Lawn Fungus Spreads Through Your Yard and How to Stop It From Moving</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Lawn Disease Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/lawn-disease-and-fungus-control">Lawn Disease &amp; Fungus</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Lawn Disease &amp; Fungus &middot; August 25, 2025</div>
         </div>
       </header>
 
@@ -65,6 +66,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/how-lawn-fungus-spreads-through-your-yard-and-how-to-stop-it-from-moving`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/how-lawn-fungus-spreads-through-your-yard-and-how-to-stop-it-from-moving&text=How%20Lawn%20Fungus%20Spreads%20Through%20Your%20Yard%20and%20How%20to%20Stop%20It%20From%20Moving`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=How%20Lawn%20Fungus%20Spreads%20Through%20Your%20Yard%20and%20How%20to%20Stop%20It%20From%20Moving&body=https://hamannweedcontrol.com/blogs/how-lawn-fungus-spreads-through-your-yard-and-how-to-stop-it-from-moving`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Lawn Disease &amp; Fungus</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/brown-spots-vs-yellow-spots-what-your-lawn-is-really-telling-you"><h3>Brown Spots vs Yellow Spots What Your Lawn Is Really Telling You</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-to-tell-if-your-lawn-has-a-fungus-or-just-heat-stress"><h3>How to Tell If Your Lawn Has a Fungus Or Just Heat Stress</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/the-early-warning-signs-of-lawn-disease-most-homeowners-miss"><h3>The Early Warning Signs of Lawn Disease Most Homeowners Miss</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/brown-patch-fungus-causes-symptoms-and-fastest-treatment-options"><h3>Brown Patch Fungus Causes Symptoms and Fastest Treatment Options</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"How Lawn Fungus Spreads Through Your Yard and How to Stop It From Moving\",\"datePublished\":\"2025-08-25\",\"dateModified\":\"2025-08-25\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/how-lawn-fungus-spreads-through-your-yard-and-how-to-stop-it-from-moving\",\"articleSection\":\"Lawn Disease & Fungus\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Lawn Disease & Fungus\",\"item\":\"https://hamannweedcontrol.com/lawn-disease-and-fungus-control\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"How Lawn Fungus Spreads Through Your Yard and How to Stop It From Moving\"}]}" }} />
+
     </main>
   );
 }

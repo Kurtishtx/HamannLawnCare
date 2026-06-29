@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>How Shade Trees Increase Mosquito Habitat Even as They Cool Your Yard</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; February 11, 2026</div>
         </div>
       </header>
 
@@ -69,6 +70,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/shade-trees-mosquito-habitat-increase`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/shade-trees-mosquito-habitat-increase&text=How%20Shade%20Trees%20Increase%20Mosquito%20Habitat%20Even%20as%20They%20Cool%20Your%20Yard`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=How%20Shade%20Trees%20Increase%20Mosquito%20Habitat%20Even%20as%20They%20Cool%20Your%20Yard&body=https://hamannweedcontrol.com/blogs/shade-trees-mosquito-habitat-increase`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/bromeliads-tank-plants-mosquito-breeding"><h3>Bromeliads and Tank Plants: Why Certain Garden Plants Breed Mosquitoes</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/sandbox-mosquito-water-trap-yards"><h3>Uncovered Sandboxes as Mosquito Traps: Prevention Tips for Texas Families</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/wheelbarrows-garden-equipment-mosquito-water"><h3>Wheelbarrows and Garden Equipment: Surprising Mosquito Water Sources</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/decorative-ponds-fountains-mosquito-management"><h3>Decorative Ponds and Fountains: How to Keep Water Features Mosquito-Free</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"How Shade Trees Increase Mosquito Habitat Even as They Cool Your Yard\",\"datePublished\":\"2026-02-11\",\"dateModified\":\"2026-02-11\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/shade-trees-mosquito-habitat-increase\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"How Shade Trees Increase Mosquito Habitat Even as They Cool Your Yard\"}]}" }} />
+
     </main>
   );
 }

@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Lawn Health &amp; Care</span>
           <h1>Why Soil Compaction Happens Even If You Do Aerate</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Lawn Health</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/lawn-care-services">Lawn Health &amp; Care</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Lawn Health &amp; Care &middot; April 29, 2025</div>
         </div>
       </header>
 
@@ -71,6 +72,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/why-soil-compaction-happens-even-if-you-do-aerate`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/why-soil-compaction-happens-even-if-you-do-aerate&text=Why%20Soil%20Compaction%20Happens%20Even%20If%20You%20Do%20Aerate`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Why%20Soil%20Compaction%20Happens%20Even%20If%20You%20Do%20Aerate&body=https://hamannweedcontrol.com/blogs/why-soil-compaction-happens-even-if-you-do-aerate`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Lawn Health &amp; Care</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/why-some-lawns-stay-thick-through-summer-while-others-thin-out"><h3>Why Some Lawns Stay Thick Through Summer While Others Thin Out</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-some-lawns-stay-green-during-heat-waves-while-others-collapse"><h3>Why Some Lawns Stay Green During Heat Waves While Others Collapse</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-some-lawns-stay-healthy-during-heavy-rain-while-others-fall-apart"><h3>Why Some Lawns Stay Healthy During Heavy Rain While Others Fall Apart</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-grass-recovers-from-stress"><h3>How Grass Recovers From Stress</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Why Soil Compaction Happens Even If You Do Aerate\",\"datePublished\":\"2025-04-29\",\"dateModified\":\"2025-04-29\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/why-soil-compaction-happens-even-if-you-do-aerate\",\"articleSection\":\"Lawn Health & Care\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Lawn Health & Care\",\"item\":\"https://hamannweedcontrol.com/lawn-care-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Why Soil Compaction Happens Even If You Do Aerate\"}]}" }} />
+
     </main>
   );
 }

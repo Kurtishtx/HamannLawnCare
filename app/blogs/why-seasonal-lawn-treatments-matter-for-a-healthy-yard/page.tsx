@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Lawn Health &amp; Care</span>
           <h1>Why Seasonal Lawn Treatments Matter for a Healthy Yard</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Lawn Care</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/lawn-care-services">Lawn Health &amp; Care</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Lawn Health &amp; Care &middot; March 14, 2025</div>
         </div>
       </header>
 
@@ -201,6 +202,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/why-seasonal-lawn-treatments-matter-for-a-healthy-yard`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/why-seasonal-lawn-treatments-matter-for-a-healthy-yard&text=Why%20Seasonal%20Lawn%20Treatments%20Matter%20for%20a%20Healthy%20Yard`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Why%20Seasonal%20Lawn%20Treatments%20Matter%20for%20a%20Healthy%20Yard&body=https://hamannweedcontrol.com/blogs/why-seasonal-lawn-treatments-matter-for-a-healthy-yard`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Lawn Health &amp; Care</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/how-watering-schedules-change-by-season-and-why-timing-matters"><h3>How Watering Schedules Change By Season and Why Timing Matters</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-foot-traffic-impacts-lawn-health-and-how-to-protect-high-use-areas"><h3>How Foot Traffic Impacts Lawn Health and How to Protect High Use Areas</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-wind-sun-and-weather-exposure-affect-lawn-health-more-than-most-homeowners-realize"><h3>How Wind Sun and Weather Exposure Affect Lawn Health More Than Most Homeowners Realize</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-soil-moisture-levels-influence-lawn-health-and-why-consistency-matters"><h3>How Soil Moisture Levels Influence Lawn Health and Why Consistency Matters</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Why Seasonal Lawn Treatments Matter for a Healthy Yard\",\"datePublished\":\"2025-03-14\",\"dateModified\":\"2025-03-14\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/why-seasonal-lawn-treatments-matter-for-a-healthy-yard\",\"articleSection\":\"Lawn Health & Care\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Lawn Health & Care\",\"item\":\"https://hamannweedcontrol.com/lawn-care-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Why Seasonal Lawn Treatments Matter for a Healthy Yard\"}]}" }} />
+
     </main>
   );
 }

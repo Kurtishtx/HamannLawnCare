@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Lawn Health &amp; Care</span>
           <h1>How Soil Moisture Levels Influence Lawn Health and Why Consistency Matters</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Lawn Health</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/lawn-care-services">Lawn Health &amp; Care</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Lawn Health &amp; Care &middot; April 6, 2025</div>
         </div>
       </header>
 
@@ -70,6 +71,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/how-soil-moisture-levels-influence-lawn-health-and-why-consistency-matters`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/how-soil-moisture-levels-influence-lawn-health-and-why-consistency-matters&text=How%20Soil%20Moisture%20Levels%20Influence%20Lawn%20Health%20and%20Why%20Consistency%20Matters`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=How%20Soil%20Moisture%20Levels%20Influence%20Lawn%20Health%20and%20Why%20Consistency%20Matters&body=https://hamannweedcontrol.com/blogs/how-soil-moisture-levels-influence-lawn-health-and-why-consistency-matters`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Lawn Health &amp; Care</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/why-some-areas-of-your-lawn-stay-green-while-others-die-off"><h3>Why Some Areas of Your Lawn Stay Green While Others Die Off</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-microclimates-affect-lawn-color-growth-and-stress"><h3>How Microclimates Affect Lawn Color Growth and Stress</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-soil-compaction-happens-even-if-you-do-aerate"><h3>Why Soil Compaction Happens Even If You Do Aerate</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-soil-type-affects-lawn-performance-in-north-texas"><h3>How Soil Type Affects Lawn Performance in North Texas</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"How Soil Moisture Levels Influence Lawn Health and Why Consistency Matters\",\"datePublished\":\"2025-04-06\",\"dateModified\":\"2025-04-06\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/how-soil-moisture-levels-influence-lawn-health-and-why-consistency-matters\",\"articleSection\":\"Lawn Health & Care\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Lawn Health & Care\",\"item\":\"https://hamannweedcontrol.com/lawn-care-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"How Soil Moisture Levels Influence Lawn Health and Why Consistency Matters\"}]}" }} />
+
     </main>
   );
 }

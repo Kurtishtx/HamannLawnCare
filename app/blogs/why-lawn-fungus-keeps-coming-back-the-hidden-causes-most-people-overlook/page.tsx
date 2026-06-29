@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Lawn Disease &amp; Fungus</span>
           <h1>Why Lawn Fungus Keeps Coming Back the Hidden Causes Most People Overlook</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Lawn Disease &amp; Fungus</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/lawn-disease-and-fungus-control">Lawn Disease &amp; Fungus</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Lawn Disease &amp; Fungus &middot; July 31, 2025</div>
         </div>
       </header>
 
@@ -61,6 +62,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/why-lawn-fungus-keeps-coming-back-the-hidden-causes-most-people-overlook`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/why-lawn-fungus-keeps-coming-back-the-hidden-causes-most-people-overlook&text=Why%20Lawn%20Fungus%20Keeps%20Coming%20Back%20the%20Hidden%20Causes%20Most%20People%20Overlook`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Why%20Lawn%20Fungus%20Keeps%20Coming%20Back%20the%20Hidden%20Causes%20Most%20People%20Overlook&body=https://hamannweedcontrol.com/blogs/why-lawn-fungus-keeps-coming-back-the-hidden-causes-most-people-overlook`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Lawn Disease &amp; Fungus</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/why-some-lawns-get-fungus-and-others-don-t-even-with-the-same-care-routine"><h3>Why Some Lawns Get Fungus and Others Don T Even With the Same Care Routine</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/the-difference-between-lawn-fungus-and-drought-stress-and-why-homeowners-mix-them-up"><h3>The Difference Between Lawn Fungus and Drought Stress and Why Homeowners Mix Them Up</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-humidity-supercharges-lawn-fungus-in-north-texas"><h3>How Humidity Supercharges Lawn Fungus in North Texas</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-fungus-spreads-faster-in-st-augustine-than-bermuda-or-zoysia"><h3>Why Fungus Spreads Faster in St Augustine Than Bermuda Or Zoysia</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Why Lawn Fungus Keeps Coming Back the Hidden Causes Most People Overlook\",\"datePublished\":\"2025-07-31\",\"dateModified\":\"2025-07-31\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/why-lawn-fungus-keeps-coming-back-the-hidden-causes-most-people-overlook\",\"articleSection\":\"Lawn Disease & Fungus\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Lawn Disease & Fungus\",\"item\":\"https://hamannweedcontrol.com/lawn-disease-and-fungus-control\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Why Lawn Fungus Keeps Coming Back the Hidden Causes Most People Overlook\"}]}" }} />
+
     </main>
   );
 }

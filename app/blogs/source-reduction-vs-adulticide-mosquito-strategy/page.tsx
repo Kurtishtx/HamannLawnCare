@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>Source Reduction vs Adulticide: Choosing the Right Mosquito Strategy for Your Yard</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; March 15, 2026</div>
         </div>
       </header>
 
@@ -77,6 +78,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/source-reduction-vs-adulticide-mosquito-strategy`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/source-reduction-vs-adulticide-mosquito-strategy&text=Source%20Reduction%20vs%20Adulticide%3A%20Choosing%20the%20Right%20Mosquito%20Strategy%20for%20Your%20Yard`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Source%20Reduction%20vs%20Adulticide%3A%20Choosing%20the%20Right%20Mosquito%20Strategy%20for%20Your%20Yard&body=https://hamannweedcontrol.com/blogs/source-reduction-vs-adulticide-mosquito-strategy`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/mosquito-peak-morning-vs-evening-activity"><h3>Morning vs Evening Mosquito Activity: Which Window Is Worse in Texas</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/fourth-of-july-mosquito-protection-texas"><h3>Fourth of July Mosquito Control: Protecting Outdoor Celebrations in Texas</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/labor-day-mosquito-season-still-active-texas"><h3>Is Mosquito Season Still Active at Labor Day in Texas? Yes, and Here's Why</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/la-nina-el-nino-effect-texas-mosquitoes"><h3>How La Nina and El Nino Weather Patterns Affect Texas Mosquito Seasons</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Source Reduction vs Adulticide: Choosing the Right Mosquito Strategy for Your Yard\",\"datePublished\":\"2026-03-15\",\"dateModified\":\"2026-03-15\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/source-reduction-vs-adulticide-mosquito-strategy\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Source Reduction vs Adulticide: Choosing the Right Mosquito Strategy for Your Yard\"}]}" }} />
+
     </main>
   );
 }

@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Weed Control &amp; Fertilizer</span>
           <h1>Warm Season Turf Growth Cycles and How They Affect Weed Pressure</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Weed Control &amp; Fertilizer</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/weed-control-and-fertilizer-services">Weed Control &amp; Fertilizer</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Weed Control &amp; Fertilizer &middot; June 18, 2025</div>
         </div>
       </header>
 
@@ -69,6 +70,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/warm-season-turf-growth-cycles-and-how-they-affect-weed-pressure`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/warm-season-turf-growth-cycles-and-how-they-affect-weed-pressure&text=Warm%20Season%20Turf%20Growth%20Cycles%20and%20How%20They%20Affect%20Weed%20Pressure`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Warm%20Season%20Turf%20Growth%20Cycles%20and%20How%20They%20Affect%20Weed%20Pressure&body=https://hamannweedcontrol.com/blogs/warm-season-turf-growth-cycles-and-how-they-affect-weed-pressure`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Weed Control &amp; Fertilizer</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/winter-pre-emergent-why-timing-matters-more-than-product"><h3>Winter Pre Emergent Why Timing Matters More Than Product</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-bermuda-grass-responds-to-weed-control-and-fertilizer"><h3>How Bermuda Grass Responds to Weed Control and Fertilizer</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/st-augustine-lawn-treatments-what-makes-this-turf-different"><h3>St Augustine Lawn Treatments What Makes This Turf Different</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-soil-health-impacts-weed-growth-in-warm-season-lawns"><h3>How Soil Health Impacts Weed Growth in Warm Season Lawns</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Warm Season Turf Growth Cycles and How They Affect Weed Pressure\",\"datePublished\":\"2025-06-18\",\"dateModified\":\"2025-06-18\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/warm-season-turf-growth-cycles-and-how-they-affect-weed-pressure\",\"articleSection\":\"Weed Control & Fertilizer\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Weed Control & Fertilizer\",\"item\":\"https://hamannweedcontrol.com/weed-control-and-fertilizer-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Warm Season Turf Growth Cycles and How They Affect Weed Pressure\"}]}" }} />
+
     </main>
   );
 }

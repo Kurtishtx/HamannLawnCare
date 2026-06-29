@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Flea &amp; Tick Control</span>
           <h1>Why Diy Flea Control Fails the Hidden Reasons Homeowners Struggle</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Flea &amp; Tick Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/flea-and-tick-control">Flea &amp; Tick Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Flea &amp; Tick Control &middot; January 28, 2025</div>
         </div>
       </header>
 
@@ -65,6 +66,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/why-diy-flea-control-fails-the-hidden-reasons-homeowners-struggle`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/why-diy-flea-control-fails-the-hidden-reasons-homeowners-struggle&text=Why%20Diy%20Flea%20Control%20Fails%20the%20Hidden%20Reasons%20Homeowners%20Struggle`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Why%20Diy%20Flea%20Control%20Fails%20the%20Hidden%20Reasons%20Homeowners%20Struggle&body=https://hamannweedcontrol.com/blogs/why-diy-flea-control-fails-the-hidden-reasons-homeowners-struggle`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Flea &amp; Tick Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/what-homeowners-should-do-after-a-flea-treatment-essential-post-treatment-care"><h3>What Homeowners Should Do After a Flea Treatment Essential Post Treatment Care</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-seasonal-weather-changes-flea-activity-throughout-the-year"><h3>How Seasonal Weather Changes Flea Activity Throughout the Year</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/environmental-factors-that-increase-flea-activity-in-your-yard"><h3>Environmental Factors That Increase Flea Activity in Your Yard</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/the-most-effective-flea-prevention-tips-for-homeowners"><h3>The Most Effective Flea Prevention Tips for Homeowners</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Why Diy Flea Control Fails the Hidden Reasons Homeowners Struggle\",\"datePublished\":\"2025-01-28\",\"dateModified\":\"2025-01-28\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/why-diy-flea-control-fails-the-hidden-reasons-homeowners-struggle\",\"articleSection\":\"Flea & Tick Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Flea & Tick Control\",\"item\":\"https://hamannweedcontrol.com/flea-and-tick-control\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Why Diy Flea Control Fails the Hidden Reasons Homeowners Struggle\"}]}" }} />
+
     </main>
   );
 }

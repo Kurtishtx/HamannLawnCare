@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Lawn Health &amp; Care</span>
           <h1>Why Some Lawns Recover Faster After Stress Than Others</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Lawn Care</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/lawn-care-services">Lawn Health &amp; Care</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Lawn Health &amp; Care &middot; May 10, 2025</div>
         </div>
       </header>
 
@@ -64,6 +65,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/why-some-lawns-recover-faster-after-stress-than-others`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/why-some-lawns-recover-faster-after-stress-than-others&text=Why%20Some%20Lawns%20Recover%20Faster%20After%20Stress%20Than%20Others`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Why%20Some%20Lawns%20Recover%20Faster%20After%20Stress%20Than%20Others&body=https://hamannweedcontrol.com/blogs/why-some-lawns-recover-faster-after-stress-than-others`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Lawn Health &amp; Care</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/spring-lawn-treatments-the-most-important-application-of-the-year"><h3>Spring Lawn Treatments the Most Important Application of the Year</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/the-complete-year-round-lawn-treatment-schedule"><h3>The Complete Year Round Lawn Treatment Schedule</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-to-measure-your-lawn-accurately-before-any-treatment-and-why-most-homeowners-get-it-wrong"><h3>How to Measure Your Lawn Accurately Before Any Treatment and Why Most Homeowners Get It Wrong</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-professional-lawn-care-creates-a-healthier-stronger-yard"><h3>How Professional Lawn Care Creates a Healthier Stronger Yard</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Why Some Lawns Recover Faster After Stress Than Others\",\"datePublished\":\"2025-05-10\",\"dateModified\":\"2025-05-10\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/why-some-lawns-recover-faster-after-stress-than-others\",\"articleSection\":\"Lawn Health & Care\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Lawn Health & Care\",\"item\":\"https://hamannweedcontrol.com/lawn-care-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Why Some Lawns Recover Faster After Stress Than Others\"}]}" }} />
+
     </main>
   );
 }

@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Flea &amp; Tick Control</span>
           <h1>How to Control Fleas When You Have Multiple Pets</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Flea &amp; Tick Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/flea-and-tick-control">Flea &amp; Tick Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Flea &amp; Tick Control &middot; February 16, 2025</div>
         </div>
       </header>
 
@@ -69,6 +70,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/how-to-control-fleas-when-you-have-multiple-pets`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/how-to-control-fleas-when-you-have-multiple-pets&text=How%20to%20Control%20Fleas%20When%20You%20Have%20Multiple%20Pets`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=How%20to%20Control%20Fleas%20When%20You%20Have%20Multiple%20Pets&body=https://hamannweedcontrol.com/blogs/how-to-control-fleas-when-you-have-multiple-pets`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Flea &amp; Tick Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/why-large-yards-have-more-flea-problems-and-how-to-control-them-effectively"><h3>Why Large Yards Have More Flea Problems and How to Control Them Effectively</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-small-yards-still-get-big-flea-infestations-and-how-to-control-them"><h3>Why Small Yards Still Get Big Flea Infestations and How to Control Them</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-professional-flea-control-works-better-than-diy-methods"><h3>Why Professional Flea Control Works Better Than Diy Methods</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-some-homes-keep-getting-fleas"><h3>Why Some Homes Keep Getting Fleas</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"How to Control Fleas When You Have Multiple Pets\",\"datePublished\":\"2025-02-16\",\"dateModified\":\"2025-02-16\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/how-to-control-fleas-when-you-have-multiple-pets\",\"articleSection\":\"Flea & Tick Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Flea & Tick Control\",\"item\":\"https://hamannweedcontrol.com/flea-and-tick-control\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"How to Control Fleas When You Have Multiple Pets\"}]}" }} />
+
     </main>
   );
 }

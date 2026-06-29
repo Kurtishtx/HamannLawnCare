@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Lawn Disease &amp; Fungus</span>
           <h1>How Watering Mistakes Lead to Lawn Fungus and How to Fix Them</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Lawn Disease &amp; Fungus</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/lawn-disease-and-fungus-control">Lawn Disease &amp; Fungus</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Lawn Disease &amp; Fungus &middot; August 2, 2025</div>
         </div>
       </header>
 
@@ -60,6 +61,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/how-watering-mistakes-lead-to-lawn-fungus-and-how-to-fix-them`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/how-watering-mistakes-lead-to-lawn-fungus-and-how-to-fix-them&text=How%20Watering%20Mistakes%20Lead%20to%20Lawn%20Fungus%20and%20How%20to%20Fix%20Them`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=How%20Watering%20Mistakes%20Lead%20to%20Lawn%20Fungus%20and%20How%20to%20Fix%20Them&body=https://hamannweedcontrol.com/blogs/how-watering-mistakes-lead-to-lawn-fungus-and-how-to-fix-them`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Lawn Disease &amp; Fungus</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/the-difference-between-lawn-fungus-and-drought-stress-and-why-homeowners-mix-them-up"><h3>The Difference Between Lawn Fungus and Drought Stress and Why Homeowners Mix Them Up</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-humidity-supercharges-lawn-fungus-in-north-texas"><h3>How Humidity Supercharges Lawn Fungus in North Texas</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-fungus-spreads-faster-in-st-augustine-than-bermuda-or-zoysia"><h3>Why Fungus Spreads Faster in St Augustine Than Bermuda Or Zoysia</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-fungus-spreads-after-rain-even-when-you-didn-t-water-too-much"><h3>Why Fungus Spreads After Rain Even When You Didn T Water Too Much</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"How Watering Mistakes Lead to Lawn Fungus and How to Fix Them\",\"datePublished\":\"2025-08-02\",\"dateModified\":\"2025-08-02\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/how-watering-mistakes-lead-to-lawn-fungus-and-how-to-fix-them\",\"articleSection\":\"Lawn Disease & Fungus\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Lawn Disease & Fungus\",\"item\":\"https://hamannweedcontrol.com/lawn-disease-and-fungus-control\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"How Watering Mistakes Lead to Lawn Fungus and How to Fix Them\"}]}" }} />
+
     </main>
   );
 }

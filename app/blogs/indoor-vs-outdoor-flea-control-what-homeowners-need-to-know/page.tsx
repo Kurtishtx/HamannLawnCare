@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Flea &amp; Tick Control</span>
           <h1>Indoor vs Outdoor Flea Control What Homeowners Need to Know</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Flea &amp; Tick Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/flea-and-tick-control">Flea &amp; Tick Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Flea &amp; Tick Control &middot; January 22, 2025</div>
         </div>
       </header>
 
@@ -64,6 +65,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/indoor-vs-outdoor-flea-control-what-homeowners-need-to-know`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/indoor-vs-outdoor-flea-control-what-homeowners-need-to-know&text=Indoor%20vs%20Outdoor%20Flea%20Control%20What%20Homeowners%20Need%20to%20Know`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Indoor%20vs%20Outdoor%20Flea%20Control%20What%20Homeowners%20Need%20to%20Know&body=https://hamannweedcontrol.com/blogs/indoor-vs-outdoor-flea-control-what-homeowners-need-to-know`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Flea &amp; Tick Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/the-most-common-flea-hotspots-in-yards-and-why-they-matter"><h3>The Most Common Flea Hotspots in Yards and Why They Matter</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-pets-bring-fleas-into-the-home-and-yard"><h3>How Pets Bring Fleas Into the Home and Yard</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/flea-allergy-reactions-in-pets-why-one-bite-can-cause-severe-symptoms"><h3>Flea Allergy Reactions in Pets Why One Bite Can Cause Severe Symptoms</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-to-prepare-your-yard-for-a-flea-treatment-what-homeowners-should-do-before-service"><h3>How to Prepare Your Yard for a Flea Treatment What Homeowners Should Do Before Service</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Indoor vs Outdoor Flea Control What Homeowners Need to Know\",\"datePublished\":\"2025-01-22\",\"dateModified\":\"2025-01-22\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/indoor-vs-outdoor-flea-control-what-homeowners-need-to-know\",\"articleSection\":\"Flea & Tick Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Flea & Tick Control\",\"item\":\"https://hamannweedcontrol.com/flea-and-tick-control\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Indoor vs Outdoor Flea Control What Homeowners Need to Know\"}]}" }} />
+
     </main>
   );
 }

@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Lawn Health &amp; Care</span>
           <h1>The Complete Year-Round Lawn Treatment Schedule</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Lawn Care</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/lawn-care-services">Lawn Health &amp; Care</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Lawn Health &amp; Care &middot; March 9, 2025</div>
         </div>
       </header>
 
@@ -184,6 +185,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/the-complete-year-round-lawn-treatment-schedule`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/the-complete-year-round-lawn-treatment-schedule&text=The%20Complete%20Year%20Round%20Lawn%20Treatment%20Schedule`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=The%20Complete%20Year%20Round%20Lawn%20Treatment%20Schedule&body=https://hamannweedcontrol.com/blogs/the-complete-year-round-lawn-treatment-schedule`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Lawn Health &amp; Care</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/how-temperature-swings-affect-lawn-growth-and-seasonal-performance"><h3>How Temperature Swings Affect Lawn Growth and Seasonal Performance</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-soil-ph-affects-lawn-health-and-why-balancing-it-improves-every-treatment"><h3>How Soil Ph Affects Lawn Health and Why Balancing It Improves Every Treatment</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-mulching-vs-bagging-affects-lawn-health-and-when-to-choose-each-method"><h3>How Mulching vs Bagging Affects Lawn Health and When to Choose Each Method</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-watering-schedules-change-by-season-and-why-timing-matters"><h3>How Watering Schedules Change By Season and Why Timing Matters</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"The Complete Year Round Lawn Treatment Schedule\",\"datePublished\":\"2025-03-09\",\"dateModified\":\"2025-03-09\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/the-complete-year-round-lawn-treatment-schedule\",\"articleSection\":\"Lawn Health & Care\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Lawn Health & Care\",\"item\":\"https://hamannweedcontrol.com/lawn-care-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"The Complete Year Round Lawn Treatment Schedule\"}]}" }} />
+
     </main>
   );
 }

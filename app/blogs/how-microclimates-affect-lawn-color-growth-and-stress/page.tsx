@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Lawn Health &amp; Care</span>
           <h1>How Microclimates Affect Lawn Color, Growth, and Stress</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Lawn Health</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/lawn-care-services">Lawn Health &amp; Care</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Lawn Health &amp; Care &middot; April 27, 2025</div>
         </div>
       </header>
 
@@ -74,6 +75,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/how-microclimates-affect-lawn-color-growth-and-stress`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/how-microclimates-affect-lawn-color-growth-and-stress&text=How%20Microclimates%20Affect%20Lawn%20Color%20Growth%20and%20Stress`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=How%20Microclimates%20Affect%20Lawn%20Color%20Growth%20and%20Stress&body=https://hamannweedcontrol.com/blogs/how-microclimates-affect-lawn-color-growth-and-stress`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Lawn Health &amp; Care</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/why-some-lawns-bounce-back-faster-after-winter-than-others"><h3>Why Some Lawns Bounce Back Faster After Winter Than Others</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-some-lawns-stay-thick-through-summer-while-others-thin-out"><h3>Why Some Lawns Stay Thick Through Summer While Others Thin Out</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-some-lawns-stay-green-during-heat-waves-while-others-collapse"><h3>Why Some Lawns Stay Green During Heat Waves While Others Collapse</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-some-lawns-stay-healthy-during-heavy-rain-while-others-fall-apart"><h3>Why Some Lawns Stay Healthy During Heavy Rain While Others Fall Apart</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"How Microclimates Affect Lawn Color Growth and Stress\",\"datePublished\":\"2025-04-27\",\"dateModified\":\"2025-04-27\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/how-microclimates-affect-lawn-color-growth-and-stress\",\"articleSection\":\"Lawn Health & Care\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Lawn Health & Care\",\"item\":\"https://hamannweedcontrol.com/lawn-care-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"How Microclimates Affect Lawn Color Growth and Stress\"}]}" }} />
+
     </main>
   );
 }

@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Lawn Health &amp; Care</span>
           <h1>How Mulching vs Bagging Affects Lawn Health and When To Choose Each Method</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Lawn Health</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/lawn-care-services">Lawn Health &amp; Care</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Lawn Health &amp; Care &middot; March 31, 2025</div>
         </div>
       </header>
 
@@ -69,6 +70,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/how-mulching-vs-bagging-affects-lawn-health-and-when-to-choose-each-method`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/how-mulching-vs-bagging-affects-lawn-health-and-when-to-choose-each-method&text=How%20Mulching%20vs%20Bagging%20Affects%20Lawn%20Health%20and%20When%20to%20Choose%20Each%20Method`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=How%20Mulching%20vs%20Bagging%20Affects%20Lawn%20Health%20and%20When%20to%20Choose%20Each%20Method&body=https://hamannweedcontrol.com/blogs/how-mulching-vs-bagging-affects-lawn-health-and-when-to-choose-each-method`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Lawn Health &amp; Care</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/why-your-lawn-struggles-after-heavy-rain-or-poor-drainage"><h3>Why Your Lawn Struggles After Heavy Rain Or Poor Drainage</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-to-protect-your-lawn-during-drought-restrictions"><h3>How to Protect Your Lawn During Drought Restrictions</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-grass-thins-out-in-shade-and-what-you-can-actually-do-about-it"><h3>Why Grass Thins Out in Shade and What You Can Actually Do About It</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-trees-compete-with-your-lawn-for-water-and-nutrients"><h3>How Trees Compete With Your Lawn for Water and Nutrients</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"How Mulching vs Bagging Affects Lawn Health and When to Choose Each Method\",\"datePublished\":\"2025-03-31\",\"dateModified\":\"2025-03-31\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/how-mulching-vs-bagging-affects-lawn-health-and-when-to-choose-each-method\",\"articleSection\":\"Lawn Health & Care\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Lawn Health & Care\",\"item\":\"https://hamannweedcontrol.com/lawn-care-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"How Mulching vs Bagging Affects Lawn Health and When to Choose Each Method\"}]}" }} />
+
     </main>
   );
 }

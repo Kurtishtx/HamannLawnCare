@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>Fourth of July Mosquito Control: Protecting Outdoor Celebrations in Texas</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; January 14, 2026</div>
         </div>
       </header>
 
@@ -79,6 +80,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/fourth-of-july-mosquito-protection-texas`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/fourth-of-july-mosquito-protection-texas&text=Fourth%20of%20July%20Mosquito%20Control%3A%20Protecting%20Outdoor%20Celebrations%20in%20Texas`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Fourth%20of%20July%20Mosquito%20Control%3A%20Protecting%20Outdoor%20Celebrations%20in%20Texas&body=https://hamannweedcontrol.com/blogs/fourth-of-july-mosquito-protection-texas`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/why-mosquitoes-buzz-near-your-ears"><h3>Why Mosquitoes Buzz Near Your Ears: The Biology Behind the Annoying Sound</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/mosquito-compound-eye-vision-capability"><h3>What Mosquitoes Can See: Understanding Their Compound Eye Vision</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-mosquitoes-detect-lactic-acid-sweat"><h3>How Mosquitoes Use Lactic Acid and Sweat to Zero In on Victims</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/mosquito-wing-beat-frequency-science"><h3>Mosquito Wing Beat Frequency: The Physics of Their Distinctive Buzz</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Fourth of July Mosquito Control: Protecting Outdoor Celebrations in Texas\",\"datePublished\":\"2026-01-14\",\"dateModified\":\"2026-01-14\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/fourth-of-july-mosquito-protection-texas\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Fourth of July Mosquito Control: Protecting Outdoor Celebrations in Texas\"}]}" }} />
+
     </main>
   );
 }

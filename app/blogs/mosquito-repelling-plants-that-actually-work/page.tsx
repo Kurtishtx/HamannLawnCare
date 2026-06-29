@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>Mosquito-Repelling Plants That Actually Work (and Which Ones Are Hype)</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; January 23, 2026</div>
         </div>
       </header>
 
@@ -66,6 +67,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/mosquito-repelling-plants-that-actually-work`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/mosquito-repelling-plants-that-actually-work&text=Mosquito-Repelling%20Plants%20That%20Actually%20Work%20(and%20Which%20Ones%20Are%20Hype)`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Mosquito-Repelling%20Plants%20That%20Actually%20Work%20(and%20Which%20Ones%20Are%20Hype)&body=https://hamannweedcontrol.com/blogs/mosquito-repelling-plants-that-actually-work`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/ac-condensate-drain-mosquito-larvae"><h3>AC Condensate Drains: The Hidden Mosquito Breeding Source on Every Home</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/pool-cover-standing-water-mosquitoes"><h3>Pool Covers and Mosquito Breeding: What Every DFW Pool Owner Should Know</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/bird-bath-mosquito-control-tips"><h3>Bird Baths and Mosquitoes: How to Keep Your Bird Bath Without the Bugs</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/old-tires-mosquito-breeding-how-to-eliminate"><h3>Old Tires and Mosquito Breeding: Why One Tire Can Produce Hundreds of Larvae</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Mosquito-Repelling Plants That Actually Work (and Which Ones Are Hype)\",\"datePublished\":\"2026-01-23\",\"dateModified\":\"2026-01-23\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/mosquito-repelling-plants-that-actually-work\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Mosquito-Repelling Plants That Actually Work (and Which Ones Are Hype)\"}]}" }} />
+
     </main>
   );
 }

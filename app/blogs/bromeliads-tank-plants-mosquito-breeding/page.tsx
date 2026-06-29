@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>Bromeliads and Tank Plants: Why Certain Garden Plants Breed Mosquitoes</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; December 11, 2025</div>
         </div>
       </header>
 
@@ -62,6 +63,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/bromeliads-tank-plants-mosquito-breeding`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/bromeliads-tank-plants-mosquito-breeding&text=Bromeliads%20and%20Tank%20Plants%3A%20Why%20Certain%20Garden%20Plants%20Breed%20Mosquitoes`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Bromeliads%20and%20Tank%20Plants%3A%20Why%20Certain%20Garden%20Plants%20Breed%20Mosquitoes&body=https://hamannweedcontrol.com/blogs/bromeliads-tank-plants-mosquito-breeding`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/invasive-mosquito-species-spreading-into-north-texas"><h3>Invasive Mosquito Species Now Spreading Into North Texas Suburbs</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-to-identify-mosquito-species-from-bite-marks"><h3>Can You Identify a Mosquito Species by Its Bite Mark</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/mosquito-size-comparison-texas-species"><h3>Mosquito Size Comparison: Largest and Smallest Species Found in Texas</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/salt-marsh-mosquitoes-inland-texas"><h3>Salt Marsh Mosquitoes in Inland Texas: Why They Show Up Far From the Coast</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Bromeliads and Tank Plants: Why Certain Garden Plants Breed Mosquitoes\",\"datePublished\":\"2025-12-11\",\"dateModified\":\"2025-12-11\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/bromeliads-tank-plants-mosquito-breeding\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Bromeliads and Tank Plants: Why Certain Garden Plants Breed Mosquitoes\"}]}" }} />
+
     </main>
   );
 }

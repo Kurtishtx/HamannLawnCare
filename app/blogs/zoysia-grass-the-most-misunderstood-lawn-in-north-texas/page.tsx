@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Weed Control &amp; Fertilizer</span>
           <h1>Zoysia Grass the Most Misunderstood Lawn in North Texas</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Weed Control &amp; Fertilizer</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/weed-control-and-fertilizer-services">Weed Control &amp; Fertilizer</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Weed Control &amp; Fertilizer &middot; June 17, 2025</div>
         </div>
       </header>
 
@@ -62,6 +63,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/zoysia-grass-the-most-misunderstood-lawn-in-north-texas`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/zoysia-grass-the-most-misunderstood-lawn-in-north-texas&text=Zoysia%20Grass%20the%20Most%20Misunderstood%20Lawn%20in%20North%20Texas`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Zoysia%20Grass%20the%20Most%20Misunderstood%20Lawn%20in%20North%20Texas&body=https://hamannweedcontrol.com/blogs/zoysia-grass-the-most-misunderstood-lawn-in-north-texas`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Weed Control &amp; Fertilizer</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/fall-fertilization-the-secret-to-a-thick-lawn-next-spring"><h3>Fall Fertilization the Secret to a Thick Lawn Next Spring</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/winter-pre-emergent-why-timing-matters-more-than-product"><h3>Winter Pre Emergent Why Timing Matters More Than Product</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-bermuda-grass-responds-to-weed-control-and-fertilizer"><h3>How Bermuda Grass Responds to Weed Control and Fertilizer</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/warm-season-turf-growth-cycles-and-how-they-affect-weed-pressure"><h3>Warm Season Turf Growth Cycles and How They Affect Weed Pressure</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Zoysia Grass the Most Misunderstood Lawn in North Texas\",\"datePublished\":\"2025-06-17\",\"dateModified\":\"2025-06-17\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/zoysia-grass-the-most-misunderstood-lawn-in-north-texas\",\"articleSection\":\"Weed Control & Fertilizer\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Weed Control & Fertilizer\",\"item\":\"https://hamannweedcontrol.com/weed-control-and-fertilizer-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Zoysia Grass the Most Misunderstood Lawn in North Texas\"}]}" }} />
+
     </main>
   );
 }

@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Lawn Disease &amp; Fungus</span>
           <h1>The Role of Soil Health in Preventing Lawn Disease</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Lawn Disease &amp; Fungus</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/lawn-disease-and-fungus-control">Lawn Disease &amp; Fungus</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Lawn Disease &amp; Fungus &middot; August 5, 2025</div>
         </div>
       </header>
 
@@ -57,6 +58,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/the-role-of-soil-health-in-preventing-lawn-disease`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/the-role-of-soil-health-in-preventing-lawn-disease&text=The%20Role%20of%20Soil%20Health%20in%20Preventing%20Lawn%20Disease`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=The%20Role%20of%20Soil%20Health%20in%20Preventing%20Lawn%20Disease&body=https://hamannweedcontrol.com/blogs/the-role-of-soil-health-in-preventing-lawn-disease`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Lawn Disease &amp; Fungus</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/why-fungus-spreads-faster-in-st-augustine-than-bermuda-or-zoysia"><h3>Why Fungus Spreads Faster in St Augustine Than Bermuda Or Zoysia</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-fungus-spreads-after-rain-even-when-you-didn-t-water-too-much"><h3>Why Fungus Spreads After Rain Even When You Didn T Water Too Much</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-fungus-returns-in-the-same-spots-every-year-and-how-to-break-the-cycle"><h3>Why Fungus Returns in the Same Spots Every Year and How to Break the Cycle</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-lawn-fungus-weakens-roots-before-you-ever-see-damage"><h3>How Lawn Fungus Weakens Roots Before You Ever See Damage</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"The Role of Soil Health in Preventing Lawn Disease\",\"datePublished\":\"2025-08-05\",\"dateModified\":\"2025-08-05\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/the-role-of-soil-health-in-preventing-lawn-disease\",\"articleSection\":\"Lawn Disease & Fungus\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Lawn Disease & Fungus\",\"item\":\"https://hamannweedcontrol.com/lawn-disease-and-fungus-control\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"The Role of Soil Health in Preventing Lawn Disease\"}]}" }} />
+
     </main>
   );
 }

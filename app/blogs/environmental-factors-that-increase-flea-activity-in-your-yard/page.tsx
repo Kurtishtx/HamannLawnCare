@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Flea &amp; Tick Control</span>
           <h1>Environmental Factors That Increase Flea Activity in Your Yard</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Flea &amp; Tick Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/flea-and-tick-control">Flea &amp; Tick Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Flea &amp; Tick Control &middot; February 10, 2025</div>
         </div>
       </header>
 
@@ -62,6 +63,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/environmental-factors-that-increase-flea-activity-in-your-yard`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/environmental-factors-that-increase-flea-activity-in-your-yard&text=Environmental%20Factors%20That%20Increase%20Flea%20Activity%20in%20Your%20Yard`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Environmental%20Factors%20That%20Increase%20Flea%20Activity%20in%20Your%20Yard&body=https://hamannweedcontrol.com/blogs/environmental-factors-that-increase-flea-activity-in-your-yard`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Flea &amp; Tick Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/the-most-common-flea-control-mistakes-homeowners-make-and-how-to-avoid-them"><h3>The Most Common Flea Control Mistakes Homeowners Make and How to Avoid Them</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/a-complete-flea-control-guide-for-pet-owners"><h3>A Complete Flea Control Guide for Pet Owners</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-indoor-pets-still-get-fleas-and-how-to-protect-them"><h3>Why Indoor Pets Still Get Fleas and How to Protect Them</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-outdoor-pets-have-the-highest-flea-risk-and-how-to-protect-them"><h3>Why Outdoor Pets Have the Highest Flea Risk and How to Protect Them</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Environmental Factors That Increase Flea Activity in Your Yard\",\"datePublished\":\"2025-02-10\",\"dateModified\":\"2025-02-10\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/environmental-factors-that-increase-flea-activity-in-your-yard\",\"articleSection\":\"Flea & Tick Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Flea & Tick Control\",\"item\":\"https://hamannweedcontrol.com/flea-and-tick-control\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Environmental Factors That Increase Flea Activity in Your Yard\"}]}" }} />
+
     </main>
   );
 }

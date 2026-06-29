@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>Outdoor Lighting and Mosquitoes: LED vs Yellow Bug Lights for North Texas Yards</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; January 26, 2026</div>
         </div>
       </header>
 
@@ -66,6 +67,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/outdoor-lighting-mosquito-attraction-led-vs-yellow`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/outdoor-lighting-mosquito-attraction-led-vs-yellow&text=Outdoor%20Lighting%20and%20Mosquitoes%3A%20LED%20vs%20Yellow%20Bug%20Lights%20for%20North%20Texas%20Yards`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Outdoor%20Lighting%20and%20Mosquitoes%3A%20LED%20vs%20Yellow%20Bug%20Lights%20for%20North%20Texas%20Yards&body=https://hamannweedcontrol.com/blogs/outdoor-lighting-mosquito-attraction-led-vs-yellow`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/bird-bath-mosquito-control-tips"><h3>Bird Baths and Mosquitoes: How to Keep Your Bird Bath Without the Bugs</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/old-tires-mosquito-breeding-how-to-eliminate"><h3>Old Tires and Mosquito Breeding: Why One Tire Can Produce Hundreds of Larvae</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/tree-holes-cavities-mosquito-breeding-yards"><h3>Tree Holes as Mosquito Nurseries: How to Identify and Treat Them</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/french-drain-mosquito-problems-texas"><h3>French Drains and Mosquitoes: When Your Drainage System Backfires</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Outdoor Lighting and Mosquitoes: LED vs Yellow Bug Lights for North Texas Yards\",\"datePublished\":\"2026-01-26\",\"dateModified\":\"2026-01-26\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/outdoor-lighting-mosquito-attraction-led-vs-yellow\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Outdoor Lighting and Mosquitoes: LED vs Yellow Bug Lights for North Texas Yards\"}]}" }} />
+
     </main>
   );
 }

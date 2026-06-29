@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Weed Control &amp; Fertilizer</span>
           <h1>How Poor Soil Structure Leads to Weeds and Thin Grass</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Weed Control &amp; Fertilizer</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/weed-control-and-fertilizer-services">Weed Control &amp; Fertilizer</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Weed Control &amp; Fertilizer &middot; July 12, 2025</div>
         </div>
       </header>
 
@@ -62,6 +63,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/how-poor-soil-structure-leads-to-weeds-and-thin-grass`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/how-poor-soil-structure-leads-to-weeds-and-thin-grass&text=How%20Poor%20Soil%20Structure%20Leads%20to%20Weeds%20and%20Thin%20Grass`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=How%20Poor%20Soil%20Structure%20Leads%20to%20Weeds%20and%20Thin%20Grass&body=https://hamannweedcontrol.com/blogs/how-poor-soil-structure-leads-to-weeds-and-thin-grass`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Weed Control &amp; Fertilizer</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/how-lawn-treatments-restore-thin-or-damaged-turf-after-heavy-weed-pressure"><h3>How Lawn Treatments Restore Thin Or Damaged Turf After Heavy Weed Pressure</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-weed-pressure-changes-throughout-the-year-and-why-timing-matters"><h3>How Weed Pressure Changes Throughout the Year and Why Timing Matters</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-fertilizer-timing-matters-more-than-the-product-you-use"><h3>Why Fertilizer Timing Matters More Than the Product You Use</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-to-identify-the-most-common-weeds-in-your-lawn"><h3>How to Identify the Most Common Weeds in Your Lawn</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"How Poor Soil Structure Leads to Weeds and Thin Grass\",\"datePublished\":\"2025-07-12\",\"dateModified\":\"2025-07-12\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/how-poor-soil-structure-leads-to-weeds-and-thin-grass\",\"articleSection\":\"Weed Control & Fertilizer\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Weed Control & Fertilizer\",\"item\":\"https://hamannweedcontrol.com/weed-control-and-fertilizer-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"How Poor Soil Structure Leads to Weeds and Thin Grass\"}]}" }} />
+
     </main>
   );
 }

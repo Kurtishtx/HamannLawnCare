@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Lawn Health &amp; Care</span>
           <h1>Why Your Lawn Turns Brown Even When You Water Properly</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Lawn Care</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/lawn-care-services">Lawn Health &amp; Care</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Lawn Health &amp; Care &middot; April 13, 2025</div>
         </div>
       </header>
 
@@ -65,6 +66,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/why-your-lawn-turns-brown-even-when-you-water-properly`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/why-your-lawn-turns-brown-even-when-you-water-properly&text=Why%20Your%20Lawn%20Turns%20Brown%20Even%20When%20You%20Water%20Properly`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Why%20Your%20Lawn%20Turns%20Brown%20Even%20When%20You%20Water%20Properly&body=https://hamannweedcontrol.com/blogs/why-your-lawn-turns-brown-even-when-you-water-properly`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Lawn Health &amp; Care</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/topdressing-vs-soil-amendments-what-is-the-difference"><h3>Topdressing vs Soil Amendments What Is the Difference</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-organic-matter-matters-for-lawn-health"><h3>Why Organic Matter Matters for Lawn Health</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-some-lawns-hold-color-longer-than-others"><h3>Why Some Lawns Hold Color Longer Than Others</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-some-lawns-green-up-faster-in-spring-than-others"><h3>Why Some Lawns Green Up Faster in Spring Than Others</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Why Your Lawn Turns Brown Even When You Water Properly\",\"datePublished\":\"2025-04-13\",\"dateModified\":\"2025-04-13\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/why-your-lawn-turns-brown-even-when-you-water-properly\",\"articleSection\":\"Lawn Health & Care\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Lawn Health & Care\",\"item\":\"https://hamannweedcontrol.com/lawn-care-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Why Your Lawn Turns Brown Even When You Water Properly\"}]}" }} />
+
     </main>
   );
 }

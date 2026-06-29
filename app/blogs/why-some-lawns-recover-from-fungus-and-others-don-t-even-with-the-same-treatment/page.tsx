@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Lawn Disease &amp; Fungus</span>
           <h1>Why Some Lawns Recover From Fungus and Others Don&rsquo;t Even With the Same Treatment</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Lawn Disease Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/lawn-disease-and-fungus-control">Lawn Disease &amp; Fungus</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Lawn Disease &amp; Fungus &middot; August 29, 2025</div>
         </div>
       </header>
 
@@ -70,6 +71,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/why-some-lawns-recover-from-fungus-and-others-don-t-even-with-the-same-treatment`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/why-some-lawns-recover-from-fungus-and-others-don-t-even-with-the-same-treatment&text=Why%20Some%20Lawns%20Recover%20From%20Fungus%20and%20Others%20Don%20T%20Even%20With%20the%20Same%20Treatment`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Why%20Some%20Lawns%20Recover%20From%20Fungus%20and%20Others%20Don%20T%20Even%20With%20the%20Same%20Treatment&body=https://hamannweedcontrol.com/blogs/why-some-lawns-recover-from-fungus-and-others-don-t-even-with-the-same-treatment`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Lawn Disease &amp; Fungus</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/the-early-warning-signs-of-lawn-disease-most-homeowners-miss"><h3>The Early Warning Signs of Lawn Disease Most Homeowners Miss</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/brown-patch-fungus-causes-symptoms-and-fastest-treatment-options"><h3>Brown Patch Fungus Causes Symptoms and Fastest Treatment Options</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/dollar-spot-disease-how-to-identify-and-stop-it-before-it-spreads"><h3>Dollar Spot Disease How to Identify and Stop It Before It Spreads</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/gray-leaf-spot-why-it-explodes-in-summer-and-how-to-control-it"><h3>Gray Leaf Spot Why It Explodes in Summer and How to Control It</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Why Some Lawns Recover From Fungus and Others Don T Even With the Same Treatment\",\"datePublished\":\"2025-08-29\",\"dateModified\":\"2025-08-29\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/why-some-lawns-recover-from-fungus-and-others-don-t-even-with-the-same-treatment\",\"articleSection\":\"Lawn Disease & Fungus\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Lawn Disease & Fungus\",\"item\":\"https://hamannweedcontrol.com/lawn-disease-and-fungus-control\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Why Some Lawns Recover From Fungus and Others Don T Even With the Same Treatment\"}]}" }} />
+
     </main>
   );
 }

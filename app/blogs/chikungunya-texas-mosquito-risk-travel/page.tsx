@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>Chikungunya and Texas Mosquitoes: Travel Risk and Local Transmission Concerns</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; April 17, 2026</div>
         </div>
       </header>
 
@@ -78,6 +79,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/chikungunya-texas-mosquito-risk-travel`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/chikungunya-texas-mosquito-risk-travel&text=Chikungunya%20and%20Texas%20Mosquitoes%3A%20Travel%20Risk%20and%20Local%20Transmission%20Concerns`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Chikungunya%20and%20Texas%20Mosquitoes%3A%20Travel%20Risk%20and%20Local%20Transmission%20Concerns&body=https://hamannweedcontrol.com/blogs/chikungunya-texas-mosquito-risk-travel`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/mosquito-barrier-fence-landscaping-solution"><h3>Using Landscaping as a Mosquito Barrier Along Property Edges</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/gravel-vs-mulch-mosquito-habitat-comparison"><h3>Gravel vs Mulch: Which Ground Cover Creates Less Mosquito Habitat</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/rain-garden-mosquito-risk-management"><h3>Rain Gardens and Mosquito Risk: How to Design One That Drains Fast Enough</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/lawn-watering-schedule-reduce-mosquitoes"><h3>Adjusting Your Lawn Watering Schedule to Reduce Mosquito Breeding in Texas</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Chikungunya and Texas Mosquitoes: Travel Risk and Local Transmission Concerns\",\"datePublished\":\"2026-04-17\",\"dateModified\":\"2026-04-17\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/chikungunya-texas-mosquito-risk-travel\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Chikungunya and Texas Mosquitoes: Travel Risk and Local Transmission Concerns\"}]}" }} />
+
     </main>
   );
 }

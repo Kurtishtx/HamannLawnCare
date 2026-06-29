@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>Mosquito-Borne Encephalitis in Texas: St. Louis and La Crosse Virus Risks</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; April 4, 2026</div>
         </div>
       </header>
 
@@ -79,6 +80,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/mosquito-borne-encephalitis-texas-lsl-slev`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/mosquito-borne-encephalitis-texas-lsl-slev&text=Mosquito-Borne%20Encephalitis%20in%20Texas%3A%20St.%20Louis%20and%20La%20Crosse%20Virus%20Risks`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Mosquito-Borne%20Encephalitis%20in%20Texas%3A%20St.%20Louis%20and%20La%20Crosse%20Virus%20Risks&body=https://hamannweedcontrol.com/blogs/mosquito-borne-encephalitis-texas-lsl-slev`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/citronella-plant-vs-candle-mosquito-repellent"><h3>Citronella Plant vs Citronella Candle: Which Actually Repels Mosquitoes</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/lavender-lemongrass-mosquito-repelling-garden"><h3>Lavender and Lemongrass in Your Garden: Mosquito Deterrent or Decoration</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/marigolds-mosquito-control-companion-planting"><h3>Marigolds and Mosquito Control: What Companion Planting Can and Cannot Do</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/catnip-plant-mosquito-repellent-effectiveness"><h3>Catnip as a Mosquito Repellent: The Research Behind This Surprising Plant</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Mosquito-Borne Encephalitis in Texas: St. Louis and La Crosse Virus Risks\",\"datePublished\":\"2026-04-04\",\"dateModified\":\"2026-04-04\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/mosquito-borne-encephalitis-texas-lsl-slev\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Mosquito-Borne Encephalitis in Texas: St. Louis and La Crosse Virus Risks\"}]}" }} />
+
     </main>
   );
 }

@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Lawn Health &amp; Care</span>
           <h1>Why Grass Thins Out in Shade and What You Can Actually Do About It</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Lawn Health</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/lawn-care-services">Lawn Health &amp; Care</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Lawn Health &amp; Care &middot; April 22, 2025</div>
         </div>
       </header>
 
@@ -71,6 +72,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/why-grass-thins-out-in-shade-and-what-you-can-actually-do-about-it`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/why-grass-thins-out-in-shade-and-what-you-can-actually-do-about-it&text=Why%20Grass%20Thins%20Out%20in%20Shade%20and%20What%20You%20Can%20Actually%20Do%20About%20It`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Why%20Grass%20Thins%20Out%20in%20Shade%20and%20What%20You%20Can%20Actually%20Do%20About%20It&body=https://hamannweedcontrol.com/blogs/why-grass-thins-out-in-shade-and-what-you-can-actually-do-about-it`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Lawn Health &amp; Care</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/why-some-lawns-handle-foot-traffic-better-than-others"><h3>Why Some Lawns Handle Foot Traffic Better Than Others</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-some-lawns-resist-drought-better-than-others"><h3>Why Some Lawns Resist Drought Better Than Others</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-some-lawns-stay-green-longer-into-fall-than-others"><h3>Why Some Lawns Stay Green Longer Into Fall Than Others</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-some-lawns-bounce-back-faster-after-winter-than-others"><h3>Why Some Lawns Bounce Back Faster After Winter Than Others</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Why Grass Thins Out in Shade and What You Can Actually Do About It\",\"datePublished\":\"2025-04-22\",\"dateModified\":\"2025-04-22\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/why-grass-thins-out-in-shade-and-what-you-can-actually-do-about-it\",\"articleSection\":\"Lawn Health & Care\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Lawn Health & Care\",\"item\":\"https://hamannweedcontrol.com/lawn-care-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Why Grass Thins Out in Shade and What You Can Actually Do About It\"}]}" }} />
+
     </main>
   );
 }

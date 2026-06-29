@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Weed Control &amp; Fertilizer</span>
           <h1>Winter Pre Emergent Why Timing Matters More Than Product</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Weed Control &amp; Fertilizer</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/weed-control-and-fertilizer-services">Weed Control &amp; Fertilizer</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Weed Control &amp; Fertilizer &middot; June 12, 2025</div>
         </div>
       </header>
 
@@ -58,6 +59,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/winter-pre-emergent-why-timing-matters-more-than-product`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/winter-pre-emergent-why-timing-matters-more-than-product&text=Winter%20Pre%20Emergent%20Why%20Timing%20Matters%20More%20Than%20Product`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Winter%20Pre%20Emergent%20Why%20Timing%20Matters%20More%20Than%20Product&body=https://hamannweedcontrol.com/blogs/winter-pre-emergent-why-timing-matters-more-than-product`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Weed Control &amp; Fertilizer</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/granular-vs-liquid-fertilizer-which-produces-better-results"><h3>Granular vs Liquid Fertilizer Which Produces Better Results</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-soil-structure-impacts-weed-growth-and-lawn-color"><h3>How Soil Structure Impacts Weed Growth and Lawn Color</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/summer-weed-control-how-to-protect-your-lawn-in-extreme-heat"><h3>Summer Weed Control How to Protect Your Lawn in Extreme Heat</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-bermuda-grass-responds-to-weed-control-and-fertilizer"><h3>How Bermuda Grass Responds to Weed Control and Fertilizer</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Winter Pre Emergent Why Timing Matters More Than Product\",\"datePublished\":\"2025-06-12\",\"dateModified\":\"2025-06-12\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/winter-pre-emergent-why-timing-matters-more-than-product\",\"articleSection\":\"Weed Control & Fertilizer\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Weed Control & Fertilizer\",\"item\":\"https://hamannweedcontrol.com/weed-control-and-fertilizer-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Winter Pre Emergent Why Timing Matters More Than Product\"}]}" }} />
+
     </main>
   );
 }

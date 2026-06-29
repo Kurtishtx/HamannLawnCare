@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Weed Control &amp; Fertilizer</span>
           <h1>How Bermuda Grass Responds to Weed Control and Fertilizer</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Weed Control &amp; Fertilizer</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/weed-control-and-fertilizer-services">Weed Control &amp; Fertilizer</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Weed Control &amp; Fertilizer &middot; June 14, 2025</div>
         </div>
       </header>
 
@@ -63,6 +64,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/how-bermuda-grass-responds-to-weed-control-and-fertilizer`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/how-bermuda-grass-responds-to-weed-control-and-fertilizer&text=How%20Bermuda%20Grass%20Responds%20to%20Weed%20Control%20and%20Fertilizer`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=How%20Bermuda%20Grass%20Responds%20to%20Weed%20Control%20and%20Fertilizer&body=https://hamannweedcontrol.com/blogs/how-bermuda-grass-responds-to-weed-control-and-fertilizer`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Weed Control &amp; Fertilizer</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/how-soil-structure-impacts-weed-growth-and-lawn-color"><h3>How Soil Structure Impacts Weed Growth and Lawn Color</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/summer-weed-control-how-to-protect-your-lawn-in-extreme-heat"><h3>Summer Weed Control How to Protect Your Lawn in Extreme Heat</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/fall-fertilization-the-secret-to-a-thick-lawn-next-spring"><h3>Fall Fertilization the Secret to a Thick Lawn Next Spring</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/st-augustine-lawn-treatments-what-makes-this-turf-different"><h3>St Augustine Lawn Treatments What Makes This Turf Different</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"How Bermuda Grass Responds to Weed Control and Fertilizer\",\"datePublished\":\"2025-06-14\",\"dateModified\":\"2025-06-14\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/how-bermuda-grass-responds-to-weed-control-and-fertilizer\",\"articleSection\":\"Weed Control & Fertilizer\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Weed Control & Fertilizer\",\"item\":\"https://hamannweedcontrol.com/weed-control-and-fertilizer-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"How Bermuda Grass Responds to Weed Control and Fertilizer\"}]}" }} />
+
     </main>
   );
 }

@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Mosquito Control</span>
           <h1>One-Time Mosquito Treatment vs Recurring Service: Which Is Worth It</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Mosquito Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/mosquito-control-services">Mosquito Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Mosquito Control &middot; June 7, 2026</div>
         </div>
       </header>
 
@@ -67,6 +68,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/one-time-mosquito-treatment-vs-recurring-service`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/one-time-mosquito-treatment-vs-recurring-service&text=One-Time%20Mosquito%20Treatment%20vs%20Recurring%20Service%3A%20Which%20Is%20Worth%20It`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=One-Time%20Mosquito%20Treatment%20vs%20Recurring%20Service%3A%20Which%20Is%20Worth%20It&body=https://hamannweedcontrol.com/blogs/one-time-mosquito-treatment-vs-recurring-service`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Mosquito Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/allergic-reaction-mosquito-bites-skeeter-syndrome"><h3>Skeeter Syndrome: Severe Allergic Reactions to Mosquito Bites Explained</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/protecting-babies-infants-mosquito-bites-texas"><h3>Protecting Babies and Infants From Mosquito Bites in Texas: Safe Strategies</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/mosquito-protection-elderly-immunocompromised"><h3>Mosquito Protection for Elderly and Immunocompromised People in North Texas</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/mosquito-bites-children-secondary-infection-risks"><h3>Children and Mosquito Bites: When Scratching Leads to Secondary Infection</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"One-Time Mosquito Treatment vs Recurring Service: Which Is Worth It\",\"datePublished\":\"2026-06-07\",\"dateModified\":\"2026-06-07\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/one-time-mosquito-treatment-vs-recurring-service\",\"articleSection\":\"Mosquito Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Mosquito Control\",\"item\":\"https://hamannweedcontrol.com/mosquito-control-services\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"One-Time Mosquito Treatment vs Recurring Service: Which Is Worth It\"}]}" }} />
+
     </main>
   );
 }

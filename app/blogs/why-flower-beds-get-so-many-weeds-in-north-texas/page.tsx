@@ -12,7 +12,8 @@ export default function Page() {
         <div className="wrap">
           <span className="cat">Flower-Bed Weed Control</span>
           <h1>Why Flower Beds Get So Many Weeds in North Texas</h1>
-          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Flower-Bed Weed Control</div>
+          <nav className="blog-crumbs"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/blogs">Blog</a> <span>&rsaquo;</span> <a href="/flower-bed-weed-control">Flower-Bed Weed Control</a></nav>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; Flower-Bed Weed Control &middot; September 21, 2025</div>
         </div>
       </header>
 
@@ -77,6 +78,26 @@ export default function Page() {
           </div>
         </div>
       </article>
+      <div className="blog-share wrap" style={{ maxWidth: 760 }}>
+        <span>Share:</span>
+        <a href={`https://www.facebook.com/sharer/sharer.php?u=https://hamannweedcontrol.com/blogs/why-flower-beds-get-so-many-weeds-in-north-texas`} target="_blank" rel="noreferrer">Facebook</a>
+        <a href={`https://twitter.com/intent/tweet?url=https://hamannweedcontrol.com/blogs/why-flower-beds-get-so-many-weeds-in-north-texas&text=Why%20Flower%20Beds%20Get%20So%20Many%20Weeds%20in%20North%20Texas`} target="_blank" rel="noreferrer">X</a>
+        <a href={`mailto:?subject=Why%20Flower%20Beds%20Get%20So%20Many%20Weeds%20in%20North%20Texas&body=https://hamannweedcontrol.com/blogs/why-flower-beds-get-so-many-weeds-in-north-texas`}>Email</a>
+      </div>
+      <section className="blog-related">
+        <div className="wrap" style={{ maxWidth: 980 }}>
+          <h2 className="sec-h" style={{ fontSize: 28 }}>More On <span className="o">Flower-Bed Weed Control</span></h2>
+          <div className="bi-grid" style={{ marginTop: 28 }}>
+            <a className="bi-card" href="/blogs/safe-weed-control-for-flower-beds-around-shrubs-and-ornamentals"><h3>Safe Weed Control for Flower Beds Around Shrubs and Ornamentals</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/seasonal-weed-control-schedule-for-flower-beds-in-arlington-texas"><h3>Seasonal Weed Control Schedule for Flower Beds in Arlington Texas</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/why-your-flower-beds-keep-getting-weeds-after-mulching"><h3>Why Your Flower Beds Keep Getting Weeds After Mulching</h3><span>Read more &rarr;</span></a>
+            <a className="bi-card" href="/blogs/how-to-keep-rock-beds-weed-free-all-year"><h3>How to Keep Rock Beds Weed Free All Year</h3><span>Read more &rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Why Flower Beds Get So Many Weeds in North Texas\",\"datePublished\":\"2025-09-21\",\"dateModified\":\"2025-09-21\",\"author\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Hamann Lawn Care & Weed Control\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://hamannweedcontrol.com/logo-header.png\"}},\"image\":\"https://hamannweedcontrol.com/logo.png\",\"mainEntityOfPage\":\"https://hamannweedcontrol.com/blogs/why-flower-beds-get-so-many-weeds-in-north-texas\",\"articleSection\":\"Flower-Bed Weed Control\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://hamannweedcontrol.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://hamannweedcontrol.com/blogs\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Flower-Bed Weed Control\",\"item\":\"https://hamannweedcontrol.com/flower-bed-weed-control\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Why Flower Beds Get So Many Weeds in North Texas\"}]}" }} />
+
     </main>
   );
 }
