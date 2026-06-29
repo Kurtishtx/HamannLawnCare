@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
+import { Anton, Inter } from "next/font/google";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import PromoPopup from "./components/PromoPopup";
 import "./globals.css";
+
+const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800", "900"], variable: "--font-inter", display: "swap" });
+const anton = Anton({ subsets: ["latin"], weight: "400", variable: "--font-anton", display: "swap" });
 
 export const metadata: Metadata = {
   title: "Hamann Lawn Care & Weed Control | Arlington & North Texas Since 2006",
@@ -12,11 +16,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${anton.variable}`}>
       <body>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
         <Header />
         {children}
         <Footer />
