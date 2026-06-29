@@ -1,0 +1,75 @@
+'use client';
+
+const PHONE_DISPLAY = '(682) 408-9013';
+const PHONE_TEL = '6824089013';
+
+export default function Page() {
+  const openPromo = () => (window as any).__openPromo?.();
+
+  return (
+    <main>
+      <header className="blog-hero honey">
+        <div className="wrap">
+          <span className="cat">Flea &amp; Tick Control</span>
+          <h1>What Homeowners Should Do After a Flea Treatment &mdash; Essential Post-Treatment Care</h1>
+          <div className="meta">Hamann Lawn Care &amp; Weed Control &middot; North Texas Flea &amp; Tick Control</div>
+        </div>
+      </header>
+
+      <article className="blog-body">
+        <p>The technician just finished treating your yard, and you&rsquo;re ready for the flea nightmare to be over. Here&rsquo;s the honest truth: the treatment just did the heavy lifting, but what you do in the days and weeks that follow determines how complete your results are. Post-treatment care is not complicated, but skipping these steps is the number-one reason homeowners end up calling back saying the treatment &ldquo;didn&rsquo;t work.&rdquo; Spoiler: it usually did work &mdash; the problem is what happened after. Here&rsquo;s how to protect that investment and finish the job properly.</p>
+
+        <h2>Wait for the Product to Dry Before Re-Entry</h2>
+        <p>Your first and most important step is simple: stay out of the treated yard until the product has fully dried. Depending on weather conditions, this typically takes 30 to 60 minutes in normal North Texas heat. Wet product can transfer to bare skin and paws, and letting it dry before re-entry ensures maximum effectiveness while keeping your family and pets safe.</p>
+        <p>On humid or overcast days, drying takes longer. If in doubt, wait the full hour. Your technician should give you a specific re-entry guideline &mdash; follow that above all else. Once the product is dry, your yard is safe for normal use.</p>
+
+        <h2>Do Not Water the Lawn Immediately After Treatment</h2>
+        <p>Resist the urge to run your irrigation system or water by hand for at least 24 to 48 hours after treatment. Many professional flea products need time to bind to soil particles and organic matter before they can withstand moisture. Watering too soon can dilute or wash away the product before it has anchored into the treated zones. After the holding period, light watering or rain is fine and can actually help carry the product into the soil surface where flea larvae live.</p>
+
+        <h2>Expect to See Some Fleas After Treatment &mdash; This Is Normal</h2>
+        <p>This is the part that genuinely surprises most homeowners, and it&rsquo;s the source of most panicked calls after a first treatment: you will very likely still see fleas in the days and even weeks following service. This does not mean the treatment failed.</p>
+        <p>Flea pupae (the cocoon stage) are nearly impervious to pesticides. A well-wrapped cocoon can sit dormant in your yard for weeks to months and hatch when conditions are right &mdash; usually triggered by vibration (a pet walking by), warmth, or carbon dioxide from a passing host. The product your technician applied will kill these newly hatched adults as they emerge and contact treated surfaces, but there is a window of time between hatch and contact where you might see live fleas.</p>
+        <p>The practical takeaway: the first two weeks after treatment are often the roughest-looking, not because it failed, but because the last generation of pupae is still hatching out. This is exactly why a follow-up treatment is almost always recommended &mdash; it catches that second wave.</p>
+
+        <h2>Keep Up With Pet Flea Prevention During This Period</h2>
+        <p>Your yard treatment and your pet&rsquo;s flea prevention work as a team. During the weeks after yard treatment, make sure your pets are current on whatever veterinarian-recommended preventative they use &mdash; topical spot-on, oral medication, or flea collar. This prevents newly emerging fleas from hitching a ride back inside and ensures they die quickly even if they do make contact with your pet.</p>
+        <p>This combination approach is what professional <a href="/flea-and-tick-control">flea and tick control</a> is built around: treating the environment at every lifecycle stage while preventing the animal from becoming a mobile reinfestation source.</p>
+
+        <h2>Continue Vacuuming Indoors Aggressively</h2>
+        <p>If any fleas made it inside before or during treatment, the interior needs attention too. Vacuum daily for the first two weeks after outdoor treatment, focusing on:</p>
+        <ul>
+          <li>All carpeted areas, especially along baseboards and under furniture</li>
+          <li>Upholstered furniture where pets rest</li>
+          <li>Area rugs, pet beds, and anywhere your animal sleeps</li>
+          <li>Hardwood floor gaps and cracks where eggs can settle</li>
+        </ul>
+        <p>Vacuuming stimulates dormant pupae to hatch, which gets them into contact with any residual product faster. Immediately after each vacuuming session, remove the bag or empty the canister into a sealed plastic bag and throw it in the outdoor trash bin. Leaving the canister full means the fleas just hatch inside your vacuum and crawl back out.</p>
+
+        <h2>Watch for Signs of Reinfestation</h2>
+        <p>After the initial post-treatment flea activity drops off (usually within two to three weeks), watch for signs that a new population is establishing. The most reliable indicator is your pet &mdash; increased scratching, excessive grooming, or visible agitation after outdoor time can signal new flea exposure. You can also do a quick flea comb check over a white paper towel; any dark specks that turn reddish-brown when wet are flea dirt and confirm active infestation.</p>
+        <p>If you&rsquo;re not sure what to watch for, review what we covered in <a href="/blogs/how-to-prepare-your-yard-for-a-flea-treatment-what-homeowners-should-do-before-service">how to prepare your yard for flea treatment</a> &mdash; the same knowledge of hotspots and harborage areas that helps you prep applies to knowing where to look for a rebounding population.</p>
+
+        <h2>Maintain the Yard to Protect Your Results</h2>
+        <p>Your treatment laid down a residual barrier, but environmental conditions affect how long that barrier holds. Keep the following habits going to extend your results:</p>
+        <ul>
+          <li>Mow regularly &mdash; flea larvae prefer tall, shaded turf and leaf litter over short, sunlit grass</li>
+          <li>Rake and remove leaf accumulation from beds and fence lines after storms or heavy drop</li>
+          <li>Fix low spots or drainage issues that keep soil wet &mdash; moist soil extends flea larval survival</li>
+          <li>Keep outdoor pet areas clean and remove feces promptly, as it attracts wildlife that carry fleas</li>
+        </ul>
+
+        <h2>Schedule Your Follow-Up Treatment</h2>
+        <p>North Texas flea pressure doesn&rsquo;t let up after one treatment. A single application is a great start, but a recurring program through the warmer months (which in DFW means roughly March through November) keeps populations from rebuilding between visits. If your pet has flea allergy dermatitis, year-round coverage is often worth discussing with both your vet and your pest control provider.</p>
+
+        <div className="blog-cta">
+          <h3>Need a Follow-Up or Starting Fresh?</h3>
+          <p>Hamann Lawn Care &amp; Weed Control has protected North Texas yards since 2006 &mdash; claim your 50% off first application.</p>
+          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
+            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
+            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
+          </div>
+        </div>
+      </article>
+    </main>
+  );
+}
