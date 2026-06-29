@@ -201,6 +201,13 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* PARENT NETWORK LINK — homepage only, passes authority to IndustryBossPro */}
+      <div style={{ textAlign: 'center', padding: '20px 16px', fontSize: 14, color: '#9a8c76', background: '#15100a' }}>
+        Powered by{' '}
+        <a href="https://www.industrybosspro.com" style={{ color: '#f07d12', fontWeight: 700 }}>IndustryBossPro</a>
+        {' '}&mdash; field service software for lawn &amp; pest pros
+      </div>
     </main>
   );
 }
