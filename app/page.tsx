@@ -4,20 +4,20 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 const lawnTreatments = [
-  { ic: '🌿', name: 'Weed Control', desc: 'Precision herbicide applications eliminate grassy and broadleaf weeds while protecting desirable turf and ornamentals.' },
-  { ic: '🌾', name: 'Fertilizers', desc: 'Nutrient-rich blends engineered for North Texas turf. Designed to deepen color, strengthen roots, and enhance chlorophyll production.' },
-  { ic: '🌱', name: 'Growth Hormone Bio Stimulants', desc: 'Advanced stimulants that accelerate root development and fill bare areas fast.' },
-  { ic: '🛡️', name: 'Fungicides', desc: 'Full-rate preventives and curatives to stop brown patch, dollar spot, and root decline.' },
-  { ic: '🌍', name: 'Soil Amendments', desc: 'Improves soil structure, fertility, and microbial activity — essential for long-term turf health.' },
-  { ic: '💧', name: 'Wetting Agents', desc: 'Enhances water penetration and retention in compacted or hydrophobic soils.' },
-  { ic: '🐛', name: 'Grub Control', desc: 'Stops root-feeding grubs before they damage turf density and soil structure.' },
-  { ic: '🌸', name: 'Landscape & Flower Bed Weed Control', desc: 'We keep your mulch beds, rock beds, shrub beds, and ornamental beds clean and weed-free all year long.' },
+  { ic: '🌿', name: 'Weed Control', href: '/weed-control-and-fertilizer-services', desc: 'Precision herbicide applications eliminate grassy and broadleaf weeds while protecting desirable turf and ornamentals.' },
+  { ic: '🌾', name: 'Fertilizers', href: '/weed-control-and-fertilizer-services', desc: 'Nutrient-rich blends engineered for North Texas turf. Designed to deepen color, strengthen roots, and enhance chlorophyll production.' },
+  { ic: '🌱', name: 'Growth Hormone Bio Stimulants', href: '/lawn-care-services', desc: 'Advanced stimulants that accelerate root development and fill bare areas fast.' },
+  { ic: '🛡️', name: 'Fungicides', href: '/lawn-disease-and-fungus-control', desc: 'Full-rate preventives and curatives to stop brown patch, dollar spot, and root decline.' },
+  { ic: '🌍', name: 'Soil Amendments', href: '/lawn-care-services', desc: 'Improves soil structure, fertility, and microbial activity — essential for long-term turf health.' },
+  { ic: '💧', name: 'Wetting Agents', href: '/lawn-care-services', desc: 'Enhances water penetration and retention in compacted or hydrophobic soils.' },
+  { ic: '🐛', name: 'Grub Control', href: '/lawn-care-services', desc: 'Stops root-feeding grubs before they damage turf density and soil structure.' },
+  { ic: '🌸', name: 'Landscape & Flower Bed Weed Control', href: '/flower-bed-weed-control', desc: 'We keep your mulch beds, rock beds, shrub beds, and ornamental beds clean and weed-free all year long.' },
 ];
 
 const pestServices = [
-  { ic: '🦟', name: 'Mosquito Control', desc: 'Enjoy your backyard again with our long-lasting barrier treatments.' },
-  { ic: '🐾', name: 'Flea & Tick Control', desc: 'Protect your family and pets with powerful outdoor treatments.' },
-  { ic: '🌳', name: 'Tree & Shrub Care', desc: 'Strengthen root systems, improve plant health, and protect your landscape investment.' },
+  { ic: '🦟', name: 'Mosquito Control', href: '/mosquito-control-services', desc: 'Enjoy your backyard again with our long-lasting barrier treatments.' },
+  { ic: '🐾', name: 'Flea & Tick Control', href: '/flea-and-tick-control', desc: 'Protect your family and pets with powerful outdoor treatments.' },
+  { ic: '🌳', name: 'Tree & Shrub Care', href: '/tree-and-shrub-care', desc: 'Strengthen root systems, improve plant health, and protect your landscape investment.' },
 ];
 
 const whyChoose = [
@@ -90,12 +90,13 @@ export default function Home() {
           <h3 style={{ textAlign: 'center', fontSize: 26, color: 'var(--ink)', margin: '6px 0 34px' }}>🌱 Included In Our Lawn Care Treatments</h3>
           <div className="svc-grid">
             {lawnTreatments.map((s) => (
-              <div key={s.name} className="svc-card">
+              <a key={s.name} className="svc-card" href={s.href}>
                 <div className="svc-top" />
                 <div className="svc-ic">{s.ic}</div>
                 <h3>{s.name}</h3>
                 <p>{s.desc}</p>
-              </div>
+                <span className="more">Learn More →</span>
+              </a>
             ))}
           </div>
         </div>
@@ -109,12 +110,13 @@ export default function Home() {
           <RedLine />
           <div className="svc-grid" style={{ marginTop: 40 }}>
             {pestServices.map((s) => (
-              <div key={s.name} className="svc-card">
+              <a key={s.name} className="svc-card" href={s.href}>
                 <div className="svc-top" />
                 <div className="svc-ic">{s.ic}</div>
                 <h3>{s.name}</h3>
                 <p>{s.desc}</p>
-              </div>
+                <span className="more">Learn More →</span>
+              </a>
             ))}
           </div>
         </div>

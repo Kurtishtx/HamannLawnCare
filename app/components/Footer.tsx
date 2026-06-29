@@ -22,7 +22,7 @@ export default function Footer() {
       <div className="wrap">
         <div className="ftr-top">
           <div>
-            <div className="ftr-logo"><img src="/logo-header.png" alt="Hamann Lawn Care & Weed Control" /></div>
+            <div className="ftr-logo"><a href="/" aria-label="Hamann Lawn Care home"><img src="/logo-header.png" alt="Hamann Lawn Care & Weed Control" /></a></div>
             <p className="ftr-about">Family-owned lawn, weed, and pest control serving Arlington and all of North Texas since 2006. Greener lawns, fewer weeds, and zero mosquitoes &mdash; guaranteed.</p>
           </div>
           <div className="ftr-col">
