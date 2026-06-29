@@ -43,8 +43,8 @@ h1,h2,h3,.display{font-family:var(--font-anton),Impact,sans-serif;font-weight:40
 
 /* ── HEADER ── */
 .hdr{position:sticky;top:0;z-index:90;background:var(--ink);border-bottom:4px solid var(--orange)}
-.hdr-in{max-width:var(--maxw);margin:0 auto;padding:0 22px;height:86px;display:flex;align-items:center;justify-content:space-between;gap:18px}
-.hdr-logo img{height:64px;width:auto}
+.hdr-in{max-width:var(--maxw);margin:0 auto;padding:0 22px;height:98px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.hdr-logo img{height:84px;width:auto;max-width:100%}
 .hdr-nav{display:flex;align-items:center;gap:24px}
 .hdr-nav a{color:#f3ece1;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.5px;transition:color .15s}
 .hdr-nav a:hover{color:var(--orange-lt)}
@@ -213,5 +213,6 @@ section{padding:80px 0}
 }
 @media(max-width:560px){
   .hdr-phone{display:none}
+  .hdr-in{height:78px}.hdr-logo img{height:60px}
   .ftr-top{grid-template-columns:1fr}.promo-top .big{font-size:56px}
 }
