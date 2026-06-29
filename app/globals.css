@@ -82,8 +82,8 @@ h1,h2,h3,.display{font-family:var(--font-anton),Impact,sans-serif;font-weight:40
 .hero-sub b{color:#fff}
 .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:26px}
 .hero-art{position:relative;display:flex;justify-content:center;align-items:center}
-.hero-art img{filter:drop-shadow(0 24px 40px rgba(0,0,0,.55));max-height:440px;transform:translateY(-1.5in)}
-.hero-art .stamp{position:absolute;bottom:14px;left:-14px}
+.hero-art img{filter:drop-shadow(0 24px 40px rgba(0,0,0,.55));max-height:440px;transform:translateY(-1.25in)}
+.hero-art .stamp{position:absolute;bottom:calc(14px + 1in);left:-14px}
 
 /* ── MARQUEE TRUST STRIP ── */
 .strip{background:var(--orange);border-top:4px solid var(--ink);border-bottom:4px solid var(--ink);overflow:hidden;padding:13px 0}
