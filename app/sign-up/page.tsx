@@ -116,6 +116,10 @@ function SignupForm() {
       <p style={{ color: 'var(--muted)', fontSize: 13, marginBottom: 14 }}>🔒 Secured by Stripe. Your card number is never stored on our website. You are not charged today — only after each service, once we email your invoice.</p>
 
       <input type="text" name="website_url" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{ position: 'absolute', left: -9999 }} />
+      <label style={{ display: 'flex', gap: 10, alignItems: 'flex-start', margin: '4px 0 14px', fontSize: 13, color: 'var(--muted)', lineHeight: 1.5 }}>
+        <input type="checkbox" name="sms_consent" style={{ marginTop: 3, flexShrink: 0, width: 16, height: 16, accentColor: 'var(--orange)' }} />
+        <span>I agree to receive service-related text messages from Hamann Lawn Care at the number provided. Consent is not a condition of purchase. Message frequency varies; msg &amp; data rates may apply. Reply STOP to opt out. See our <a href="/terms" style={{ color: 'var(--orange-dk)', fontWeight: 700 }}>Terms</a> &amp; <a href="/privacy" style={{ color: 'var(--orange-dk)', fontWeight: 700 }}>Privacy Policy</a>.</span>
+      </label>
       {err && <p style={{ color: 'var(--red)', fontWeight: 700, marginBottom: 10 }}>{err}</p>}
       <button type="submit" className="btn btn-orange btn-lg" style={{ width: '100%' }} disabled={status === 'sending' || !cardReady}>
         {status === 'sending' ? 'Saving…' : !cardReady ? 'Loading secure card field…' : '🌿 Complete Sign Up'}
