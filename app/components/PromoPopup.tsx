@@ -1,13 +1,20 @@
 'use client';
 import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
+// Pages where the "get a free estimate" promo shouldn't interrupt the visitor.
+const SUPPRESS_ON = ['/sign-up'];
+
 export default function PromoPopup() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  const suppressed = SUPPRESS_ON.includes(pathname);
 
   useEffect(() => {
+    if (suppressed) return;
     (window as any).__openPromo = () => setOpen(true);
     // auto-show once per browser session, shortly after load
     let t: any;
@@ -20,13 +27,13 @@ export default function PromoPopup() {
       }
     } catch {}
     return () => { clearTimeout(t); delete (window as any).__openPromo; };
-  }, []);
+  }, [suppressed]);
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : '';
   }, [open]);
 
-  if (!open) return null;
+  if (!open || suppressed) return null;
 
   return (
     <div className="promo-ov" onClick={() => setOpen(false)}>
