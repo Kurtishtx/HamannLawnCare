@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
 
         <p>Hamann Lawn Care &amp; Weed Control has worked with both Tifway 419 and TifGrand lawns throughout Arlington and the DFW metroplex since 2006. If you&rsquo;re deciding which variety is right for your specific yard, call us at <a href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a> — we can assess your sun conditions and soil and give you a straight recommendation.</p>
 
-        <div className="blog-cta">
-          <h3>Not Sure Which Bermuda Is Right for Your Yard?</h3>
-          <p>Hamann knows DFW lawns inside and out. Call today for expert guidance and a new-customer offer.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

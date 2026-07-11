@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -65,14 +64,6 @@ export default function Page() {
         <p>A complete zone assessment for a typical DFW residential lot takes 5&ndash;10 minutes before product is applied. The technician notes primary harborage, flags standing water, identifies entry corridors, and adjusts the treatment plan accordingly. That assessment is why the same amount of product applied by a trained professional produces dramatically better results than a homeowner covering the same square footage. You can learn more about the chemistry behind why proper surface targeting matters in our post on <a href="/blogs/contact-kill-vs-residual-mosquito-chemical">contact kill vs residual mosquito chemical action</a>.</p>
         <p>Hamann&rsquo;s technicians have been reading North Texas yards since 2006. We know the plant species, drainage patterns, and mosquito pressure points specific to Arlington, Mansfield, Grand Prairie, and the surrounding communities. That local knowledge isn&rsquo;t something you get from a generic national chain.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

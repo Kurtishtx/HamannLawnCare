@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -75,14 +74,6 @@ export default function Page() {
         <p>There&rsquo;s no one-and-done solution for dallisgrass, especially in an established lawn where it&rsquo;s already spread to multiple locations. But the good news for Arlington and DFW homeowners is that a consistent, properly timed program really does work. Year over year, the weed pressure from dallisgrass decreases as the seed bank in the soil gets depleted and the existing plants are eliminated through repeated treatment. A lawn that&rsquo;s been on a professional program for two to three years looks dramatically different than one that hasn&rsquo;t &mdash; and dallisgrass is one of the biggest reasons why.</p>
         <p>The goal isn&rsquo;t just to kill what you can see today. It&rsquo;s to build a lawn environment where dallisgrass can&rsquo;t win &mdash; dense, healthy turf, well-timed pre-emergent applications, and targeted post-emergent treatments that systematically reduce the weed population each season until it stops being a problem worth talking about.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Weed-Free Lawn?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control specializes in North Texas weed problems &mdash; including dallisgrass. Let&rsquo;s build a program that gets it under control and keeps it that way. Claim your 50% off first application today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

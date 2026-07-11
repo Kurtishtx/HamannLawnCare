@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <h2>Professional Treatment Timing Matters Too</h2>
         <p>Understanding tick activity cycles doesn&rsquo;t just help you plan outdoor activities — it also informs when professional treatments are most effective. Sprays applied to resting and questing zones work best when ticks are active at the surface. That&rsquo;s why Hamann times applications to align with actual North Texas tick activity patterns, not just a generic calendar schedule. See our post on <a href="/blogs/wooded-backyard-tick-management-arlington">managing ticks in a wooded Arlington backyard</a> for how treatment zone strategy and timing combine in high-pressure properties.</p>
 
-        <div className="blog-cta">
-          <h3>Stop Ticks Before They Find You</h3>
-          <p>Hamann&rsquo;s professional flea &amp; tick control targets the right zones at the right time — claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

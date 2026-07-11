@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
 
         <p>For a look at another disease that strikes in similar seasonal windows, our post on <a href="/blogs/anthracnose-lawn-disease-symptoms-and-treatment-in-texas">anthracnose lawn disease symptoms and treatment in Texas</a> covers a related but heat-driven pathogen that can overlap with red thread in transitional weather.</p>
 
-        <div className="blog-cta">
-          <h3>Pink Threads in Your Grass? Let&rsquo;s Get Ahead of It.</h3>
-          <p>Red thread spreads quickly through nitrogen-deficient turf in spring and fall. Hamann Lawn Care &amp; Weed Control can diagnose, treat, and set up the fertilization program that keeps it from coming back.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

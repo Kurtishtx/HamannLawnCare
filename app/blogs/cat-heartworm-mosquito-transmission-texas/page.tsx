@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -70,14 +69,6 @@ export default function Page() {
         <h2>Protect Every Animal in Your Home</h2>
         <p>Cat heartworm disease is underdiagnosed, has no cure, and can kill suddenly without warning. Monthly prevention and reduced mosquito exposure are the two tools available to protect your cats. Hamann&rsquo;s North Texas mosquito program has been reducing mosquito populations in Arlington and the surrounding DFW area since 2006, giving your whole household &mdash; humans, dogs, and cats &mdash; a significantly safer environment. Give us a call and let&rsquo;s build a program for your property before the season gets into full swing.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

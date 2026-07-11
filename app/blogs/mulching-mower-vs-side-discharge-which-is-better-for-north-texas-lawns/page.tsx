@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <p>Whether you mulch or side discharge, the mower deck and blades need to be maintained for either approach to work properly. Mulching especially requires sharp blades &mdash; a dull blade on a mulching deck tears clippings rather than chopping them, leaving larger pieces that decompose slowly and mat on the surface. Clean the underside of the deck regularly to prevent buildup that restricts airflow and reduces cutting efficiency.</p>
         <p>Pairing a consistent mulching or side-discharge approach with a <a href="/lawn-care-services">professional lawn care program</a> that includes seasonal fertilization and weed control gives North Texas turf the complete picture it needs: proper nutrition from above (treatments) and below (returned clippings), plus control of the weeds and pests that compete with your grass for both. For a deeper look at the timing and technique that ties it all together, read our guide on <a href="/blogs/mowing-frequency-for-st-augustine-grass-in-dfw-spring-through-fall">mowing frequency for St. Augustine grass in DFW</a> &mdash; the same principles of matching mowing habits to growth rate apply whether you&rsquo;re mulching or discharging.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Greener Lawn?</h3>
-          <p>Get professional lawn care that delivers real results &mdash; and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

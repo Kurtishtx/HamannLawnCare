@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
 
         <p>White or gray webbing on your grass before 9 a.m. is your lawn speaking clearly: something is actively wrong. Hamann&rsquo;s <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control</a> team has been reading these early warning signs across Arlington and DFW since 2006. Also review our post on <a href="/blogs/sunken-patches-in-lawn-what-disease-causes-them">sunken patches and what disease causes them</a> to understand what happens when early mycelium warnings go unanswered.</p>
 
-        <div className="blog-cta">
-          <h3>Seeing Webbing on Your Lawn This Morning?</h3>
-          <p>Don&rsquo;t wait. Active mycelium means the disease is spreading right now — call Hamann and stop it today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off First Treatment</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

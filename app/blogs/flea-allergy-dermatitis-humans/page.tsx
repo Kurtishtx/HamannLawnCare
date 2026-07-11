@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -69,14 +68,6 @@ export default function Page() {
         <p>Learn more about <a href="/blogs/fleas-without-pets-in-house">how fleas infest homes without pets</a> &mdash; because wildlife-sourced infestations are a common and often overlooked cause of ongoing FAD exposure in families who don&rsquo;t own animals.</p>
         <p>Hamann Lawn Care &amp; Weed Control has served Arlington and the broader DFW community since 2006. If you or your family members are experiencing reactions that go beyond a typical flea bite, let us treat the yard and break the exposure cycle. That&rsquo;s where lasting relief starts.</p>
 
-        <div className="blog-cta">
-          <h3>Stop the Reactions at the Source</h3>
-          <p>Professional flea control built for North Texas&rsquo;s long season &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

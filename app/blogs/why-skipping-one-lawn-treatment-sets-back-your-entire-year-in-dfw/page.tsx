@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <h2>The Value of a Recurring Professional Program</h2>
         <p>One underappreciated benefit of a professional recurring program is that the scheduling is handled for you. You don&rsquo;t have to remember when the soil temperature hits the pre-emergent threshold, or whether the timing is right for the fall potassium application. The treatments arrive when they&rsquo;re supposed to, adjusted for that year&rsquo;s actual conditions, and you never accidentally skip a critical window because life got busy. That consistency — more than any single product or application — is what makes a managed lawn dramatically outperform a DIY lawn over a full year.</p>
 
-        <div className="blog-cta">
-          <h3>Get Back on Track — or Stay Ahead All Year</h3>
-          <p>Whether you&rsquo;ve missed a treatment or want to start a program that never lets one slip, Hamann has you covered. Call today or get 50% off your first visit.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

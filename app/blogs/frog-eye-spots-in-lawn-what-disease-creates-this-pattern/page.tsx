@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
 
         <p>Frog-eye spots are one of the clearest signals your lawn sends that a fungal disease is in the middle of a spreading event. Hamann has been reading these patterns in Arlington and DFW since 2006. Our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control</a> service correctly identifies the cause and matches the right chemistry to the right disease — which is the only way to actually stop it. Also see our post on <a href="/blogs/orange-residue-on-shoes-from-lawn-rust-fungus-explained">orange residue on shoes from lawn rust fungus</a> for another visually distinctive fungal symptom common in North Texas lawns.</p>
 
-        <div className="blog-cta">
-          <h3>Frog-Eye Rings Spreading in Your Lawn?</h3>
-          <p>The pattern is telling you exactly where the disease is active. Call Hamann and let&rsquo;s stop it there.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off First Treatment</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

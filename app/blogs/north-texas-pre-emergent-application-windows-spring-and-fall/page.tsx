@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <h2>Let Hamann Handle the Timing For You</h2>
         <p>We&rsquo;ve been treating Arlington and DFW lawns since 2006. We monitor soil temperatures, weather patterns, and weed pressure across the area so our technicians hit your property at exactly the right moment &mdash; not too early, not too late. Our program covers both the spring and fall windows and includes post-emergent follow-up for anything that breaks through.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Lock In Weed-Free Windows?</h3>
-          <p>Get on our pre-emergent program before the next application window opens &mdash; and grab 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

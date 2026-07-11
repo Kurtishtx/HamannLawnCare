@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <p>You can keep your bird bath and keep your yard mosquito-free. The approach that works best for most North Texas homeowners is a combination of regular water changes (every 3&ndash;4 days during peak season), a solar fountain to keep water moving between changes, and a Bti dunk as backup insurance during busy weeks. That combination essentially eliminates the bird bath as a mosquito breeding source while making it more attractive to birds at the same time.</p>
         <p>Bird baths are just one of many potential breeding sources to address. If you have a pool with a cover, that&rsquo;s another major source worth checking. Read our post on <a href="/blogs/pool-cover-standing-water-mosquitoes">pool covers and mosquito breeding</a> for everything DFW pool owners need to know about that hidden risk.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

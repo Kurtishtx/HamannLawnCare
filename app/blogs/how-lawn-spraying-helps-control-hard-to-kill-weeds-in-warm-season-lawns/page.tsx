@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -50,14 +49,6 @@ export default function Page() {
         <p>Here&rsquo;s an honest statement that most lawn care companies won&rsquo;t say out loud: for some weed species, especially established dallisgrass and nutsedge with large tuber banks in the soil, <strong>complete eradication in a single season isn&rsquo;t realistic</strong>. What is realistic &mdash; and what professional programs consistently deliver &mdash; is significant reduction in weed density, suppression of seed production (which reduces next season&rsquo;s pressure), and progressive improvement year over year as the tuber bank depletes.</p>
         <p>Turf health is the long-term solution. A thick, well-fertilized Bermuda or St. Augustine lawn creates the competitive canopy that starves out new weed seedlings even as existing populations are being managed. Professional spraying and fertilization work together toward that outcome in a way that reactive single treatments never do. See the full range of professional options at our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer services</a> page, or learn how a year-round seasonal approach builds on these results in <a href="/blogs/how-seasonal-lawn-care-strengthens-turf-and-reduces-weed-pressure">how seasonal lawn care strengthens turf and reduces weed pressure</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Weed-Free Lawn?</h3>
-          <p>Get professional weed control &amp; fertilizer treatments &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

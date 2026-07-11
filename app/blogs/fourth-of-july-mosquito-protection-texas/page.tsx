@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -71,14 +70,6 @@ export default function Page() {
         <p>A lot of Hamann customers who start with a Fourth of July treatment end up extending their program through Labor Day weekend and beyond. The pattern makes sense: summer in North Texas is full of outdoor events &mdash; backyard cookouts, school-year-end parties, neighborhood gatherings, birthday celebrations. Having a yard that&rsquo;s consistently protected means never scrambling for a last-minute treatment before each event. For more on morning versus evening mosquito windows and when your party guests are most at risk, see our post on <a href="/blogs/mosquito-peak-morning-vs-evening-activity">morning vs evening mosquito activity and which window is worse in Texas</a>.</p>
         <p>Hamann has been treating Arlington yards since 2006. We know the July 4th rush and we&rsquo;re used to helping families get ready for it. Call us well ahead of the holiday &mdash; our schedule fills up fast in late June &mdash; and we&rsquo;ll time your treatment for maximum effectiveness on the big night.</p>
 
-        <div className="blog-cta">
-          <h3>Make Your Fourth of July Bite-Free</h3>
-          <p>Get pre-event mosquito treatment for your celebration &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

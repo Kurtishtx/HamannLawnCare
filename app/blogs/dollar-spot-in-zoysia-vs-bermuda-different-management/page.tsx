@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -72,14 +71,6 @@ export default function Page() {
 
         <p>We&rsquo;ve treated hundreds of zoysia and bermuda lawns across Arlington, Mansfield, Grand Prairie, and the surrounding DFW area for dollar spot and other fungal diseases. Our approach is never one-size-fits-all&mdash;because your grass isn&rsquo;t one-size-fits-all. If you&rsquo;re seeing spots, give us a call and we&rsquo;ll come take a look.</p>
 
-        <div className="blog-cta">
-          <h3>Dollar Spot Damaging Your Lawn?</h3>
-          <p>Whether you have bermuda or zoysia, we know exactly how to treat it the right way. Hamann Lawn Care &amp; Weed Control has been protecting DFW lawns since 2006. Call us today or grab your first-treatment discount below.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>&#128222; Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <h2>Hamann Moves as Fast as the Disease</h2>
         <p>Hamann Lawn Care &amp; Weed Control has been on the front lines of North Texas lawn disease management since 2006. We know which diseases are active in each summer season, which grass types are most at risk, and what professional-grade fungicide programs deliver the fastest results in Arlington and the surrounding DFW area. When you call us about a disease problem, we move quickly &mdash; because in a North Texas summer, every day matters.</p>
 
-        <div className="blog-cta">
-          <h3>Summer Disease Spreading Fast in Your Yard?</h3>
-          <p>Don&rsquo;t give it another week. Professional treatment stops North Texas lawn disease in its tracks.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

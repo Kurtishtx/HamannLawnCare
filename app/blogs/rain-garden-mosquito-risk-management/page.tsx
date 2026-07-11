@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <p>A poorly draining rain garden is a meaningful source of mosquitoes &mdash; not just for your yard but potentially for the whole neighborhood. If engineering fixes are beyond your current project scope, professional treatment of the standing water is a responsible interim step. Our <a href="/mosquito-control-services">mosquito control program</a> includes targeted larval treatment for water features that can&rsquo;t be immediately eliminated, so rain gardens don&rsquo;t have to be left untreated while drainage improvements are planned.</p>
         <p>And while you&rsquo;re auditing your yard for water sources, our comprehensive walkthrough in <a href="/blogs/gravel-vs-mulch-mosquito-habitat-comparison">gravel vs mulch for mosquito habitat</a> covers how your ground cover choices in and around the rain garden also affect pressure.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

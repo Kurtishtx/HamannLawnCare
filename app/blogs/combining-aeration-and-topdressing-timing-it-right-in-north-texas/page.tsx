@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <p>For most North Texas lawns with moderate to heavy clay compaction, plan to do the combined aeration and topdress treatment once per year during the peak growing season. Lawns with severe compaction issues — very thin turf, persistent standing water, or a history of being left untreated for many years — may benefit from twice-yearly treatments in the first one to two years before settling into an annual program. Read our post on <a href="/blogs/how-to-level-low-spots-in-your-lawn-without-killing-the-grass">how to level low spots in your lawn without killing the grass</a> to understand how topdressing fits into the broader surface leveling picture.</p>
         <p>For professional <a href="/lawn-care-services">lawn aeration and topdressing services</a> timed correctly for your specific turf type and yard conditions, Hamann Lawn Care &amp; Weed Control has been serving Arlington and surrounding DFW communities since 2006.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Transform Your North Texas Lawn?</h3>
-          <p>Professional aeration and topdressing, done right and timed for DFW clay. Call Hamann today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

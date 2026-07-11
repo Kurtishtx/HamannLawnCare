@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <p>Because brown dog ticks live both on the dog and in the home environment, treating only one front never works. You need simultaneous action on both the animal and the structure. Consult your veterinarian for appropriate on-animal tick control. For the home and yard, Hamann&rsquo;s program addresses the outdoor entry points &mdash; treating the yard perimeter and exterior areas where ticks first reach your dog &mdash; which reduces the number that ever make it inside. Pair that with thorough vacuuming of all cracks, crevices, and pet resting areas, and targeted application of appropriately labeled indoor products if an infestation is already established.</p>
         <p>For context on the range of ticks present in the DFW area and how the brown dog tick fits in, see our post on <a href="/blogs/american-dog-tick-dfw-yards">American dog ticks in DFW yards</a> &mdash; comparing species helps you understand exactly what you&rsquo;re dealing with.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Let Ticks Move In Permanently</h3>
-          <p>Hamann has kept Arlington and DFW homes protected from ticks since 2006. Get 50% off your first treatment today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <p>Our satisfaction guarantee is straightforward: if you&rsquo;re experiencing significant mosquito activity between scheduled visits, call us and we&rsquo;ll come back at no charge. We stand behind the products we use and the methods our technicians apply. We&rsquo;ve been serving Arlington and DFW since 2006, and our reputation is built on results that hold up &mdash; not on fine-print escape hatches.</p>
         <p>To understand what our service program includes from the ground up, visit our <a href="/mosquito-control-services">mosquito control services</a> page. And if you&rsquo;re heading into your first visit and want to know exactly what the experience looks like, check out our guide on <a href="/blogs/what-to-expect-first-professional-mosquito-treatment">what to expect during your first professional mosquito treatment visit</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

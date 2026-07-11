@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
 
         <p>Hamann Lawn Care &amp; Weed Control has been repairing and maintaining Arlington lawns since 2006. If your St. Augustine keeps dying in the same spots season after season, it&apos;s time to get to the root of the problem &mdash; we can diagnose what&apos;s happening and recommend the right treatment plan before you spend another dollar on plugs.</p>
 
-        <div className="blog-cta">
-          <h3>Dead Patches You Can&apos;t Fix on Your Own?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control diagnoses and repairs Arlington lawns. Call us or grab your discount below.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off First Service</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

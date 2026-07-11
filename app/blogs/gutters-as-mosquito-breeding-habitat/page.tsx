@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -70,14 +69,6 @@ export default function Page() {
         <p>Addressing your gutters eliminates a major breeding source, but it&rsquo;s rarely the only one. AC condensate drain lines, pool covers, plant saucers, low spots in the yard, and decorative water features all contribute. A comprehensive approach that identifies and addresses all breeding sources &mdash; combined with regular barrier treatments to the vegetation where adults rest &mdash; is what actually drives the mosquito population down to livable levels in a North Texas summer.</p>
         <p>Wondering what other hidden breeding sources might be hiding on your property? Check out our post on <a href="/blogs/do-mosquitoes-have-a-memory-host-preference">mosquito host preference</a> to understand how these pests decide who to target once they&rsquo;ve hatched and taken flight.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

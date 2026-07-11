@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>Bottom Line: Patience Pays Off</h2>
         <p>The answer to whether you should mow wet grass in North Texas after a summer storm is almost always: wait. The combination of DFW clay soils, Bermuda and St. Augustine susceptibility to fungal disease, and intense summer heat means the consequences of mowing too soon are more serious here than in many other parts of the country. The lawn will survive an extra day at a slightly taller height far better than it will survive mower-spread brown patch or compaction damage to already-saturated clay soil. Waiting 24 hours after a heavy storm to mow is not being lazy &mdash; it&rsquo;s protecting the investment you&rsquo;ve made in your turf.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Greener Lawn?</h3>
-          <p>Get professional lawn care that delivers real results &mdash; and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

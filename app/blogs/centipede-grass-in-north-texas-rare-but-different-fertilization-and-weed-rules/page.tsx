@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <h2>Should You Keep Your Centipede Lawn?</h2>
         <p>If you have a healthy, established centipede lawn in DFW, it can be maintained with the right program &mdash; but it requires more specific and careful management than the standard North Texas warm-season grass program. If your centipede is thin, chronically yellow, or repeatedly failing despite good care, the soil pH and clay composition of DFW may simply be fighting you at every step. In that case, a renovation to Bermuda or Zoysia might be worth considering. Our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer service</a> can help you evaluate the condition of your centipede lawn and determine whether the right program can save it or a new grass type makes more sense. For a broader look at identifying turf types before treatment, see our post on <a href="/blogs/grass-type-confusion-how-to-identify-your-north-texas-turf-before-treating">grass type confusion and how to identify your North Texas turf before treating</a>.</p>
 
-        <div className="blog-cta">
-          <h3>We Know Centipede &mdash; Even in North Texas</h3>
-          <p>Centipede needs a specialized program, not a standard DFW spray. Call us and let&rsquo;s assess what your lawn actually needs.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -80,14 +79,6 @@ export default function Page() {
         </ul>
         <p>The Arlington homeowners who see the best results are the ones who commit to annual topdressing as a routine part of their lawn program, not a one-time fix. Done consistently, it genuinely transforms DFW clay into something your lawn can thrive in rather than struggle against.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Build a Healthier Soil Foundation?</h3>
-          <p>Our lawn programs work from the ground up &mdash; claim your 50% off first application and let&rsquo;s get started.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

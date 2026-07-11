@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <h2>Talk to the Pros About Your Lawn&rsquo;s Specific Situation</h2>
         <p>Not every lawn needs the same aeration timing or frequency. Our <a href="/lawn-care-services">lawn care program</a> includes aeration recommendations based on your soil type, turf density, compaction level, and the specific weed pressures in your yard. Hamann Lawn Care &amp; Weed Control has been helping Arlington and DFW homeowners get the most out of their Bermuda since 2006. Call us and we&rsquo;ll tell you exactly what your lawn needs and when.</p>
 
-        <div className="blog-cta">
-          <h3>Want Expert Aeration and Lawn Care Timing for DFW?</h3>
-          <p>Get a program built for North Texas Bermuda &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

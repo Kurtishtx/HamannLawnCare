@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
 
         <p>Spurge is a tough opponent, but it&rsquo;s not unbeatable. With the right combination of pre-emergent timing, selective post-emergent treatment, and mulch management, you can take your flower beds back &mdash; and keep them clean through the whole North Texas summer.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Stop Fighting Spurge Every Summer?</h3>
-          <p>Get a professional flower-bed weed control plan built for North Texas heat &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

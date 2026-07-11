@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -75,14 +74,6 @@ export default function Page() {
         <p>If you&rsquo;re seeing any of the patterns above &mdash; rings, lesions on blades, root rot, overnight collapse, mushroom rings &mdash; don&rsquo;t wait for it to &ldquo;come back on its own.&rdquo; Lawn disease rarely self-resolves in North Texas conditions, and most fungal pathogens will keep spreading as long as conditions stay favorable.</p>
         <p>Hamann Lawn Care &amp; Weed Control has been diagnosing and treating North Texas lawn disease since 2006. Our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control service</a> starts with an accurate on-site diagnosis so you get the right treatment, not just a generic fungicide application.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Healthier Lawn?</h3>
-          <p>Get a professional diagnosis from a team that knows every disease on this list and how to stop it. Hamann has been treating Arlington and DFW lawns since 2006 &mdash; call today or grab your 50% off offer.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

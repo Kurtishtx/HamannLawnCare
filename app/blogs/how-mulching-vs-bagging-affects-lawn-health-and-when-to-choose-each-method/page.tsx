@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <h2>Practical Bottom Line for North Texas Homeowners</h2>
         <p>For most lawns here, the right approach is <strong>mulch by default, bag when the situation calls for it</strong>. Stay on a consistent mowing schedule so you&rsquo;re never removing too much at once, keep blades sharp, and mow at the right height for your grass type. When disease, skipped mowings, or weed issues arise, switch to bagging temporarily. Our <a href="/lawn-care-services">lawn care services</a> include mowing guidance as part of a full program because what you do between treatments has a direct effect on how well those treatments perform. The details of lawn care add up — and getting the basics right is what separates a lawn that looks okay from one that looks genuinely great.</p>
 
-        <div className="blog-cta">
-          <h3>Want a Lawn That Performs All Season Long?</h3>
-          <p>We&rsquo;ve been getting North Texas lawns right since 2006. Call us or grab your new-customer deal.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

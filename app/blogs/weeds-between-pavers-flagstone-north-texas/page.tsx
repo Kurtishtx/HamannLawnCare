@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
 
         <p>Paver and flagstone weed management is an extension of the broader <a href="/flower-bed-weed-control">flower-bed weed control</a> philosophy: prevention wins over reaction every time in North Texas&rsquo;s aggressive climate. If you&rsquo;re also dealing with weed pressure in gravel or DG paths nearby, our companion post covers <a href="/blogs/weeds-in-gravel-decomposed-granite-paths-dfw">long-term weed control in gravel and decomposed granite paths in DFW</a> with the same installation-first approach. Hamann has been managing North Texas landscapes since 2006 &mdash; call us at {PHONE_DISPLAY} if the weeds in your paving joints have gotten ahead of you.</p>
 
-        <div className="blog-cta">
-          <h3>Ready for Clean Pavers and Paths in Your DFW Landscape?</h3>
-          <p>Professional weed control that targets every surface &mdash; and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

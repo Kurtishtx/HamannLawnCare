@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -78,14 +77,6 @@ export default function Page() {
         <h2>When in Doubt, Ask a Professional</h2>
         <p>Grass identification directly affects every treatment decision — herbicide safety, fertilizer rate and timing, mowing height recommendations, and aeration scheduling. Getting it wrong means wasting money at best and damaging your lawn at worst. Hamann has been identifying and caring for every major DFW grass type since 2006 across Arlington, Mansfield, Grand Prairie, and throughout Tarrant County. Give us a call and we&rsquo;ll identify your grass on the first visit and build a program around what you actually have.</p>
 
-        <div className="blog-cta">
-          <h3>Not Sure What&rsquo;s Growing in Your Yard?</h3>
-          <p>Hamann will identify your grass type and design a program that actually fits your lawn — call today and get 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off First Service</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

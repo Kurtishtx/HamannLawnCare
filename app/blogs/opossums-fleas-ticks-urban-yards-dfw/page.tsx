@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <h2>The Bottom Line on Opossums and Your Yard</h2>
         <p>Opossums are neither the villains nor the heroes of the flea and tick story in DFW yards. They are opportunistic scavengers that happen to carry significant flea loads and, depending on the specific population and conditions, may carry and transport ticks as well. The romantic idea that a resident opossum is quietly protecting your yard from ticks does not hold up in the suburban North Texas environment. What holds up is a consistent, professionally applied treatment program that addresses the flea and tick populations your yard actually has &mdash; regardless of what wildlife is contributing to them from the outside.</p>
 
-        <div className="blog-cta">
-          <h3>Tired of Chasing Wildlife-Sourced Flea Infestations?</h3>
-          <p>A consistent professional program stops reinfestation in its tracks. Claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

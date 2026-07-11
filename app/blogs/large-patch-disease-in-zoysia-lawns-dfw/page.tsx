@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -68,14 +67,6 @@ export default function Page() {
         <h2>How Hamann Handles Large Patch in DFW</h2>
         <p>Hamann Lawn Care &amp; Weed Control has been working on North Texas zoysia lawns since 2006. We know the fall and spring disease windows for this area, and we use professional-grade systemic fungicides timed to stop Large Patch before it runs. If your zoysia has a history of circular dead patches each fall or a slow, patchy spring green-up, we can help you break that cycle with the right treatment at the right time of year.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Protect Your Lawn?</h3>
-          <p>Get professional lawn disease control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

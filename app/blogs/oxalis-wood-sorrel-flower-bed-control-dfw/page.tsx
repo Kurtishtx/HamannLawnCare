@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
 
         <p>If you&rsquo;ve been fighting oxalis in your DFW flower beds for more than a season and feel like you&rsquo;re going backwards, that&rsquo;s normal &mdash; and it doesn&rsquo;t mean the battle is lost. It means you need a systematic multi-season approach with the right products applied at the right time. Read about <a href="/blogs/how-to-kill-spurge-in-flower-beds-north-texas">how to kill spotted spurge in North Texas flower beds</a> for a look at how we handle another common summer annual, and call us to talk through a plan for your specific beds.</p>
 
-        <div className="blog-cta">
-          <h3>Tired of Oxalis Coming Back Every Season?</h3>
-          <p>Professional flower-bed weed control built for DFW &mdash; and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

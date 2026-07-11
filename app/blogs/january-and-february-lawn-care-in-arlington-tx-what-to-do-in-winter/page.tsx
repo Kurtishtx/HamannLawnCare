@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <h2>What Hamann Does in January and February</h2>
         <p>Our winter visits focus on documentation and spot treatment. We walk properties to map where winter weeds have established, treat actively growing broadleaf weeds with targeted post-emergent applications, and complete any soil testing that clients haven&rsquo;t already scheduled. We also review the prior year&rsquo;s program to identify any areas that had pre-emergent gaps or weed pressure and adjust the spring program accordingly. Read more in our <a href="/blogs/north-texas-lawn-care-calendar-month-by-month-weed-and-fertilizer-guide">North Texas lawn care calendar</a> for a full month-by-month breakdown of how all twelve months fit together.</p>
 
-        <div className="blog-cta">
-          <h3>Start Winter the Right Way &mdash; Let Hamann Plan Your Program</h3>
-          <p>Don&rsquo;t wait until spring to start thinking about your lawn. Our winter soil testing, weed mapping, and pre-emergent planning gets you ahead of the season &mdash; claim 50% off your first service today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

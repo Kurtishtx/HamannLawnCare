@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <p>The clearest way to see the value of integrating mowing and spraying is to look at the trajectory over several years. A lawn that gets both correct &mdash; appropriate mowing height for the turf type, consistent pre- and post-emergent treatments timed to the North Texas weed calendar &mdash; builds weed resistance progressively. Each year, fewer weeds set seed. The soil seed bank depletes. Turf density increases with consistent fertility. The canopy suppression advantage grows. By year three or four, a well-managed North Texas lawn requires significantly fewer herbicide applications to stay clean because the turf is doing most of the work.</p>
         <p>A lawn that gets only one of the two right never reaches that point. Great herbicide programs applied to thin, improperly mowed turf fight a constant battle against new germination. Perfectly mowed lawns with no herbicide program can&rsquo;t handle established perennial weeds or edge-area germination pressure. Both together, year over year, produce compounding returns. That full program is explained on our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer services</a> page. And if you&rsquo;re dialing in the mowing side first, the previous post on <a href="/blogs/how-proper-mowing-practices-reduce-weed-pressure-in-warm-season-lawns">how proper mowing practices reduce weed pressure in warm season lawns</a> covers the height, frequency, and technique details for St. Augustine, Bermuda, and Zoysia.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Weed-Free Lawn?</h3>
-          <p>Get professional weed control &amp; fertilizer treatments &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

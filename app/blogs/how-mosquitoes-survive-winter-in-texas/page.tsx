@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -52,14 +51,6 @@ export default function Page() {
         <p>A program engineered for North Texas doesn&rsquo;t wait for mosquitoes to become a problem &mdash; it addresses the overwintering population before it fully wakes up. That means an early-season treatment in late February or March targeting the resting sites where adults are emerging from dormancy, followed by regular barrier applications through the active season. Larval control treatments applied to standing water sites prevent the egg hatch from becoming an adult surge. Together, these break the cycle before it gains momentum.</p>
         <p>At Hamann, we&rsquo;ve been running mosquito programs in Arlington and the surrounding DFW communities since 2006. We know exactly when the first wave hits, where the overwintering sites cluster, and which treatments deliver the longest-lasting results in our specific climate. That local knowledge makes every application more effective than a generic national program.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Let Last Winter&rsquo;s Mosquitoes Ruin This Spring</h3>
-          <p>Get ahead of the season with professional mosquito control &mdash; and take 50% off your first application when you call today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

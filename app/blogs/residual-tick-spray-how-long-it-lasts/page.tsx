@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -73,14 +72,6 @@ export default function Page() {
         <h2>Planning Your Schedule Around Residual Reality</h2>
         <p>A professional North Texas tick program accounts for all of these variables. Rather than picking a fixed calendar date, a well-designed program adjusts interval length based on the product used, the conditions that month, and your specific yard features. After significant rain events or during peak tick season, your technician may recommend shortening the interval. In dry stretches with shaded yards, the interval can safely stretch. This kind of adaptive scheduling is what separates a program that actually controls ticks from one that simply looks active on paper.</p>
 
-        <div className="blog-cta">
-          <h3>Stop Guessing &mdash; Get Tick Coverage That Lasts</h3>
-          <p>Professional residual treatment calibrated for North Texas conditions. Claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

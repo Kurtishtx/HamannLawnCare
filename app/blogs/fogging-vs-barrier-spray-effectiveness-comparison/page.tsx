@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <p>If you&rsquo;re genuinely trying to reclaim your backyard from mosquitoes through the full Texas season &mdash; April through November &mdash; fogging as your primary method will leave you frustrated and broke. The residual chemistry in a professional barrier program, applied on a recurring schedule to the right surfaces, is what actually keeps numbers down week after week. You can read more about how pros choose where to apply these treatments in our post on <a href="/blogs/aerial-mosquito-treatment-neighborhood-dfw">neighborhood aerial mosquito spraying programs in DFW</a>.</p>
         <p>Hamann has been running barrier spray programs for Arlington homeowners since 2006. We use commercial-grade products, treat every resting zone that matters, and back every application with a satisfaction guarantee. If mosquitoes come back before your next scheduled visit, we come back too.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

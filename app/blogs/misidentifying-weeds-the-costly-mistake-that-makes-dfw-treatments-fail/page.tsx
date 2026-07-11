@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -68,14 +67,6 @@ export default function Page() {
         <p>If you&rsquo;ve been dealing with a persistent weed that isn&rsquo;t responding to treatments, there&rsquo;s a very good chance the weed has been misidentified from the start. Check out our related post on <a href="/blogs/herbicide-drift-damage-how-wind-ruins-neighbor-plants-in-arlington">herbicide drift damage and how wind ruins neighbor plants in Arlington</a> &mdash; because once you have the right chemistry in hand, application conditions matter just as much as product selection.</p>
         <p>The Hamann team has been walking North Texas lawns since 2006, and correct weed identification is where every treatment program starts. Call us before you spray &mdash; it&rsquo;s the cheapest step in the whole process.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Greener, Weed-Free Lawn?</h3>
-          <p>Get professional weed control and fertilization that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

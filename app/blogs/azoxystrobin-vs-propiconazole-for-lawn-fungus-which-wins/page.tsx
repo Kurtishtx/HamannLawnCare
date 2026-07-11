@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
           <li><strong>Fix irrigation timing.</strong> Both diseases thrive when grass sits wet overnight. Switch irrigation to early morning so turf dries completely during the day. No fungicide program fully compensates for chronic nighttime irrigation.</li>
         </ul>
 
-        <div className="blog-cta">
-          <h3>Active Fungus or Just Trying to Prevent It? We Have the Right Product.</h3>
-          <p>Hamann selects the right active ingredient for your lawn&rsquo;s specific disease situation &mdash; preventive or curative, azoxystrobin or propiconazole, at the right rate and the right time.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

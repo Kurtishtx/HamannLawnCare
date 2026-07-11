@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -80,14 +79,6 @@ export default function Page() {
         <h2>The Bottom Line</h2>
         <p>Residual mosquito spray lasts anywhere from 24 hours (botanical pyrethrins) to 30 days (bifenthrin under ideal conditions) depending on the product, the weather, and how the application was done. In North Texas heat, expect to land closer to the shorter end of most product ranges, and plan your program accordingly. Hamann Lawn Care &amp; Weed Control has been navigating DFW&rsquo;s mosquito season since 2006 &mdash; we know exactly what holds up here and what doesn&rsquo;t.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

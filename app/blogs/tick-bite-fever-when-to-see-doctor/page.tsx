@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -77,14 +76,6 @@ export default function Page() {
         <h2>The Smartest Protection Is Preventing the Bite in the First Place</h2>
         <p>The best time to think about tick-borne disease is before a tick finds you. In the DFW area, most tick exposure happens in the backyard &mdash; especially along fence lines, under trees, and in shaded ground cover. Professional barrier treatments applied to these harborage zones dramatically reduce tick populations where your family actually spends time. Hamann&rsquo;s program targets both adult ticks and nymphs (the tiny, hard-to-see life stage responsible for many bites) on a schedule designed around North Texas&rsquo;s extended tick season. Read our earlier post on <a href="/blogs/how-quickly-ticks-transmit-disease">how long a tick has to be attached to transmit disease</a> to understand why time-to-detection matters so much &mdash; and why reducing the tick population in your yard is the most reliable way to keep your family safe.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Wait for a Tick Bite to Take Action</h3>
-          <p>Hamann has protected Arlington and DFW families from ticks since 2006. Claim 50% off your first yard treatment today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

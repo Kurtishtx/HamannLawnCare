@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <p>At Hamann Lawn Care &amp; Weed Control, we&rsquo;ve been treating Arlington and DFW properties since 2006 &mdash; long enough to recognize the pattern of La Ni&ntilde;a and El Ni&ntilde;o years and adjust our programs accordingly. When conditions point toward a heavy season, we communicate that early and help customers schedule appropriately. Our barrier treatments target the resting zones where mosquitoes hide during the day, our larval control hits breeding sites directly, and our residual products keep working between visits. Whether the Pacific is cooking up a wet La Ni&ntilde;a or a dry El Ni&ntilde;o, our goal is the same: a backyard you can actually use.</p>
         <p>Check out our previous post on <a href="/blogs/labor-day-mosquito-season-still-active-texas">why mosquito season is still fully active at Labor Day in Texas</a> &mdash; because regardless of the climate cycle, September bites just as hard as July.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

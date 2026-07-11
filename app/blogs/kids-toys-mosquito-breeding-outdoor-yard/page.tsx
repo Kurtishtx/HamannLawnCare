@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -45,14 +44,6 @@ export default function Page() {
         <p>Diligently eliminating standing water in your yard cuts off the mosquito production on your property, but it doesn&rsquo;t stop adult mosquitoes from flying in from neighboring properties, from the greenbelt behind the subdivision, or from sources you can&rsquo;t control. In North Texas, adult mosquitoes can travel up to a mile from their breeding site. You can have a spotless yard and still be dealing with a significant biting population because the source is elsewhere.</p>
         <p>That&rsquo;s where barrier treatment fills the gap. A professional spray program targeting resting mosquitoes in shaded foliage, fence lines, and ground cover kills the adults that are already in your yard regardless of where they hatched. Combined with consistent source reduction — including the toy check after rain — it delivers the most complete protection for families that want their kids actually playing outside without getting bitten. Read our article on <a href="/blogs/rain-barrel-mosquito-prevention">rain barrels and mosquito prevention</a> for another high-impact source to address in your yard.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works — and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

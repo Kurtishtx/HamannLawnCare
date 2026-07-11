@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <h2>When Source Reduction Alone Isn&rsquo;t Enough</h2>
         <p>No matter how diligently you eliminate water sources on your own property, mosquitoes breeding beyond your fence line will still find their way into your yard. Storm drains, neighboring properties, and natural drainage areas all contribute to local mosquito populations that you can&rsquo;t reach through source reduction alone. A <a href="/mosquito-control-services">professional mosquito control program</a> covers that gap by targeting the adult mosquitoes resting in your vegetation and maintaining a residual barrier that intercepts new arrivals before they bite. Combined with your own source-reduction habits, it&rsquo;s the most comprehensive approach available for North Texas yards.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

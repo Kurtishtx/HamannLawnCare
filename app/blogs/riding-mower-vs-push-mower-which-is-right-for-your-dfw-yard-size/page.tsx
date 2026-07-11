@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -54,14 +53,6 @@ export default function Page() {
 
         <p>Hamann Lawn Care &amp; Weed Control has been mowing North Texas yards since 2006. Our crews use commercial-grade walk-behinds and ZTR equipment matched to the specific property layout &mdash; we don&rsquo;t run a riding mower on a tight Arlington lot with five crape myrtles and curved beds any more than we&rsquo;d hand-push a half-acre Southlake property.</p>
 
-        <div className="blog-cta">
-          <h3>Skip the Equipment Decision Entirely</h3>
-          <p>Let Hamann&rsquo;s professional crew handle your DFW lawn with the right equipment, every time &mdash; claim 50% off your first mowing service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>St. Augustine vs. Bermuda: Why You Can&rsquo;t Use the Same Program</h2>
         <p>If you moved from a Bermuda lawn to a St. Augustine lawn (or have both in adjacent areas), the adjustment can be jarring. What worked perfectly on Bermuda may injure St. Augustine. The fertilizer timing is different. The safe herbicide list is different. The disease risks are different. Recognizing that your lawn&rsquo;s grass type defines every treatment decision is the most important shift any North Texas homeowner can make. For a deeper look at how Bermuda responds to these same inputs, our post on <a href="/blogs/how-bermuda-grass-responds-to-weed-control-and-fertilizer">Bermuda grass weed control and fertilizer</a> lays out the contrast clearly.</p>
 
-        <div className="blog-cta">
-          <h3>Get St. Augustine Care Done Right</h3>
-          <p>Professional treatments calibrated to your specific turf type &mdash; and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

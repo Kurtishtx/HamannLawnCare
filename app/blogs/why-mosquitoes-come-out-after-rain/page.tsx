@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <p>If you want to understand how the biology of breeding sites compounds these post-rain surges, our post on <a href="/blogs/why-mosquitoes-bite-some-people-more-than-others">why mosquitoes bite some people more than others</a> covers how individual factors layer on top of environmental pressure to determine your exposure.</p>
         <p>Hamann Lawn Care &amp; Weed Control has been protecting Arlington and DFW properties since 2006. We schedule treatments around the North Texas storm calendar and build programs that stay ahead of post-rain population spikes rather than reacting to them after the fact.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Stop The Post-Rain Surge?</h3>
-          <p>Get a professional mosquito program built for Texas weather — and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

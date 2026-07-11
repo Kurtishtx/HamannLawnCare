@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <h2>What to Expect Long-Term</h2>
         <p>Fairy ring doesn&rsquo;t disappear quickly. If there&rsquo;s significant buried organic matter feeding the fungus, it may persist for years or even decades. The good news: as the fungus consumes the organic material, it eventually runs out of food and the ring stops expanding and fades. The bad news: in a DFW yard with buried construction debris or large old root systems, that food supply can last a very long time. Managing it effectively through aeration, wetting agents, and good irrigation practices is the realistic approach for most homeowners &mdash; and it&rsquo;s enough to keep your lawn looking acceptable while the ring runs its course.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Protect Your Lawn?</h3>
-          <p>Get professional lawn disease control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

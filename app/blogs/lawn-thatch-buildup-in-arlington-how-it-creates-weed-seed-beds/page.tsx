@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <p>Thatch management does not exist in isolation from weed control&mdash;it is directly integrated with it. A lawn carrying a thick thatch layer will consistently underperform regardless of how accurately herbicides are applied or how well the fertilization schedule is timed, because the thatch interferes with the soil chemistry and moisture dynamics that make those treatments work. For Arlington homeowners on a full-season <a href="/weed-control-and-fertilizer-services">weed control and fertilizer program</a>, thatch assessment is part of how we evaluate whether a lawn is responding to treatment the way it should. When we see recurring weed pressure in areas that received pre-emergent applications, thatch interference is one of the first factors we investigate.</p>
         <p>Preventing excessive thatch from rebuilding after removal requires the same practices that support overall lawn health: balanced nitrogen fertilization rather than heavy single applications, deep infrequent irrigation to encourage soil microbial activity, and annual or biennial aeration to maintain soil porosity. In North Texas&rsquo;s warm climate, these practices do not eliminate thatch production&mdash;Bermuda and St. Augustine will always generate organic material faster than cooler-climate grasses&mdash;but they slow accumulation and keep the thatch layer in the manageable range where it functions as protection rather than weed seed bed.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Weed-Free Lawn?</h3>
-          <p>Get professional weed control and fertilizer treatments that actually work &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

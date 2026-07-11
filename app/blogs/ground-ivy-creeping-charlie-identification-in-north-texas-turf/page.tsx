@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -74,14 +73,6 @@ export default function Page() {
 
         <p>Creeping charlie is far more manageable when you know what you&rsquo;re dealing with and catch it early. For a look at another summer broadleaf that takes over DFW lawns in similar shaded-to-open transitions, see our post on <a href="/blogs/common-lespedeza-summer-weed-identification-in-arlington-lawns">Common Lespedeza summer weed identification in Arlington lawns</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Creeping Charlie Doesn&rsquo;t Have to Win</h3>
-          <p>Hamann Lawn Care &amp; Weed Control uses triclopyr-based broadleaf programs timed to DFW&rsquo;s active growth windows&mdash;plus 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

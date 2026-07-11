@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>What Standing Water Does to Your Lawn If You Ignore It</h2>
         <p>Just to be clear about the stakes: turf grass roots need oxygen as much as they need water. When soil is completely saturated for more than 24&ndash;48 hours, roots in that zone begin to die from anaerobic conditions. Repeated flooding kills existing roots, allows soil pathogens to multiply, and opens the area to weeds that tolerate wet conditions — sedges, dollarweed, and nutsedge are all classic wet-area invaders in DFW. The longer you tolerate pooling water, the more your lawn&rsquo;s root system deteriorates and the harder recovery becomes.</p>
 
-        <div className="blog-cta">
-          <h3>Standing Water Ruining Your Backyard?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control has diagnosed and solved DFW drainage and lawn problems since 2006. Call for a real assessment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

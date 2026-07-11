@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <p>If fleas are already established inside your home, yard treatment and pet medication alone won&rsquo;t resolve the indoor population. Interior vacuuming (daily during heavy infestation, focusing on baseboards, carpets, and under furniture), washing all pet bedding weekly, and in severe cases an indoor flea spray or professional interior treatment are needed alongside the outdoor program. The indoor environment is where the majority of the flea lifecycle plays out in households with indoor/outdoor pets.</p>
         <p>For more detail on what the outdoor treatment side involves, see our post on <a href="/blogs/how-long-keep-pets-off-treated-grass">How Long to Keep Pets Off Treated Grass After a Flea or Tick Yard Spray</a> — understanding re-entry timing is part of coordinating the two systems safely.</p>
 
-        <div className="blog-cta">
-          <h3>Let&rsquo;s Get You to Zero Fleas</h3>
-          <p>Professional yard flea treatment paired with your vet&rsquo;s program — 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

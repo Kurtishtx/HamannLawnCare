@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <h2>Outdoor Treatment Is the Long-Term Answer</h2>
         <p>No indoor treatment program will be sustainably effective if pets are bringing new fleas indoors from the yard every day. The yard is the primary flea reservoir for most DFW households with outdoor pets &mdash; wildlife (opossums, feral cats, raccoons) continually seed flea eggs into the yard, pets pick them up, and the eggs fall off indoors to complete the cycle. Breaking this cycle requires treating the yard with a professional residual product on a scheduled basis. Indoor treatment handles the current infestation; outdoor yard treatment prevents the next one from starting.</p>
 
-        <div className="blog-cta">
-          <h3>Break the Flea Cycle at the Source</h3>
-          <p>Professional yard treatment stops reinfestation from the outside in. Claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -78,14 +77,6 @@ export default function Page() {
         <p>North Texas conditions are moderately challenging for residual performance. Summer heat accelerates UV degradation of pyrethroids on exposed surfaces, and the heavy storms that move through DFW from spring through fall can wash product off treated areas faster than in drier climates. Under normal conditions without heavy rainfall, a professional application in North Texas delivers meaningful residual protection for <strong>30 to 60 days</strong>. Heavy rain within 48 hours of application may reduce that window and warrant a follow-up.</p>
         <p>This is why three-season treatment scheduling is the baseline for North Texas yards rather than a single annual application. The environmental conditions that support year-round flea and tick pressure are the same conditions that demand regular treatment renewal to maintain an effective barrier.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Protect Your Yard From Fleas &amp; Ticks?</h3>
-          <p>Professional flea &amp; tick control built for North Texas &mdash; claim your 50% off first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

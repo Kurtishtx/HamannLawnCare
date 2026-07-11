@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <h2>Why Professionals Choose Gallery for DFW Broadleaf Prevention</h2>
         <p>At Hamann Lawn Care &amp; Weed Control, we include isoxaben in fall programs specifically because the winter annual broadleaf weed pressure in North Texas is severe and often underestimated until February rolls around and the lawn is covered in purple henbit. Preventing that outcome costs far less time, money, and chemical exposure than trying to clean it up post-emergence. Pairing Gallery with the right grassy-weed pre-emergent products gives Arlington homeowners the most complete pre-emergent coverage available. To see how timing interplays with new installations, read our post on <a href="/blogs/pre-emergent-and-new-sod-can-you-apply-without-hurting-grass">pre-emergent and new sod application without hurting grass</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Stop Broadleaf Weeds Before They Even Start</h3>
-          <p>Our fall and spring pre-emergent programs are designed for North Texas soil and season. Claim 50% off your first service today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

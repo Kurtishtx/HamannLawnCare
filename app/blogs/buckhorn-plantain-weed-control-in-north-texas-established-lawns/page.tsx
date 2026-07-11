@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -104,14 +103,6 @@ export default function Page() {
           Buckhorn plantain is a persistent weed, but it is not an uncontrollable one. The plants are identifiable, the herbicide options are well-established, and the conditions that allow it to establish are correctable. The key is not waiting until the infestation is widespread &mdash; treating a few rosettes in October is faster, cheaper, and more effective than treating a lawn full of mature, deep-rooted plants the following summer. Hamann Lawn Care &amp; Weed Control works with homeowners throughout the Arlington and DFW area to manage broadleaf weeds with targeted, turf-safe programs built around the specific soil and seasonal conditions of North Texas.
         </p>
 
-        <div className="blog-cta">
-          <h3>Ready To Clear Buckhorn Plantain From Your Lawn?</h3>
-          <p>Professional broadleaf weed control for established North Texas lawns &mdash; 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

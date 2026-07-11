@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -95,14 +94,6 @@ export default function Page() {
           If your landscape beds have been losing ground to prostrate knotweed, the fix is not a more powerful herbicide. It&rsquo;s getting the right product into the soil at the right time in January or February, before the seeds ever have a chance to wake up.
         </p>
 
-        <div className="blog-cta">
-          <h3>Ready To Reclaim Your Flower Beds?</h3>
-          <p>Get professional flower-bed weed control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

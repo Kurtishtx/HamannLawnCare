@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <p>For pet medication decisions specifically, the fipronil resistance issue in Texas flea populations makes switching from a fipronil-based topical to an oral isoxazoline (NexGard, Bravecto, Simparica) worth discussing with your vet — especially if you&rsquo;re seeing breakthrough fleas on a Frontline-treated animal.</p>
         <p>For more on what professional formulations offer that consumer products can&rsquo;t, see our post on <a href="/blogs/store-bought-flea-products-vs-professional">Store-Bought Flea Products vs Professional-Grade: Concentration and Formulation Differences</a> — understanding that gap is part of understanding why active ingredient choice alone doesn&rsquo;t tell the whole story.</p>
 
-        <div className="blog-cta">
-          <h3>The Right Chemistry for Your Yard and Pets</h3>
-          <p>Professional flea and tick treatment built around North Texas flea pressure — 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

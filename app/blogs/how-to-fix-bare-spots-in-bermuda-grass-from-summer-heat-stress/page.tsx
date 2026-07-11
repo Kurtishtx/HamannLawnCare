@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         <h2>Get a Pro Diagnosis for Recurring Problems</h2>
         <p>If the same spots go bare every summer despite good watering, the underlying problem may be soil compaction, drainage failure, or irrigation design — none of which sprigging alone will fix. Read our post on <a href="/blogs/combining-aeration-and-topdressing-timing-it-right-in-north-texas">combining aeration and topdressing and timing it right in North Texas</a> for a deeper look at the soil health work that prevents these recurring issues. Hamann Lawn Care &amp; Weed Control has been diagnosing and repairing North Texas Bermuda lawns since 2006 — give us a call and we&rsquo;ll tell you exactly what&rsquo;s going on.</p>
 
-        <div className="blog-cta">
-          <h3>Bare Spots Ruining Your Bermuda Lawn?</h3>
-          <p>Hamann has the North Texas know-how to repair and protect your lawn through even the toughest DFW summer.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

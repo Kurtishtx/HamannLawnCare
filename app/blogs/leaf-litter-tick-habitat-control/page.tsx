@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <h2>What Hamann Targets in Your Yard</h2>
         <p>When our technicians treat for ticks, we focus on the transition zones and shaded areas where leaf litter accumulates — not just the open turf. That means fence lines, shrub perimeters, landscape bed edges, and the border between your maintained lawn and any adjacent natural areas. See our guide on <a href="/blogs/ticks-in-tall-grass-why-they-wait-there">why ticks congregate in tall grass</a> for how we approach the full range of tick habitat on a typical North Texas property. Hamann has been protecting families in Arlington and DFW since 2006, and we back every treatment with a satisfaction guarantee.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Reduce Tick Pressure in Your Yard?</h3>
-          <p>Get targeted flea &amp; tick treatment that hits the zones ticks actually use — and claim 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

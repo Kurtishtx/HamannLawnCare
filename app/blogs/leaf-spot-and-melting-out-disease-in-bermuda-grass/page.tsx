@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -70,14 +69,6 @@ export default function Page() {
 
         <p>Bermuda grass is tough, and most lawns can recover from leaf spot and melting out when the disease is caught and addressed correctly. The mistake to avoid is misreading Phase 2 as drought stress and irrigating heavily into an already-diseased root zone. If your Bermuda lawn is thinning in irregular patches this spring or summer and the usual fixes aren&rsquo;t working, read our detailed breakdown of <a href="/blogs/slime-mold-on-lawn-harmless-or-harmful-north-texas-guide">slime mold on North Texas lawns</a> to rule out other unusual causes &mdash; then call us. Hamann Lawn Care &amp; Weed Control has diagnosed and treated North Texas Bermuda lawns since 2006, and we know what spring disease looks like versus drought versus something else entirely.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Protect Your Lawn?</h3>
-          <p>Get professional lawn disease control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

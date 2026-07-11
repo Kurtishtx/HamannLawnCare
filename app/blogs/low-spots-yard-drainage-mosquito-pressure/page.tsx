@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         <p>Fixing drainage problems is one of the highest-impact investments a North Texas homeowner can make for long-term mosquito management. Unlike other source-reduction efforts that require weekly maintenance, a properly graded yard with functional drainage is a permanent improvement. But drainage fixes take time and money, and mosquitoes from neighboring properties, storm drainage infrastructure, and nearby natural areas will still find their way into your yard even after your own property drains well.</p>
         <p>A <a href="/mosquito-control-services">professional mosquito control program</a> provides the adult population control and residual barrier that covers both your own yard and arrivals from beyond your property line. Combined with drainage improvements for your chronic low spots, it&rsquo;s a durable, layered approach to mosquito management that delivers consistent results through a full North Texas mosquito season &mdash; and every season after that.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

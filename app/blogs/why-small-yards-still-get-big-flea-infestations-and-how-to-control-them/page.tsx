@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
 
         <p>For the complete picture of what a thorough flea control plan looks like, our guide on <a href="/blogs/why-large-yards-have-more-flea-problems-and-how-to-control-them-effectively">why large yards have more flea problems</a> covers many of the same strategic principles &mdash; targeted hot spot treatment, IGR use, and follow-up timing &mdash; that apply equally to small-yard control.</p>
 
-        <div className="blog-cta">
-          <h3>Small Yard, Serious Flea Problem?</h3>
-          <p>Hamann treats the zones that actually matter &mdash; claim your 50% off first flea treatment today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

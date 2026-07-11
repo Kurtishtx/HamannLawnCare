@@ -341,21 +341,6 @@ export default function LimeApplicationsNorthTexasPage() {
           </p>
 
           {/* ── CTA ── */}
-          <div className="blog-cta">
-            <h3>Get a Free Lawn Care Estimate</h3>
-            <p>
-              Serving Arlington, Mansfield, and the mid-cities area. Family-owned, locally operated, and we actually
-              know DFW soil.
-            </p>
-            <div className="cta-btns">
-              <button className="btn-primary" onClick={openPromo}>
-                Get Free Estimate
-              </button>
-              <a className="btn-secondary" href={`tel:${PHONE_TEL}`}>
-                Call {PHONE_DISPLAY}
-              </a>
-            </div>
-          </div>
 
         </div>
       </article>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <h2>Work With the Seasons, Not Against Them</h2>
         <p>North Texas lawns are tougher than they look, but they&rsquo;re not maintenance-free. The homeowners who get the best results year after year are the ones who understand that timing is everything — and that responding to what the grass actually needs at each stage of the season beats following a rigid monthly calendar. Hamann has been doing this in Arlington and across DFW since 2006, and we&rsquo;re always happy to walk a property and give honest advice about what&rsquo;s going on and what&rsquo;s actually needed.</p>
 
-        <div className="blog-cta">
-          <h3>Let&rsquo;s Get Your Lawn on the Right Schedule</h3>
-          <p>Season-timed care makes a real difference. Call us or grab your first-service deal below.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

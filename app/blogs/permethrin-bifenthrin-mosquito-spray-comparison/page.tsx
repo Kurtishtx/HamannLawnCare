@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -75,14 +74,6 @@ export default function Page() {
         <h2>The Bottom Line</h2>
         <p>For North Texas conditions &mdash; intense summer heat, high UV, frequent rain events, and a mosquito season that runs March through November &mdash; bifenthrin generally outperforms permethrin on residual duration and heat stability. Permethrin remains a solid, widely available option, especially for rotation. The best mosquito program uses the right chemistry at the right time, applied by someone who knows both the product and the local pest population. That&rsquo;s what Hamann Lawn Care &amp; Weed Control has been doing in Arlington and DFW since 2006.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

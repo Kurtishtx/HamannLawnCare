@@ -29,7 +29,6 @@ const faqs = [
 const RedLine = () => <div style={{ height: 4, width: 64, background: 'var(--red)', borderRadius: 2, margin: '14px auto 0' }} />;
 
 export default function FlowerBedWeedControl() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -41,10 +40,6 @@ export default function FlowerBedWeedControl() {
             <h1>Flower Bed <span className="headline-3d">Weed Control</span> in Arlington, TX</h1>
             <p className="hero-sub" style={{ margin: '20px auto 10px', fontWeight: 700, color: '#fff' }}>Permanent Weed Control • Pre-Emergent + Post-Emergent • Built for North Texas Beds</p>
             <p className="hero-sub" style={{ margin: '0 auto 26px' }}>Your flower beds should look clean, sharp, and maintained — not overrun with nutgrass, spurge, dandelions, crabgrass, dallisgrass, henbit, chickweed, and broadleaf weeds. Our professional program is engineered for North Texas soils, heat, rainfall, and weed pressure, giving you a clean, polished landscape all year long.</p>
-            <div className="hero-cta" style={{ justifyContent: 'center' }}>
-              <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-              <button className="btn btn-ghost btn-lg" onClick={openPromo}>Get 50% Off →</button>
-            </div>
           </div>
         </div>
       </section>
@@ -142,16 +137,6 @@ export default function FlowerBedWeedControl() {
         </div>
       </section>
 
-      <section className="cta-band">
-        <div className="wrap">
-          <h2>Stop Fighting Weeds. Start Winning.</h2>
-          <p>If you&rsquo;re tired of weeds taking over your landscape beds, you&rsquo;re one call away from a clean, sharp, weed-free property. <b>Claim your 50% off first application!</b></p>
-          <div className="btns">
-            <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Get Your Free Quote</a>
-            <button className="btn btn-ghost btn-lg" onClick={openPromo}>Claim 50% Off</button>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

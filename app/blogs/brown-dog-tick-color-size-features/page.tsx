@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <p>Eliminating brown dog ticks requires a coordinated approach: treating the dog with a veterinarian-recommended product, treating the outdoor environment where the dog spends time, and treating indoor harborage areas if an infestation has established. DIY sprays applied only to the yard won&rsquo;t resolve an indoor population that&rsquo;s already behind your baseboards.</p>
         <p>Professional <a href="/flea-and-tick-control">flea and tick control</a> from a licensed applicator covers the outdoor perimeter — yard edges, kennel areas, shaded resting spots — where the tick cycle resets with each new host visit. Paired with veterinary prevention and targeted indoor treatment when necessary, this approach breaks the cycle effectively. For a comparison of how this species stacks up against the other ticks common in our area, see our breakdown of the <a href="/blogs/american-dog-tick-vs-lone-star-tick-texas">American dog tick vs Lone Star tick in Texas</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Brown Dog Ticks in Your Yard or Home?</h3>
-          <p>Hamann has handled North Texas tick problems since 2006. Let&rsquo;s get your yard — and your dog — protected.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

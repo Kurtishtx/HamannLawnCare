@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <p>If you haven&rsquo;t looked at what your neighborhood&rsquo;s specific risk profile looks like, read our breakdown of <a href="/blogs/west-nile-virus-north-texas-risk-by-neighborhood">West Nile virus risk by neighborhood in North Texas</a>. Knowing your area&rsquo;s history with virus-positive mosquito pools helps you make informed decisions about how aggressively to protect your household.</p>
         <p>Hamann has protected Arlington families from mosquitoes since 2006. We take West Nile seriously because we live and work in the same communities our customers do. Professional treatment is the most effective household-level action you can take.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

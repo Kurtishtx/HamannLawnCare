@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <p>The most comfortable outdoor experience in a North Texas mosquito season uses multiple tools together. A professionally treated yard reduces the overall mosquito population by targeting resting zones and larvae. Personal repellent handles the inevitable stragglers. And netting provides chemical-free protection in specific situations &mdash; infant play areas, outdoor sleeping, high-pressure spots near water features. None of these tools alone solves the whole problem. Together, they make a DFW summer backyard genuinely usable.</p>
         <p>For context on another natural approach that gets lumped into the same category but with very different results, check out our post on <a href="/blogs/garlic-spray-mosquito-yard-repellent-effectiveness">garlic spray for mosquito control</a> &mdash; a popular remedy that doesn&rsquo;t hold up nearly as well as netting does. Hamann Lawn Care has been protecting outdoor spaces in Arlington and across DFW since 2006. If you&rsquo;re ready to seriously reduce the mosquito pressure in your yard, call us today.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

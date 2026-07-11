@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <p>Here&rsquo;s the encouraging part: density compounds on itself. A thick lawn shades the soil, which reduces weed germination, which means less competition for the grass, which allows even more density. It retains moisture better, which reduces drought thinning. It&rsquo;s harder for pests and disease to get a foothold in dense turf because the canopy is so tight.</p>
         <p>Getting there requires addressing the specific thinning causes in your lawn rather than applying generic treatments. For more background on what drives recovery after your lawn takes a hit, read our post on <a href="/blogs/why-some-lawns-green-up-faster-in-spring-than-others">why some lawns green up faster in spring than others</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Tired of Fighting Thin, Patchy Turf?</h3>
-          <p>Hamann Lawn Care has been diagnosing and fixing North Texas lawn problems since 2006. Let&rsquo;s build you a lawn that stays thick. Call us or claim your new-customer deal today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

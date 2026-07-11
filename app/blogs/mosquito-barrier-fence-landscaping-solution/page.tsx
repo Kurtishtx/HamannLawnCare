@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <h2>A Final Word on Alley and Easement Edges</h2>
         <p>In many Arlington and DFW neighborhoods, the back alley and drainage easements are maintained by the city &mdash; and they&rsquo;re often a mess of overgrown vegetation and standing water. You can&rsquo;t control what happens back there, but you can control the buffer on your side of the fence. A well-maintained, open border planting with good drainage on your property line acts as a genuine barrier between the alley mosquito population and your patio. It won&rsquo;t stop every mosquito, but it makes your yard measurably less hospitable to the ones drifting in from outside.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

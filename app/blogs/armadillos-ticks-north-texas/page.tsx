@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -80,14 +79,6 @@ export default function Page() {
         <h2>Protect Your Family From What Armadillos Bring In</h2>
         <p>The odd-looking animals digging up your lawn at night aren&rsquo;t just an aesthetic nuisance — they&rsquo;re a genuine tick vector that can drive serious disease risk for your kids, pets, and yourself. North Texas tick seasons are long, armadillo populations in suburban DFW are healthy and growing, and the combination demands a professional control strategy that accounts for wildlife as an ongoing variable. Hamann backs all our work with a satisfaction guarantee — if you&rsquo;re not seeing results, we make it right.</p>
 
-        <div className="blog-cta">
-          <h3>Tick Problems Driven by Wildlife? Let&rsquo;s Break the Cycle.</h3>
-          <p>Professional flea &amp; tick yard treatment built for North Texas — and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

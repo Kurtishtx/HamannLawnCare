@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -70,14 +69,6 @@ export default function Page() {
 
         <p>Hamann Lawn Care &amp; Weed Control has served Arlington and the surrounding DFW communities since 2006. We design flea and tick programs around real local conditions &mdash; including the wildlife pressure that North Texas homeowners actually deal with, not a generic treatment schedule built for a different region.</p>
 
-        <div className="blog-cta">
-          <h3>Wildlife Visits Happen &mdash; Your Yard Does Not Have to Pay the Price</h3>
-          <p>Professional flea and tick treatment built for North Texas. Claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

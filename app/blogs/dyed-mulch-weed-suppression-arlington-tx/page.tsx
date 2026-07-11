@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -48,14 +47,6 @@ export default function Page() {
         <p>If your only goal is weed suppression, the premium for dyed mulch is not justified. Quality un-dyed shredded hardwood or cedar at the right depth performs identically for blocking weeds and costs less. If curb appeal is a genuine priority &mdash; and for many Arlington homeowners it is, whether for HOA compliance, property value, or personal satisfaction &mdash; then the color retention advantage of quality dyed mulch may be worth the added cost, with the understanding that you are buying aesthetics, not weed control.</p>
         <p>Either way, the fundamentals of effective <a href="/blogs/rubber-mulch-flower-beds-weed-control-pros-cons">mulch-based weed control</a> do not change with color: apply at 3 to 4 inches, refresh before the spring and fall weed flushes, and keep the layer away from plant crowns. Do those three things with any quality mulch product and you will have far better results than applying dyed mulch at 1 inch because the bags were on sale.</p>
 
-        <div className="blog-cta">
-          <h3>Want Beds That Look Great and Stay Clean?</h3>
-          <p>Hamann handles flower-bed weed control across Arlington and the DFW area. Call today or get 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

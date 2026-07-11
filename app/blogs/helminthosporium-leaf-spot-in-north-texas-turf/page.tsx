@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -98,14 +97,6 @@ export default function Page() {
           For lawns with a history of Helminthosporium outbreaks, preventive fungicide applications in early spring &mdash; before temperatures consistently reach the 50&deg;F threshold &mdash; can significantly reduce the severity of the season&rsquo;s first outbreak. Our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control program</a> includes timed preventive applications for exactly this reason. To compare with another transitional-season disease, read our post on <a href="/blogs/curvularia-blight-identifying-this-rare-texas-lawn-disease">Curvularia blight identification</a>.
         </p>
 
-        <div className="blog-cta">
-          <h3>Spotted Leaf Blades or Spreading Dead Patches in Your DFW Bermudagrass?</h3>
-          <p>Helminthosporium leaf spot can progress to devastating melting out if not caught early. Hamann Lawn Care &amp; Weed Control has treated North Texas turf diseases since 2006. Call us for a diagnosis and targeted treatment plan.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

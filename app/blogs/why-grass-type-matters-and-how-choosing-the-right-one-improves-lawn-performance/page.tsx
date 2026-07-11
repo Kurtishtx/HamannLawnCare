@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <h2>Making the Right Call for Your Property</h2>
         <p>There&rsquo;s no single &ldquo;best&rdquo; grass for North Texas — it depends on your yard&rsquo;s specific mix of sun, soil, drainage, traffic, and how hands-on you want to be with maintenance. What matters is making an informed choice that sets your turf up to succeed from the start. A lawn that&rsquo;s matched to its environment needs less water, fewer disease treatments, and less corrective fertilization — which means lower costs and better results year after year. Hamann has been helping Arlington and DFW homeowners get this right since 2006, and we&rsquo;re happy to walk through your yard and give you a straight answer.</p>
 
-        <div className="blog-cta">
-          <h3>Need Help Figuring Out What&rsquo;s Right for Your Lawn?</h3>
-          <p>Our team knows North Texas turf inside and out. Call us or grab your new-customer deal below.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <h2>The Bottom Line</h2>
         <p>Mosquitoes are genuinely impressive hunters. They layer CO2 detection, infrared heat sensing, and chemical scent analysis to find you across distances most people wouldn&rsquo;t believe. In a North Texas summer — where the heat has everyone sweating, everyone&rsquo;s CO2 output is up, and outdoor time peaks — the deck is stacked in the mosquito&rsquo;s favor. The best defense isn&rsquo;t hiding from the science; it&rsquo;s reducing your exposure while dramatically cutting the mosquito population in your own yard.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works — and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

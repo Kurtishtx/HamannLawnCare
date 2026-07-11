@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <p>Our standard March approach for lawns in Arlington and the greater DFW area follows a soil-temperature-driven sequence. We monitor soil temps through the first two weeks of March and target pre-emergent application before the consistent 55&deg;F threshold is reached. Broadleaf weed spot treatments on visible dandelion, clover, and chickweed are scheduled for mid-March during the optimal spray temperature window. We hold starter fertilizer applications until late April when turf is actively greening up and roots are ready to absorb nutrients.</p>
         <p>For lawns on our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer services</a> program, March treatment is built into the annual schedule automatically&mdash;no guessing about timing, no missed windows. If you&rsquo;re also catching up on winter reading, our post on <a href="/blogs/january-and-february-lawn-care-in-arlington-tx-what-to-do-in-winter">January and February lawn care in Arlington TX: what to do in winter</a> covers what to tackle before March arrives.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Miss the March Window</h3>
-          <p>Hamann Lawn Care &amp; Weed Control handles pre-emergent timing, broadleaf spray, and spring scheduling for Arlington and DFW lawns&mdash;plus 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

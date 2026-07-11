@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -70,14 +69,6 @@ export default function Page() {
         <h2>What a Hamann Proposal Looks Like</h2>
         <p>When you call Hamann Lawn Care &amp; Weed Control for an estimate, you get a program built around your specific turf type, your lot size, the weed pressure we can see, and the season. We break out every application, explain what we&rsquo;re doing and why, and back it with a re-treatment guarantee. We&rsquo;ve been doing this in Arlington and across DFW since 2006 &mdash; long enough that we know exactly which weeds show up in which neighborhoods and when.</p>
 
-        <div className="blog-cta">
-          <h3>Want a Proposal That Actually Makes Sense?</h3>
-          <p>Call us for a straight-talking lawn care quote &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>&#128222; Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

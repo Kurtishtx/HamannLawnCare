@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -51,14 +50,6 @@ export default function Page() {
         <h2>The Takeaway: Timing Is Everything</h2>
         <p>Weed pressure is highest when your lawn is most vulnerable &mdash; before spring green-up, during summer stress, and at the start of fall germination windows. Fighting weeds reactively, after they&rsquo;ve already established, is always harder and more expensive than blocking them during those critical windows. A well-timed professional program keeps the pressure manageable all year instead of letting it build into a full-scale invasion. Call Hamann at {PHONE_DISPLAY} to talk through your lawn&rsquo;s specific situation and schedule this season&rsquo;s treatments before the next pressure window arrives.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Let Weeds Win the Season</h3>
-          <p>Professional weed control timed to your lawn&rsquo;s most vulnerable windows &mdash; and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

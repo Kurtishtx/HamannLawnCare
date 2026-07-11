@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -52,14 +51,6 @@ export default function Page() {
         <h2>When Watering Fixes Aren&rsquo;t Enough</h2>
         <p>Sometimes you fix every irrigation habit and fungus still comes back. That usually means there are other contributing factors at play &mdash; compacted clay soil holding water, heavy thatch acting as a spore reservoir, or a fungal strain that&rsquo;s already well-established in the soil. Read our post on <a href="/blogs/why-lawn-fungus-keeps-coming-back-the-hidden-causes-most-people-overlook">why lawn fungus keeps coming back and the hidden causes most people overlook</a> to understand the full picture. And when you&rsquo;re ready for professional diagnosis and treatment, Hamann has been doing this across Arlington and DFW since 2006. Give us a call.</p>
 
-        <div className="blog-cta">
-          <h3>Still Fighting Lawn Fungus?</h3>
-          <p>Let our North Texas specialists diagnose the real cause and stop it for good &mdash; plus 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

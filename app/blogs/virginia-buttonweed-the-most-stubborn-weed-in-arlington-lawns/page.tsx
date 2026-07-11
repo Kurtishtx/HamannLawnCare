@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <p>Hamann Lawn Care &amp; Weed Control has been eliminating Virginia buttonweed from Arlington and DFW lawns since 2006. We use the right chemistry, apply at the right growth stage, and schedule return visits to hit regrowth before it can recover. We also look at the whole lawn to identify drainage issues and irrigation practices that are feeding the infestation. For a look at another persistent warm-season weed we handle, see our post on <a href="/blogs/chickweed-in-north-texas-winter-weed-identification-and-removal">chickweed in North Texas</a>&mdash;a cool-season invader that exploits the same dormancy window buttonweed takes over when it dies back. Together, they can make it feel like your lawn is never weed-free, which is exactly why a year-round program is the most effective approach.</p>
         <p>If Virginia buttonweed has been winning the battle in your Arlington yard, it&rsquo;s time to bring in the professionals and play the long game with the right tools. The lawn you want is achievable&mdash;it just takes the right plan.</p>
 
-        <div className="blog-cta">
-          <h3>Is Virginia Buttonweed Running Your Lawn?</h3>
-          <p>Call Hamann Lawn Care &amp; Weed Control. We&rsquo;ve been beating this stubborn weed in Arlington since 2006&mdash;plus 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

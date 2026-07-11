@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         </ul>
         <p>If keeping up with bed maintenance is taking more time than you want to spend, our <a href="/lawn-care-services">lawn care services</a> include bed edge maintenance as part of a complete lawn program. We know Arlington and DFW Bermuda behavior inside and out — including how to stop it from eating your flower beds before the season gets away from you. And if compaction or bare spots along bed edges are part of your problem, our post on <a href="/blogs/compacted-paths-across-lawn-how-to-fix-without-hardscaping">how to fix compacted paths across the lawn without hardscaping</a> covers soil restoration techniques that apply along these boundaries too.</p>
 
-        <div className="blog-cta">
-          <h3>Tired of Bermuda Taking Over Your Flower Beds?</h3>
-          <p>We keep Arlington lawns and beds clean and sharp. Call us or grab your new customer discount today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

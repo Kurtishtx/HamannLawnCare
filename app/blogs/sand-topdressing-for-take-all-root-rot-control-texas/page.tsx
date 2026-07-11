@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -133,14 +132,6 @@ export default function Page() {
           Either way, the investment is worthwhile. A St. Augustine lawn devastated by take-all root rot over multiple seasons faces expensive sodding or overseeding to recover &mdash; costs that dwarf a few seasons of preventive topdressing.
         </p>
 
-        <div className="blog-cta">
-          <h3>Dealing with Take-All Root Rot in Your St. Augustine?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control has helped Arlington-area homeowners fight take-all root rot since 2006. Call us now or claim our new-customer discount &mdash; we&rsquo;ll assess your lawn and put a real suppression plan in place.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

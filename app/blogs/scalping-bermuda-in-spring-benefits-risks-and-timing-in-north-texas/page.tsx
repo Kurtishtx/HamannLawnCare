@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -69,14 +68,6 @@ export default function Page() {
         <h2>Equipment Matters</h2>
         <p>Scalping with a standard push mower set to its lowest setting works for many residential lawns. However, a reel mower produces a cleaner cut at low heights and is less likely to rip or tear the dormant stolons. If you&rsquo;re renting equipment or hiring a lawn service for the scalp, make sure the blade is freshly sharpened &mdash; a dull rotary blade at low height will tear the plant tissue rather than cut it, leading to ragged brown tips that slow recovery even after green-up begins.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Weed-Free Lawn?</h3>
-          <p>Get professional weed control and fertilizer treatments that actually work &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

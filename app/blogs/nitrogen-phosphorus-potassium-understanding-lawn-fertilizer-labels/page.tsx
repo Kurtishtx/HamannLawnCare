@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <p>Reading a label is useful knowledge, but knowing <em>which</em> product to buy, when to apply it, at what rate, and how it fits into a seasonal program across multiple visits is where professional expertise adds real value. Hamann&rsquo;s <a href="/weed-control-and-fertilizer-services">weed control and fertilizer program</a> takes all of this off your plate &mdash; we select the right products for your specific turf species and soil conditions, apply them at the right times, and adjust as the season changes. For the deeper science behind how these nutrients actually work in your turf, check out our guide on <a href="/blogs/the-science-behind-lawn-fertilization-what-your-grass-really-needs">the science behind lawn fertilization and what your grass really needs</a>.</p>
         <p>Hamann has been doing lawn care in Arlington and the DFW area since 2006. Call us at {PHONE_DISPLAY} and let&rsquo;s stop the guesswork and get your lawn on a program that actually works.</p>
 
-        <div className="blog-cta">
-          <h3>Stop Guessing, Start Growing</h3>
-          <p>Professional fertilization with the right products for your turf &mdash; and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

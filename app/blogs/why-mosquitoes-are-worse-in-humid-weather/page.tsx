@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <h2>Professional Control Accounts For All Of It</h2>
         <p>A well-designed mosquito control program doesn&rsquo;t just spray and walk away &mdash; it accounts for your specific yard&rsquo;s humidity patterns, shaded resting zones, and water features, and it adjusts application timing to the local climate. At Hamann Lawn Care &amp; Weed Control, we&rsquo;ve been doing exactly that in Arlington and across the DFW area since 2006. We know when the humidity surges hit, which parts of a North Texas yard hold moisture longest, and how to treat them with products engineered to perform through Texas weather.</p>
 
-        <div className="blog-cta">
-          <h3>Stop Letting Humidity Hand Your Yard To The Mosquitoes</h3>
-          <p>Take back your evenings with professional mosquito control &mdash; and get 50% off your first application when you call today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

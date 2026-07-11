@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -73,14 +72,6 @@ export default function Page() {
         <h2>Professional Yard Treatment: The Foundation of Your Defense</h2>
         <p>Personal repellents and tick checks are essential, but they address ticks <em>during</em> exposure. Reducing the tick population in your yard before exposure happens is the most effective prevention strategy available to North Texas homeowners. The vast majority of suburban tick bites happen within or immediately adjacent to residential property, not on distant hiking trails. Hamann&rsquo;s barrier spray program targets the shaded vegetation, fence lines, leaf litter, and ground cover where Lone Star and American dog ticks actually live and hunt. Using residual formulas calibrated to North Texas&rsquo;s extended tick season, treatments are timed to address both adult ticks in spring and the critical nymph season in late spring and early summer. The result is dramatically lower tick pressure on your property through the peak exposure months, and for families with children and pets who regularly use the yard, that reduction in baseline tick density translates directly into reduced disease risk.</p>
 
-        <div className="blog-cta">
-          <h3>Start with the Safest Yard in the Neighborhood</h3>
-          <p>Hamann has protected Arlington and DFW families from ticks since 2006. Claim 50% off your first yard treatment today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <h2>Put It All Together</h2>
         <p>Mosquitoes aren&rsquo;t random. The female is making calculated choices about where to invest her eggs, and she&rsquo;s very good at finding the spots in your yard that give her offspring the best chance at survival. Remove the still, shaded, organically rich water she&rsquo;s looking for and you take away her nursery. Pair that with professional treatment and you break the cycle at every stage — so instead of fighting a new wave every week, you&rsquo;re actually getting ahead of it. A little awareness of where she&rsquo;s laying and why is the most powerful tool you have for a mosquito-free summer.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works — and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

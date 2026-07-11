@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
 
         <p><strong>Hamann Lawn Care &amp; Weed Control</strong> has been diagnosing root diseases and surface fungal problems in DFW since 2006. We do not guess &mdash; we pull samples, inspect root systems, and build a treatment plan around what is actually happening in your soil. Read more about <a href="/blogs/dollar-spot-vs-spring-dead-spot-in-bermuda-grass-diagnosis">dollar spot vs. spring dead spot in Bermuda grass</a> for another common DFW diagnosis challenge.</p>
 
-        <div className="blog-cta">
-          <h3>Thinning Turf That Won&rsquo;t Respond to Treatment?</h3>
-          <p>It might be a root disease, not a blade disease. <strong>Hamann Lawn Care &amp; Weed Control</strong> gets to the bottom of it &mdash; literally. Call us today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

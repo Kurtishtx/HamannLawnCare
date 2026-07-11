@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <p>The reverse also happens: homeowners see circular bleached patches in spring, assume it is a summer disease and wait for it to resolve on its own, not realizing they are watching dollar spot spread through nitrogen-deficient turf that could be corrected quickly with the right treatment.</p>
         <p><strong>Hamann Lawn Care &amp; Weed Control</strong> has been diagnosing St. Augustine diseases in Arlington and DFW since 2006. We look at the blade lesions, the season, the moisture conditions, and the grass history before recommending any treatment &mdash; because the wrong diagnosis in lawn disease does not just fail to help, it actively causes more damage. For a related comparison, read about <a href="/blogs/take-all-root-rot-vs-brown-patch-root-system-comparison">take-all root rot vs. brown patch root system comparison</a> to understand the root-level diagnostic process.</p>
 
-        <div className="blog-cta">
-          <h3>Spots on Your St. Augustine Blades and Not Sure What You&rsquo;re Looking At?</h3>
-          <p>The wrong treatment makes it worse. <strong>Hamann Lawn Care &amp; Weed Control</strong> identifies the disease correctly before anything goes down. Call us today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

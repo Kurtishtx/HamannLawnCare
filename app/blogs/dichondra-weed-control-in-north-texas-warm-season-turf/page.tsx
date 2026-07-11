@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <p>Hamann Lawn Care &amp; Weed Control has been handling broadleaf weeds like dichondra across Arlington and DFW since 2006. We know which products are safe for each turf type, the right timing for the DFW climate, and how to address the cultural factors driving the infestation. For a close look at another creeping perennial weed that fights back just as hard, read our post on <a href="/blogs/virginia-buttonweed-the-most-stubborn-weed-in-arlington-lawns">Virginia buttonweed</a>&mdash;it shares many of the same habits and requires the same persistent multi-application approach to beat.</p>
         <p>Don&rsquo;t let dichondra turn your thin spots into a permanent takeover. The right treatment at the right time puts warm-season turf back in charge where it belongs.</p>
 
-        <div className="blog-cta">
-          <h3>Dichondra Creeping Into Your Bermuda or St. Augustine?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control uses the right herbicides for your turf type&mdash;plus 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

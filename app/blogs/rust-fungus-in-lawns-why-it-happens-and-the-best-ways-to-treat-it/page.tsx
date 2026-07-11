@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <h2>Hamann Takes Rust Seriously</h2>
         <p>While rust doesn&rsquo;t always get the same dramatic attention as brown patch or gray leaf spot, it can quietly thin your lawn and set it up for a rough winter dormancy if left to run. Hamann Lawn Care &amp; Weed Control has been keeping North Texas lawns healthy since 2006, including managing rust in Bermuda and Zoysia turf across Arlington and surrounding DFW communities. If your lawn is looking orange and faded this fall, give us a call &mdash; we know exactly what to do with it.</p>
 
-        <div className="blog-cta">
-          <h3>Rust Turning Your Lawn Orange? Let&rsquo;s Fix It.</h3>
-          <p>Professional diagnosis and fungicide treatment gets your lawn back on track before winter. Call Hamann.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

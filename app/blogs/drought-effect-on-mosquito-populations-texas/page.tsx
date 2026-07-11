@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>Year-Round Vigilance Pays Off in Texas Weather</h2>
         <p>Texas weather is volatile by nature &mdash; drought one month, flooding the next. The mosquito population responds to every swing. The most effective approach is a consistent, professional program that adapts to whatever conditions the season delivers. Hamann has been treating DFW properties since 2006 through droughts, floods, and everything in between. Call us and we&rsquo;ll build a strategy specific to how your property handles drought and post-drought conditions.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Wait for the Drought to Break &mdash; Get Ahead of the Surge</h3>
-          <p>Schedule professional mosquito control now and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

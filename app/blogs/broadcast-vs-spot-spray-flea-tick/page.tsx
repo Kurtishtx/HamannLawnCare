@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -68,14 +67,6 @@ export default function Page() {
         <h2>How to Evaluate What Your Yard Needs</h2>
         <p>The right method depends on your yard&rsquo;s specific features. A professional assessment answers these questions: How much wildlife pressure does the yard receive? What percentage of the lawn is shade versus sun? Are there persistent leaf litter or ground cover zones? What is the history of flea and tick activity in this yard? Hamann Lawn Care &amp; Weed Control has been evaluating Arlington and DFW yards since 2006 and builds each treatment plan around those specific conditions rather than applying a one-size-fits-all method.</p>
 
-        <div className="blog-cta">
-          <h3>Get a Treatment Plan Built for Your Yard</h3>
-          <p>Broadcast, spot, or both &mdash; we apply the right strategy for your specific North Texas yard. Claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

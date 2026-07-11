@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -96,14 +95,6 @@ export default function Page() {
           Products containing azoxystrobin, propiconazole, or myclobutanil are effective against most of the major North Texas lawn fungal pathogens. Timing the application correctly, using the right rate, and following up appropriately is what separates a successful treatment from a partial one. Most homeowners underestimate how quickly these diseases spread and wait too long to treat &mdash; often by the time a large patch is visible, the fungus has been active underground for days or weeks already.
         </p>
 
-        <div className="blog-cta">
-          <h3>Ready To Protect Your Lawn?</h3>
-          <p>Get professional fungus control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

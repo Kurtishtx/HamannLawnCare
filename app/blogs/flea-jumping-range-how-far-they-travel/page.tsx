@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <h2>What This Means for DFW Homeowners Year-Round</h2>
         <p>In North Texas, fleas are biologically active for ten or more months of the year. Our winters rarely get cold enough long enough to kill populations that have retreated into protected soil microhabitats. That means the reintroduction cycle from wildlife and the jumping-and-spreading behavior of adults never fully stops. A yard that is treated once in spring and ignored through fall will have rebuilt a substantial flea population by late summer, regardless of how diligent you were about pet prevention during that period. Consistent, scheduled treatment tied to flea biology &mdash; not just to calendar seasons &mdash; is what keeps the jumping, spreading, hitching behavior of fleas from winning the long game in your yard.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Protect Your Yard From Fleas &amp; Ticks?</h3>
-          <p>Professional flea &amp; tick control built for North Texas &mdash; claim your 50% off first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

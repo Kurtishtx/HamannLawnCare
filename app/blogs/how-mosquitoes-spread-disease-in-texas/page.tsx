@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -52,14 +51,6 @@ export default function Page() {
         </ul>
         <p>Hamann Lawn Care &amp; Weed Control has been protecting Arlington and DFW families since 2006. Our mosquito programs are built for the specific mosquito species, climate, and landscape conditions of North Texas &mdash; because what works in a national brochure doesn&rsquo;t always match what&rsquo;s actually flying around your backyard.</p>
 
-        <div className="blog-cta">
-          <h3>Protect Your Family From More Than Just Bites</h3>
-          <p>Professional mosquito control reduces real disease risk &mdash; get 50% off your first application and take back your yard today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

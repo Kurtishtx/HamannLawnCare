@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <p>Hamann Lawn Care &amp; Weed Control has served Arlington and the DFW metroplex since 2006. In that time, we&rsquo;ve treated thousands of ornamental beds across Tarrant and Dallas counties, developing a practical understanding of how DFW&rsquo;s clay soils, wind patterns, and plant varieties interact with herbicide chemistry. When you hire a professional, you&rsquo;re not just paying for the labor — you&rsquo;re paying for the knowledge of what not to spray and where not to spray it.</p>
         <p>If glyphosate drift or root uptake has already damaged ornamentals in your beds, recovery depends on the degree of exposure. Minor drift damage may allow recovery if the plant is otherwise healthy and the affected tissue is removed. Root uptake damage is typically more severe and may be irreversible. Either way, eliminating the ongoing weed problem without risking further ornamental damage is a job best left to professionals who carry the right products and the knowledge to apply them safely.</p>
 
-        <div className="blog-cta">
-          <h3>Protect Your Ornamentals &amp; Kill The Weeds</h3>
-          <p>Let our professionals handle the herbicide chemistry so your ornamentals stay safe — claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <p>A homeowner who sees circular brown patches on their zoysia lawn in October and assumes brown patch will apply fungicide at summer rates and timing &mdash; and wonder why the lawn keeps declining. Large patch requires fall-timed preventive treatment, and a curative application in the middle of an active outbreak is far less effective than stopping the disease before it starts. Similarly, treating large patch with a product timed for summer conditions does nothing to address the cool-weather infection cycle.</p>
         <p><strong>Hamann Lawn Care &amp; Weed Control</strong> has been diagnosing and treating North Texas lawn diseases since 2006. We identify whether you are dealing with brown patch, large patch, or a completely different problem before any product goes down &mdash; because the right treatment at the right time is everything. Read more about <a href="/blogs/lawn-disease-in-shaded-st-augustine-after-summer-rain">lawn disease in shaded St. Augustine after summer rain</a> for another common DFW diagnosis challenge.</p>
 
-        <div className="blog-cta">
-          <h3>Not Sure Which Disease Is Damaging Your Lawn?</h3>
-          <p>Get a professional diagnosis before you waste money on the wrong treatment. <strong>Hamann Lawn Care &amp; Weed Control</strong> has been solving DFW lawn disease problems since 2006.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

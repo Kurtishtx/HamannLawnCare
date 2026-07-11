@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -75,14 +74,6 @@ export default function Page() {
         <p>Edging alone won&rsquo;t eliminate weeds any more than one application of herbicide will. But it plays a structural role that no chemical treatment can replicate. Think of it as the fence on your property line&mdash;it doesn&rsquo;t stop everything, but without it you&rsquo;re just asking for problems. Combined with properly timed pre-emergent applications, selective post-emergent follow-ups, and a solid fertilization program that drives turf density, clean edging is what ties it all together. If you&rsquo;ve got a lawn that&rsquo;s been struggling with weed pressure for a few seasons, it&rsquo;s worth looking at the whole picture. Our post on <a href="/blogs/lawn-renovation-steps-for-severely-weed-invaded-arlington-tx-yards">lawn renovation steps for severely weed-invaded Arlington TX yards</a> walks through what it takes to reset a lawn that&rsquo;s gotten away from you&mdash;and edging reestablishment is always step one.</p>
         <p>At Hamann Lawn Care &amp; Weed Control, we&rsquo;ve been keeping North Texas yards clean since 2006. We know the local grasses, the local weeds, and the local timing that makes the difference between a lawn that looks decent and one that looks genuinely sharp all season long. Give us a call and let&rsquo;s talk about what your edges need.</p>
 
-        <div className="blog-cta">
-          <h3>Ready for Edges That Actually Stay Clean?</h3>
-          <p>Call Hamann Lawn Care &amp; Weed Control for professional weed control that pairs proper edging guidance with proven North Texas treatments&mdash;plus 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

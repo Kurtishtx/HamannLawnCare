@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         <p>The canopy fungus situation that homeowners most often try to manage themselves &mdash; and most often get wrong &mdash; is take-all root rot. By the time the symptoms are obvious enough to diagnose, the disease has already been active for weeks or months, and the root damage is significant. Post-infection recovery in St. Augustine requires not just fungicide but careful attention to soil amendment, pH adjustment, and irrigation timing over multiple seasons. Getting a professional diagnosis early, before the disease gets deep into the root zone, makes a substantial difference in how quickly the lawn recovers.</p>
         <p>At Hamann Lawn Care &amp; Weed Control, we have been diagnosing and treating lawn disease in Arlington and DFW since 2006. We know the tree species, the soil types, and the disease patterns specific to North Texas well enough to distinguish shade stress from active fungal infection on the first visit &mdash; which means you get the right treatment the first time instead of spending the season trying products that are not addressing the actual problem. If your grass under the trees looks off and you are not sure why, that is exactly the situation we are here for.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Protect Your Lawn?</h3>
-          <p>Get professional lawn disease treatment &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

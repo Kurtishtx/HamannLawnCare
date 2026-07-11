@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <p>For homeowners on a <a href="/lawn-care-services">professional lawn care program</a> that includes fertilization and weed control, pairing those treatments with proper mowing technique &mdash; including double-cuts at the right moments &mdash; produces noticeably better results. The treatments work on a lawn that&rsquo;s properly maintained; the mowing keeps the turf in the best possible condition to respond to what&rsquo;s being applied.</p>
         <p>If you want to know more about the other side of good mowing technique, check out our post on <a href="/blogs/should-you-mow-wet-grass-in-north-texas-after-summer-storms">whether you should mow wet grass after summer storms in North Texas</a> &mdash; because wet-condition mowing is one of the fastest ways to undo all the work a clean double-cut accomplishes.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Greener Lawn?</h3>
-          <p>Get professional lawn care that delivers real results &mdash; and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

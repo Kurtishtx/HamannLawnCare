@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <h2>What Hamann Does When We See This</h2>
         <p>Hamann Lawn Care &amp; Weed Control has been treating North Texas lawns since 2006. When we see water-soaked blade symptoms, we identify which pathogen is responsible before treating &mdash; gray leaf spot requires a different fungicide than pythium, and using the wrong product wastes time. We apply systemic fungicides that move into plant tissue, treat the affected area plus a buffer zone into healthy turf, and evaluate irrigation schedules to cut overnight moisture. Early intervention at the water-soaked stage almost always produces better outcomes than treatment after full outbreak.</p>
 
-        <div className="blog-cta">
-          <h3>See Greasy or Water-Soaked Grass in the Morning?</h3>
-          <p>Don&rsquo;t wait for it to turn brown. Call Hamann Lawn Care &amp; Weed Control for a same-week lawn disease inspection in Arlington and the DFW area.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

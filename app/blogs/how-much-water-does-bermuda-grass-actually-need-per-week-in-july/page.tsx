@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <p>The 1 to 1.5-inch weekly guideline assumes average DFW conditions. South and west-facing lawn areas exposed to full afternoon sun and prevailing southerly winds may need 10&ndash;15 percent more than shaded north-facing turf. Bermuda along a west-facing fence line next to concrete or brick hardscape &mdash; a common DFW yard configuration &mdash; receives radiant heat that can increase ET rates significantly beyond what the weather station reports. These microclimates may need separate zone programming to match their higher demand. Read our guide on <a href="/blogs/arlington-tx-odd-even-watering-schedule-how-to-stay-compliant">staying compliant with Arlington&rsquo;s watering schedule</a> to understand how to make your permitted days work as hard as possible for these zones.</p>
         <p>For a complete picture of what your lawn needs beyond watering, visit <a href="/lawn-care-services">Hamann&rsquo;s lawn care services</a> to see how fertilization and weed control work in tandem with proper irrigation to build a Bermuda lawn that handles DFW summers.</p>
 
-        <div className="blog-cta">
-          <h3>Let&rsquo;s Build a Lawn That Handles Texas Summer</h3>
-          <p>Hamann Lawn Care has served Arlington and North Texas since 2006. Call us and claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -75,14 +74,6 @@ export default function Page() {
         <p>Fleas in HOA neighborhoods are fundamentally a community problem wearing the disguise of an individual one. The homeowner who gets re-infested every month isn&rsquo;t doing anything wrong — they&rsquo;re just on the receiving end of a block-wide flea circulation that nobody has bothered to treat at the right scale. Hamann has been working with North Texas homeowners in exactly these situations since 2006. We understand the neighborhood dynamics, the wildlife corridors, and the HOA-specific challenges that drive flea persistence in densely built communities.</p>
         <p>If you&rsquo;ve treated and treated and can&rsquo;t get ahead of the problem, let&rsquo;s talk about building a program that accounts for your specific neighborhood pressure — not just your backyard in isolation.</p>
 
-        <div className="blog-cta">
-          <h3>Tired of Treating and Getting Re-Infested From the Neighborhood?</h3>
-          <p>Professional flea &amp; tick control built for HOA community realities — and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

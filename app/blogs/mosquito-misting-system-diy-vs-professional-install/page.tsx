@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -70,14 +69,6 @@ export default function Page() {
         <p>For most Arlington and DFW homeowners, a professional mosquito barrier spray program beats DIY misting on effectiveness, simplicity, and total cost. If you&rsquo;re seriously considering a misting system, go professional &mdash; the DIY kits sound economical but the installation labor, ongoing maintenance, and troubleshooting headaches eat that savings quickly. And whichever approach you choose, pair it with larval control for standing water. A system that only kills adults is always fighting uphill.</p>
         <p>Hamann Lawn Care &amp; Weed Control has been protecting North Texas yards from mosquitoes since 2006. Check out our <a href="/mosquito-control-services">mosquito control services</a> to see how our barrier program stacks up &mdash; and get 50% off your first treatment.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

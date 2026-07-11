@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -65,14 +64,6 @@ export default function Page() {
         <h2>The Bottom Line on Lavender and Lemongrass</h2>
         <p>Grow them because they&rsquo;re beautiful, useful in the kitchen, good for pollinators, and they smell incredible. Enjoy the mild skin-repellency you get when you crush the leaves. But don&rsquo;t plant a row of lemongrass and expect to cancel your mosquito treatment &mdash; that&rsquo;s a summer of frustration waiting to happen. Use them as the pleasant accent they are, not the solution they aren&rsquo;t. Hamann has been setting realistic expectations and delivering real mosquito control for Arlington families since 2006.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

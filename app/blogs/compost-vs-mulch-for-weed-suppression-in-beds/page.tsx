@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -50,14 +49,6 @@ export default function Page() {
         <h2>When to Refresh Mulch in DFW</h2>
         <p>Mulch breaks down over time through microbial activity, and in the North Texas heat it can decompose and thin out faster than homeowners expect. Plan to inspect bed depth in late February before the spring weed flush and again in late September before fall germination picks up. Beds that have dropped below two inches of coverage need a top-up before those windows to maintain effective suppression. Add mulch on top of existing material rather than removing it; the decomposed layer below is actually good for soil biology.</p>
 
-        <div className="blog-cta">
-          <h3>Get Your Beds Weed-Free This Season</h3>
-          <p>Professional pre-emergent application plus a customized bed strategy &mdash; call Hamann today and get 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

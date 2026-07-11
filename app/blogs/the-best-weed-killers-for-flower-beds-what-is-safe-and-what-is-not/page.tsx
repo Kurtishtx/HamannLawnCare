@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <h2>When Professional Products Make a Difference</h2>
         <p>Professional-grade pre-emergents and selective herbicides are available in higher concentrations with longer residuals and broader labeled uses than most retail products. At Hamann, we use commercial formulations specifically labeled for ornamental beds, applied at the right times for North Texas&rsquo;s weed seasons. If your beds are in a constant battle, the combination of professional products, proper timing, and local expertise often closes the gap faster than DIY trial and error.</p>
 
-        <div className="blog-cta">
-          <h3>Want the Right Products, Applied Right?</h3>
-          <p>Professional flower-bed weed control with no guesswork on products or timing &mdash; and your first service is 50% off.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

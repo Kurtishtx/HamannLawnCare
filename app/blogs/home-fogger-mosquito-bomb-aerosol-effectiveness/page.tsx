@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <p>Fogger bombs have a narrow, specific use case: a quick knockdown immediately before a short outdoor event, in a relatively enclosed space with little wind. For anything beyond that &mdash; real season-long mosquito control in a DFW yard &mdash; they&rsquo;re not the right tool. They miss larvae, they miss resting mosquitoes, they leave no residual protection, and North Texas conditions work against them at every turn.</p>
         <p>Hamann Lawn Care has been providing professional mosquito control in Arlington and the surrounding DFW communities since 2006. Our program targets mosquitoes at every lifecycle stage, uses products that last weeks instead of hours, and is backed by a satisfaction guarantee. If you&rsquo;ve been relying on natural alternatives, check out our post on <a href="/blogs/essential-oils-mosquito-repellent-eucalyptus-tea-tree">essential oils as mosquito repellent</a> to see how those compare as well. Call us today and let&rsquo;s talk about what real mosquito control looks like for your yard.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

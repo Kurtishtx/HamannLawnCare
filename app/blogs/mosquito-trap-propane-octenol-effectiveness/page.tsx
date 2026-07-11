@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -54,14 +53,6 @@ export default function Page() {
         <p>The most effective approach combines source reduction (eliminating standing water), residual barrier sprays applied to foliage resting zones, and larviciding of water that can&rsquo;t be removed. This multi-stage attack hits mosquitoes before they hatch, when they land to rest, and keeps a protective barrier active for weeks. You can compare treatment approaches in our post about <a href="/blogs/fogging-vs-barrier-spray-effectiveness-comparison">fogging vs barrier spray effectiveness</a>. For professional-grade <a href="/mosquito-control-services">mosquito control</a> in Arlington, that combination delivers the season-long results a propane trap alone can&rsquo;t match.</p>
         <p>Hamann has been protecting DFW backyards since 2006 with programs that actually match what North Texas mosquito pressure demands. If you&rsquo;ve tried a propane trap and still find yourself eating alive every evening, it&rsquo;s time for a different approach.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

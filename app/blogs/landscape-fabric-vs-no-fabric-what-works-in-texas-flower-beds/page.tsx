@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <h2>Our Recommendation for North Texas</h2>
         <p>For planted ornamental beds: skip the fabric. Use pre-emergent plus mulch, maintain it each season, and spot-treat breakthough weeds. You&rsquo;ll have less long-term work and better plant health. For rock beds or gravel areas: quality geotextile fabric under the rock is a reasonable choice, with the understanding that nothing is permanent. Hamann has been working in North Texas flower beds since 2006, and we&rsquo;ve seen the fabric problem play out on hundreds of properties across Arlington and the DFW area. The pre-emergent plus mulch system wins for planted beds, every time.</p>
 
-        <div className="blog-cta">
-          <h3>Not Sure What&rsquo;s Right for Your Beds?</h3>
-          <p>We&rsquo;ll assess your flower beds and build a weed control plan that actually works &mdash; and your first service is 50% off.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -12,15 +12,15 @@ const features = [
 ];
 
 const steps = [
-  { n: '1', t: 'Mosquito Inspection & Pressure Assessment', d: 'We identify breeding zones, resting areas, and environmental factors driving mosquito activity.' },
-  { n: '2', t: 'Targeted Mosquito Spraying', d: 'We apply professional-grade treatments to foliage, shaded areas, and mosquito resting sites.' },
-  { n: '3', t: 'Larval Control & Breeding Prevention', d: 'When appropriate, we treat standing water to stop larvae from developing into biting adults.' },
+  { n: '1', t: 'Mosquito Inspection & Pressure Assessment', d: 'We assess mosquito pressure, resting areas, and the conditions driving mosquito activity across your property.' },
+  { n: '2', t: 'Full-Yard Mosquito Spraying', d: 'We spray the entire yard — turf, foliage, shrubs, and the shaded, humid spots where mosquitoes rest during the day.' },
+  { n: '3', t: 'Even, Whole-Yard Coverage', d: 'No spot-treating — we cover the whole lawn and landscape so mosquitoes have nowhere left to hide.' },
   { n: '4', t: 'Residual Barrier Application', d: 'A long-lasting protective barrier keeps mosquitoes away for weeks.' },
-  { n: '5', t: 'Recurring Treatments (Optional)', d: 'Seasonal or monthly mosquito spraying ensures consistent protection.' },
+  { n: '5', t: 'Recurring Treatments (Optional)', d: 'Recurring mosquito spraying every 5–7 weeks ensures consistent, season-long protection.' },
 ];
 
 const faqs = [
-  { q: 'How long do treatments last?', a: 'Around 45 days depending on weather and mosquito pressure.' },
+  { q: 'How long do treatments last?', a: 'Around 5–7 weeks depending on weather and mosquito pressure. We return every 5–7 weeks for consistent protection.' },
   { q: 'Is it safe for pets?', a: 'Yes — once dry, pets and children can return to treated areas.' },
   { q: 'Do mosquito treatments really work?', a: 'Absolutely — when applied correctly, they dramatically reduce mosquito populations.' },
   { q: 'Do I need recurring treatments?', a: 'For consistent season-long protection, yes.' },
@@ -30,7 +30,6 @@ const faqs = [
 const RedLine = () => <div style={{ height: 4, width: 64, background: 'var(--red)', borderRadius: 2, margin: '14px auto 0' }} />;
 
 export default function MosquitoControlServices() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -42,10 +41,6 @@ export default function MosquitoControlServices() {
             <h1>Premium <span className="headline-3d">Mosquito Control</span> Services</h1>
             <p className="hero-sub" style={{ margin: '20px auto 10px', fontWeight: 700, color: '#fff' }}>Long-Lasting Protection • Fewer Applications • Better Results</p>
             <p className="hero-sub" style={{ margin: '0 auto 26px' }}>Hamann delivers a superior mosquito control program engineered for North Texas. We use the highest-grade products available — <b>the same technology trusted by golf courses and commercial properties</b> — giving you longer protection with fewer applications.</p>
-            <div className="hero-cta" style={{ justifyContent: 'center' }}>
-              <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-              <button className="btn btn-ghost btn-lg" onClick={openPromo}>Get 50% Off →</button>
-            </div>
           </div>
         </div>
       </section>
@@ -156,16 +151,6 @@ export default function MosquitoControlServices() {
         </div>
       </section>
 
-      <section className="cta-band">
-        <div className="wrap">
-          <h2>Get Professional Mosquito Control Today</h2>
-          <p>Take back your yard with mosquito control services that actually work. <b>Claim your 50% off first application!</b></p>
-          <div className="btns">
-            <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Get Your Free Quote</a>
-            <button className="btn btn-ghost btn-lg" onClick={openPromo}>Claim 50% Off</button>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

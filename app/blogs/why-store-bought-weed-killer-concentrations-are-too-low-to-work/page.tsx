@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <p>The practical outcome: lawns in Tarrant County that have been treated with consumer herbicides for five or more years often have weed populations that laugh at the same products homeowners used initially. A professional program breaks this cycle by rotating chemistries, using lethal rates calibrated by soil test and turf type, and timing applications to the actual growth stage of the target weeds &mdash; not the calendar date on the back of a retail bottle.</p>
         <p>If your lawn has been losing the weed battle despite regular store-bought treatments, the problem almost certainly isn&rsquo;t your effort &mdash; it&rsquo;s the product concentration ceiling. Learn more about how Hamann approaches this at our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer services</a> page, and see why consistent seasonal strategy matters in our post on <a href="/blogs/lawn-fertilizer-mistakes-north-texas-homeowners-make-every-spring">lawn fertilizer mistakes North Texas homeowners make every spring</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Stop Fighting Weeds With Watered-Down Products</h3>
-          <p>Hamann uses professional-grade herbicides at calibrated rates &mdash; the concentrations that actually kill DFW weeds. Get 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
 
         <p>Combining a spray shield with the right spot-spraying technique is one layer of a complete <a href="/flower-bed-weed-control">flower-bed weed control</a> strategy. For the full picture &mdash; including pre-emergents, timing, and ongoing maintenance &mdash; professional programs make a meaningful difference in DFW beds. Learn more in our companion post about <a href="/blogs/spot-spraying-technique-flower-beds-dfw">spot-spraying techniques for DFW flower beds</a>. Hamann has been keeping North Texas beds clean since 2006, and we&rsquo;re happy to take the guesswork out of it for you.</p>
 
-        <div className="blog-cta">
-          <h3>Need Clean Flower Beds Without the Guesswork?</h3>
-          <p>Professional weed control built for DFW&rsquo;s climate &mdash; and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

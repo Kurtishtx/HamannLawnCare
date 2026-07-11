@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -51,14 +50,6 @@ export default function Page() {
         <p>To put the timing in plain terms for North Texas homeowners: target annual sedge with a pre-emergent in late February or early March before your soil warms past 65&deg;F. This prevents seed germination and dramatically reduces the annual sedge population you&rsquo;ll face in summer. For yellow nutsedge, pre-emergent alone is not a reliable strategy because the plant does not rely on seed germination to return each year&mdash;focus your attention on post-emergent applications starting as soon as nutsedge plants reach the two-to-four leaf stage in spring, then follow up every three to four weeks through the growing season until the population is suppressed.</p>
         <p>Neither approach is a one-and-done fix. Both sedge species reward consistent, correctly timed programs over multiple seasons. The good news is that after two to three seasons of disciplined treatment, yellow nutsedge populations can be reduced substantially as the nutlet bank in the soil is depleted and fewer new nutlets are formed each year.</p>
 
-        <div className="blog-cta">
-          <h3>Not Sure Which Sedge Is Taking Over Your Lawn?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control identifies the exact species and builds a targeted program for your Arlington or DFW yard&mdash;plus 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <p>If you&rsquo;re a regular trail user, treating your yard creates a protected home base that reduces the chance any ticks you transport home will establish and breed. A professional application covers the perimeter, mulch beds, fence lines, and any edge habitat where ticks dropped from clothing, gear, or a dog are most likely to end up. Residual barrier treatments continue killing newly introduced ticks for weeks after each application, which is essential when you&rsquo;re bringing in external pressure on a regular basis.</p>
         <p>Hamann has served Arlington and surrounding North Texas communities since 2006. If trail hiking is part of your regular routine and you have a yard with pets or kids, it&rsquo;s worth having a professional assess your property and set up a treatment schedule that keeps pace with the ongoing exposure you&rsquo;re bringing home.</p>
 
-        <div className="blog-cta">
-          <h3>Hike the Trails. Not Worry About Ticks at Home.</h3>
-          <p>Professional yard treatment that keeps your outdoor spaces protected between trail adventures. Claim 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

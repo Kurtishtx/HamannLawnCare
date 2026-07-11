@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -76,14 +75,6 @@ export default function Page() {
         <h2>The Bottom Line for Arlington Homeowners</h2>
         <p>For most North Texas residential lawns with full-sun exposure, Bermuda grass is the drought-tolerant champion and the default recommendation when water conservation is a priority. Zoysia is the better choice when aesthetics under mild stress matter more and you can water slightly more often. St. Augustine is only appropriate where shade requirements override drought tolerance concerns — and even then, expect to irrigate more than the other options demand. Hamann has been helping Arlington and DFW homeowners build drought-resilient lawns since 2006. Call us and we&rsquo;ll walk you through what makes the most sense for your specific property.</p>
 
-        <div className="blog-cta">
-          <h3>Build a Drought-Ready Lawn That Survives DFW Summers</h3>
-          <p>Get a professional lawn program tailored to your grass type and water situation — and claim 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off First Service</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

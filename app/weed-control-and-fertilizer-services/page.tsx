@@ -44,7 +44,6 @@ const faqs = [
 const RedLine = () => <div style={{ height: 4, width: 64, background: 'var(--red)', borderRadius: 2, margin: '14px auto 0' }} />;
 
 export default function WeedControlAndFertilizerServices() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,10 +55,6 @@ export default function WeedControlAndFertilizerServices() {
             <h1>Weed Control &amp; <span className="headline-3d">Fertilization</span> Services</h1>
             <p className="hero-sub" style={{ margin: '20px auto 10px', fontWeight: 700, color: '#fff' }}>Fewer Weeds • Thicker Turf • Deep Texas Green</p>
             <p className="hero-sub" style={{ margin: '0 auto 26px' }}>Hamann delivers a complete lawn care program designed to eliminate weeds, strengthen roots, and build thick, healthy turf that lasts all year. Our <b>Weed Control &amp; Fertilization Program</b> targets weeds, feeds your soil, and transforms your yard into the lawn you&rsquo;ve always wanted.</p>
-            <div className="hero-cta" style={{ justifyContent: 'center' }}>
-              <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-              <button className="btn btn-ghost btn-lg" onClick={openPromo}>Get 50% Off →</button>
-            </div>
           </div>
         </div>
       </section>
@@ -210,16 +205,6 @@ export default function WeedControlAndFertilizerServices() {
         </div>
       </section>
 
-      <section className="cta-band">
-        <div className="wrap">
-          <h2>Ready For A Healthier, Greener, Weed-Free Lawn?</h2>
-          <p>Get a lawn care program that actually works — season after season. Request your quote today and start your weed-free lawn transformation. <b>Claim your 50% off first application!</b></p>
-          <div className="btns">
-            <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Get Your Free Quote</a>
-            <button className="btn btn-ghost btn-lg" onClick={openPromo}>Claim 50% Off</button>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

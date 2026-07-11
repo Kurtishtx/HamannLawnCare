@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -65,14 +64,6 @@ export default function Page() {
         <p>The biggest mistake homeowners make is waiting until the mosquitoes are unbearable before calling for treatment. By that point, the population has already gone through multiple breeding cycles and is deeply established in your yard. Starting early in the season — when you notice the first few mosquitoes, not when you&rsquo;re slapping at a dozen — keeps numbers down before they compound. Read more about the conditions that drive breeding in our post on <a href="/blogs/mosquito-breeding-sites-how-they-multiply-and-how-to-stop-them">mosquito breeding sites and how to stop them</a>.</p>
         <p>Hamann Lawn Care &amp; Weed Control has been protecting Arlington and DFW yards since 2006. We know the North Texas season from the first warm March weekend to the last warm October afternoon, and we build our schedules around what actually works here — not a generic national template.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Lock In Season-Long Mosquito Protection?</h3>
-          <p>Get a professional treatment schedule built for North Texas heat — and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

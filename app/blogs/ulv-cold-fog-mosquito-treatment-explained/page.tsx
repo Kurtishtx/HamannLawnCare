@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <p>Professional mosquito programs in Texas use ULV cold fogging as one tool in a layered system, not the whole answer. Its role is <strong>rapid knockdown of high adult populations</strong> — particularly before events or after surge conditions — while the residual barrier spray handles ongoing protection and larval treatments address the breeding cycle. Think of ULV as the emergency brake and barrier spray as the cruise control: both have roles, but you run the car on cruise control, not the brake.</p>
         <p>If you&rsquo;re evaluating mosquito control options and want to understand how IGRs fit alongside these adult-targeting approaches, read our previous post on <a href="/blogs/igr-insect-growth-regulator-mosquito-control">insect growth regulators for mosquitoes and breaking the life cycle at the source</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works — and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

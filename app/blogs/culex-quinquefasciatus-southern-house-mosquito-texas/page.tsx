@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         <p>Effective control of the southern house mosquito requires a two-part strategy. First, address what you can on your property: eliminate standing water in ditches, low areas, and any open containers. If you have a pool, keep it properly chlorinated and running. If you have an ornamental pond, add mosquito dunks (Bti) to treat the water biologically.</p>
         <p>Second — and most critically — use a residual barrier treatment that targets the resting sites adults use during the day. <em>Culex quinquefasciatus</em> rests in dense vegetation, shaded ground cover, and cool sheltered areas during daylight hours before emerging to feed at night. A professional treatment applied to those resting zones dramatically reduces the number of active adults in your yard each evening, even when the source populations are offsite. Our <a href="/mosquito-control-services">mosquito control services</a> are designed specifically around this biology — targeting the species where and when it&rsquo;s vulnerable, not just doing a general spray and hoping for the best.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works — and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

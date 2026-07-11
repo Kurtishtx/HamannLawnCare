@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <h2>Turf Health Is What Makes Stripes Pop</h2>
         <p>The single biggest factor in whether lawn stripes look impressive or mediocre is the underlying health of the turf. Thick, dense, uniformly green Bermuda that has been fertilized correctly and kept free of weeds and disease produces dramatically sharper stripe contrast than thin, patchy, weed-infested grass. No amount of roller technique fixes sparse turf &mdash; the light-dark contrast depends entirely on having enough blades per square inch to create a solid band of color. If your Bermuda is thin in spots, address that with a proper fertilization and lawn care program before focusing on aesthetics. The stripes will take care of themselves once the turf underneath them is genuinely healthy.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Greener Lawn?</h3>
-          <p>Get professional lawn care that delivers real results &mdash; and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <h2>Why a Professional Program Removes the Guesswork</h2>
         <p>At Hamann Lawn Care &amp; Weed Control, every product we apply is selected based on three things: what weed species we&rsquo;re targeting, what grass type is in the lawn, and what the season and conditions allow. That matching process &mdash; done by licensed applicators with 20-plus years in the Tarrant County market &mdash; eliminates the risk of reaching for the wrong tool and damaging a lawn that took years to establish. Read about how rainfall further complicates product decisions in our guide to <a href="/blogs/how-heavy-rainfall-reduces-pre-emergent-effectiveness-in-dfw">how heavy rainfall reduces pre-emergent effectiveness in DFW</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Right Product. Right Lawn. Right Season.</h3>
-          <p>Stop guessing at the hardware store. Call Hamann for a professional weed control program and get 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

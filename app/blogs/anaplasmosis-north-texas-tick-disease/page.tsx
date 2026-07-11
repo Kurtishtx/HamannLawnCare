@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <h2>North Texas Tick Risk Is Not Seasonal — It Is Year-Round</h2>
         <p>One of the most dangerous misconceptions about ticks in the DFW region is that they are only a spring or summer problem. While tick activity peaks from March through November, North Texas&rsquo;s mild winters allow ticks to remain active during warm spells throughout the year. A professional yard treatment program that runs from early spring through late fall provides the most consistent protection — and the peace of mind that comes with knowing your family and pets are not walking through a yard full of tick hazards. For more on the range of diseases these ticks can cause, see our post on <a href="/blogs/alpha-gal-syndrome-red-meat-allergy-lone-star-tick">alpha-gal syndrome and the Lone Star tick</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Stop Ticks Before They Bite</h3>
-          <p>Hamann&rsquo;s professional flea &amp; tick treatments protect Arlington and DFW families all season long. Claim 50% off your first treatment today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

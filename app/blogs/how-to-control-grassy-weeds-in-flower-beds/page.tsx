@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -69,14 +68,6 @@ export default function Page() {
         <h2>Putting It All Together</h2>
         <p>Controlling grassy weeds in flower beds isn&rsquo;t about one heroic pull or one spray. It&rsquo;s a system: pre-emergents on the right schedule to stop seeds before they start, selective graminicides for the perennials already in the ground, consistent mulch depth to block light and add a physical barrier, and follow-up treatments when tough perennials like dallisgrass push back. Stack those layers and the beds stay clean with far less ongoing labor. Hamann has been keeping North Texas landscapes weed-free since 2006 &mdash; we know exactly what&rsquo;s germinating in Arlington soil and when to hit it.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Stop Fighting Grassy Weeds for Good?</h3>
-          <p>Let Hamann put a professional flower-bed weed control program in place &mdash; and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

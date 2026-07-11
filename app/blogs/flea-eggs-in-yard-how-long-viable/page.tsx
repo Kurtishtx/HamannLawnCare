@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <p>The most effective window for reducing the overall flea population in a North Texas yard is late spring &mdash; typically April through May &mdash; before the summer heat accelerates hatching and population growth. Treating at this point catches the first generation of eggs laid after winter and prevents the exponential population growth that characterizes summer infestations. A follow-up treatment in late June or July addresses the second generation and the pupae from the first treatment that have now hatched.</p>
         <p>Fall treatment in September or October is also important for DFW yards. Our warm falls extend flea activity well into November, and a fall treatment reduces the overwintering population that will seed next spring&rsquo;s first generation. You can also read about <a href="/blogs/flea-jumping-range-how-far-they-travel">how far fleas jump and travel</a> to understand how eggs get distributed across your property in the first place &mdash; because knowing the movement pattern helps identify which zones need the most attention during treatment.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Protect Your Yard From Fleas &amp; Ticks?</h3>
-          <p>Professional flea &amp; tick control built for North Texas &mdash; claim your 50% off first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

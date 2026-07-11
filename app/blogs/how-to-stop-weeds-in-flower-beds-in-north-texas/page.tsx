@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <h2>The Year-Round Approach That Actually Works</h2>
         <p>Stopping weeds in North Texas flower beds isn&rsquo;t a one-time fix &mdash; it&rsquo;s a system. Combining proper mulch depth, timed pre-emergent applications, targeted post-emergent spot treatments, and annual refresh cycles gets you beds that require far less reactive work. Hamann Lawn Care has been providing that kind of structured, season-aware flower bed weed control across Arlington and the DFW area since 2006, and we can take the guesswork &mdash; and the weekends &mdash; off your hands.</p>
 
-        <div className="blog-cta">
-          <h3>Done Fighting Weeds in Your Flower Beds?</h3>
-          <p>Let Hamann set up a year-round program that actually keeps them out. Call today for a free quote.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

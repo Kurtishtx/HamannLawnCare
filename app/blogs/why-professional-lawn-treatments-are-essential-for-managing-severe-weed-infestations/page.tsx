@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         </ul>
         <p>No professional program promises an overnight fix for a severe infestation. What a good program does deliver is consistent, measurable progress at each visit &mdash; with the trajectory always moving toward a healthier lawn rather than just buying time until the next flare-up. See the full details of how we build these programs at our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer services</a> page, or learn more about the hard-to-kill species that often drive severe infestations in <a href="/blogs/how-lawn-spraying-helps-control-hard-to-kill-weeds-in-warm-season-lawns">how lawn spraying helps control hard to kill weeds in warm season lawns</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Weed-Free Lawn?</h3>
-          <p>Get professional weed control &amp; fertilizer treatments &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

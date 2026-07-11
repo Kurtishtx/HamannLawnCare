@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <p>A lawn that makes it through August looking as thick as it did in May didn&rsquo;t get lucky &mdash; it was built that way through the right decisions compounded over months. Deep irrigation training, proper mowing height, well-timed fertilization, aerated soil, and staying ahead of pests and disease all work together to create a turf dense enough to shade out weeds, resist stress, and look great right through Labor Day.</p>
         <p>Our team at Hamann has been building lawns like that in Arlington and across the DFW area since 2006. Learn more about our full <a href="/lawn-care-services">lawn care services</a> and how a structured season-long program makes all the difference. And if you&rsquo;re wondering how the same habits that build summer thickness connect to spring green-up speed, read our post on <a href="/blogs/why-some-lawns-bounce-back-faster-after-winter-than-others">why some lawns bounce back faster after winter than others</a> &mdash; it&rsquo;s all part of the same system.</p>
 
-        <div className="blog-cta">
-          <h3>Want a Lawn That Stays Thick All Summer?</h3>
-          <p>Get a professional North Texas lawn care program &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

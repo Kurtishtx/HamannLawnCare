@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
 
         <p>If you&rsquo;re just getting started with your strategy, our breakdown of <a href="/blogs/common-flea-treatment-myths-homeowners-believe-and-why-they-cause-problems">common flea treatment myths homeowners believe</a> is worth reading before you buy another bag of diatomaceous earth or another can of fogger.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to End the Flea Cycle for Good?</h3>
-          <p>Get professional yard treatment that breaks the flea lifecycle &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

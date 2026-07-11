@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         </ul>
         <p>A seasonal <a href="/flea-and-tick-control">flea and tick control</a> program timed to these windows provides far better protection than a single annual application — because a single treatment cannot cover all three stages at peak activity. For an explanation of what tick egg masses look like and where female ticks deposit them in a DFW yard, see our guide on <a href="/blogs/deer-tick-vs-dog-tick-texas-differences">deer tick vs dog tick differences in Texas</a> for context on how different species time their egg-laying across the season.</p>
 
-        <div className="blog-cta">
-          <h3>Get Ahead of Every Tick Stage This Season</h3>
-          <p>Hamann times professional tick control to DFW&rsquo;s actual life cycle calendar — not guesswork. Call today or claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

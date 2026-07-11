@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -80,14 +79,6 @@ export default function Page() {
         <h2>Why Professional Applications Deliver Better Results</h2>
         <p>Choosing the right herbicide type is only the first step. Rate, timing, surfactant use, temperature at application, weed growth stage, and turf species compatibility all affect outcomes. Misapplication of a systemic like dicamba near desirable trees or neighboring properties can cause serious off-target damage. At Hamann Lawn Care &amp; Weed Control, we assess the specific weeds present, the turf type, and the season before selecting any product &mdash; because the best herbicide in the world won&rsquo;t work if it&rsquo;s the wrong one for the situation.</p>
 
-        <div className="blog-cta">
-          <h3>📞 Stop Fighting Weeds That Keep Coming Back</h3>
-          <p>If your weed killer isn&rsquo;t working, chances are you&rsquo;re using a contact product on perennial weeds with deep root systems. Our team uses the right systemic treatments to eliminate weeds at the root &mdash; claim 50% off your first service today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

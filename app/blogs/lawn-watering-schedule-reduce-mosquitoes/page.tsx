@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <p>Our <a href="/mosquito-control-services">mosquito control program</a> works best when the yard isn&rsquo;t fighting against chronic over-irrigation. When we treat barrier zones and resting areas, a yard that dries out properly between irrigation cycles holds the treatment longer and sees fewer mosquitoes returning between visits.</p>
         <p>For a complete picture of how your yard&rsquo;s water management affects mosquito pressure, check out our full analysis of <a href="/blogs/rain-garden-mosquito-risk-management">rain garden mosquito risks</a> &mdash; many of the same drainage principles apply to irrigation management throughout the yard.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -54,14 +53,6 @@ export default function Page() {
         <p>If the appeal of rubber mulch is its longevity and reduced refresh frequency, cedar mulch is a better choice. Cedar holds volume through a DFW summer better than hardwood, resists decomposition longer than pine bark, and still provides organic matter return. Starting at 4 inches with quality cedar and refreshing every 18 months typically provides better weed control outcomes than rubber mulch at lower long-term cost &mdash; without the heat amplification, off-gassing, or bed renovation problems.</p>
         <p>Pairing a quality organic mulch at the right depth with a targeted pre-emergent application before the spring and fall weed flushes gives North Texas flower beds the most effective, plant-friendly weed control available. That combination outperforms rubber mulch on every metric that matters in a living bed, especially when you factor in how it interacts with <a href="/blogs/pine-bark-nuggets-weed-suppression-texas-beds">choosing the right mulch particle size</a> for your specific bed conditions.</p>
 
-        <div className="blog-cta">
-          <h3>Let Us Handle Your Flower-Bed Weed Control</h3>
-          <p>Hamann Lawn Care &amp; Weed Control has kept Arlington beds clean since 2006. Call or grab 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

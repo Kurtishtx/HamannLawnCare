@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -77,14 +76,6 @@ export default function Page() {
 
         <p>Virginia creeper is one of those plants that earns a certain respect for its tenacity. It&rsquo;s beautiful in the right setting &mdash; draped over a stone wall at a distance &mdash; but in a maintained flower bed, it&rsquo;s a persistent invader that will crowd out everything around it if not managed consistently. Hamann Lawn Care &amp; Weed Control has been helping Arlington and DFW homeowners reclaim their flower beds since 2006. If Virginia creeper or any other invasive vine has gotten ahead of you, we can help you get back on top of it.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Reclaim Your Flower Beds?</h3>
-          <p>Get professional flower-bed weed control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

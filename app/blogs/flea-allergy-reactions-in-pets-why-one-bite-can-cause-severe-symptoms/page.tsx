@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -52,14 +51,6 @@ export default function Page() {
         <p>Hamann Lawn Care &amp; Weed Control has been treating yards in Arlington and the surrounding DFW communities since 2006. Our flea treatments target the shaded, moist microhabitats where fleas actually live and breed &mdash; not just the open lawn. We use residual-formula products designed to keep working between visits, which is critical for reducing the cumulative flea pressure that keeps allergic pets reacting.</p>
         <p>If your pet has been struggling with unexplained skin issues, intense scratching, or recurring hot spots, the yard may be the missing piece of the puzzle that your vet&rsquo;s prescription alone can&rsquo;t fix.</p>
 
-        <div className="blog-cta">
-          <h3>Protect Your Pet From Flea Reactions</h3>
-          <p>Professional yard treatment reduces flea pressure at the source &mdash; claim your 50% off first application today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

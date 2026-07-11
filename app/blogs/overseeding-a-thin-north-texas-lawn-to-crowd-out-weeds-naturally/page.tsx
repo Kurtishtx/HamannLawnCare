@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -93,14 +92,6 @@ export default function Page() {
           True overseeding with matching warm-season grass seed is rarely the right move in DFW. Instead, think in terms of <strong>targeted patch repair with plugs or sod</strong> for your permanent grass, strategic ryegrass overseeding for winter color only, and a consistent fertilizer program that keeps your existing turf dense and competitive. A thick, healthy lawn is the single best weed barrier you can build &#8212; and once it&rsquo;s established, maintaining it is far cheaper than repeatedly treating an open, weedy yard.
         </p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Weed-Free Lawn?</h3>
-          <p>Get professional weed control and fertilizer treatments that actually work &#8212; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

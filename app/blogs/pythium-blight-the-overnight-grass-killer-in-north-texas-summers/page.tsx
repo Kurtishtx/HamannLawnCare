@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -77,14 +76,6 @@ export default function Page() {
         <p>Most of the United States only deals with Pythium blight in isolated cases. North Texas is different. The combination of clay soil that drains slowly, summer humidity that regularly spikes above 90% at night, irrigation-dependent lawns running on evening schedules, and temperatures that stay above 90&deg;F for months creates a nearly continuous outbreak window from late June through early September. Arlington, Grand Prairie, Mansfield, and the surrounding DFW metro sit right in this climate zone.</p>
         <p>Hamann Lawn Care &amp; Weed Control has been treating Pythium blight and other North Texas lawn diseases since 2006. We know the seasonal patterns, the high-risk weather windows, and how to identify an outbreak before it spreads beyond containment.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Protect Your Lawn?</h3>
-          <p>Get professional lawn disease control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

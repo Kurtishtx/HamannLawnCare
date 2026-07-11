@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <h2>Why This Matters for Your Lawn Long-Term</h2>
         <p>Resistance is a permanent change in your soil&rsquo;s weed seed bank. Once resistant genetics dominate, reverting is nearly impossible without comprehensive intervention. The most cost-effective strategy is preventing resistant populations from establishing in the first place &mdash; which means rotating chemistry from the beginning, not after the problem has already developed. At Hamann Lawn Care &amp; Weed Control, we&rsquo;ve been navigating North Texas weed pressure since 2006 and we build resistance management into every program. Read more about related issues in our post on <a href="/blogs/what-happens-when-you-fertilize-without-controlling-weeds-first">what happens when you fertilize without controlling weeds first</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Weeds Surviving Your Spray? We Know Why.</h3>
-          <p>Get a professional program that rotates chemistry and actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>&#128222; Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <h2>When to Call Hamann</h2>
         <p>If you&rsquo;ve done the footprint test, adjusted irrigation, and the patches are still spreading &mdash; especially if they have defined edges, ring patterns, or visible lesions on blades &mdash; it&rsquo;s time for a professional diagnosis. Hamann Lawn Care &amp; Weed Control has been reading North Texas lawns since 2006. We know the diseases that hit Arlington and the surrounding DFW area hard every season, and we know how to stop them before they take over your turf.</p>
 
-        <div className="blog-cta">
-          <h3>Not Sure What&rsquo;s Wrong With Your Lawn?</h3>
-          <p>Get a professional diagnosis and treatment plan from a team that knows North Texas turf inside and out.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

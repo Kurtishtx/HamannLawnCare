@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
 
         <p>Read about <a href="/blogs/crabgrass-invading-flower-beds-dfw">crabgrass invasion in DFW flower beds</a> to see how we handle the annual grassy weed challenge alongside this perennial bermuda problem. Hamann has been managing bermuda grass invasion in Arlington landscape beds since 2006. Call us at {PHONE_DISPLAY} to get on a treatment schedule.</p>
 
-        <div className="blog-cta">
-          <h3>Stop Bermuda Grass From Reclaiming Your Flower Beds</h3>
-          <p>Professional selective grass control for North Texas landscape beds &mdash; 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

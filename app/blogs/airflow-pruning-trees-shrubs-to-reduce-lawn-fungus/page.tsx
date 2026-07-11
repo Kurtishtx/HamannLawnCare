@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
 
         <p>Pruning works in combination with the mowing practices discussed in <a href="/blogs/raising-mow-height-to-reduce-lawn-disease-texas">raising mow height to reduce lawn disease in Texas</a> &mdash; together they address both the vertical and horizontal airflow that keeps North Texas grass crowns dry.</p>
 
-        <div className="blog-cta">
-          <h3>Recurring Fungus in the Same Spot Every Year?</h3>
-          <p>Hamann identifies the structural cause and treats the disease. Get 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

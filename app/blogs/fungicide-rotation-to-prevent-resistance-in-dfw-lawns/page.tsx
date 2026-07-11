@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <h2>Signs That Resistance May Already Be Present</h2>
         <p>If you have been applying the same product for multiple seasons and are seeing consistently poor results despite correct application rates and timing, resistance is a real possibility. Other indicators: disease that appears to recover briefly after application but rebounds within days rather than holding for the full residual window; disease that spreads into areas treated with the product; or disease that responds to a different-group product after failing to respond to your usual one. In these cases, discontinuing the affected FRAC group for an entire season and rotating exclusively through other groups can allow the pathogen population to shift back toward susceptibility over time.</p>
 
-        <div className="blog-cta">
-          <h3>Is Your Fungicide Program Actually Working?</h3>
-          <p>Hamann uses a full FRAC-rotation program on every lawn disease treatment &mdash; no repeated chemistry, no resistance buildup. Call us to evaluate your current program.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

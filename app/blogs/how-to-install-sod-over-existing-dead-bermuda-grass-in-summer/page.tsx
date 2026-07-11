@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
 
         <p>If your lawn has multiple issues happening simultaneously, read our post on <a href="/blogs/how-to-repair-lawn-ruts-from-vehicles-or-heavy-equipment-in-dfw">repairing lawn ruts from vehicles or heavy equipment</a> — ruts and dead patches often need to be addressed together during the same repair season. Hamann Lawn Care has been helping DFW homeowners get green lawns back since 2006, and we&rsquo;re happy to walk through any sod install question by phone.</p>
 
-        <div className="blog-cta">
-          <h3>Need a Fresh Start for Your North Texas Lawn?</h3>
-          <p>Get expert lawn care in Arlington and DFW — and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

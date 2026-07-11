@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -85,16 +84,6 @@ export default function Page() {
           For professional fairy ring diagnosis and lawn disease treatment in Arlington and North Texas, visit our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control service page</a>. You may also want to read our post on <a href="/blogs/bleached-straw-colored-spots-in-bermuda-dollar-spot-diagnosis">bleached straw-colored spots in Bermuda grass</a> to learn about dollar spot, another common DFW fungal disease that is sometimes confused with fairy ring stimulation zones.
         </p>
 
-        <div className="blog-cta">
-          <h3>Fairy Ring or Mysterious Mushrooms in Your DFW Lawn? Let&rsquo;s Diagnose It.</h3>
-          <p>
-            Hamann Lawn Care &amp; Weed Control has been managing lawn diseases in North Texas since 2006. Fairy ring requires the right diagnosis and the right treatment sequence — we can walk your lawn, identify the type, and build a plan that actually works.
-          </p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>&#128222; Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

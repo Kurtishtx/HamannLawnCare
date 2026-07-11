@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -65,14 +64,6 @@ export default function Page() {
         <p>When Hamann treats a North Texas lawn, the process looks nothing like a trip to the weed killer aisle. We identify the specific weed species present before selecting chemistry. We calibrate application equipment to deliver precise product rates per thousand square feet. We select professional-grade active ingredients matched to the weeds in your lawn and safe for your grass type. We time treatments around soil temperature, weed growth stage, and DFW&rsquo;s seasonal patterns &mdash; not a label written for the national average. And we follow up, because a single application of even the best product rarely solves a season-long weed problem alone.</p>
         <p>That&rsquo;s the difference between a family-owned operation that has been doing this in Arlington since 2006 and a product designed to sit on a retail shelf in all 50 states. If your yard keeps losing the weed battle despite your best efforts at the big-box store, the issue isn&rsquo;t effort &mdash; it&rsquo;s that the tools were never designed for this fight.</p>
 
-        <div className="blog-cta">
-          <h3>Done Fighting Weeds With the Wrong Products?</h3>
-          <p>Get professional weed control built for North Texas &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

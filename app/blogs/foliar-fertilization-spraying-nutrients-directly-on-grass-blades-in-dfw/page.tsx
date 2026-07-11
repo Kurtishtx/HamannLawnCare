@@ -3,7 +3,6 @@
 const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
-const openPromo = () => (window as any).__openPromo?.();
 
 export default function FoliarFertilizationPage() {
   const slug = 'foliar-fertilization-spraying-nutrients-directly-on-grass-blades-in-dfw';
@@ -277,22 +276,6 @@ export default function FoliarFertilizationPage() {
           satisfying calls we make because the results are fast and unmistakable.
         </p>
 
-        <div className="blog-cta">
-          <h3>Ready to Get Your Lawn Looking Green Again?</h3>
-          <p>
-            Whether your grass is showing chlorosis, pale growth, or just isn&rsquo;t responding to your current
-            fertilizer program, our team can diagnose the problem and put together a foliar and granular plan
-            built for DFW soil. Give us a call or request a free quote online.
-          </p>
-          <div className="cta-btns">
-            <button onClick={openPromo} className="btn-primary">
-              Get a Free Quote
-            </button>
-            <a href={`tel:${PHONE_TEL}`} className="btn-secondary">
-              Call {PHONE_DISPLAY}
-            </a>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap">

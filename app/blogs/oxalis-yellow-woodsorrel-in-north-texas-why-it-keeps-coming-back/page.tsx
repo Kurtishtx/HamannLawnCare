@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -197,18 +196,6 @@ export default function Page() {
           it is a fix &mdash; which is more than most reactive approaches can offer.
         </p>
 
-        <div className="blog-cta">
-          <h3>Ready To Get Rid of Oxalis For Good?</h3>
-          <p>
-            Our integrated weed control program targets oxalis at every stage &mdash; pre-emergent timing,
-            systemic post-emergent treatments, and fertilization to thicken your turf so it stops coming back.
-            Claim your 50% off first application and let us build a plan for your lawn.
-          </p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>&#128222; Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

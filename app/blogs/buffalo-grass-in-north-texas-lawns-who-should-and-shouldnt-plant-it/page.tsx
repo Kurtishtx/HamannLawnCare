@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
 
         <p>Hamann Lawn Care &amp; Weed Control has worked with every major grass variety in North Texas since 2006. If you&rsquo;re weighing whether buffalo grass is right for your specific yard, call us at <a href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a> — we&rsquo;ll give you a straight answer based on your actual conditions, not a sales pitch for any particular product.</p>
 
-        <div className="blog-cta">
-          <h3>Not Sure Which Grass Fits Your DFW Yard?</h3>
-          <p>Hamann has been matching the right grass to North Texas conditions since 2006. Call or claim your offer.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

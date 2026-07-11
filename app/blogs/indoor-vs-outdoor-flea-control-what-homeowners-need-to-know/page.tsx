@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <h2>The Bottom Line for North Texas Homeowners</h2>
         <p>Fleas are a two-front problem, and they win every time homeowners fight only on one front. Treat the yard to cut off the source. Treat indoors &mdash; with an IGR and a vacuum &mdash; to clear the established population. Keep pets on prevention to eliminate their role as a flea taxi. Do all three at the same time, and you&rsquo;ll actually get ahead of it. Hamann has been helping Arlington and DFW families knock out flea problems since 2006 &mdash; call us when you&rsquo;re ready to stop fighting and start winning.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To End the Flea Fight?</h3>
-          <p>Get professional outdoor flea treatment that actually lasts &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

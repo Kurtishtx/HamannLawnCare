@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <p>Rather than two separate visits — one for fertilizer, one for weeds — Hamann&rsquo;s May treatment handles both in a single efficient service call. We assess what&rsquo;s actively growing in your lawn, identify weed pressure (including nutsedge, spurge, clover, and any remaining cool-season weeds finishing their cycle), and apply the right fertilizer blend for your grass type and conditions. Post-emergent herbicide hits the active weeds, while the fertilizer kicks the turf into strong, competitive growth that naturally crowds out future invaders.</p>
         <p>That combination — healthy, dense turf plus targeted weed control — is the foundation of a North Texas lawn that looks good through summer rather than declining into it. If you haven&rsquo;t had your May application yet, now is the time to get it scheduled.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Fuel Your Lawn This May?</h3>
-          <p>Get professional fertilization and weed control dialed in for your Bermuda or St. Augustine lawn — and claim 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

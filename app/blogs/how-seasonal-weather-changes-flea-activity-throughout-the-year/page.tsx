@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -53,14 +52,6 @@ export default function Page() {
         <h2>The Bottom Line for Arlington and Surrounding DFW Communities</h2>
         <p>North Texas does not give you a flea-free winter to coast through. Planning your flea control around the actual local climate &mdash; roughly a 9-to-10-month active season with year-round dormant-but-survivable conditions for pupae &mdash; is the only realistic strategy. Hamann Lawn Care &amp; Weed Control has been navigating these local seasonal patterns since 2006 and designs treatment programs specifically around what actually happens in DFW yards, not generic national averages.</p>
 
-        <div className="blog-cta">
-          <h3>Stay Ahead of Flea Season All Year</h3>
-          <p>Get a treatment program timed to North Texas conditions &mdash; claim your 50% off first application today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

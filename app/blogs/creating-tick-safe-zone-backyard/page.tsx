@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <h2>How Hamann Creates Tick-Safe Zones in DFW</h2>
         <p>When we service a property, we&rsquo;re thinking exactly in terms of this zone model — identifying where the family spends time, mapping the tick habitat at the perimeter, and applying treatment precisely to the zones that matter most. Our approach to <a href="/blogs/tick-tubes-diy-professional-use">tick control tools like tubes</a> fits into this same framework as a supplemental option for rodent-transported ticks. Hamann has served Arlington and the DFW area since 2006, and we stand behind every treatment with a satisfaction guarantee.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Create a Tick-Safe Zone in Your Backyard?</h3>
-          <p>Get professional flea &amp; tick control focused on the zones that matter most — and claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

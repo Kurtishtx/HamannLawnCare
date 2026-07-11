@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
           <li><strong>Setting up cycle-and-soak and then not checking for runoff:</strong> The whole point is eliminating runoff. Walk outside during the first scheduled run after setup and confirm water isn&rsquo;t sheeting off the lawn. If it still is, shorten cycle times and lengthen soak intervals.</li>
         </ul>
 
-        <div className="blog-cta">
-          <h3>Get North Texas Lawn Expertise on Your Side</h3>
-          <p>Family-owned since 2006, Hamann Lawn Care &amp; Weed Control serves Arlington and all of DFW. Call us for a free estimate.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -70,14 +69,6 @@ export default function Page() {
         <h2>Hamann Has Managed Gray Leaf Spot Since 2006</h2>
         <p>Hamann Lawn Care &amp; Weed Control is a family-owned company that has been treating Arlington and North Texas St. Augustine lawns since 2006. We know gray leaf spot well &mdash; what it looks like at every stage, which fungicide products work best in our local conditions, and what cultural adjustments make the biggest difference in preventing it from coming back the following year. If your St. Augustine is developing spots and thinning fast this summer, don&rsquo;t wait it out. The longer gray leaf spot runs, the more turf you lose. Call us and we&rsquo;ll stop it.</p>
 
-        <div className="blog-cta">
-          <h3>Gray Leaf Spot Taking Over Your St. Augustine?</h3>
-          <p>Fast professional treatment stops the spread and gets your Arlington lawn recovering. Hamann Lawn Care &amp; Weed Control &mdash; family-owned since 2006.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

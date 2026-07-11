@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <h2>When to Call Hamann</h2>
         <p>If you&rsquo;re finding ticks on family members or pets despite consistent mowing and basic yard maintenance, the population in your yard has almost certainly established itself in the transition zones and shaded areas that cultural practices alone can&rsquo;t address. That&rsquo;s when professional treatment makes the biggest difference. Hamann has served Arlington and the broader DFW area since 2006, and our <a href="/blogs/tick-collar-vs-topical-vs-oral-pet-prevention">tick prevention options for pets</a> guide covers how to layer yard treatment with personal and pet protection for full-spectrum defense.</p>
 
-        <div className="blog-cta">
-          <h3>Stop Ticks Before They Find You</h3>
-          <p>Get professional flea &amp; tick control targeted at the zones ticks actually hide in — and claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -68,14 +67,6 @@ export default function Page() {
         <h2>Is the Switch Worth It?</h2>
         <p>For yards with 4 or more hours of sun in the affected areas, yes — replacing declining Bermuda with properly selected St. Augustine is absolutely worth the effort and investment. A dense, healthy St. Augustine lawn in partial shade looks dramatically better than a thin, weedy Bermuda lawn struggling against the same canopy. The key is doing the transition correctly: complete kill-out, proper soil prep, right variety selection, and aggressive establishment watering. Hamann has been helping Arlington homeowners navigate exactly these kinds of lawn transitions since 2006. Give us a call before you buy the sod — we&rsquo;ll help you get it right the first time.</p>
 
-        <div className="blog-cta">
-          <h3>Thinking About Replacing Your Failing Lawn?</h3>
-          <p>Let Hamann help you plan the right grass conversion for your specific yard — and get 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off First Service</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

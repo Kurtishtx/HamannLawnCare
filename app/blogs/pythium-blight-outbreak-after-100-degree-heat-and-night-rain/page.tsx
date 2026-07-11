@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <h2>How Hamann Handles Pythium Outbreaks</h2>
         <p><strong>Hamann Lawn Care &amp; Weed Control</strong> has been managing North Texas lawn disease emergencies since 2006. Pythium blight is a genuine emergency, and we treat it as one. We stock the correct chemistry, respond quickly during peak season, and can help assess whether affected areas can recover or need replacement. If you woke up to matted, greasy patches in your lawn after an overnight rain, call us today.</p>
 
-        <div className="blog-cta">
-          <h3>Pythium Blight Needs Emergency Treatment &mdash; Not a Wait-and-See Approach.</h3>
-          <p>Every hour matters when pythium blight is active. Call <strong>Hamann Lawn Care &amp; Weed Control</strong> now and get the right treatment on your lawn before the damage spreads further.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

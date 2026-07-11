@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <p>Texas DSHS publishes arbovirus surveillance data including Zika case reports. If you travel internationally, check the CDC&rsquo;s current Zika map before departure &mdash; the active regions shift as outbreaks wax and wane globally. And continue reading our coverage of related threats, including our post on <a href="/blogs/west-nile-virus-symptoms-what-to-watch-for">West Nile virus symptoms that North Texas residents should watch for</a>, since the same mosquito control habits protect against multiple diseases simultaneously.</p>
         <p>Hamann has been controlling DFW mosquitoes since 2006 &mdash; both the <em>Culex</em> species driving West Nile and the <em>Aedes</em> species that concern us for Zika and dengue. Our programs are built to reduce the full spectrum of mosquito pressure on your property, not just one species.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

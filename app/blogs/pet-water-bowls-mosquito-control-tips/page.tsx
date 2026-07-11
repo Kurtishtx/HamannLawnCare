@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -47,14 +46,6 @@ export default function Page() {
         <h2>Pet Bowls Are One Piece of the Puzzle</h2>
         <p>Addressing your outdoor water bowls makes a real difference, but mosquitoes don&rsquo;t limit themselves to one source. The adults flying around your yard tonight may have hatched in a neighbor&rsquo;s yard, a nearby retention pond, or a tree hole in your own yard. Source reduction on your property cuts future production; professional barrier treatment cuts the adult population that&rsquo;s already there. The combination is what delivers the kind of measurable, lasting relief that makes outdoor time actually pleasant again. Also see our article on <a href="/blogs/tarps-and-covers-mosquito-water-collection">tarps and ground covers as hidden mosquito water traps</a> for more overlooked sources to address.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works — and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

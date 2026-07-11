@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -53,14 +52,6 @@ export default function Page() {
         <h2>How Hamann Coordinates These Services</h2>
         <p>We&rsquo;ve been handling this scheduling challenge since 2006. When customers are on both our weed control program and a lawn care program that includes aeration, we build the calendar around the pre-emergent windows to minimize conflict. For customers who hire separate companies for mowing and lawn care, we recommend sharing your pre-emergent application dates with your aeration provider so they can schedule around the barrier &mdash; or plan to retreat after the aeration if the timing can&rsquo;t be avoided.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Let Aeration Undo Your Weed Control</h3>
-          <p>We coordinate the timing so both treatments work together. Get 50% off your first weed control application today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <h2>Bottom Line on Gallinippers</h2>
         <p>The gallinipper is real, it&rsquo;s in North Texas, and it will absolutely ruin your post-flood backyard experience. But it&rsquo;s not the disease threat that smaller species are, its surges are temporary, and professional treatment handles it just like it handles the rest of the mosquito species trying to claim your yard. Know what you&rsquo;re dealing with, act fast after flood events, and you can get ahead of the surge before it derails your outdoor season.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works — and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

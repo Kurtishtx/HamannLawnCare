@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
         <p>We&rsquo;ve been treating properties in Arlington and across DFW since 2006 and we&rsquo;ve seen what tropical-origin rainfall does to mosquito populations in this area. When a major storm event hits, we prioritize existing customers to ensure their properties are retreated quickly and offer fast scheduling for new customers who need post-storm intervention. We use golf-course-grade products that deliver a residual barrier lasting several weeks so you&rsquo;re covered even as new mosquitoes continue drifting in from surrounding areas.</p>
         <p>If a tropical system just passed through and your yard is suddenly swarmed, don&rsquo;t wait it out. The population will keep climbing until it&rsquo;s treated. Call us and we&rsquo;ll get you scheduled fast.</p>
 
-        <div className="blog-cta">
-          <h3>Storm Surge Got Your Yard? We Can Fix That.</h3>
-          <p>Get professional post-storm mosquito treatment &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

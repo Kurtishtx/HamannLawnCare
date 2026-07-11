@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -70,14 +69,6 @@ export default function Page() {
         </ul>
         <p>If you&rsquo;ve noticed irregular browning, spongy turf, or areas that simply aren&rsquo;t recovering despite good irrigation and fertilization, don&rsquo;t assume it&rsquo;s just the heat. Get it looked at. Insects are fast-moving problems, and the window between &ldquo;manageable&rdquo; and &ldquo;expensive&rdquo; is shorter than most homeowners expect.</p>
 
-        <div className="blog-cta">
-          <h3>Suspect Insects Are Damaging Your Lawn?</h3>
-          <p>Early treatment saves your grass and your wallet &mdash; call us to identify what&rsquo;s going on and get it handled fast.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

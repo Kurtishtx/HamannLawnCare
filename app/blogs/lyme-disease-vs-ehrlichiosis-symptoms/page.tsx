@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <p>The practical takeaway for DFW-area families is this: if you develop fever and flu-like symptoms after spending time outdoors in North Texas, ehrlichiosis should be your primary concern, not Lyme disease. Seek care promptly rather than waiting to see if symptoms resolve, ask for a CBC and ehrlichiosis-specific testing, and push for early doxycycline if the clinical picture is consistent. The prior probability of ehrlichiosis in our area is high enough that experienced local physicians will often treat empirically before results are confirmed. Read our post on <a href="/blogs/tick-bite-fever-when-to-see-doctor">when to see a doctor after a tick bite</a> for the full triage framework.</p>
         <p>The most reliable prevention remains reducing tick populations where your family actually spends time. Hamann&rsquo;s residual barrier spray program targets the shaded vegetation and fence-line brush where Lone Star ticks shelter and quest. Treating your yard consistently through spring, summer, and fall keeps tick pressure low on your property all season long.</p>
 
-        <div className="blog-cta">
-          <h3>Protect Your Yard Before the Next Tick Finds You</h3>
-          <p>Hamann has protected Arlington and DFW families from ticks since 2006. Claim 50% off your first yard treatment today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

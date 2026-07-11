@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <h2>The Bottom Line on Compaction</h2>
         <p>Soil compaction in North Texas is not a problem you solve once &mdash; it&rsquo;s a condition you manage continuously. Aeration is the right tool, but it works best as part of a broader soil health program that includes compost topdressing, proper irrigation, thatch management, and realistic traffic expectations for high-use zones. Hamann Lawn Care has been maintaining Arlington lawns since 2006, and we can assess whether your current approach is keeping pace with your soil&rsquo;s compaction tendency or falling behind it.</p>
 
-        <div className="blog-cta">
-          <h3>Is Compaction Holding Your Lawn Back?</h3>
-          <p>Get a soil health assessment from a team that knows North Texas clay &mdash; and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

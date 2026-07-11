@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <p>Proper mowing height works in concert with every other lawn care input. Fertilizer applications work best on grass that&rsquo;s actively growing at the right height &mdash; overly long turf holds fertilizer granules in the canopy rather than delivering them to the soil. Pre-emergent weed control creates its germination barrier in the top layer of soil, which stays more intact when Bermuda is mowed correctly and the soil is not repeatedly disturbed by scalping. For the complete picture of how mowing fits into a year-round program, visit <a href="/lawn-care-services">Hamann&rsquo;s lawn care services</a> for Arlington and North Texas homeowners.</p>
         <p>Read our companion article on <a href="/blogs/sprinkler-runoff-on-slopes-how-to-fix-it-without-replacing-heads">fixing sprinkler runoff on slopes</a> to make sure your irrigation is working as effectively as your mowing program.</p>
 
-        <div className="blog-cta">
-          <h3>Ready for a Thicker, Healthier Bermuda Lawn?</h3>
-          <p>Hamann Lawn Care has been helping Arlington families grow better lawns since 2006. Call for 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

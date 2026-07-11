@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <h2>When It&rsquo;s Time to Call a Pro</h2>
         <p>If the ruts cover a large area, if the damage compromised your irrigation lines, or if the surrounding grass is already thin and struggling, a professional assessment saves you from spending money on a repair that won&rsquo;t hold. Also read our post on <a href="/blogs/dog-urine-spots-on-bermuda-grass-how-to-repair-them-fast">repairing dog urine spots on Bermuda grass</a> if you&rsquo;re dealing with multiple types of lawn damage at once — a combined approach is almost always more efficient. Hamann has been fixing North Texas lawns since 2006 and can tell you in five minutes whether your ruts need a DIY fix or a professional hand.</p>
 
-        <div className="blog-cta">
-          <h3>Ruts Ruining Your Lawn? Let&rsquo;s Fix That.</h3>
-          <p>Get expert lawn repair in Arlington and the DFW area — and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

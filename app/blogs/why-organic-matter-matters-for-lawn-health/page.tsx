@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>The Bottom Line</h2>
         <p>Healthy grass doesn&rsquo;t come from what you spray on it &mdash; it comes from what&rsquo;s underneath it. Organic matter is the engine of soil health, and in North Texas&rsquo;s challenging clay soils, building it deliberately is the difference between a lawn that survives and one that genuinely thrives. For more on what you can add back to your soil to accelerate the process, check out our deep dive on <a href="/blogs/topdressing-vs-soil-amendments-what-is-the-difference">topdressing vs. soil amendments</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Ready for a Healthier Lawn From the Ground Up?</h3>
-          <p>Hamann Lawn Care has been building beautiful North Texas lawns since 2006. Call us or grab your new-customer deal today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

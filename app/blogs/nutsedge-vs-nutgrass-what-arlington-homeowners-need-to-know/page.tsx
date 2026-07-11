@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -46,14 +45,6 @@ export default function Page() {
 
         <p>For additional context on identifying and controlling the grassy weeds that show up alongside nutsedge in DFW yards, our post on <a href="/blogs/crabgrass-identification-and-control-in-dfw-yards">Crabgrass Identification and Control in DFW Yards</a> covers the full picture of summer annual grassy weed pressure in this region.</p>
 
-        <div className="blog-cta">
-          <h3>Nutsedge Taking Over Your Yard?</h3>
-          <p>Get professional sedge control with the right chemistry for Arlington&rsquo;s clay soil &mdash; and claim 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <h2>What to Expect When You Make the Switch</h2>
         <p>If you&rsquo;ve been spot spraying for years and switch to a year-round program, manage expectations for the first season. Year one is primarily about stopping the current season&rsquo;s weed additions to the seed bank and getting turf density moving in the right direction. You&rsquo;ll likely still see weeds &mdash; but they should be visibly fewer. By season two and three, the difference becomes undeniable. The lawn that seemed impossible to keep clean starts staying clean with minimal effort, because the underlying biology is finally working in your favor rather than against you. Our post on <a href="/blogs/how-soil-health-impacts-weed-growth-in-warm-season-lawns">soil health and weed growth</a> explains another layer of why consistent programs beat reactive ones at a fundamental level.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Stop Chasing Weeds and Start Preventing Them?</h3>
-          <p>Get on a year-round program built for North Texas lawns &mdash; and claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

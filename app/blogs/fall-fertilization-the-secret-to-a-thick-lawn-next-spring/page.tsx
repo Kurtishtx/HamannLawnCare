@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <h2>What to Expect the Following Spring</h2>
         <p>When fall fertilization is done right, the payoff is obvious. Lawns that were fed properly in fall typically break dormancy two to three weeks earlier than neglected ones. They green up more uniformly, without the patchy thin spots that plague unfed lawns. They also establish density faster, which means fewer opportunities for spring weeds to get a foothold. The lawn you want in May gets built in October. If you missed last fall, this year is the time to start &mdash; and if you need guidance on fitting it into a <a href="/blogs/summer-weed-control-how-to-protect-your-lawn-in-extreme-heat">summer weed control</a> strategy, the groundwork starts earlier in the season than most people think.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Build a Thicker Lawn This Fall?</h3>
-          <p>Get professional fall fertilization tailored to your North Texas turf &mdash; and claim your 50% off first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

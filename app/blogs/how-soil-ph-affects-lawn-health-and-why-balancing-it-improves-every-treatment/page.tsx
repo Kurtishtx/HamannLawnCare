@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -65,14 +64,6 @@ export default function Page() {
         <h2>The Bottom Line on pH</h2>
         <p>Soil pH is one of those behind-the-scenes factors that a lot of homeowners never think about — right up until they&rsquo;ve spent two seasons on a fertilization program and still don&rsquo;t have the lawn they expected. A quick soil test, a targeted pH correction program, and some patience can unlock performance that was already paid for but never delivered. Hamann has been helping Arlington and DFW homeowners get their soil working for them, not against them, since 2006. If your lawn isn&rsquo;t responding the way it should, the answer might be an inch below the surface.</p>
 
-        <div className="blog-cta">
-          <h3>Is Your Soil Working Against Your Lawn?</h3>
-          <p>Let our team take a look and get your program dialed in. Grab your new-customer offer below.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

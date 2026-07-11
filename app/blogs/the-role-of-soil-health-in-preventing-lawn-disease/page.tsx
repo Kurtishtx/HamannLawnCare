@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -49,14 +48,6 @@ export default function Page() {
         <p>Fungicide applications &mdash; whether preventive or curative &mdash; work better in healthy soil. Products applied to compacted, waterlogged soil that drains poorly don&rsquo;t move into the root zone as effectively, and the biological suppression that would help the fungicide&rsquo;s work persist is absent. Our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control</a> program always evaluates soil conditions as part of disease diagnosis, because treating the grass without addressing the soil beneath it is fighting with one hand tied behind your back.</p>
         <p>If you&rsquo;ve been working on your mowing routine, this is a natural next step &mdash; read our post on <a href="/blogs/how-mowing-habits-can-trigger-lawn-disease-and-how-to-prevent-it">how mowing habits can trigger lawn disease and how to prevent it</a> to see how the two practices work together. Hamann has been helping Arlington and DFW homeowners build healthier lawns from the ground up since 2006. Call us to talk through what your soil specifically needs.</p>
 
-        <div className="blog-cta">
-          <h3>Build a Lawn That Resists Disease</h3>
-          <p>Start with a professional assessment of your soil and turf &mdash; and get 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

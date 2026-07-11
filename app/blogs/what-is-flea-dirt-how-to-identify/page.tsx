@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -65,14 +64,6 @@ export default function Page() {
           <li><strong>The outdoor source:</strong> If your pet spends time outdoors — and in North Texas, fleas are an outdoor problem — professional yard treatment is essential. Without eliminating the outdoor source, pets will be continuously re-infested no matter how well you treat the interior. See our related post on <a href="/blogs/birds-tick-hosts-yard-effect">birds as tick hosts</a> to understand how wildlife traffic contributes to the outdoor flea pressure that repeatedly resets indoor infestations.</li>
         </ul>
 
-        <div className="blog-cta">
-          <h3>Stop Fleas at the Source Before They Get Inside</h3>
-          <p>Hamann&rsquo;s yard flea &amp; tick treatments eliminate outdoor flea populations so your pets and home stay protected. Claim 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

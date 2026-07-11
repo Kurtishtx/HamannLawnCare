@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -52,14 +51,6 @@ export default function Page() {
         <h2>The Consistent Theme Across All of This</h2>
         <p>Whether it&rsquo;s spring green-up, summer color retention, drought performance, or fall longevity, the lawns that consistently win in North Texas are well-managed across the entire season &mdash; not just during one application or one event. The fall performance of your lawn is a report card for everything that happened from March through September. For a closer look at how summer drought performance sets the stage for fall, check out our post on <a href="/blogs/why-some-lawns-resist-drought-better-than-others">why some lawns resist drought better than others</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Want Your Lawn to Stay Green Deep Into Fall?</h3>
-          <p>Hamann Lawn Care builds full-season programs that extend color and set your turf up for a strong spring. Call us or claim your new-customer deal today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <h2>The Bottom Line</h2>
         <p>In North Texas, mosquito season effectively begins in late February to March and runs through October or even November in warm years. The calendar matters less than temperature trends, and the two species you need to control most &mdash; <em>Culex</em> and <em>Aedes albopictus</em> &mdash; both become active well before most homeowners start thinking about mosquitoes. Starting a professional program in early spring is the single highest-leverage thing you can do to protect your backyard all summer long. Hamann has been dialing in that timing for Arlington and DFW neighborhoods since 2006 &mdash; give us a call before March and get ahead of the curve this year.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

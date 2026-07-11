@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         </ul>
         <p>Source elimination is more powerful against <em>Aedes aegypti</em> than against any other species precisely because of its limited range — if there&rsquo;s no water within 600 feet, there&rsquo;s nowhere to breed. Pair that with our <a href="/mosquito-control-services">mosquito control services</a>, which treat the resting vegetation and remaining micro-habitats with residual barrier treatment, and you&rsquo;re attacking the problem from both sides. With a species this dangerous and this close to home, that combination is exactly the right approach.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works — and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -91,14 +90,6 @@ export default function Page() {
 
         <p>If you&rsquo;re seeing large bare patches, if the problem is spreading despite your efforts, or if you&rsquo;re not certain you&rsquo;re dealing with TARR versus another issue, call us. Hamann Lawn Care &amp; Weed Control has been diagnosing and treating North Texas lawns since 2006. We know DFW soil, we know DFW grass, and we know what TARR looks like at every stage. A misdiagnosis costs you weeks of time and can make the problem significantly worse — getting a professional set of eyes on your lawn early saves money in the long run.</p>
 
-        <div className="blog-cta">
-          <h3>Take-All Root Rot Attacking Your St. Augustine?</h3>
-          <p>Don&rsquo;t let TARR destroy your lawn one season at a time. Hamann Lawn Care &amp; Weed Control has been diagnosing and treating fungal disease in DFW since 2006. Call us today or grab your new-customer discount — we&rsquo;ll get your St. Augustine on a real recovery plan.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>&#128222; Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
 
       </article>
 

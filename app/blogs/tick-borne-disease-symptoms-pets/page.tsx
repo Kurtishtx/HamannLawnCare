@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <h2>Your Yard Is the First Line of Defense</h2>
         <p>Most tick exposures for DFW pets happen within your own yard — not on hiking trails or at the dog park. That makes your property the most important place to control ticks. A professionally applied barrier treatment works through the grass, brush edges, and shaded areas where ticks concentrate, cutting the local population significantly and reducing the odds that your dog or cat picks one up during their daily routine. For a deeper look at the specific diseases affecting dogs in our area, read our post on <a href="/blogs/tick-paralysis-dogs-texas">tick paralysis in Texas dogs</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Keep Ticks Away From Your Pets</h3>
-          <p>Professional flea &amp; tick yard treatments for DFW and Arlington pet owners. Call now and get 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

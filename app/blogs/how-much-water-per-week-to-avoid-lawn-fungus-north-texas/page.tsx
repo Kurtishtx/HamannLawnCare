@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
 
         <p>Once you know your weekly volume, pair that knowledge with the right irrigation timing from <a href="/blogs/best-time-of-day-to-water-lawn-to-prevent-fungus-dfw">best time of day to water your lawn to prevent fungus in DFW</a> &mdash; volume and timing together define your total disease risk exposure.</p>
 
-        <div className="blog-cta">
-          <h3>Fungus Despite Careful Watering? Let Us Diagnose It.</h3>
-          <p>Hamann pinpoints what&rsquo;s driving disease on your specific lawn &mdash; and your first treatment is 50% off.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

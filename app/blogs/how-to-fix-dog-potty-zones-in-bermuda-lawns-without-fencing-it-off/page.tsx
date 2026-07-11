@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <p>North Texas Bermuda is actually one of the tougher turfgrass varieties for dog traffic compared to St. Augustine or Zoysia, because of its aggressive lateral growth through stolons. A well-fed Bermuda lawn can outpace moderate dog damage in peak summer growing season. Hybrid Bermuda varieties like Tifway 419 or Celebration are particularly dense and recover quickly from both urine spots and traffic wear. If your current lawn is a common Bermuda that&rsquo;s really struggling, a renovation to a hybrid variety at the next practical opportunity may be worth considering.</p>
         <p>Our <a href="/lawn-care-services">lawn care services</a> include customized fertilization and repair programs designed for real-life lawns — including the ones that have dogs running across them every day. For more on other common bare-patch causes in DFW, read our guide on <a href="/blogs/why-your-lawn-smells-bad-after-watering-in-north-texas">why your North Texas lawn smells bad after watering and what it means</a> — soil health connects to dog-damage recovery more than most homeowners realize.</p>
 
-        <div className="blog-cta">
-          <h3>Dog Spots Winning the War Against Your Bermuda?</h3>
-          <p>We help Arlington and DFW homeowners keep lawns healthy with dogs in the yard. Call or grab your offer.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

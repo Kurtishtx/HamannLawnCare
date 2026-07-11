@@ -10,7 +10,6 @@ const faqs = [{"q":"How often should my lawn be treated for weeds?","a":"We trea
 const RedLine = () => <div style={{ height: 4, width: 64, background: 'var(--red)', borderRadius: 2, margin: '14px auto 0' }} />;
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
   return (
     <main>
       <section className="hero honey" style={{ paddingBottom: 96 }}>
@@ -19,10 +18,6 @@ export default function Page() {
             <span className="hero-kick" style={{ borderColor: 'var(--red)' }}>🌿 Serving {CITY} & North Texas Since 2006</span>
             <h1>{SERVICE} In <span className="headline-3d">{CITY}, Texas</span></h1>
             <p className="hero-sub" style={{ margin: '20px auto 26px' }}>Kill the weeds, feed the grass. Hamann&rsquo;s science-based weed control and fertilization program gives Richland Hills lawns a thick, green, weed-free look year-round — engineered for North Texas turf since 2006.</p>
-            <div className="hero-cta" style={{ justifyContent: 'center' }}>
-              <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-              <button className="btn btn-ghost btn-lg" onClick={openPromo}>Get 50% Off →</button>
-            </div>
           </div>
         </div>
       </section>
@@ -64,16 +59,6 @@ export default function Page() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }) }} />
       </section>
 
-      <section className="cta-band">
-        <div className="wrap">
-          <h2>Give Richland Hills The Best Lawn On The Block</h2>
-          <p>Science-driven weed control and fertilization that delivers. <b>Claim your 50% off first application!</b></p>
-          <div className="btns">
-            <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Get Your Free Quote</a>
-            <button className="btn btn-ghost btn-lg" onClick={openPromo}>Claim 50% Off</button>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

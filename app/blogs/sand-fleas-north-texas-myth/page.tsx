@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <p>The best way to confirm whether you have fleas, chiggers, or another pest is to look at where the bites appear on your body, check your pets for signs of flea activity (look for flea dirt &mdash; small black specks in the coat that turn red when wet), and have a pest professional evaluate your yard. Treating based on assumption is one of the most common reasons DFW homeowners go through multiple rounds of product without solving the problem.</p>
         <p>Hamann Lawn Care &amp; Weed Control has been diagnosing and treating flea, tick, and chigger pressure in North Texas since 2006. If you&rsquo;ve been blaming sand fleas for bites that won&rsquo;t stop, let us take a look &mdash; the actual pest might surprise you, and the right treatment will make a real difference. Read more about <a href="/blogs/flea-bites-on-humans-identification">how to identify flea bites on humans</a> to help narrow down what you&rsquo;re dealing with before your first call.</p>
 
-        <div className="blog-cta">
-          <h3>Not Sure What&rsquo;s Biting You?</h3>
-          <p>Let a North Texas pro identify and treat the real problem &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
           <li><strong>Peat moss topdressing:</strong> Research has shown that topdressing with Canadian sphagnum peat moss can suppress TARR by lowering local soil pH around the root zone. Apply 0.5&ndash;1 cubic yard per 1,000 sq ft and work lightly into the turf with irrigation.</li>
         </ul>
 
-        <div className="blog-cta">
-          <h3>Roots Rotting Out? Take-All Needs the Right Treatment, Applied Correctly.</h3>
-          <p>Hamann treats take-all root rot with the right products, deep watered-in, at the right time of year. Do not waste another season treating leaves when the problem is underground.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

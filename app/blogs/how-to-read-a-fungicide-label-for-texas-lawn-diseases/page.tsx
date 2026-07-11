@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <p>A practical label-reading workflow for a DFW homeowner: (1) Confirm the active ingredient and FRAC code match what you need for your specific disease and rotation slot. (2) Confirm your grass type and the disease you are treating are both listed. (3) Measure your lawn area and calculate the exact amount of product needed at the labeled rate — measure it, don&rsquo;t estimate. (4) Check the reapplication interval and plan your second application accordingly. (5) Follow REI and PPE requirements.</p>
         <p>If this process feels more involved than expected, that is actually an argument for professional disease management. Our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control</a> service handles every one of these decisions correctly, applied by technicians who understand North Texas disease pressure, product chemistry, and resistance management. You can also read our guide on <a href="/blogs/sdhi-fungicides-for-lawn-disease-fluxapyroxad-and-others-texas">SDHI fungicides for lawn disease</a> to understand the class of products that often require professional access anyway — and why that access matters for lasting protection.</p>
 
-        <div className="blog-cta">
-          <h3>Skip the Label Confusion — Let Hamann Handle It</h3>
-          <p>Professional-grade fungicides applied at the right rate, the right timing, and in the right rotation. Hamann has protected North Texas lawns since 2006 — call for a disease assessment today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

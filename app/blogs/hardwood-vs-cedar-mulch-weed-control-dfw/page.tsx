@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         </ul>
         <p>Whichever you choose, mulch depth and timing matter more than product selection. A 4-inch layer of either hardwood or cedar applied before the spring weed flush &mdash; combined with <a href="/blogs/mulch-depth-for-weed-suppression-flower-beds">applying at the right depth from the start</a> &mdash; will outperform a 1-inch layer of the &ldquo;best&rdquo; product on the market every time.</p>
 
-        <div className="blog-cta">
-          <h3>Want Cleaner Flower Beds Without the Constant Weeding?</h3>
-          <p>Hamann has served Arlington and the DFW area since 2006. Call today or get 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

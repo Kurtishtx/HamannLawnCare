@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <h2>A Five-Minute Fix With Real Impact</h2>
         <p>The gratifying thing about hollow fence post breeding is how completely fixable it is. A $2 post cap or a dab of caulk eliminates a breeding site permanently. Walk your fence line once, fix what you find, and you&rsquo;ve permanently removed what may have been a significant contributor to your mosquito problem. That&rsquo;s a rare combination of easy, cheap, and genuinely effective &mdash; and it&rsquo;s something most homeowners never think to do.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

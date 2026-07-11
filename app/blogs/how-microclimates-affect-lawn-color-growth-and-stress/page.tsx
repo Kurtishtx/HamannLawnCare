@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         <p>Microclimates don&rsquo;t just explain color differences &mdash; they explain why the same disease shows up in one corner but not another, why one zone stays green through August while its neighbor goes dormant, and why identical grass under identical programs performs completely differently across a single yard. Combine this knowledge with what you know about how patchy areas develop generally, and you&rsquo;ll find most lawn mysteries suddenly have a clear answer. Our previous post on <a href="/blogs/why-some-areas-of-your-lawn-stay-green-while-others-die-off">why some lawn areas stay green while others die off</a> covers the full range of patchy-lawn drivers, with microclimates as a key piece of the diagnosis puzzle.</p>
         <p>Hamann Lawn Care has been serving Arlington and DFW since 2006, and we factor microclimate analysis into every property assessment. If you&rsquo;re not sure which zones of your yard are the problem children and why, we can help you figure it out.</p>
 
-        <div className="blog-cta">
-          <h3>Let&rsquo;s Read Your Lawn&rsquo;s Microclimates Together</h3>
-          <p>Get a site-specific lawn assessment from a North Texas team that knows what makes each yard unique &mdash; and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

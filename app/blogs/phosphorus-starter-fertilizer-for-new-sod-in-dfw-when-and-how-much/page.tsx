@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -78,14 +77,6 @@ export default function Page() {
         <h2>What Good Rooting Looks Like &mdash; and How to Know You&rsquo;re There</h2>
         <p>The test is simple. At the two-week mark, gently try to lift a corner of sod. If it lifts easily with no resistance, rooting is behind schedule &mdash; check your watering frequency and consider a follow-up phosphorus application. If there&rsquo;s real resistance and you can see fine white root hairs pulling away from the soil when you lift, you&rsquo;re on track. By week four, you shouldn&rsquo;t be able to lift installed sod without tearing it. That&rsquo;s the goal. That&rsquo;s what good starter fertilizer and consistent irrigation deliver. For the long game on turf health, also check out our piece on <a href="/blogs/potassium-for-drought-and-heat-stress-resistance-in-north-texas-turf">Potassium for Drought and Heat Stress Resistance in North Texas Turf</a> &mdash; because what you do after rooting is just as important as what you do at installation.</p>
 
-        <div className="blog-cta">
-          <h3>Installing New Sod? Start It Right.</h3>
-          <p>Our team knows exactly what DFW new sod needs &mdash; get professional fertilizer service and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -53,14 +52,6 @@ export default function Page() {
         </ul>
         <p>Hamann has been diagnosing and treating lawn disease in Arlington and across the DFW area since 2006. We see the same hidden causes repeat in lawn after lawn, and we know what actually stops the cycle. If fungus keeps coming back in your yard, give us a call &mdash; we&rsquo;ll find out why.</p>
 
-        <div className="blog-cta">
-          <h3>Tired of Fungus Coming Back?</h3>
-          <p>Get a professional assessment and treatment plan that actually addresses the root causes &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

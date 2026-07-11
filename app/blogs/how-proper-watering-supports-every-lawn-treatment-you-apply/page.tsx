@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <p>Great lawn care products applied at the right time still need water to deliver results. Fertilizer needs to be watered in to feed your turf rather than burn it. Pre-emergent needs half an inch of water to create the weed barrier that makes it worth applying. Post-emergent needs dry time on the foliage to absorb properly. And the grass itself needs the right volume of water at the right time of day to stay healthy enough to actually benefit from any treatment you put down.</p>
         <p>In North Texas, with clay soil, brutal summers, and seasonal water restrictions layered on top, getting your irrigation habits dialed in is not optional &mdash; it is foundational. The homeowners who get the most out of professional lawn programs are the ones who treat watering as part of the program, not an afterthought.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Healthier Lawn?</h3>
-          <p>Get professional lawn treatments backed by real expertise &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

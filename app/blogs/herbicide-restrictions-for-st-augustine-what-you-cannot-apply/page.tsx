@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
         <h2>When in Doubt, Call a Professional</h2>
         <p>The cost of a professional weed control program is a fraction of what it costs to resod a St. Augustine lawn damaged by the wrong herbicide. We&rsquo;ve quoted resodding jobs that ran into thousands of dollars for damage that started with a $25 bag of big-box weed killer applied at the wrong time. Our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer services</a> page explains how we build St. Augustine-specific programs that target weeds without putting your turf at risk &mdash; backed by 20 years of working with North Texas grass types.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Greener, Weed-Free Lawn?</h3>
-          <p>Get professional weed control and fertilization that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

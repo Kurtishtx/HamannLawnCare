@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <h2>Hamann&rsquo;s Approach to Rose Bed Weed Control</h2>
         <p>We&rsquo;ve been managing ornamental beds in Arlington and surrounding North Texas communities since 2006. Our approach to rose beds uses timed pre-emergent applications that coordinate with your local rose care calendar &mdash; applied after winter pruning is complete but before the soil warms into the danger zone for summer annual germination. If you have both grassy and broadleaf weed pressure, we apply the right combination of active ingredients to cover the spectrum without putting your roses at risk. Clean rose beds aren&rsquo;t a mystery &mdash; they&rsquo;re a timing and chemistry problem, and we solve both.</p>
 
-        <div className="blog-cta">
-          <h3>Protect Your Roses From Weeds This Season</h3>
-          <p>Professional pre-emergent service safe for ornamentals &mdash; call Hamann and get 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

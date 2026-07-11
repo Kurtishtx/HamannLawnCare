@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -54,14 +53,6 @@ export default function Page() {
         <h2>Combining Gutter Maintenance With Professional Treatment</h2>
         <p>Clearing your downspouts and gutters eliminates a major breeding source, but adult mosquitoes currently living in your shaded foliage, fence lines, and ground cover aren&rsquo;t going anywhere on their own. A professional barrier spray program handles that adult population while your source reduction work cuts off future production. It&rsquo;s the combination that delivers real, sustained relief — not just a temporary knockdown. For more on overlooked breeding sources to address alongside your downspouts, read about <a href="/blogs/pet-water-bowls-mosquito-control-tips">outdoor pet water bowls and how they contribute to mosquito pressure</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works — and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

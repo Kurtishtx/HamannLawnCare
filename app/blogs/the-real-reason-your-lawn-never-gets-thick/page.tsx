@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <p>The reason thick lawns feel elusive is that there&rsquo;s rarely one fix &mdash; it&rsquo;s usually two or three factors working together to limit your turf. Aeration solves compaction but not thatch. Proper fertilization helps but doesn&rsquo;t overcome weeds. Weed control opens space but doesn&rsquo;t help if soil quality is poor. Getting a thick lawn means diagnosing what&rsquo;s actually limiting it and addressing those specific factors in the right sequence. Our post on <a href="/blogs/why-north-texas-lawns-struggle-and-how-professional-treatments-fix-it">why North Texas lawns struggle and how professional treatments fix it</a> goes deeper on the soil and climate side of the equation.</p>
         <p>Hamann Lawn Care has been working in Arlington and across DFW since 2006. We&rsquo;ve seen every version of &ldquo;I&rsquo;ve tried everything&rdquo; lawn &mdash; and in almost every case, the right combination of targeted treatments gets it moving in the right direction within one season.</p>
 
-        <div className="blog-cta">
-          <h3>Time To Get That Thick, Full Lawn</h3>
-          <p>Let us diagnose what&rsquo;s holding your lawn back and build a program to fix it &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <h2>Using Growth Cycles to Time Every Decision</h2>
         <p>The most practical takeaway from understanding warm-season growth cycles is this: let the turf tell you when to act. Watch for visible green-up to time spring fertilizer. Monitor soil temperature apps or an inexpensive soil thermometer to hit pre-emergent windows. Notice when growth slows in fall to make the shift to potassium applications. A program built around these biological cues will outperform any calendar-based approach, no matter how expensive the products. Our earlier post on <a href="/blogs/zoysia-grass-the-most-misunderstood-lawn-in-north-texas">Zoysia grass</a> is a good example of how growth cycle awareness changes specific treatment decisions for that turf type.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Work With Your Lawn&rsquo;s Natural Cycle?</h3>
-          <p>Professional treatments timed precisely to North Texas turf cycles &mdash; and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

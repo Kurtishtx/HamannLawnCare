@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <p>When a homeowner finally calls in spring&mdash;after the stickers appear and the barefoot season begins&mdash;the control options for the current season are limited. A professional program addresses spurweed on its actual schedule, not on the homeowner&rsquo;s perception of when the problem starts. Read more about the cool-season broadleaf weed challenge in the DFW area in our post on <a href="/blogs/wild-violet-weed-treatment-in-shaded-dfw-lawn-areas">wild violet weed treatment in shaded DFW lawn areas</a>, another winter-active weed that catches homeowners off guard.</p>
         <p>If you&rsquo;ve been fighting sticker weeds every spring, the fix is not a better spring spray&mdash;it&rsquo;s a fall pre-emergent applied in the correct window, followed by targeted post-emergent treatment in winter if any plants break through. That two-step approach, applied on the plant&rsquo;s schedule rather than yours, is what actually keeps North Texas lawns sticker-free by the time shorts weather arrives.</p>
 
-        <div className="blog-cta">
-          <h3>Tired Of Sticker Weeds Ambushing Your Family?</h3>
-          <p>Pre-emergent timing is everything &mdash; let us protect your lawn before next spring&rsquo;s burs arrive. 50% off first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

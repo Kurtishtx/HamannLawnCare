@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <p>For the average North Texas homeowner with a standard residential Bermuda lawn kept between 1.5 and 2 inches, a well-maintained rotary mower with sharp blades performs adequately and is the practical choice. Keep the blade sharp &mdash; sharpen it every 20 to 25 mowing hours &mdash; and you capture most of the cut quality benefit without the expense and maintenance complexity of a reel mower.</p>
         <p>If you want to push your Bermuda to golf course or stadium quality at 0.75 to 1 inch, a reel mower is the right tool and the investment pays off in turf quality you simply cannot achieve otherwise. Whichever mower you use, consistent height, sharp cutting surfaces, and the right mowing frequency for each season are what determine whether your Bermuda looks ordinary or exceptional.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Greener Lawn?</h3>
-          <p>Get professional lawn care that delivers real results &mdash; and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

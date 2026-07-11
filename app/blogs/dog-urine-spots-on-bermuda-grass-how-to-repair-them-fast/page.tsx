@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -54,14 +53,6 @@ export default function Page() {
         <h2>When to Call in Help</h2>
         <p>If you have multiple dogs or a very large yard with widespread spotting, managing repairs individually becomes a full-time job. Read our post on <a href="/blogs/how-to-fix-bare-spots-in-bermuda-grass-from-summer-heat-stress">how to fix bare spots in Bermuda grass from summer heat stress</a> for the broader context on Bermuda repair techniques, then call us for a professional assessment. Hamann Lawn Care &amp; Weed Control has been servicing Arlington and DFW yards since 2006 and can help you build a maintenance program that keeps your Bermuda healthy even with dogs in the picture.</p>
 
-        <div className="blog-cta">
-          <h3>Dog Spots Taking Over Your Bermuda Lawn?</h3>
-          <p>Call Hamann Lawn Care for expert turf repair and a maintenance plan that keeps your lawn thriving all summer.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

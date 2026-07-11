@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         <h2>Professional Treatment vs. DIY in a Wooded Yard</h2>
         <p>Wooded backyards are where DIY tick control most consistently fails. The leaf litter penetration problem, the zone complexity, the timing requirements, and the ongoing wildlife reinfestation pressure all combine to make store-bought sprays an inadequate response. Professional-grade residual products applied at the right concentration to the right zones — and retreated on a schedule timed to tick activity cycles — deliver results that DIY approaches simply can&rsquo;t match in this environment. See our post on <a href="/blogs/mowing-height-tick-reduction">mowing height and tick reduction</a> for how lawn maintenance combines with professional treatment for a layered strategy.</p>
 
-        <div className="blog-cta">
-          <h3>Wooded Yard? We Know Exactly How to Treat It.</h3>
-          <p>Hamann specializes in tick management for Arlington&rsquo;s wooded residential properties. Claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -69,14 +68,6 @@ export default function Page() {
         <h2>Hamann&rsquo;s Fall Treatment Plan for Arlington</h2>
         <p>Hamann Lawn Care &amp; Weed Control executes fall treatments on a precise schedule built around DFW soil temperature trends. Our September program includes fall pre-emergent applied at labeled rates, post-emergent treatment for any summer weeds still active, and a fall fertilizer application matched to your grass type and current soil conditions. We schedule September treatments starting in the first week of the month to ensure the pre-emergent barrier is fully established before soil temperatures trigger winter annual germination. If your July and August treatments are fresh in mind, you can review what we covered in <a href="/blogs/july-and-august-lawn-treatments-heat-stress-and-weed-control-in-arlington">July and August lawn treatments: heat stress and weed control in Arlington</a> to see how the summer and fall programs connect.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Miss the Fall Pre-Emergent Window</h3>
-          <p>September treatments book up fast in Arlington &mdash; claim your 50% off first treatment and get on the schedule now.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

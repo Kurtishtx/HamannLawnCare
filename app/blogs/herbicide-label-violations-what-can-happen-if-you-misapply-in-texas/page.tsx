@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         </ul>
         <p>The bottom line for Arlington homeowners: herbicide application carries genuine legal risk that most people never think about until something goes wrong. A professional service eliminates that risk entirely &mdash; the license, the insurance, the training, and the accountability are all built into every application. Learn more about how Hamann approaches responsible weed control at our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer services</a> page, and see how DIY costs compare to professional service in our post on <a href="/blogs/professional-vs-diy-weed-control-cost-comparison-for-arlington-tx-homeowners">professional vs. DIY weed control cost comparison for Arlington TX homeowners</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Leave the Legal Risk to the Professionals</h3>
-          <p>Hamann&rsquo;s TDA-licensed applicators handle every treatment correctly, legally, and safely &mdash; so you never have to worry about label violations, drift liability, or neighbor complaints. Get 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

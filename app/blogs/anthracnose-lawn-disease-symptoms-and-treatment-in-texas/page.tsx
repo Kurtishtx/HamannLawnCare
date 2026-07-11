@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
 
         <p>For a broader look at similar summer diseases, read our guide on <a href="/blogs/leaf-spot-and-melting-out-disease-in-bermuda-grass">leaf spot and melting out disease in bermuda grass</a>, which shares several risk factors with anthracnose.</p>
 
-        <div className="blog-cta">
-          <h3>Seeing Bronze Patches and Dying Crowns? Don&rsquo;t Wait.</h3>
-          <p>Anthracnose can destroy bermudagrass crowns permanently if left untreated through the summer heat. Call Hamann Lawn Care &amp; Weed Control for professional diagnosis and fungicide treatment before your turf reaches the point of no return.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

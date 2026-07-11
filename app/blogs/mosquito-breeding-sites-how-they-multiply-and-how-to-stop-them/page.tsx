@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
         <p>Breeding site elimination is powerful, but it works best paired with a professional barrier treatment program. You handle the sources on your property, and <a href="/mosquito-control-services">professional mosquito control</a> handles the adults and any sources you missed, plus the ongoing breeding pressure from neighboring properties and nearby land. Neither approach alone is as effective as the two working together.</p>
         <p>Hamann&rsquo;s technicians are also trained to spot breeding sites during service visits that homeowners commonly overlook &mdash; corrugated extensions, valve boxes, low spots along the fence &mdash; and to flag them so you can address them between treatments. That partnership between what your technician does and what you do on a weekly basis is what makes a real difference in how your yard feels all season long.</p>
 
-        <div className="blog-cta">
-          <h3>Stop the Breeding Cycle in Your Yard</h3>
-          <p>Professional treatment plus source reduction &mdash; the most effective combination available. Claim 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
 
         <p>A professional <a href="/flower-bed-weed-control">flower-bed weed control</a> program takes all these timing and product decisions off your plate entirely. Hamann has been managing DFW beds since 2006 and applies the right product at the right rate at the right time &mdash; no compromises. We&rsquo;re also happy to compare product options, including <a href="/blogs/organic-weed-control-flower-beds-arlington-tx">fully organic alternatives</a> for homeowners who want to avoid synthetics altogether. Call us at {PHONE_DISPLAY} to talk through what makes sense for your beds specifically.</p>
 
-        <div className="blog-cta">
-          <h3>Stop Guessing at Combo Products &mdash; Get Professional DFW Bed Care</h3>
-          <p>Right product, right timing, right rate &mdash; and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

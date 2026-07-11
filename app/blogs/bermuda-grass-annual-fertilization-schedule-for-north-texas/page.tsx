@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -68,14 +67,6 @@ export default function Page() {
         <h2>Annual Nitrogen Budget for North Texas Bermuda</h2>
         <p>A well-managed Bermuda lawn in North Texas should receive 3&ndash;5 lbs of actual nitrogen per 1,000 sq ft per year, split across the applications above. Under-feeding produces a thin, pale lawn that loses ground to weeds. Over-feeding with quick-release nitrogen drives disease pressure and leaches nitrogen into groundwater. The middle path &mdash; consistent, calibrated, season-timed applications with controlled-release products &mdash; is what produces the lawns people stop to look at. Our previous post on <a href="/blogs/controlled-release-fertilizer-technology-polymer-coated-for-dfw-soil">controlled-release fertilizer technology and polymer-coated products for DFW soil</a> goes deeper on why product quality matters as much as timing.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Greener, Weed-Free Lawn?</h3>
-          <p>Get professional weed control and fertilization that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

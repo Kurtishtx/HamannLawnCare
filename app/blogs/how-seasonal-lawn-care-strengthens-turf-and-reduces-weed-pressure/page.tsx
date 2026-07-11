@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -50,14 +49,6 @@ export default function Page() {
         <p>This is why fertilization isn&rsquo;t a separate concern from weed control &mdash; it&rsquo;s part of the same program. Every application that strengthens turf density is also an indirect weed control application. Year over year, a lawn that&rsquo;s been on a consistent seasonal program becomes progressively easier to maintain and progressively harder for weeds to penetrate.</p>
         <p>Hamann has been running year-round programs for North Texas lawns since 2006. We know the local weed calendar, the right product timing for DFW conditions, and how to build lawn strength across all four seasons. See the full picture of what we do at our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer services</a> page, or get the specifics on why program-based care beats single treatments in <a href="/blogs/why-professional-lawn-programs-outperform-single-step-weed-control">why professional lawn programs outperform single step weed control</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Weed-Free Lawn?</h3>
-          <p>Get professional weed control &amp; fertilizer treatments &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

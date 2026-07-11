@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
 
         <p>Read about <a href="/blogs/chamberbitter-gripeweed-flower-bed-control-texas">chamberbitter control in Arlington flower beds</a> if you&rsquo;re also dealing with summer annual pressure &mdash; a year-round program covers both seasons. Hamann has been keeping North Texas flower beds clean since 2006 and can put you on a fall pre-emergent schedule that takes winter weeds off your to-do list. Call us at {PHONE_DISPLAY}.</p>
 
-        <div className="blog-cta">
-          <h3>Stop Henbit and Chickweed Before They Start</h3>
-          <p>Professional fall pre-emergent application for North Texas flower beds &mdash; 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -50,14 +49,6 @@ export default function Page() {
         <h2>The Bottom Line</h2>
         <p>Professional weed control isn&rsquo;t just better products &mdash; it&rsquo;s better diagnosis, better timing, better application technique, and better follow-through. When all of those elements run together in a coordinated seasonal program, the results are dramatically more consistent than anything a homeowner can reasonably achieve with store-bought products and a hose-end sprayer. Hamann has been doing this in Arlington and across DFW since 2006. Call us and let&rsquo;s put a program together for your lawn.</p>
 
-        <div className="blog-cta">
-          <h3>See What Professional Weed Control Actually Delivers</h3>
-          <p>Real products, real timing, real results &mdash; and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

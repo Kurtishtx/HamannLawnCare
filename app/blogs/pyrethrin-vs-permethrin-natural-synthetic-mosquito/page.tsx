@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         <h2>The Bottom Line</h2>
         <p>Pyrethrin and permethrin share a common ancestor but serve different roles. Pyrethrin is fast, short-lived, and natural. Permethrin is fast, long-lasting, and synthetic. Neither is universally &ldquo;better&rdquo; &mdash; the right choice depends on what you need the product to do. For the sustained, barrier-based control that North Texas yards require through an eight-month mosquito season, permethrin and its synthetic cousins are the backbone of any effective professional program. Hamann Lawn Care &amp; Weed Control has been making these calls for Arlington and DFW homeowners since 2006 &mdash; using the right products at the right time for the results you can actually feel.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <h2>A Condition Worth Taking Seriously in North Texas</h2>
         <p>Alpha-gal syndrome turns a backyard tick bite into a permanent dietary restriction and a genuine anaphylaxis risk. In a region where Lone Star ticks are as common as mosquitoes in spring and summer, that makes tick control one of the most consequential services a North Texas homeowner can invest in. For more on the diseases these same ticks spread, read our post on <a href="/blogs/rocky-mountain-spotted-fever-texas-cases">Rocky Mountain Spotted Fever cases in Texas</a> — another reason to take the Lone Star tick seriously.</p>
 
-        <div className="blog-cta">
-          <h3>Keep Lone Star Ticks Out of Your Yard</h3>
-          <p>Professional flea &amp; tick control for Arlington and the DFW Metroplex. Call now and get 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

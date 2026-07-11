@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -47,14 +46,6 @@ export default function Page() {
         <h2>Maintaining Clean Beds Through the Season</h2>
         <p>Once you&rsquo;ve applied pre-emergent and proper mulch depth, maintenance shifts to monitoring and catching breakthrough weeds while they&rsquo;re young. Walk the beds monthly. Pull any escapes before they seed. Recheck mulch depth in May (spring flush thins it fast through decomposition in the heat) and top up if beds have dropped below two inches. A second pre-emergent application in September extends coverage through the cool-season window. Hamann has been managing beds like these across Arlington and DFW since 2006 and can set up a program that keeps your Knockout beds clean through the full growing season.</p>
 
-        <div className="blog-cta">
-          <h3>Stop the Knockout Rose Weed Cycle</h3>
-          <p>Professional pre-emergent and bed weed control for North Texas &mdash; call Hamann today and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

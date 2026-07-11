@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -181,14 +180,6 @@ export default function Page() {
           precision is what separates a season of prevention from a season of remediation.
         </p>
 
-        <div className="blog-cta">
-          <h3>Want Pre-Emergent Applied At Exactly The Right Time?</h3>
-          <p>We track DFW soil temps and apply at the optimal window &mdash; so you get maximum weed prevention all season. 50% off first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

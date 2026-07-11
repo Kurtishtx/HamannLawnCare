@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
         <h2>Don&rsquo;t Let Your Yard Be the Reason Your Dog Gets Sick</h2>
         <p>Heartworm is preventable. The treatment &mdash; if a dog gets infected and isn&rsquo;t caught early &mdash; is expensive, hard on the animal, and takes months. Keeping your yard mosquito-controlled isn&rsquo;t an extra expense, it&rsquo;s one of the most practical things you can do for your dog&rsquo;s long-term health. Call us to get started &mdash; your dog will thank you.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

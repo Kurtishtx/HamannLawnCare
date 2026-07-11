@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -71,14 +70,6 @@ export default function Page() {
         <h2>The Realistic Expectation: Low Maintenance, Not Zero Maintenance</h2>
         <p>A well-maintained rock bed with a solid pre-emergent program and good installation will be significantly lower maintenance than a neglected one, but no bed is zero maintenance in North Texas. Wind, birds, and Bermuda grass make sure of that. The goal is reducing weed work from a weekly chore to a seasonal touch-up. With the right program, that&rsquo;s completely achievable. Hamann has kept rock beds clean across Arlington since 2006, and we know which products and timing actually hold up through the Texas summer.</p>
 
-        <div className="blog-cta">
-          <h3>Ready for Rock Beds That Stay Clean?</h3>
-          <p>Professional year-round weed control for rock and landscape beds &mdash; and your first service is 50% off.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

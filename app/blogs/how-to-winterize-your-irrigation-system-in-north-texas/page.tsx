@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <h2>Hamann&rsquo;s Seasonal Reminder</h2>
         <p>We&rsquo;ve been helping Arlington homeowners care for their lawns through Texas winters since 2006. Every hard freeze season, we see avoidable irrigation damage across the neighborhood — usually from homeowners who meant to winterize but forgot until the news was already showing temperature maps in the 20s. Put a November calendar reminder on your phone now. The backflow preventer wrap and test cock adjustment takes less than 20 minutes and can save you hundreds of dollars. And if the lawn needs fall or winter treatment alongside your winterization — pre-emergent timing, fall fertilization, fungus prevention — give us a call and we&rsquo;ll handle the whole program.</p>
 
-        <div className="blog-cta">
-          <h3>Ready for a Full Fall Lawn Program?</h3>
-          <p>Hamann handles pre-emergent, fall fertilization, and winterization guidance for Arlington and DFW homeowners — get 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off First Service</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

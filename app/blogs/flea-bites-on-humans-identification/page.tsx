@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -68,14 +67,6 @@ export default function Page() {
         <p>For the bites themselves: wash with soap and water, apply an anti-itch cream containing hydrocortisone, avoid scratching to prevent infection, and take an oral antihistamine if the itching is severe. Calamine lotion can help. For most people, the bites resolve within one to two weeks with basic care.</p>
         <p>For the actual problem: Hamann Lawn Care &amp; Weed Control has been treating flea infestations in Arlington, Mansfield, Grand Prairie, and across DFW since 2006. We eliminate the outdoor flea population at the source so your family stops getting bitten &mdash; and we schedule follow-up visits timed to the flea life cycle so the relief actually lasts. Give us a call and let&rsquo;s stop those bites for good.</p>
 
-        <div className="blog-cta">
-          <h3>Tired of Getting Bitten in Your Own Yard?</h3>
-          <p>Professional flea control that targets the source &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

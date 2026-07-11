@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -54,14 +53,6 @@ export default function Page() {
         <p>Weed pressure and thin grass in North Texas are almost never random bad luck. They&rsquo;re predictable outcomes of a soil environment that isn&rsquo;t supporting the grass it&rsquo;s supposed to grow. Compacted clay that doesn&rsquo;t hold nutrients, repels water, and suffocates roots is always going to produce a weak lawn that weeds move into. You can spray weeds all day, but if the underlying soil conditions don&rsquo;t improve, you&rsquo;re just creating a temporary opening that the next wave of weeds will fill.</p>
         <p>The good news is that North Texas soil is fixable. It takes consistent care &mdash; aeration, proper fertilization timed right, pre-emergent programs that account for local conditions &mdash; but the results compound over time. A lawn that&rsquo;s been properly managed for two or three seasons develops the dense, healthy turf that genuinely crowds out weeds without constant intervention. For more on how the summer heat compounds these soil-related issues, our post on <a href="/blogs/how-heat-stress-damages-bermuda-and-st-augustine">how heat stress damages Bermuda and St. Augustine</a> covers what happens when compacted soil meets triple-digit temperatures.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Healthier Lawn?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control has been solving North Texas soil and weed problems since 2006. Let&rsquo;s get your lawn growing the way it should &mdash; claim your 50% off first application today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

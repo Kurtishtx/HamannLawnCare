@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <p>The fungal complex that causes leaf spot overlaps with several other St. Augustine diseases, and misidentifying the culprit leads to using the wrong fungicide class — which wastes money and lets the disease advance. A professional assessment of your specific turf, irrigation patterns, thatch depth, and growth stage ensures the correct diagnosis and the right treatment program before your grass reaches the point of no return.</p>
         <p>Hamann has been diagnosing and treating North Texas lawn diseases since 2006. We&rsquo;ve seen exactly how fast leaf spot escalates in our climate and what it takes to stop it before it melts out your St. Augustine. Learn more about our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control</a> services and how we protect Arlington lawns through every season. Also see our post on <a href="/blogs/red-thread-in-tall-fescue-dfw-lawns">Red Thread Disease in Tall Fescue</a> if you have fescue mixed into your turf areas.</p>
 
-        <div className="blog-cta">
-          <h3>Think Your St. Augustine Has Leaf Spot?</h3>
-          <p>Don&rsquo;t wait for melt-out to set in. Get a professional diagnosis and stop the disease before it costs you your lawn.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off First Treatment</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

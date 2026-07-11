@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <h2>Bottom Line: Mulch Is Part of the System, Not the Whole System</h2>
         <p>Mulch is an important tool, but it&rsquo;s one layer of a multi-layer approach. Without pre-emergent herbicide, proper edging, and periodic spot-treatment of breakthrough weeds, you&rsquo;ll be hauling in fresh mulch every spring and still battling weeds by June. Get the system right and the beds stay cleaner with far less labor. Hamann has been helping Arlington homeowners build that system since 2006 &mdash; and we stand behind our results.</p>
 
-        <div className="blog-cta">
-          <h3>Tired of Weeds Coming Back After Every Mulching?</h3>
-          <p>Professional flower-bed weed control that actually keeps beds clean &mdash; and your first service is 50% off.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

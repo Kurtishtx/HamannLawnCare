@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -71,14 +70,6 @@ export default function Page() {
         <p>If your lawn has been showing hydrophobic symptoms for more than one season, or if your irrigation system is running but your grass is going into drought stress anyway, it&rsquo;s time to bring in professional help. Diagnosing whether you&rsquo;re dealing with hydrophobic thatch, compaction, irrigation coverage issues, or some combination of all three takes a trained eye and the right equipment. The <a href="/lawn-care-services">lawn care services</a> we provide at Hamann Lawn Care &amp; Weed Control include professional thatch evaluation, core aeration, and customized treatment programs designed around the specific grass types and soil conditions in DFW. We&rsquo;ve been working in Arlington and the surrounding Metroplex since 2006, and we know how to get water moving through North Texas turf the way it&rsquo;s supposed to.</p>
         <p>Water that beads and rolls away isn&rsquo;t watering your lawn &mdash; it&rsquo;s watering your curb. Getting that water where it belongs starts with understanding what&rsquo;s blocking it, and for most DFW yards, thatch is the answer.</p>
 
-        <div className="blog-cta">
-          <h3>Is Your Lawn Repelling Water Instead of Absorbing It?</h3>
-          <p>Our team can diagnose the problem and get moisture moving through your soil again &mdash; call us or grab our new-customer deal today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

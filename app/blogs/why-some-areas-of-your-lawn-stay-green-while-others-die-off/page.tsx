@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
         </ul>
         <p>Hamann Lawn Care has been reading North Texas lawns since 2006. If you&rsquo;ve got a stubborn patchy lawn and can&rsquo;t figure out what&rsquo;s driving it, we can walk the yard with you and give you a straight answer.</p>
 
-        <div className="blog-cta">
-          <h3>Puzzled by Your Patchy Lawn?</h3>
-          <p>Let a North Texas lawn expert walk it with you and find the real cause &mdash; and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

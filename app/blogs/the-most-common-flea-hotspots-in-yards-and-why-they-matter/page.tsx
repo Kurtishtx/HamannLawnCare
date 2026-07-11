@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         </ul>
         <p>The zones that check multiple boxes are your priority targets. Hamann has been doing this audit across Arlington and DFW yards since 2006 &mdash; call us and we&rsquo;ll put our eyes on your specific property to make sure nothing gets missed.</p>
 
-        <div className="blog-cta">
-          <h3>Target the Right Spots. Get Real Results.</h3>
-          <p>Professional flea treatment focused on where fleas actually live &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

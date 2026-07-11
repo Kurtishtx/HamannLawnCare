@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <h2>Sun Exposure Enhances Professional Treatments Too</h2>
         <p>Landscape design that maximizes sun exposure doesn&rsquo;t just passively reduce ticks — it also makes professional treatments more effective. Spray products applied to well-sunlit, open areas break down faster (UV degrades many insecticides), but the reduced tick presence in those areas means the treatment load can be concentrated where it counts: the shaded border zones, fence lines, and bed edges where tick populations actually live. This zone-targeted approach stretches treatment effectiveness and delivers more consistent results. See our related post on <a href="/blogs/tick-activity-morning-vs-evening">when ticks are most active during the day</a> to understand how sun exposure&rsquo;s effect on tick behavior aligns with the daily activity cycles that shape when treatment matters most.</p>
 
-        <div className="blog-cta">
-          <h3>Make Your Yard Tick-Hostile</h3>
-          <p>Hamann combines landscape advice with professional treatment to protect your family from North Texas ticks. Claim 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,7 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
+
 
   return (
     <main>
@@ -74,10 +74,7 @@ export default function Page() {
 
           <p>At Hamann Lawn Care &amp; Weed Control, we have been dealing with nutsedge in Arlington and across North Texas since 2006. We know how it behaves in DFW&rsquo;s summer heat, how it responds to different treatment approaches by grass type, and when to pull in sulfentrazone as a rotation option. If nutsedge is making your lawn look embarrassing, stop reaching for the Roundup &mdash; it is not the right tool for this job.</p>
 
-          <div className="blog-cta">
-            <h3>Nutsedge Is Beatable &mdash; With the Right Approach</h3>
-            <p>Hamann Lawn Care &amp; Weed Control knows exactly how to handle nutsedge in DFW yards. We&rsquo;ve been doing it since 2006 and we stand behind our results. Call us at <a href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a> or <button className="link-btn" onClick={openPromo}>get a free quote online</button> and let&rsquo;s start pushing that nutlet population in the right direction.</p>
-          </div>
+
         </div>
       </article>
 

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -50,14 +49,6 @@ export default function Page() {
         <h2>Is Ryegrass Overseeding Worth It in North Texas?</h2>
         <p>The honest answer: it depends on your priorities. If curb appeal through winter is important to you and you understand the trade-offs it creates for your weed control program, ryegrass overseeding is absolutely viable. If you&rsquo;re trying to build the cleanest, weed-free Bermuda lawn possible with the strongest pre-emergent program, staying out of dormancy might serve you better long-term. Either way, the decision shouldn&rsquo;t be made in isolation from your <a href="/weed-control-and-fertilizer-services">weed control and fertilizer program</a>. For more on how grass variety shapes your treatment plan, see our post on <a href="/blogs/buffalo-grass-low-input-lawn-weed-control-and-fertilization-in-dfw">buffalo grass weed control and fertilization in DFW</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Let&rsquo;s Build a Plan That Works Year-Round</h3>
-          <p>Whether you overseed or let Bermuda go dormant, we&rsquo;ll make sure your weed control and fertilizer timing is exactly right.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

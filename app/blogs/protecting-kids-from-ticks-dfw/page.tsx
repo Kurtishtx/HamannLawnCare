@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -85,14 +84,6 @@ export default function Page() {
         <h2>The Bottom Line for DFW Parents</h2>
         <p>The goal isn&rsquo;t to keep kids indoors. It&rsquo;s to build habits that make outdoor play safer &mdash; the right clothes, the right repellent, a tick-checked yard, and a quick inspection when they come back in. Hamann Lawn Care &amp; Weed Control has been treating Arlington and DFW yards for ticks since 2006. Our barrier program targets the vegetation zones where ticks actually live, giving your kids a backyard where they can play freely all season long.</p>
 
-        <div className="blog-cta">
-          <h3>Protect Your Kids With a Tick-Free Yard</h3>
-          <p>Get professional flea &amp; tick treatment and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

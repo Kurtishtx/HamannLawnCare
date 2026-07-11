@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -65,14 +64,6 @@ export default function Page() {
 
         <p>Hamann Lawn Care &amp; Weed Control has been navigating DFW clay soil since 2006. We don&apos;t sell amendments that don&apos;t match your soil &mdash; we diagnose what&apos;s actually happening and build programs around results. Call us and let&apos;s talk about what your lawn actually needs.</p>
 
-        <div className="blog-cta">
-          <h3>Not Sure What Your DFW Clay Soil Actually Needs?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control builds data-driven lawn programs for North Texas. Call us today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off First Service</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

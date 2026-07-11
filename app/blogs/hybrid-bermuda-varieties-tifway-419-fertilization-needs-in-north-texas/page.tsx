@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -54,14 +53,6 @@ export default function Page() {
         <h2>Getting the Most From Your 419 Investment</h2>
         <p>Tifway 419 sod is not cheap. Getting it established and maintaining it properly is a multi-year investment, and the fertilizer and weed control program you run directly determines whether that investment pays off in a beautiful, dense, weed-resistant lawn or fades into a thin, patchy disappointment. Our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer service</a> is calibrated to North Texas soils and the specific demands of hybrid Bermuda &mdash; we know the difference between a 419 program and a common Bermuda program, and we build accordingly. For insights on how ryegrass overseeding affects your 419 weed control timing, read our previous post on <a href="/blogs/overseeding-bermuda-with-ryegrass-how-it-affects-weed-control-timing">how overseeding Bermuda with ryegrass affects weed control timing</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Get the Most From Your 419 Lawn</h3>
-          <p>Hybrid Bermuda deserves a hybrid-specific program &mdash; not a generic bag from the hardware store. Let&rsquo;s talk about your lawn.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

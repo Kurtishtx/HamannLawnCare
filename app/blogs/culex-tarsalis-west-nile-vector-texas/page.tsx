@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -121,14 +120,6 @@ export default function Page() {
           Most DFW suburbanites are dealing primarily with Culex quinquefasciatus and Aedes albopictus. But anyone with acreage, near agricultural land, or in the rural-suburban fringe of Tarrant, Parker, or Johnson County should be aware that Culex tarsalis is part of the local mosquito picture — and that it carries one of the most clinically significant mosquito-borne diseases we have in Texas. Professional barrier treatments reduce your exposure; eliminating standing water near your property reduces breeding. Both matter.
         </p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works — and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <p>Pairing smart mowing frequency with a <a href="/lawn-care-services">professional lawn care program</a> that includes fertilization, weed control, and pre-emergent applications is how St. Augustine lawns in DFW reach and maintain their full potential. The treatments do the chemical work; the mowing sets up the conditions that let those treatments perform at their best.</p>
         <p>For more on the mechanics of better mowing, read about <a href="/blogs/double-cut-mowing-technique-when-and-why-to-do-it-on-bermuda">the double-cut mowing technique</a> &mdash; a method that can improve the quality of your cut on any grass type, including St. Augustine, after a stretch of heavy growth.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Greener Lawn?</h3>
-          <p>Get professional lawn care that delivers real results &mdash; and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

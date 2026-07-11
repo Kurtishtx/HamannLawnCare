@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <h2>When Moss Is Not the Only Problem</h2>
         <p>Sometimes what looks like moss is actually algae crust — a different organism with different causes and treatments. If the dark growth is more of a thin, smooth black or blue-green film rather than a thick velvety mat, it may be algae rather than moss. Both signal poor drainage and bare soil, but the treatments differ slightly. When in doubt, have a professional look at the affected area before applying control products.</p>
 
-        <div className="blog-cta">
-          <h3>Moss Problem You Can&rsquo;t Shake? We Can Help.</h3>
-          <p>Hamann Lawn Care &amp; Weed Control has fixed shady, mossy lawns across Arlington and DFW since 2006. Get a real solution.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

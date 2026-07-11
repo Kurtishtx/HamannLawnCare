@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -102,14 +101,6 @@ export default function Page() {
           When you combine good cultural practices with a fertilizer program that emphasizes potassium heading into summer, you end up with a lawn that genuinely handles North Texas heat better — one that holds its color longer, recovers faster from dry spells, and stays healthier through the season without requiring heroic intervention. That&rsquo;s the goal, and it&rsquo;s absolutely achievable right here in Arlington, Mansfield, Grand Prairie, and the surrounding DFW communities we serve every day.
         </p>
 
-        <div className="blog-cta">
-          <h3>Want a Tougher, Drought-Ready Lawn?</h3>
-          <p>Our fertilizer programs are dialed in for North Texas heat — claim your 50% off first application and let&rsquo;s build your lawn&rsquo;s defenses.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

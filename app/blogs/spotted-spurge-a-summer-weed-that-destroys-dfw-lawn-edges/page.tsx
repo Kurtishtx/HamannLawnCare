@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         <p>At Hamann Lawn Care &amp; Weed Control, we&rsquo;ve been battling summer annuals like spotted spurge across Arlington and the DFW area since 2006. Our seasonal weed program pairs properly timed pre-emergent applications with targeted post-emergent follow-ups so your edges stay clean all summer long. We know the DFW planting calendar, the local soil conditions, and exactly when to treat for maximum impact. Read more about how we tackle a similarly tenacious cool-season invader in our post on <a href="/blogs/dandelions-in-texas-lawns-why-they-thrive-and-how-to-eliminate-them">dandelions in Texas lawns</a>.</p>
         <p>Don&rsquo;t let spotted spurge eat your curb appeal one edge at a time. The fix is straightforward when the timing is right and the right products are used&mdash;and that&rsquo;s exactly what we deliver.</p>
 
-        <div className="blog-cta">
-          <h3>Done Fighting Spurge Along Your Edges?</h3>
-          <p>Call Hamann Lawn Care &amp; Weed Control and get professional weed control that keeps DFW lawn edges clean all season&mdash;plus 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

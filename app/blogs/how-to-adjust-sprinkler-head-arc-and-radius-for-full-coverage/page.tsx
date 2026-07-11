@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
         <h2>When to Call in a Professional</h2>
         <p>Head adjustment is a solid DIY task. But if you&rsquo;re finding that every season you&rsquo;re re-adjusting the same heads, or that no matter what you do a particular zone leaves brown patches, the problem may be zone design rather than individual head settings. Undersized pipe, too many heads on one valve, or a zone that crosses soil types all require a bigger fix than a screwdriver can deliver. That&rsquo;s also a good moment to revisit <a href="/blogs/rotary-vs-rotary-sprinkler-heads-which-covers-north-texas-lawns-better">whether your head type is right for DFW clay</a> before investing more time in a system that may need a redesign.</p>
 
-        <div className="blog-cta">
-          <h3>Get Expert Lawn Care in Arlington &amp; DFW</h3>
-          <p>Hamann Lawn Care &amp; Weed Control has kept North Texas lawns healthy since 2006. Call us today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -35,7 +35,6 @@ const faqs = [
 const RedLine = () => <div style={{ height: 4, width: 64, background: 'var(--red)', borderRadius: 2, margin: '14px auto 0' }} />;
 
 export default function TreeCareServices() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -47,10 +46,6 @@ export default function TreeCareServices() {
             <h1>We Don&rsquo;t Mulch. We <span className="headline-3d">Inject Life</span> Back Into Your Trees</h1>
             <p className="hero-sub" style={{ margin: '20px auto 10px', fontWeight: 700, color: '#fff' }}>Arborjet Trunk Injections • No Spraying • No Runoff • No Drama</p>
             <p className="hero-sub" style={{ margin: '0 auto 26px' }}>Texas doesn&rsquo;t go easy on your trees. From boring beetles tunneling through your oaks to aphids draining your maples, your trees are under constant attack. We deliver targeted treatments straight into the tree&rsquo;s vascular system — <b>long-lasting protection that works from the inside out.</b></p>
-            <div className="hero-cta" style={{ justifyContent: 'center' }}>
-              <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-              <button className="btn btn-ghost btn-lg" onClick={openPromo}>Get 50% Off →</button>
-            </div>
           </div>
         </div>
       </section>
@@ -154,16 +149,6 @@ export default function TreeCareServices() {
       </section>
 
       {/* CTA */}
-      <section className="cta-band">
-        <div className="wrap">
-          <h2>Give Your Trees A Fighting Chance</h2>
-          <p>Stop watching your trees lose the battle. Inject life back into them with Hamann tree care. <b>Claim your 50% off first application!</b></p>
-          <div className="btns">
-            <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Get Your Free Quote</a>
-            <button className="btn btn-ghost btn-lg" onClick={openPromo}>Claim 50% Off</button>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

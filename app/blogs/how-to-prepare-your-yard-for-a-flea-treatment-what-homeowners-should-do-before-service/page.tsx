@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>Set Realistic Expectations for the First Treatment</h2>
         <p>Even an excellent yard treatment does not mean zero fleas immediately after service. Flea pupae (cocoons) are remarkably resistant to pesticides and can remain dormant in the environment for weeks. After the treatment, pupae will continue hatching into adults &mdash; this is normal. Those newly hatched adults will then contact the residual product and die. The first two weeks after treatment often see some continued flea activity as that final pupal generation hatches out. A follow-up treatment is typically recommended to catch that second wave and break the cycle completely.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Schedule Your Flea Treatment?</h3>
-          <p>Get professional flea control for your North Texas yard &mdash; claim your 50% off first application today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

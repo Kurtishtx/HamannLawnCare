@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <h2>The Bottom Line on Timing</h2>
         <p>Evening is worse. In North Texas summers, it&rsquo;s not particularly close. The evening window is longer, involves more motivated mosquitoes, and coincides with when people actually want to be outside. But the morning window is real, especially in spring and fall when overnight temperatures produce genuinely comfortable early mornings and you actually want to be outdoors at sunrise. Professional control that covers both windows is the only way to reclaim your yard across the full day. Call Hamann &mdash; we&rsquo;ve been making Arlington yards bite-free since 2006.</p>
 
-        <div className="blog-cta">
-          <h3>Take Back Your Morning and Evening Outside</h3>
-          <p>Get professional barrier treatment that covers both activity windows &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

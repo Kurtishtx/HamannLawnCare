@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <p>Fleas strongly prefer non-human hosts &mdash; dogs and cats are their ideal choice because they provide easier fur attachment and more stable feeding opportunities. But fleas are opportunists. When the preferred host is absent, they will absolutely feed on humans. In a pet-free home with an active flea population, the biting pressure on human occupants is often <strong>worse</strong> than in a home with pets, because there&rsquo;s no alternative host to absorb the feeding pressure. You are the only option. Read more about <a href="/blogs/fleas-in-texas-winter-survival">how North Texas winters affect flea survival</a> and why year-round pressure in this region is real regardless of whether you have pets.</p>
         <p>Hamann Lawn Care &amp; Weed Control has been solving exactly these kinds of atypical flea situations in Arlington and the surrounding DFW communities since 2006. If you&rsquo;re dealing with fleas and there&rsquo;s no obvious pet source, call us &mdash; we&rsquo;ll figure out where they&rsquo;re coming from and cut off the supply.</p>
 
-        <div className="blog-cta">
-          <h3>Fleas With No Pets? We&rsquo;ve Seen It Before.</h3>
-          <p>Professional diagnosis and treatment for non-pet flea sources in DFW &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
         <p>Mosquito control isn&rsquo;t just a comfort expense &mdash; it&rsquo;s a leverage multiplier for every other outdoor living investment you make. It extends the usable life of your outdoor space across nine months of the year. It makes showings more impressive during peak selling season. And it gives your family back the evenings that North Texas weather would otherwise make genuinely enjoyable if mosquitoes weren&rsquo;t in the way.</p>
         <p>Hamann Lawn Care &amp; Weed Control has served Arlington and the DFW area since 2006. We use professional-grade products with a satisfaction guarantee &mdash; meaning if pressure returns between visits, we come back at no charge. A bite-free yard is one of the best investments you can make in your property and your daily life.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works — and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

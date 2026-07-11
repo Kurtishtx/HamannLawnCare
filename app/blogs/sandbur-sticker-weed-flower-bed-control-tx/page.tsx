@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -52,14 +51,6 @@ export default function Page() {
         <h2>What Hamann Does Differently</h2>
         <p>Hamann Lawn Care &amp; Weed Control has been serving Arlington and the greater DFW area since 2006. Our flower-bed programs are built around the North Texas growing calendar &mdash; which means pre-emergents go down at the right soil-temperature window, not on a generic national schedule. We identify what is actually growing in your beds, select products that target the problem without harming your ornamentals, and follow up through the season to catch any breakthrough germination before it goes to seed. If sandbur burs are already present when we arrive, we document the infestation, manage it conservatively to avoid spreading seeds, and build a plan to break the cycle for next season. You do not have to fight this alone, and you do not have to live with sticker weeds in your flower beds.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Reclaim Your Flower Beds?</h3>
-          <p>Get professional flower-bed weed control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

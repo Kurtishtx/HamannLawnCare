@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>The Lawn Isn&rsquo;t Going to Fix Itself</h2>
         <p>Compaction and traffic damage are cumulative. Every season without intervention compounds the problem, making recovery progressively harder. The good news is that even severely compacted, thinned areas in high-use zones can recover well with the right combination of aeration, topdressing, repair, and adjusted watering. Our <a href="/lawn-care-services">lawn care services</a> can assess compaction levels, recommend aeration timing, and put together a repair plan that fits your yard&rsquo;s specific layout and use patterns. Hamann has been helping Arlington and DFW homeowners solve exactly these kinds of problems since 2006 — and the right plan makes these fixable.</p>
 
-        <div className="blog-cta">
-          <h3>Got Worn-Out Spots That Won&rsquo;t Recover?</h3>
-          <p>We can diagnose the problem and put together a real fix. Call us or grab your new-customer offer below.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

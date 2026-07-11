@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <h2>The Right Program Makes All the Difference</h2>
         <p>Zoysia grown on the right fertilization schedule is one of the most rewarding lawns in North Texas. It&rsquo;s thick enough to be relatively weed-resistant, handles shade better than Bermuda, and produces a dense, carpet-like appearance that stands out in any neighborhood. The key is working with Zoysia&rsquo;s natural growth rhythm instead of pushing it with inputs designed for faster-growing grasses. Our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer services</a> page explains how we build turf-type-specific programs for Zoysia, St. Augustine, and Bermuda across North Texas. And for a broader look at what makes Zoysia so different from its neighbors, see our earlier post on <a href="/blogs/herbicide-restrictions-for-st-augustine-what-you-cannot-apply">herbicide restrictions for St. Augustine</a> &mdash; the contrast between these two sensitive grasses is instructive.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Greener, Weed-Free Lawn?</h3>
-          <p>Get professional weed control and fertilization that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

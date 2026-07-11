@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <p>The Texas A&amp;M AgriLife Extension recommends a total annual nitrogen input for St. Augustine of <strong>2&ndash;4 lbs per 1,000 sq ft</strong>, distributed across the growing season. Most DFW homeowners applying fertilizer themselves are either applying too much total nitrogen or applying it at the wrong times. The professional approach is to spread that annual total across 3&ndash;4 targeted applications aligned with the lawn&rsquo;s growth cycle rather than hitting a fixed calendar date.</p>
         <p>For the full picture of how we structure weed control and fertilization programs for St. Augustine and other North Texas turf types, visit our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer services</a> page. And if you want to understand what herbicides are safe &mdash; and unsafe &mdash; on St. Augustine, our follow-up post on <a href="/blogs/weed-control-challenges-specific-to-bermuda-grass-in-arlington-tx">weed control challenges specific to Bermuda grass</a> provides useful comparison context for how different turf types handle chemistry differently.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Greener, Weed-Free Lawn?</h3>
-          <p>Get professional weed control and fertilization that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

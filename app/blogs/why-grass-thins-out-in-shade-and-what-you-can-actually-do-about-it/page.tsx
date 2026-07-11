@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <p>The best yards in Arlington and DFW aren&rsquo;t the ones where someone forced Bermuda to grow under 80-foot pecans &mdash; they&rsquo;re the ones where the homeowner matched the right grass to the right conditions and made strategic decisions about what should be turf and what shouldn&rsquo;t. That distinction can save you hundreds of dollars a year in dead sod and frustrated service calls.</p>
         <p>If you&rsquo;re not sure what&rsquo;s going on in your shaded areas or what the right fix is, Hamann Lawn Care has been navigating these exact situations in North Texas yards since 2006. We can assess your specific tree canopy, identify your grass variety, and give you an honest recommendation &mdash; even if that recommendation is to put mulch down instead of sod.</p>
 
-        <div className="blog-cta">
-          <h3>Struggling With Thin Grass Under Trees?</h3>
-          <p>Get an honest assessment from a North Texas lawn team that&rsquo;s been solving shade problems since 2006 &mdash; and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

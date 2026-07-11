@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -90,14 +89,6 @@ export default function Page() {
         <h2>Start With the Right Diagnosis</h2>
         <p>If your lawn has struggled with recurring brown patches, yellowing, or thin areas that worsen after rain, there is a strong chance compaction is part of the story. A proper diagnosis looks at both the soil condition and the active pathogen to build a treatment plan that addresses both. For more context on how soil chemistry interacts with disease susceptibility in this region, read <a href="/blogs/soil-ph-and-lawn-disease-connection-in-north-texas">Soil pH and Lawn Disease: The Connection North Texas Homeowners Often Overlook</a>. Combining soil structure correction through aeration with the right chemical and cultural management gives your lawn the best possible chance of recovering fully and staying healthy through the next disease season.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Fix the Root Cause of Your Lawn Disease?</h3>
-          <p>Get professional core aeration and lawn disease treatment tailored to North Texas clay &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

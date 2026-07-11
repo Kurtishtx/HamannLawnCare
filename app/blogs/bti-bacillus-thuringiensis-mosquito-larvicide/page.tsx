@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
         <p>Bti is genuinely one of the best tools available for mosquito larval control &mdash; effective, species-specific, and safe for the rest of your yard&rsquo;s ecosystem. It should absolutely be part of any serious mosquito management effort, especially in North Texas where standing water is abundant and the breeding season runs from March through November. But it&rsquo;s a complement to professional adult mosquito treatment, not a replacement. When you pair smart larval control with a <a href="/blogs/organic-natural-mosquito-barrier-spray-options">professional barrier spray program</a>, you attack mosquitoes at every stage of their lifecycle &mdash; and that&rsquo;s what finally puts you back in control of your own backyard.</p>
         <p>Hamann Lawn Care &amp; Weed Control has been protecting Arlington and DFW families from mosquitoes since 2006. If you&rsquo;re ready to stop guessing and start winning, give us a call.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

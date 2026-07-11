@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
 
         <p>Hamann Lawn Care &amp; Weed Control has been managing North Texas lawns on heavy clay soil since 2006. We aerate Bermuda and St. Augustine lawns across Arlington, Mansfield, Burleson, and the surrounding DFW communities, and we can tell you after one look at your yard whether your soil needs mechanical relief, a supplemental treatment, or both.</p>
 
-        <div className="blog-cta">
-          <h3>Get the Right Aeration for Your North Texas Clay Soil</h3>
-          <p>Hamann provides professional core aeration matched to DFW soil conditions &mdash; claim 50% off your first service today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

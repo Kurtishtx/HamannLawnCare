@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <p>If you want organic pre-emergent options and are willing to manage expectations, apply CGM on schedule for at least two to three years, track results honestly, and supplement with hand-weeding and mulch. If you need reliable, season-long suppression in beds that represent significant landscape investment, a professional pre-emergent program will outperform CGM in DFW conditions by a meaningful margin.</p>
         <p>Hamann Lawn Care &amp; Weed Control has served Arlington and the DFW area since 2006. We work with both conventional and reduced-input programs depending on homeowner preferences — contact us to discuss what approach fits your beds and your goals.</p>
 
-        <div className="blog-cta">
-          <h3>Want Stronger Weed Prevention For Your Beds?</h3>
-          <p>Professional pre-emergent programs outperform corn gluten meal in North Texas conditions — get 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

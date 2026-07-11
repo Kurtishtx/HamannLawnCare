@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -83,14 +82,6 @@ export default function Page() {
         </ul>
         <p>Beds that stay on this schedule rarely develop the runaway weed-from-bed-into-lawn problem that sends homeowners scrambling for post-emergent sprays in July. Prevention built into the edge routine is far cheaper and less disruptive than reactive treatment after the weed population has already established.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Stop Weeds At The Edge?</h3>
-          <p>Hamann&rsquo;s professional weed control and fertilizer programs protect your entire lawn &mdash; and your first application is 50% off.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

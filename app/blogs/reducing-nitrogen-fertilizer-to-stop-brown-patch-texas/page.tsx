@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
 
         <p>For the complete picture of how airflow and pruning interact with fertilizer management, read <a href="/blogs/airflow-pruning-trees-shrubs-to-reduce-lawn-fungus">pruning trees and shrubs for airflow to reduce lawn fungus in DFW</a> &mdash; the structural conditions that trap humidity amplify every fertilizer mistake made in fall.</p>
 
-        <div className="blog-cta">
-          <h3>Brown Patch Already Moving Through Your Yard?</h3>
-          <p>Hamann stops it fast and sets you up to prevent the next outbreak. First treatment is 50% off.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

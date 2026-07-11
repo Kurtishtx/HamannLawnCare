@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         </ul>
         <p>Hamann Lawn Care has been working North Texas lawns since 2006, and we&rsquo;ve seen every version of lawn struggle this region can throw at a homeowner. We also know how to read the soil also covered in our post on <a href="/blogs/how-soil-moisture-levels-influence-lawn-health-and-why-consistency-matters">how soil moisture levels influence lawn health and why consistency matters</a>. The combination of local knowledge and a program built specifically for this climate is what finally moves the needle on a lawn that&rsquo;s been fighting you for years.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Stop Fighting Your Lawn?</h3>
-          <p>Get a professional lawn program built for North Texas &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

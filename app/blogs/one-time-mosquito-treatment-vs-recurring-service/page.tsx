@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <p>One-time treatments are great tools for specific occasions or low-pressure situations. Recurring programs are the right answer for anyone who wants genuine, sustained control through a full North Texas mosquito season. If you&rsquo;ve been on the fence, consider starting with a one-time treatment during a trial with a quality company &mdash; you can always convert to recurring mid-season once you see how well it works.</p>
         <p>For a full picture of what it costs to stay protected all year, check out our guide on <a href="/blogs/mosquito-control-annual-cost-north-texas">annual mosquito control costs in North Texas</a> so you know exactly what to budget before you call.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

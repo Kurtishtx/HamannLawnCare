@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -53,14 +52,6 @@ export default function Page() {
         <h2>The Long-Term Play: A Clean Edge All Season With No Guesswork</h2>
         <p>The homeowners in Arlington who have clean, grass-free flower beds all summer aren&rsquo;t spending more time on their yard &mdash; they&rsquo;re just doing the right things at the right times. A professional weed control program that includes bed-edge herbicide applications, timed pre-emergent for the bed interior, and guidance on edging type and maintenance frequency takes the guesswork out entirely. Hamann has been setting up and maintaining these programs across North Texas since 2006. We know when to cut, what to apply, and how to keep Bermuda from winning.</p>
 
-        <div className="blog-cta">
-          <h3>Tired of Bermuda Winning Every Summer?</h3>
-          <p>Get professional flower-bed weed control with a bed-edge strategy built for Arlington and North Texas &mdash; and 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

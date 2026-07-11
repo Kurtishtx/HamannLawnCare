@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -69,14 +68,6 @@ export default function Page() {
         <p>You don&rsquo;t have to redesign your entire yard to reduce mosquitoes. Even small changes — fixing a drainage low spot, thinning a dense shrub border, adjusting your irrigation schedule, keeping gutters clean — add up quickly. The goal is to remove the conditions that let mosquitoes breed and rest, so that professional treatment keeps populations down longer between visits.</p>
         <p>If you&rsquo;re dealing with a persistent mosquito problem in the Arlington area and you&rsquo;re not sure where it&rsquo;s coming from, sometimes the answer is hidden in plain sight: a corner of the yard that stays damp, a bed that never dries out, or a drainage path that&rsquo;s quietly backing up after every rain. Getting eyes on the problem — and pairing smart landscaping decisions with real professional treatment — is the fastest way to get your evenings back.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works — and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

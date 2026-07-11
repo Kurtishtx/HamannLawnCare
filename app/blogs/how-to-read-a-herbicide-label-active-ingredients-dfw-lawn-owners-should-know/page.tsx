@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -71,14 +70,6 @@ export default function Page() {
         <h2>Off-Label Use: Warranty, Liability, and the Law</h2>
         <p>Using a herbicide in any way that contradicts the label &mdash; wrong site, wrong rate, unlisted grass type, unlisted pest &mdash; is called off-label use, and it carries real consequences. First, the manufacturer&rsquo;s warranty is void. If you apply a product at double the labeled rate and it kills your lawn, you have no recourse. Second, if drift or runoff from an off-label application damages a neighbor&rsquo;s plants or contaminates a water source, you bear personal liability. Third, for licensed applicators, off-label use is a TDA violation that can result in fines or license suspension. The label exists for a reason &mdash; it is the product of federal registration testing, and it defines the boundaries of safe and legal use.</p>
 
-        <div className="blog-cta">
-          <h3>Leave the Label Reading to the Professionals</h3>
-          <p>Hamann&rsquo;s licensed applicators know every active ingredient, every rate table, and every turf tolerance requirement &mdash; so your lawn gets the right product at the right time. Claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

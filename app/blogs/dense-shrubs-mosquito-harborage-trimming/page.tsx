@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <p>At Hamann, our technicians note harborage zones on each property and communicate them to homeowners specifically because we know how much shrub structure affects treatment results. Our <a href="/mosquito-control-services">mosquito control program</a> is designed to work with the landscape you have &mdash; but helping you optimize that landscape is part of what we do.</p>
         <p>If you&rsquo;re also thinking about how your overall watering schedule affects the moisture levels inside and around your shrubs, check out our guide on <a href="/blogs/lawn-watering-schedule-reduce-mosquitoes">adjusting your lawn watering schedule to reduce mosquito breeding</a> &mdash; over-irrigation is what keeps those interiors humid even on dry days.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -108,14 +107,6 @@ export default function Page() {
           Professional treatment ensures the right product, the right rate, the right surfactant, and the right timing &mdash; combined with the follow-up applications that DIY efforts rarely sustain. For shaded DFW lawns where wild violet has established across significant areas, a professional program is the realistic path to meaningful, lasting control. If you&rsquo;re also dealing with other persistent broadleaf weeds in your North Texas lawn, our post on <a href="/blogs/buckhorn-plantain-weed-control-in-north-texas-established-lawns">buckhorn plantain weed control in North Texas established lawns</a> covers another tough perennial broadleaf that often appears in the same lawn zones.
         </p>
 
-        <div className="blog-cta">
-          <h3>Struggling With Wild Violets In Your Shaded Areas?</h3>
-          <p>Professional broadleaf weed treatment for shaded DFW lawns &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

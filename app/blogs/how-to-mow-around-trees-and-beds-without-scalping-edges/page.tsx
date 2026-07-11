@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <h2>When to Call for Help</h2>
         <p>If you have a mature live oak, pecan, or cedar elm with surface roots that make safe mowing essentially impossible without scalping, that&rsquo;s not a technique problem &mdash; it&rsquo;s a tree management and landscape design problem. Professional lawn care crews who know North Texas tree species can help you decide whether a mulch ring, groundcover planting, or a different approach makes the most sense for your specific situation. Hamann has been managing North Texas lawns and their trees since 2006, and we have seen every variation of this problem across Arlington, Mansfield, Burleson, and the surrounding DFW communities.</p>
 
-        <div className="blog-cta">
-          <h3>Protect Your Trees and Beds With Professional Mowing</h3>
-          <p>Hamann&rsquo;s crews use the right technique around every obstacle on your lawn &mdash; claim 50% off your first service today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

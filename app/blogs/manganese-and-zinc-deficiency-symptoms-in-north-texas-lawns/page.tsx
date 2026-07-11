@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
         <h2>The North Texas Bottom Line</h2>
         <p>Manganese and zinc deficiencies are common in DFW lawns not because the soil lacks these minerals, but because alkaline clay chemistry makes them unavailable to grass roots. Bermuda and St. Augustine are both susceptible, and the visual symptoms &mdash; interveinal chlorosis, stunted growth, pale color that doesn&rsquo;t respond to nitrogen &mdash; are easy to misread without a solid understanding of what&rsquo;s actually driving them. A soil test, the right chelated product form, and well-timed foliar applications are the combination that actually solves the problem. If your lawn is yellowing and the usual fixes aren&rsquo;t working, micronutrients are worth investigating before spending another season guessing.</p>
 
-        <div className="blog-cta">
-          <h3>Yellowing Lawn? Let&rsquo;s Find the Real Problem.</h3>
-          <p>Micronutrient deficiencies are sneaky &mdash; our team diagnoses and treats them right. Claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

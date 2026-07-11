@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -50,14 +49,6 @@ export default function Page() {
         <h2>The Bottom Line</h2>
         <p>Professional mosquito treatments work because they&rsquo;re engineered to do what retail products can&rsquo;t: kill mosquitoes at multiple lifecycle stages, maintain residual activity for weeks, and build a protective barrier around your entire yard rather than just knocking down whatever&rsquo;s flying around at the moment. If you&rsquo;ve ever wondered why the results feel so different, that&rsquo;s exactly why. It&rsquo;s not magic &mdash; it&rsquo;s the right chemistry, applied in the right places, at the right time of year.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For Real Mosquito Relief?</h3>
-          <p>Get a professional barrier treatment that actually lasts &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

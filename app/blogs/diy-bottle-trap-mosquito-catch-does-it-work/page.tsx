@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <p>DIY bottle traps are a fun science experiment and a good demonstration of yeast fermentation for kids. As a mosquito control strategy for a DFW backyard running at full summer mosquito capacity &mdash; producing populations in the hundreds per week &mdash; they are not going to make a detectable difference in your quality of outdoor life. Save the plastic bottle and the sugar for something else.</p>
         <p>If you&rsquo;ve been exploring DIY solutions, our post on <a href="/blogs/ir3535-mosquito-repellent-ingredient-review">IR3535 as a mosquito repellent ingredient</a> covers a personal protection option that actually has real science behind it. For your yard itself, Hamann Lawn Care has been keeping Arlington and the surrounding DFW communities mosquito-manageable since 2006. Call us and let&rsquo;s start with a real plan.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

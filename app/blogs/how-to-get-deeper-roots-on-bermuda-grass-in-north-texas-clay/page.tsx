@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -69,14 +68,6 @@ export default function Page() {
 
         <p>Hamann Lawn Care &amp; Weed Control has been building healthy, deep-rooted Bermuda lawns in Arlington and throughout DFW since 2006. If your lawn looks great until the first heat wave and then struggles, shallow roots are almost certainly the reason. Call us and let&apos;s fix the foundation.</p>
 
-        <div className="blog-cta">
-          <h3>Want a Bermuda Lawn That Handles DFW Heat?</h3>
-          <p>We build deep-rooted, drought-tough lawns in Arlington and North Texas. Call Hamann today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off First Service</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

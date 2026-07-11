@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
 
         <p>If you&rsquo;re dealing with clover in addition to dollarweed &mdash; another common broadleaf invader in DFW yards &mdash; our post on <a href="/blogs/white-clover-in-dfw-lawns-why-it-spreads-and-how-to-stop-it">White Clover in DFW Lawns: Why It Spreads and How to Stop It</a> covers why clover keeps coming back and how professional programs address it for good.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Weed-Free Lawn?</h3>
-          <p>Get professional dollarweed control that addresses both the weed and the conditions creating it &mdash; and claim 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

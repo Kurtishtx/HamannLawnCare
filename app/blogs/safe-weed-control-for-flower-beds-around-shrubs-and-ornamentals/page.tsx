@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
         <h2>When To Call a Professional</h2>
         <p>If your beds have a serious weed problem, high-value ornamentals, or you just don&rsquo;t want the risk of a chemical mistake, professional weed control is worth every penny. At Hamann, we&rsquo;ve been managing North Texas flower beds since 2006 and know exactly which products are safe around which plants, when to apply pre-emergents for maximum effectiveness, and how to handle the stubborn stuff like nutsedge and wild violet without collateral damage. No guesswork, no burned shrubs.</p>
 
-        <div className="blog-cta">
-          <h3>Want Weed-Free Flower Beds Without the Risk?</h3>
-          <p>Get professional flower-bed weed control that protects your shrubs and ornamentals &mdash; and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

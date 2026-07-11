@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <p>These habitat reduction steps complement professional treatment nicely — fewer hiding spots means fewer mosquitoes surviving through the day and fewer waiting to bite you at dusk. Learn more about the conditions that drive mosquito activity in our post on <a href="/blogs/why-mosquitoes-come-out-after-rain">why mosquitoes come out after rain</a>.</p>
         <p>Hamann Lawn Care &amp; Weed Control has been serving Arlington and the DFW area since 2006. Our mosquito treatments are applied by technicians who know exactly where North Texas mosquitoes hide — and we put the product there, not just in the open air where it sounds impressive but accomplishes little.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Hit Mosquitoes Where They Hide?</h3>
-          <p>Get a professional treatment that targets the resting zones, not just the open air — and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

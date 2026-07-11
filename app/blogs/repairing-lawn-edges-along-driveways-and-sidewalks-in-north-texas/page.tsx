@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -75,14 +74,6 @@ export default function Page() {
 
         <p>Hamann Lawn Care &amp; Weed Control has kept Arlington lawns looking sharp since 2006. If your edges are a persistent problem, we&apos;ll diagnose the underlying cause and build a plan that keeps them healthy year-round.</p>
 
-        <div className="blog-cta">
-          <h3>Tired of Ragged Lawn Edges?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control restores and maintains Arlington and DFW lawn borders. Call today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off First Service</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

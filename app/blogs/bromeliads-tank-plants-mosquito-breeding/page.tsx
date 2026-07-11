@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -54,14 +53,6 @@ export default function Page() {
         <h2>Bottom Line For North Texas Gardeners</h2>
         <p>Bromeliads and tank plants are beautiful additions to a Texas landscape &mdash; they handle the heat, they attract hummingbirds, and they add genuine visual interest. They&rsquo;re also one of the most overlooked mosquito breeding sources in suburban yards. A weekly flush routine or a Bti treatment program keeps them in your garden without keeping mosquitoes in your yard. The effort is modest; the payoff in bite-free evenings is real.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

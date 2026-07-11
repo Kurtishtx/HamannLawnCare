@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -71,14 +70,6 @@ export default function Page() {
         <h2>The Bottom Line on New Bed Setup</h2>
         <p>The first month of a new flower bed determines how hard you&rsquo;ll have to work for the next five years. A complete kill-down, pre-emergent application, proper mulching, and edge installation done right at the start saves enormous labor and frustration over the life of the bed. Hamann has been helping Arlington homeowners build and maintain weed-resistant beds since 2006. Getting the foundation right from day one is the single highest-return investment you can make in any new landscape project.</p>
 
-        <div className="blog-cta">
-          <h3>Installing New Beds? Start Them Right.</h3>
-          <p>Professional weed prevention for new flower beds &mdash; and your first service is 50% off.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

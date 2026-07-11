@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -65,14 +64,6 @@ export default function Page() {
         <p>The long game against soil algae is keeping grass canopy coverage as complete as possible. Bare soil is the invitation. A properly fertilized, well-aerated lawn with calibrated irrigation and appropriate grass species for each sun exposure zone will naturally crowd out algae by denying it the bare soil it needs. Annual core aeration, spring and fall pre-emergent to prevent weed-driven thinning, and correctly timed fertilization all contribute to a dense canopy that gives algae no foothold.</p>
         <p>For professional help diagnosing why bare spots keep appearing in your DFW lawn, see our <a href="/lawn-care-services">lawn care services page</a> or read our related guide on <a href="/blogs/how-to-get-rid-of-moss-growing-on-north-texas-lawn-soil">getting rid of moss on North Texas lawn soil</a> — a companion problem with overlapping causes.</p>
 
-        <div className="blog-cta">
-          <h3>Algae Crust Keeps Coming Back? Let&rsquo;s Fix What&rsquo;s Causing It.</h3>
-          <p>Hamann Lawn Care &amp; Weed Control has been solving stubborn DFW lawn problems since 2006. Real diagnosis, real results.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

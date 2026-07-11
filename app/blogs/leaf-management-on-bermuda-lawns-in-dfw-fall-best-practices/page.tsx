@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <h2>Hamann Can Help You Finish the Season Strong</h2>
         <p>Hamann Lawn Care &amp; Weed Control has been helping Arlington and DFW homeowners manage their lawns through every season since 2006. If you want a fall program that handles weed prevention, fertilization timing, and expert guidance on what your specific lawn needs heading into winter, give us a call.</p>
 
-        <div className="blog-cta">
-          <h3>Set Your Lawn Up for a Great Spring This Fall</h3>
-          <p>Get professional fall lawn care timed for North Texas &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>Hamann Catches It Early</h2>
         <p>Since 2006, Hamann Lawn Care &amp; Weed Control has been diagnosing and treating lawn diseases across Arlington and the DFW area. We know which diseases are active each season, which grass types are most vulnerable, and what the earliest warning signs look like in North Texas conditions. If something looks off in your lawn, don&rsquo;t wait until it&rsquo;s obvious &mdash; give us a call and we&rsquo;ll take a look.</p>
 
-        <div className="blog-cta">
-          <h3>Catching Lawn Disease Early Saves Your Turf</h3>
-          <p>Don&rsquo;t let a small patch become a big problem. Get professional diagnosis and treatment before it spreads.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

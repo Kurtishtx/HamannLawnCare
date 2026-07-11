@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         </ul>
         <p>Uneven lawn color in North Texas is always telling you something specific — the job is just figuring out which message it is sending.</p>
 
-        <div className="blog-cta">
-          <h3>Tired of a Lawn That Never Looks Even?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control has been diagnosing and fixing DFW lawn color problems since 2006. Call us for a straight answer.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

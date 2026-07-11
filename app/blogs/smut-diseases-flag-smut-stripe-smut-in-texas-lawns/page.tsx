@@ -2,7 +2,6 @@
 
 const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
-const openPromo = () => (window as any).__openPromo?.();
 
 export default function Page() {
   const blogPostingJsonLd = {
@@ -110,14 +109,6 @@ export default function Page() {
           If you spotted unusual yellow-green streaking in your bermuda last spring and dismissed it, revisit those areas closely this fall. For related information on another systemic disease that strikes at the season transition, read our post on <a href="/blogs/anthracnose-basal-rot-in-annual-bluegrass-and-texas-turf">anthracnose basal rot in annual bluegrass and Texas turf</a>.
         </p>
 
-        <div className="blog-cta">
-          <h3>Seeing Streaked, Shredding Leaves in Your Lawn?</h3>
-          <p>Spotted a problem in your lawn? <strong>Hamann Lawn Care &amp; Weed Control</strong> has served Arlington and the DFW area since 2006. We identify smut diseases correctly and build a management plan before the infection spreads further.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get a Free Quote</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

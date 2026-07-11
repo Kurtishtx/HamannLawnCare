@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
 
         <p>For contrast, read our guide on <a href="/blogs/red-thread-disease-pink-strands-in-north-texas-grass">red thread disease and pink strands in North Texas grass</a>, another disease that appears in moderate temperatures but is driven by nitrogen deficiency rather than shade.</p>
 
-        <div className="blog-cta">
-          <h3>White Powder on Your Shaded St. Augustine? We Know Exactly What to Do.</h3>
-          <p>Hamann Lawn Care &amp; Weed Control has treated powdery mildew in Arlington shade yards since 2006. We&rsquo;ll assess your light and airflow situation, apply the right fungicide, and tell you exactly what to do with those trees to stop the cycle for good.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

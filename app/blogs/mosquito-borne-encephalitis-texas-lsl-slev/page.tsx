@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -71,14 +70,6 @@ export default function Page() {
         <p>A professional mosquito barrier program doesn&rsquo;t just reduce annoyance &mdash; it directly reduces your family&rsquo;s exposure to the specific mosquito species that transmit SLEV and LACV. Hamann&rsquo;s treatments target the shaded resting zones and vegetation corridors where both Culex and Aedes mosquitoes concentrate. Our North Texas program is built for the full season and backed by a satisfaction guarantee.</p>
         <p>For more context on the range of serious diseases that local mosquito species can carry, see our post on <a href="/blogs/dog-heartworm-mosquito-transmission-texas">dog heartworm and mosquito transmission in Texas</a> &mdash; it&rsquo;s a reminder that mosquito-borne disease affects every member of your household, not just the humans.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

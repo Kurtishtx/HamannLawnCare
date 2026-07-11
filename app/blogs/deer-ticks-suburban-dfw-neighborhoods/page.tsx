@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <p>Yard treatment reduces the population dramatically, but personal protection habits matter too — especially for properties with ongoing deer pressure. Check dogs after outdoor time, particularly around the ears, between toes, and along the belly. Keep pets on veterinary tick prevention year-round. When working in garden beds or along fence lines, tuck pants into socks and do a full body check after. These habits combined with professional yard treatment give you overlapping layers of protection that work even when deer are regular visitors.</p>
         <p>Hamann has been protecting Arlington-area families since 2006. If deer are active in your neighborhood and you&rsquo;re concerned about tick exposure, our team can assess your property&rsquo;s specific risk zones and put together a treatment plan that fits the situation.</p>
 
-        <div className="blog-cta">
-          <h3>Ticks in the Yard? We&rsquo;ll Target the Hot Zones.</h3>
-          <p>Professional tick control focused on where the real risk lives — perimeter, beds, and fence lines. Get 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

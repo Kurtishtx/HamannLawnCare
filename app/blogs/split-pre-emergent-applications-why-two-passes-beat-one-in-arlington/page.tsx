@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <h2>Spring vs. Fall: Does Splitting Work for Both?</h2>
         <p>Yes, though fall split applications are less commonly used because winter annual weed germination tends to be more concentrated in a shorter window than summer annuals. A fall split can still add value for high-pressure Poa annua situations, but most programs focus the split strategy on the spring application where the extended germination window makes two passes most beneficial.</p>
 
-        <div className="blog-cta">
-          <h3>Two Passes, Zero Crabgrass Headaches</h3>
-          <p>Our split pre-emergent program gives Arlington lawns full-season protection. Get started with 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

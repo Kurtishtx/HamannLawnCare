@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <h2>Refresh the Fabric When It&rsquo;s Due</h2>
         <p>If your xeriscape bed is five or more years old and weeds are coming through no matter what you do, the landscape fabric is likely saturated with soil and debris and no longer functioning. Herbicide programs slow the problem considerably, but eventually a fabric refresh &mdash; pulling back the rock, replacing the barrier, and resetting the bed &mdash; is the permanent fix. We can advise on timing and coordinate that with your weed treatment program so the new fabric starts clean and protected.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Clean Up Your Rock Beds for Good?</h3>
-          <p>Get professional flower-bed weed control built for Arlington xeriscape and gravel landscapes &mdash; and claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

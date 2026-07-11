@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -81,14 +80,6 @@ export default function Page() {
         <p>The best time to pull a soil sample in Arlington is <strong>fall (September&ndash;October)</strong> or <strong>early spring (February&ndash;March)</strong> before the main growing season starts. Fall testing gives you the winter to plan amendments and order product. Spring testing lets you fine-tune your program before the first fertilizer application of the year.</p>
         <p>Once is not enough. We recommend retesting every <strong>2&ndash;3 years</strong> for established lawns. If you&rsquo;ve made active amendments &mdash; sulfur applications, lime corrections, significant organic matter additions &mdash; test annually for a few years to track the changes. North Texas soil can shift, especially with the alkaline irrigation water we deal with.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Feed Your Lawn Right?</h3>
-          <p>Get professional weed control and fertilizer service backed by real soil science &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

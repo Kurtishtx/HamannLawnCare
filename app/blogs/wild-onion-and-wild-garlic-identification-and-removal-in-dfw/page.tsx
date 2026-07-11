@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <p>Hamann Lawn Care &amp; Weed Control has been eliminating wild onion and wild garlic from DFW lawns since 2006. Our fall and winter weed applications include surfactant-enhanced treatments timed to the North Texas climate&mdash;not a generic national schedule. We also track infestations over multiple seasons so your lawn gets progressively cleaner over time. For a look at another frustrating bulb-based invader that requires multi-season commitment to control, check out our post on <a href="/blogs/dichondra-weed-control-in-north-texas-warm-season-turf">dichondra weed control in North Texas</a>.</p>
         <p>If wild onions have been showing up in your yard every winter for years, it&rsquo;s not a lost cause&mdash;it just requires the right program applied consistently. Give us a call and let&rsquo;s get your lawn smelling like a lawn again.</p>
 
-        <div className="blog-cta">
-          <h3>Tired of Wild Onion and Garlic Taking Over Every Winter?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control handles bulb weeds the right way&mdash;plus 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

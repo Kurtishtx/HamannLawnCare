@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <h2>One More Thing: Don&rsquo;t Wait Until It&rsquo;s Bad</h2>
         <p>The time to address nutsedge is when you first notice it appearing &mdash; two or three plants emerging in spring. At that stage, a single targeted application can stop it before it builds a substantial nutlet bank in your soil. By the time it&rsquo;s a dense carpet across the whole bed, you&rsquo;re looking at a multi-year program. Early action isn&rsquo;t just easier &mdash; it&rsquo;s dramatically more effective, faster, and less expensive than trying to recover a fully infested bed.</p>
 
-        <div className="blog-cta">
-          <h3>Nutgrass Taking Over Your Flower Beds?</h3>
-          <p>Call Hamann for a targeted nutsedge control program that actually reaches the underground system &mdash; not just the tops.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

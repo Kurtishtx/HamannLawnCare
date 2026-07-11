@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>Managing Realistic Expectations</h2>
         <p>Even with a perfect program, some weed pressure from outside your property is unavoidable in a suburban DFW neighborhood. The goal isn&rsquo;t zero weeds &mdash; it&rsquo;s a lawn healthy and dense enough that migration doesn&rsquo;t turn into infestation. Read more about building a program that accounts for ongoing pressure in our post on <a href="/blogs/why-weed-control-applications-need-rest-periods-not-mowing-right-after">why weed control applications need rest periods</a>. At Hamann Lawn Care &amp; Weed Control, we help Arlington and DFW homeowners build that kind of resilient, well-timed program &mdash; one that takes the neighborhood context into account, not just the property lines.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Let the Neighbors Win</h3>
-          <p>Get a weed control program built for real DFW neighborhood conditions &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>&#128222; Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

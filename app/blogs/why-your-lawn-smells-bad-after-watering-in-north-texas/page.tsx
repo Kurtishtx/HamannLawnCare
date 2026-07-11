@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <h2>The Long-Term Fix Starts With Soil Health</h2>
         <p>A lawn that smells bad after watering is a lawn telling you its soil ecosystem is out of balance. The smell itself goes away once you restore aerobic conditions, but more importantly, fixing the soil health issues behind it produces a genuinely better lawn — one that drains better, grows deeper roots, uses fertilizer more efficiently, and resists both disease and drought stress more effectively. Our <a href="/lawn-care-services">lawn care services</a> include soil health diagnostics that tell you exactly what your North Texas lawn needs — no guesswork, no one-size-fits-all program.</p>
 
-        <div className="blog-cta">
-          <h3>Does Your Lawn Smell After Every Watering?</h3>
-          <p>Hamann solves real soil problems for Arlington and DFW homeowners. Call or grab your new customer offer.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

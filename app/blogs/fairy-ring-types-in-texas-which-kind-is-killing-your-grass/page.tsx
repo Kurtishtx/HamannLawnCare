@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         <h2>The Bottom Line on Fairy Ring Types</h2>
         <p>Three types, three very different urgency levels. Type 3 &mdash; manage it, remove mushrooms, watch it. Type 2 &mdash; monitor it, test for hydrophobic conditions regularly, enjoy the extra green for now. Type 1 &mdash; act now, especially if you&rsquo;re reading this in summer. The water penetration test takes 30 seconds and tells you everything you need to know about which category you&rsquo;re dealing with. Hamann Lawn Care &amp; Weed Control has been diagnosing and managing fairy ring in the Arlington area since 2006. If you&rsquo;re not sure what you have, give us a call and we&rsquo;ll take a look.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Protect Your Lawn?</h3>
-          <p>Get professional lawn disease control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

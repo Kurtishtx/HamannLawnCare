@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
   return (
     <main>
       <section className="hero honey" style={{ paddingBottom: 90 }}>
@@ -13,10 +12,6 @@ export default function Page() {
             <span className="hero-kick" style={{ borderColor: 'var(--red)' }}>🦟 Free, No-Pressure Quotes</span>
             <h1><span className="headline-3d">Mosquito Control Pricing</span></h1>
             <p className="hero-sub" style={{ margin: '20px auto 26px' }}>Pricing is based on the size of your yard and the areas we treat — foliage, fence lines, and resting zones. Most homes fall into simple flat seasonal pricing. Call or text for your exact price &mdash; and claim 50% off your first application.</p>
-            <div className="hero-cta" style={{ justifyContent: 'center' }}>
-              <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-              <a className="btn btn-ghost btn-lg" href={`sms:${PHONE_TEL}`}>💬 Text Us</a>
-            </div>
           </div>
         </div>
       </section>
@@ -35,16 +30,6 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="cta-band">
-        <div className="wrap">
-          <h2>Get Your Custom Quote Today</h2>
-          <p>Call or text now for your exact price and <b>50% off your first application.</b></p>
-          <div className="btns">
-            <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost btn-lg" onClick={openPromo}>Claim 50% Off</button>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

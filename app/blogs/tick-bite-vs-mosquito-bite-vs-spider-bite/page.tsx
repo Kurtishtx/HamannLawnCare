@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -80,14 +79,6 @@ export default function Page() {
         <h2>Professional Yard Treatment Controls All Three Pests</h2>
         <p>Ticks, mosquitoes, and spiders all live and breed in the same yard zones: shaded ornamental beds, fence lines, leaf litter, dense vegetation, and the transition between managed lawn and natural areas. Professional barrier treatment targets these zones and reduces the population of all three across your property. Hamann has served Arlington and the DFW area since 2006, and our treatments are scheduled around North Texas seasonal patterns to maintain protection through the highest-risk periods of spring, summer, and fall.</p>
 
-        <div className="blog-cta">
-          <h3>Control Ticks, Mosquitoes, and More in Your Yard</h3>
-          <p>Professional pest barrier treatment for Arlington and DFW — claim 50% off your first service today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

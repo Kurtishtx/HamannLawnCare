@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
 
         <p>Also read: <a href="/blogs/how-to-read-a-fungicide-label-for-texas-lawn-diseases">How to Read a Fungicide Label for Texas Lawn Diseases</a> &mdash; understanding what&rsquo;s on the label is the next step once you know which type of product you need.</p>
 
-        <div className="blog-cta">
-          <h3>Not Sure Which Fungicide Your Lawn Needs?</h3>
-          <p>Let Hamann diagnose the disease and apply the right treatment &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <p>Store-bought weed killers aren&rsquo;t ineffective &mdash; they just suffer from timing and product selection problems that most homeowners don&rsquo;t know to solve. The pre-emergents available at big box stores are often less concentrated than professional-grade products, meaning they have shorter residual windows and leave gaps in coverage. The post-emergent formulations available retail are often general-purpose and not well-matched to the specific weeds present. And most homeowners apply them reactively &mdash; after they see weeds &mdash; which is always playing catch-up.</p>
         <p>A professional program uses higher-quality chemistry, applies it at the right time for the specific weeds common to your area, and combines it with fertility management that builds the turf density that prevents weeds in the first place. The result over two to three seasons is a lawn where weed pressure decreases year over year instead of staying the same or getting worse. Explore how we build that program at our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer services</a> page. And if you&rsquo;d like to be able to identify exactly which weeds you&rsquo;re seeing in your yard before treatment, our post on <a href="/blogs/how-to-identify-the-most-common-weeds-in-your-lawn">how to identify the most common weeds in your lawn</a> is a practical starting point.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Break the Weed Cycle for Good?</h3>
-          <p>Professional weed control that actually prevents &mdash; not just reacts &mdash; and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

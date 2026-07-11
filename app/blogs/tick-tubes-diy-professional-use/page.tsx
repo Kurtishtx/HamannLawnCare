@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <h2>Our Recommendation for DFW Homeowners</h2>
         <p>Tick tubes are a reasonable supplemental tool, especially for properties with active mouse populations and woodland-edge exposure. But in a region dominated by Lone Star ticks — a species that uses deer, dogs, and humans as primary hosts and actively pursues hosts rather than waiting passively — professional barrier treatment of vegetation and transition zones delivers faster, broader protection. If you want to add tick tubes on top of a professional program, we support that layered approach. If you&rsquo;re choosing between tick tubes only or professional treatment only, professional treatment wins for DFW conditions. See our post on <a href="/blogs/woodland-edge-ticks-dfw-properties">managing woodland-edge tick zones</a> for how we structure treatment on high-exposure properties in Arlington and the surrounding communities.</p>
 
-        <div className="blog-cta">
-          <h3>Want a Complete Tick Control Plan for Your Yard?</h3>
-          <p>Get professional flea &amp; tick treatment tailored to your property — and claim 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

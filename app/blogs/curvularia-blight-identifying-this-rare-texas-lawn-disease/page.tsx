@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -97,14 +96,6 @@ export default function Page() {
           A professional lawn disease diagnostic assessment through our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control service</a> gives you accurate identification and a fungicide program matched to the specific pathogen &mdash; rather than a guessing-game approach that costs more in the end. For another disease frequently confused with heat stress, see our earlier post on <a href="/blogs/nigrospora-blight-the-misdiagnosed-lawn-disease-in-dfw">Nigrospora blight in DFW St. Augustine</a>.
         </p>
 
-        <div className="blog-cta">
-          <h3>Suspicious of a Lawn Disease That Keeps Getting Called &ldquo;Heat Stress&rdquo;?</h3>
-          <p>Curvularia blight is underdiagnosed across North Texas because it mimics drought damage so closely. Hamann Lawn Care &amp; Weed Control has been treating DFW lawn diseases since 2006 &mdash; we&rsquo;ll identify the real problem and build a treatment plan that works.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

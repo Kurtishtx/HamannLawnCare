@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -65,14 +64,6 @@ export default function Page() {
         <h2>Building a Complete Broadleaf Weed Control System</h2>
         <p>Controlling broadleaf weeds in North Texas flower beds isn&rsquo;t a one-and-done effort &mdash; it&rsquo;s a seasonal program. Apply pre-emergent before both weed seasons (cool and warm), maintain mulch depth, spot-treat breakthrough weeds quickly before they seed, and follow up on perennial species with targeted applications at the right time of year. Hamann has been running this exact program in Arlington beds since 2006 and can take the guesswork &mdash; and the labor &mdash; completely off your plate.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Clear Your Beds of Broadleaf Weeds for Good?</h3>
-          <p>Professional flower-bed weed control for North Texas &mdash; and your first service is 50% off.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

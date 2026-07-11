@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         </ul>
         <p>Getting the diagnosis right is the whole game. The right treatment varies completely by cause, and the wrong treatment often makes things worse. If you&rsquo;re not sure what you&rsquo;re looking at, Hamann&rsquo;s team can walk through your lawn and identify the cause &mdash; we&rsquo;ve been diagnosing North Texas lawn problems since 2006. Learn more about how we approach the full season through our <a href="/lawn-care-services">lawn care services</a>, and read our post on <a href="/blogs/how-grass-recovers-from-stress">how grass recovers from stress</a> for guidance on what to do once you&rsquo;ve identified the problem and started treatment.</p>
 
-        <div className="blog-cta">
-          <h3>Not Sure What&rsquo;s Killing Your Grass?</h3>
-          <p>Get a professional diagnosis &mdash; and claim your 50% off first application today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

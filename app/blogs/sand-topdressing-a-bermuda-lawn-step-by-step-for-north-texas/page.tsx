@@ -4,7 +4,7 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
+
 
   return (
     <main>
@@ -122,12 +122,7 @@ export default function Page() {
           If you&rsquo;d like professional help with aeration, topdressing, and a full Bermuda lawn care program tailored to your DFW soil conditions, our team at Hamann Lawn Care &amp; Weed Control is ready to help. Visit our <a href="/lawn-care-services">lawn care services page</a> to see what we offer for Arlington and surrounding North Texas communities, or call us to schedule a lawn assessment this season.
         </p>
 
-        <div className="blog-cta">
-          <h3>Want Expert Topdressing and Aeration for Your Bermuda Lawn?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control has served Arlington and DFW since 2006. We handle aeration, topdressing, fertilization, and full lawn health programs. Call us or claim your new-customer offer.</p>
-          <a href={`tel:${PHONE_TEL}`} className="btn-primary">Call {PHONE_DISPLAY}</a>
-          <button onClick={openPromo} className="btn-secondary">Get 50% Off First Service</button>
-        </div>
+
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

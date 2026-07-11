@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -52,14 +51,6 @@ export default function Page() {
         <h2>If You Want to Use Something Natural, Use Something That Actually Works</h2>
         <p>If avoiding synthetic chemistry is important to you, there are legitimate organic options that have real scientific backing — specifically <em>Bacillus subtilis</em>-based biofungicides applied correctly in the right temperature window. Read our full breakdown of <a href="/blogs/biofungicides-for-lawn-disease-do-they-work-in-texas">biofungicides for lawn disease</a> to understand where they succeed and where they fall short in DFW conditions. And when you need results quickly, our team at Hamann knows exactly which chemistry works on each North Texas pathogen. Explore our full approach on our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control</a> page — because your lawn deserves a remedy that actually matches the problem.</p>
 
-        <div className="blog-cta">
-          <h3>Stop the Spread Before It&rsquo;s Too Late</h3>
-          <p>Hamann has treated North Texas lawn disease since 2006. We&rsquo;ll identify what you&rsquo;re dealing with and apply the right solution — not a home remedy that lets the clock run out on your lawn.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

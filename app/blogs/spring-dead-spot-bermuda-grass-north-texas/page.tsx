@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
 
         <p>Read our post on <a href="/blogs/powdery-mildew-on-st-augustine-grass-arlington-tx">powdery mildew on St. Augustine grass in Arlington TX</a> to understand another disease where the timing of intervention &mdash; not just the treatment itself &mdash; determines whether you stop the damage or chase it all season.</p>
 
-        <div className="blog-cta">
-          <h3>Dead Circles in Your Bermuda Every Spring? There&rsquo;s a Fall Solution.</h3>
-          <p>Spring dead spot is a fall disease with spring symptoms. Hamann Lawn Care &amp; Weed Control can set up the preventive fungicide program in September and October that stops the infection before next spring&rsquo;s damage appears. Don&rsquo;t wait until you see the circles &mdash; call us now.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

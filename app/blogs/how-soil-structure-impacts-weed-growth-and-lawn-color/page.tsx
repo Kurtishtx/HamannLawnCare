@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <p>Weed problems and color problems that don&rsquo;t respond to standard treatments are usually soil structure problems in disguise. Identifying whether compaction, pH imbalance, or drainage is the root cause &mdash; and addressing it directly &mdash; unlocks the results that products alone can&rsquo;t deliver. Hamann&rsquo;s <a href="/weed-control-and-fertilizer-services">weed control and fertilizer program</a> is built around North Texas soil conditions, and our technicians are trained to spot the signs of soil-driven problems rather than just reaching for more product. For a comparison of how different fertilizer types interact with soil conditions in our climate, read our breakdown of <a href="/blogs/granular-vs-liquid-fertilizer-which-produces-better-results">granular vs. liquid fertilizer and which produces better results</a>.</p>
         <p>Call us at {PHONE_DISPLAY} and let&rsquo;s take a look at what&rsquo;s actually going on beneath your lawn&rsquo;s surface.</p>
 
-        <div className="blog-cta">
-          <h3>Fix the Soil, Fix the Lawn</h3>
-          <p>Professional weed control and fertilizer programs built around North Texas soil &mdash; and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

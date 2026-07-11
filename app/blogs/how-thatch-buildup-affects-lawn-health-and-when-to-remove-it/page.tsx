@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -91,14 +90,6 @@ export default function Page() {
         </ul>
         <p>Managing thatch isn&rsquo;t the most glamorous part of lawn care, but it&rsquo;s one of the most consequential. A half inch of thatch helping your lawn hold moisture is an asset. An inch of thatch blocking everything you apply from ever reaching the soil is money down the drain &mdash; and a slow path to a thinner, weaker lawn that fights you every season.</p>
 
-        <div className="blog-cta">
-          <h3>Is Thatch Choking Your Lawn?</h3>
-          <p>A professional evaluation can tell you exactly where your lawn stands &mdash; and what it needs to thrive.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -39,7 +39,6 @@ const seasons = [
 const RedLine = () => <div style={{ height: 4, width: 64, background: 'var(--red)', borderRadius: 2, margin: '14px auto 0' }} />;
 
 export default function LawnCareTips() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -51,10 +50,6 @@ export default function LawnCareTips() {
             <h1>Lawn &amp; <span className="headline-3d">Yard Tips</span></h1>
             <p className="hero-sub" style={{ margin: '20px auto 10px', fontWeight: 700, color: '#fff' }}>Water Smart • Save Money • Keep It Green All Year</p>
             <p className="hero-sub" style={{ margin: '0 auto 26px' }}>North Texas weather doesn&rsquo;t play around &mdash; so neither should your watering schedule. Here&rsquo;s the season-by-season irrigation game plan Hamann uses to keep yards lush from the spring rains straight through the brutal August heat.</p>
-            <div className="hero-cta" style={{ justifyContent: 'center' }}>
-              <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-              <button className="btn btn-ghost btn-lg" onClick={openPromo}>Get 50% Off →</button>
-            </div>
           </div>
         </div>
       </section>
@@ -87,16 +82,6 @@ export default function LawnCareTips() {
       </section>
 
       {/* CTA */}
-      <section className="cta-band">
-        <div className="wrap">
-          <h2>Want a Yard You Don&rsquo;t Have to Babysit?</h2>
-          <p>Let Hamann dial in your irrigation, lawn care, and pest control so your grass stays green and the bugs stay gone. <b>Claim your 50% off first application!</b></p>
-          <div className="btns">
-            <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Get Your Free Quote</a>
-            <button className="btn btn-ghost btn-lg" onClick={openPromo}>Claim 50% Off</button>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

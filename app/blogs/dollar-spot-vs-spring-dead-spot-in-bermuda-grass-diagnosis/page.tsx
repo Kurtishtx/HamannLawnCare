@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
 
         <p><strong>Hamann Lawn Care &amp; Weed Control</strong> has been diagnosing and treating Bermuda grass diseases in Arlington and the wider DFW area since 2006. We identify which disease is actually present, apply the right product at the right time, and help you adjust your fall fertilization and irrigation to reduce next year&rsquo;s pressure. For a related comparison in a different grass, read about <a href="/blogs/brown-patch-vs-large-patch-how-to-tell-apart-in-dfw">brown patch vs. large patch in DFW lawns</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Bermuda Lawn Showing Circular Dead Patches?</h3>
-          <p>Get the right diagnosis before you treat. <strong>Hamann Lawn Care &amp; Weed Control</strong> has solved DFW Bermuda disease problems since 2006 &mdash; call us today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

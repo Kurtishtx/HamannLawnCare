@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <h2>The Bottom Line for North Texas Homeowners</h2>
         <p>A lawn roller is a specialized tool with a narrow window of usefulness on DFW clay soil. It shines when pressing new sod or working seed into a prepared bed. It causes real, lasting harm when used on wet clay, used repeatedly on established turf, or used as a substitute for proper leveling techniques. If your lawn is bumpy and you&rsquo;re not sure which approach fits your situation, read our post on <a href="/blogs/how-to-fix-a-bumpy-uneven-lawn-in-dfw-without-starting-over">how to fix a bumpy uneven lawn in DFW without starting over</a> — it covers the full range of options based on the severity of your unevenness.</p>
 
-        <div className="blog-cta">
-          <h3>Not Sure What Your Lawn Needs?</h3>
-          <p>Hamann Lawn Care has been diagnosing and fixing North Texas turf problems since 2006. Give us a call.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

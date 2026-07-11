@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>Hamann&rsquo;s Take After 20 Years in DFW</h2>
         <p>We&rsquo;ve maintained thousands of lawns across Arlington, Mansfield, Grand Prairie, and surrounding communities. Homeowners who choose Zeon and commit to the mowing and dethatching program are almost universally thrilled with how the lawn looks. Homeowners who choose Palisades appreciate how naturally it fits into standard lawn care routines without demanding premium equipment. Either way, zoysia at its best is one of the finest-looking lawns in North Texas — and at Hamann, we know exactly how to keep it that way. Call us before you order sod and we&rsquo;ll tell you exactly which variety makes sense for your specific yard.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Upgrade Your Lawn to Zoysia?</h3>
-          <p>Call Hamann for expert guidance on variety selection and a professional lawn care program — and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off First Service</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

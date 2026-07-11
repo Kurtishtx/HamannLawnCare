@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <p>Cultural controls help but don&rsquo;t fully solve the problem. Raking leaf litter, keeping grass mowed short, removing wood piles, and keeping shrub mulch rings trimmed back from living areas all reduce the favorable egg-laying habitat available to engorged females. However, ticks are persistent, and a single deer crossing your yard can deposit a gravid female that undoes weeks of habitat management.</p>
         <p>The most reliable approach is professional <a href="/flea-and-tick-control">flea and tick control</a> that applies a residual barrier to the perimeter and shaded zones where females drop off and lay eggs. Timed to begin before peak egg-laying season, these treatments interrupt the cycle at the source rather than reacting to adults after the population has already built. For a broader look at how ticks develop through each stage in our area, read about the <a href="/blogs/brown-dog-tick-color-size-features">brown dog tick&rsquo;s color, size, and identifying features</a> to understand what you&rsquo;re targeting.</p>
 
-        <div className="blog-cta">
-          <h3>Stop the Tick Cycle Before It Starts</h3>
-          <p>Hamann protects Arlington and North Texas yards from ticks at every stage — including the egg masses most people never see. Call today or claim your first-treatment discount.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

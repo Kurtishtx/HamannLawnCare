@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <h2>The Verdict for North Texas Black Clay</h2>
         <p>Liquid aeration products are a useful supplemental tool on Texas black clay, not a replacement for mechanical core aeration. If your lawn has significant compaction — spongy turf that doesn&rsquo;t spring back, water pooling even after light rain, thin grass despite good fertility — core aeration is the fix you need. Liquid products can support your soil health program and make your mechanical aeration more effective, but they won&rsquo;t do the heavy lifting on their own. Read our post on <a href="/blogs/how-deep-should-core-aeration-plugs-go-for-compacted-dfw-clay">how deep core aeration plugs should go for compacted DFW clay</a> to understand the mechanical approach in detail.</p>
 
-        <div className="blog-cta">
-          <h3>Let&rsquo;s Fix Your Compacted North Texas Lawn</h3>
-          <p>Hamann Lawn Care offers professional core aeration and soil health programs built for DFW clay. Call today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
           <p>If you&apos;re also dealing with weed pressure around the base of your home, our recent post on <a href="/blogs/weed-control-around-foundation-shrubs-arlington">eliminating weeds around foundation shrubs in Arlington without damaging roots or mulch</a> covers the strategies we use in those tighter, root-sensitive zones.</p>
           <p>Shaded beds are not hopeless. They just require a program calibrated to their conditions rather than a one-size approach designed for open landscape. We can help you build that program and maintain it season by season.</p>
 
-          <div className="blog-cta">
-            <h3>Ready To Clear Your Shaded Beds?</h3>
-            <p>Get expert weed control for shaded flower beds &mdash; and claim your 50% off first treatment.</p>
-            <div className="cta-btns">
-              <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-              <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-            </div>
-          </div>
 
         </div>
       </article>

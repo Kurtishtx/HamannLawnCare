@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <p>If you&rsquo;ve fogged more than two or three times and keep ending up back at the same miserable starting point, you&rsquo;re not failing &mdash; the product category is failing you. DIY foggers were never designed to provide season-long mosquito control. They&rsquo;re designed to reduce adult mosquitoes in the immediate moment. That&rsquo;s a different goal, and it&rsquo;s why the result is always temporary relief followed by immediate return.</p>
         <p>The money spent on repeated DIY fogging &mdash; the propane, the canisters, your time &mdash; often adds up quickly over a Texas mosquito season. A professional program with guaranteed results frequently costs less in the long run while actually delivering the outcome you&rsquo;re after: a yard you can use without planning around the bug situation. Hamann Lawn Care has been delivering exactly that for Arlington and DFW homeowners since 2006.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

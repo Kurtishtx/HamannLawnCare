@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -74,14 +73,6 @@ export default function Page() {
         <p>A <a href="/weed-control-and-fertilizer-services">professional weed control program</a> builds MOA rotation and pre-emergent timing into its schedule from the start. Rather than reacting to visible weeds with whatever is on hand, professionals select chemistry based on the current weed species, the growth stage, the turf type, and the prior treatments applied to that property. That rotation history matters &mdash; knowing what has been used before is part of managing what should be used next.</p>
         <p>Hamann&rsquo;s program also includes fertilization timed to push your grass into dense, competitive growth. A thick, healthy lawn is one of the most effective weed barriers available &mdash; not because it kills weeds, but because it eliminates the bare soil and thin turf that weeds need to establish in the first place. Resistance management and turf health are not separate goals; they work together to create a lawn that is genuinely difficult for weeds to colonize season after season.</p>
 
-        <div className="blog-cta">
-          <h3>Stop the Cycle &mdash; Get Professional Weed Control</h3>
-          <p>Rotating chemistry, pre-emergent timing, and turf-building fertilization &mdash; 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

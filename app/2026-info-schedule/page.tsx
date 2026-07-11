@@ -109,7 +109,6 @@ const faqs = [
 const RedLine = () => <div style={{ height: 4, width: 64, background: 'var(--red)', borderRadius: 2, margin: '14px auto 0' }} />;
 
 export default function LawnTreatmentSchedule2026() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -121,10 +120,6 @@ export default function LawnTreatmentSchedule2026() {
             <h1>The 2026 <span className="headline-3d">Lawn Treatment</span> Schedule</h1>
             <p className="hero-sub" style={{ margin: '20px auto 10px', fontWeight: 700, color: '#fff' }}>9 Rounds • Every 4&ndash;7 Weeks • Built For North Texas Turf</p>
             <p className="hero-sub" style={{ margin: '0 auto 26px' }}>This isn&rsquo;t spray-and-pray. Our 2026 program layers weed control, fertilizer, micronutrients, fungus protection, grub control, bio stimulants, and soil science across the whole year &mdash; so your lawn gets exactly what it needs, exactly when it needs it.</p>
-            <div className="hero-cta" style={{ justifyContent: 'center' }}>
-              <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-              <button className="btn btn-ghost btn-lg" onClick={openPromo}>Get 50% Off →</button>
-            </div>
           </div>
         </div>
       </section>
@@ -260,16 +255,6 @@ export default function LawnTreatmentSchedule2026() {
       </section>
 
       {/* CTA */}
-      <section className="cta-band">
-        <div className="wrap">
-          <h2>Get On The 2026 Program Today</h2>
-          <p>Give your lawn a real plan this year &mdash; nine rounds engineered for North Texas turf. <b>Claim your 50% off first application!</b></p>
-          <div className="btns">
-            <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Get Your Free Quote</a>
-            <button className="btn btn-ghost btn-lg" onClick={openPromo}>Claim 50% Off</button>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

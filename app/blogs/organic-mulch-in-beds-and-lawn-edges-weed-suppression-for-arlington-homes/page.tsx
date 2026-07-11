@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -96,14 +95,6 @@ export default function Page() {
           The bottom line for Arlington homeowners: organic mulch at the correct depth is one of the most cost-effective weed suppression tools available, and it does double duty by protecting your soil and plants from summer heat stress. Pair it with professional pre-emergent timing and you&rsquo;ll spend dramatically less time on your knees in the beds every weekend.
         </p>
 
-        <div className="blog-cta">
-          <h3>Let&rsquo;s Build A Weed Suppression Strategy For Your Arlington Yard.</h3>
-          <p>Hamann&rsquo;s professional weed control and fertilizer programs pair perfectly with proper mulching &mdash; and your first application is 50% off.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

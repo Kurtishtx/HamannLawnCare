@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <p>The previous post on <a href="/blogs/outdoor-fan-mosquito-prevention-patios">using outdoor fans to prevent mosquitoes on your patio</a> covers another effective supplemental tool &mdash; fans plus smart lighting plus professional treatment is a genuinely strong combination for making your outdoor space tolerable through a Texas summer.</p>
         <p>Hamann Lawn Care &amp; Weed Control has been serving Arlington and the DFW area since 2006. We know North Texas mosquitoes like the back of our hand, and our barrier treatment program gives your smart home improvements the population reduction they need to actually make a difference you can feel.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

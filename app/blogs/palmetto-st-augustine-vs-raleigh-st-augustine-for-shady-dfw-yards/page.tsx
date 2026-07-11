@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
 
         <p>Hamann Lawn Care &amp; Weed Control has maintained both Palmetto and Raleigh lawns throughout Arlington and DFW since 2006. If you&rsquo;re deciding between varieties or troubleshooting a struggling shaded lawn, call us at <a href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a> and we&rsquo;ll take a look.</p>
 
-        <div className="blog-cta">
-          <h3>Struggling With a Shaded Lawn in DFW?</h3>
-          <p>Hamann specializes in North Texas lawns — shady or sunny. Call or claim your new-customer offer.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

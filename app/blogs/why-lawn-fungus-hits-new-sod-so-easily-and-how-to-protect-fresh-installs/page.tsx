@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -73,14 +72,6 @@ export default function Page() {
         <h2>Protect the Investment You Just Made</h2>
         <p>Fresh sod is expensive &mdash; between materials, prep, and installation, a typical North Texas backyard can represent a significant investment. Protecting it from fungal disease during the establishment window isn&rsquo;t complicated, but it does require attention and often professional support. Hamann Lawn Care has been helping Arlington-area homeowners protect their lawns since 2006, and we&rsquo;re here to make sure that new sod turns into a lawn you enjoy for years.</p>
 
-        <div className="blog-cta">
-          <h3>New Sod Going In? Let&rsquo;s Protect It From Day One.</h3>
-          <p>Ask us about preventive fungicide programs for fresh sod installs in North Texas.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

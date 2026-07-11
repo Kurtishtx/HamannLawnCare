@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <p>In North Texas, fleas remain biologically active for ten or more months of the year. This means the outdoor-to-indoor transfer pathway is essentially continuous from March through November and intermittently active even in winter. <a href="/flea-and-tick-control">Professional flea and tick yard treatment</a> is what closes the outdoor source, dramatically reducing the rate at which eggs enter your home. You can also read about <a href="/blogs/flea-eggs-in-yard-how-long-viable">how long flea eggs survive in your yard before hatching</a> to understand why a single outdoor treatment is rarely sufficient and why timing follow-up visits to flea biology &mdash; not just to the calendar &mdash; produces better results.</p>
         <p>Indoor treatment alone is a losing battle in DFW. The vacuum and spray routine inside the house buys time, but until the yard is under control, the pipeline of new eggs entering your home every day keeps the indoor population rebuilding faster than you can eliminate it. A coordinated approach &mdash; yard barrier treatment, indoor perimeter treatment, and consistent vacuuming of all the non-obvious zones described above &mdash; is what actually breaks the cycle.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Protect Your Yard From Fleas &amp; Ticks?</h3>
-          <p>Professional flea &amp; tick control built for North Texas &mdash; claim your 50% off first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

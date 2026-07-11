@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -75,14 +74,6 @@ export default function Page() {
         <p>The North Texas flea and tick season calendar points to a clear professional treatment rhythm for most suburban properties: first application in March, follow-up in April or May, then recurring treatments every 6–8 weeks through October, with a final late-season application in November if budget allows. This schedule aligns treatments with the season&rsquo;s natural vulnerability windows — hitting populations before they compound, rather than chasing them after they explode.</p>
         <p><a href="/blogs/new-puppy-flea-tick-protection-plan">Households with pets and young children</a> benefit most from sticking to this full schedule. Hamann has been treating North Texas properties on this rhythm since 2006 — our team knows the local calendar and can build a program that fits your specific yard, your pets, and your family&rsquo;s needs.</p>
 
-        <div className="blog-cta">
-          <h3>Timing Is Everything. Let&rsquo;s Get Your Schedule Set.</h3>
-          <p>Professional flea and tick treatments timed to the North Texas season calendar. Claim 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -65,14 +64,6 @@ export default function Page() {
         <p>Condensate drainage is one of those mosquito breeding sources that tends to stay active all summer while other sources dry up between rain events. It&rsquo;s worth identifying and addressing on your property &mdash; and it&rsquo;s one of the sources a trained eye will check during a professional mosquito assessment.</p>
         <p>If you&rsquo;ve also been dealing with clogged gutters holding water above the roofline, that&rsquo;s another major source worth tackling simultaneously. Check out our post on <a href="/blogs/gutters-as-mosquito-breeding-habitat">why clogged gutters are one of the top mosquito breeding sites on your property</a> for everything you need to know about that source.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

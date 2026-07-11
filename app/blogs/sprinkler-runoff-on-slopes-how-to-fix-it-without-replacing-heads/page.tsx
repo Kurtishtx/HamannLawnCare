@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -54,14 +53,6 @@ export default function Page() {
         <p>For lawn zones on moderate slopes (less than 15 percent grade), cycle-and-soak combined with rotating nozzles nearly always solves the problem. For steep banks (above 20 percent grade) planted with turf, drip may be the right long-term conversion. A <a href="/lawn-care-services">professional lawn care evaluation</a> can help you assess which solution fits your specific terrain and budget.</p>
         <p>Once your slope zones are properly calibrated and delivering water efficiently, the next question is whether your overall weekly water delivery is hitting the right target. Read our breakdown of <a href="/blogs/how-much-water-does-bermuda-grass-actually-need-per-week-in-july">how much water Bermuda grass needs per week in a DFW July</a> to confirm your schedule is delivering enough on the days you can water.</p>
 
-        <div className="blog-cta">
-          <h3>Wasting Water on Runoff Every Watering Day?</h3>
-          <p>Hamann Lawn Care helps Arlington homeowners get more out of every irrigation session. Call for a free consult.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

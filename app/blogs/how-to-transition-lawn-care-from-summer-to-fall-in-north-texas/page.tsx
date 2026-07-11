@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
         <h2>Build Your Spring Head Start Now</h2>
         <p>Every step you take during the summer-to-fall transition is really an investment in next spring. The lawns that green up first and most evenly in March are the ones that went into dormancy strong — with full root reserves, no disease pressure, and a pre-emergent barrier blocking the first flush of spring weeds. If you want a thick, healthy DFW lawn year after year, fall is where the real work happens.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Set Your Lawn Up for a Stronger Spring?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control has served Arlington and the DFW area since 2006. Let us build your fall transition plan.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

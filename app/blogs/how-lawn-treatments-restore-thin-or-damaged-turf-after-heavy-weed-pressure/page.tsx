@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -69,14 +68,6 @@ export default function Page() {
         <p>Reading about how <a href="/blogs/why-professional-lawn-treatments-are-essential-for-managing-severe-weed-infestations">professional lawn treatments are essential for managing severe weed infestations</a> is a good starting point for understanding what a structured program actually looks like versus piecemeal DIY applications. The gap in results between a well-sequenced professional program and a reactive DIY approach is significant &mdash; especially on lawns that are already in a weakened state and need every advantage they can get.</p>
         <p>Since 2006, Hamann Lawn Care &amp; Weed Control has been restoring thin, weed-damaged lawns across Arlington and North Texas. We know these grasses, these weeds, and these soils because we have been working in them for two decades. If your lawn is struggling after a rough season of weed pressure, the recovery is possible &mdash; it just needs the right program behind it.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Healthier Lawn?</h3>
-          <p>Let&rsquo;s put together a treatment plan that clears out the weeds and gets your turf growing thick again &mdash; and lock in 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

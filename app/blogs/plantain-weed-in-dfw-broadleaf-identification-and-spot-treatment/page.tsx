@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -91,14 +90,6 @@ export default function Page() {
           Plantain weed is a reliable signal that your lawn&rsquo;s soil needs attention. Where you see it clustering, you&rsquo;ll almost always find compacted, low-oxygen clay that&rsquo;s making it difficult for turf to compete. Controlling the existing plants with a well-timed selective broadleaf herbicide will knock back the infestation, but pairing that treatment with aeration and a consistent fertilization schedule is what prevents plantain &mdash; and weeds like it &mdash; from reclaiming ground each season. Hamann Lawn Care &amp; Weed Control serves homeowners across the DFW area with targeted, turf-safe weed control programs designed around the specific challenges of North Texas clay soil.
         </p>
 
-        <div className="blog-cta">
-          <h3>Ready To Knock Out Plantain Weed For Good?</h3>
-          <p>Get professional weed control that targets broadleaf weeds at the root &mdash; and claim your 50% off first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

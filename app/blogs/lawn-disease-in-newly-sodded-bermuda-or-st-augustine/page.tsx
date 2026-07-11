@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -71,14 +70,6 @@ export default function Page() {
         <p>The <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control program</a> we run for DFW homeowners includes exactly this kind of assessment &mdash; because correctly identifying what you&rsquo;re dealing with is the difference between a fast recovery and throwing money at the wrong treatment while the sod continues to decline.</p>
         <p>New sod is not low-maintenance, especially in DFW&rsquo;s climate. But with the right timing, proper watering management, and fast action when symptoms appear, you can get past that vulnerable first month and come out the other side with turf that will thrive for years. If something looks wrong, trust your gut and make the call.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Protect Your Lawn?</h3>
-          <p>Get professional lawn disease treatment &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

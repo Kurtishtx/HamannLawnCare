@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <h2>When You Need Professional Help</h2>
         <p>Buffalo grass is forgiving of neglect but unforgiving of the wrong product. Selecting herbicides that are safe for this unique grass species while still hammering the weeds takes experience with native turf systems, not just a standard warm-season spray program. Our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer service</a> identifies your specific grass type before we recommend any treatment &mdash; because spraying buffalo grass with a Bermuda program can ruin it. For more background on how grass variety changes the treatment approach, read our post on <a href="/blogs/tall-fescue-in-north-texas-weed-control-and-fertilization-differences">tall fescue weed control and fertilization differences in North Texas</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Low-Input Lawn, Expert-Level Results</h3>
-          <p>Buffalo grass deserves the right program &mdash; not a one-size-fits-all spray. Call us and we&rsquo;ll build a plan that fits your turf.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

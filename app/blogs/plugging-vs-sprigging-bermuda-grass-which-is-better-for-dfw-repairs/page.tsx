@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
 
         <p>Also see our guide on <a href="/blogs/how-to-install-sod-over-existing-dead-bermuda-grass-in-summer">installing sod over dead Bermuda in summer</a> if the damage is extensive enough that full sod replacement makes more sense than plugging or sprigging. Hamann has handled Bermuda repairs of every scale across Arlington and the surrounding DFW communities since 2006 — call us anytime to talk through which approach fits your specific situation.</p>
 
-        <div className="blog-cta">
-          <h3>Not Sure Which Repair Method Is Right for Your Lawn?</h3>
-          <p>Get a pro opinion from the Hamann team — plus 50% off your first lawn care service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

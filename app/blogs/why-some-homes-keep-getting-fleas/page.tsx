@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <p>If you&rsquo;ve been struggling with repeat infestations and wondering why your DIY efforts never seem to stick, it&rsquo;s worth reading about <a href="/blogs/why-professional-flea-control-works-better-than-diy-methods">why professional flea control works better than DIY methods</a> &mdash; the differences in timing, product access, and application technique are significant and explain a lot of the frustration homeowners experience going it alone.</p>
         <p>The good news is that homes that commit to a consistent, multi-pronged approach do break the cycle. It takes a few weeks and some patience while existing cocoons work through their lifecycle, but once the population is suppressed and the conditions that support it are addressed, flea problems become manageable rather than maddening. The key is not letting up too soon.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Break The Flea Cycle For Good?</h3>
-          <p>Get professional flea control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

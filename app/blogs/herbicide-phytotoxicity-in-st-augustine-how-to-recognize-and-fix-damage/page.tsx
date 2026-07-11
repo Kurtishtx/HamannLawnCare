@@ -4,7 +4,7 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
+
 
   return (
     <main>
@@ -78,10 +78,7 @@ export default function Page() {
 
           <p>At Hamann Lawn Care &amp; Weed Control, we have been treating St. Augustine lawns across Arlington and the DFW metroplex since 2006. We know which products to use, which to avoid, and how to handle the uncommon situations when something unexpected shows up. Phytotoxicity from our applications is essentially unheard of &mdash; because we do not use products that cause it.</p>
 
-          <div className="blog-cta">
-            <h3>Don&rsquo;t Risk Your St. Augustine Lawn With the Wrong Product</h3>
-            <p>Let Hamann Lawn Care &amp; Weed Control handle weed control the right way &mdash; with the correct products, at the right rates, timed for your specific grass type and the DFW growing season. Call us at <a href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a> or <button className="link-btn" onClick={openPromo}>get a free quote online</button> before the next weed flush hits.</p>
-          </div>
+
         </div>
       </article>
 

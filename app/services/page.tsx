@@ -17,7 +17,6 @@ const services = [
 ];
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
   return (
     <main>
       <section className="hero honey" style={{ paddingBottom: 90 }}>
@@ -26,10 +25,6 @@ export default function Page() {
             <span className="hero-kick" style={{ borderColor: 'var(--red)' }}>⭐ Arlington &amp; North Texas Since 2006</span>
             <h1>Our <span className="headline-3d">Services</span></h1>
             <p className="hero-sub" style={{ margin: '20px auto 26px' }}>One local company for everything your yard needs — lawn care, weed &amp; pest control, tree &amp; shrub care, and more. Every service backed by science-driven products and a satisfaction guarantee.</p>
-            <div className="hero-cta" style={{ justifyContent: 'center' }}>
-              <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-              <button className="btn btn-ghost btn-lg" onClick={openPromo}>Get 50% Off →</button>
-            </div>
           </div>
         </div>
       </section>
@@ -53,16 +48,6 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="cta-band">
-        <div className="wrap">
-          <h2>Not Sure Which Service You Need?</h2>
-          <p>Give us a call — we&rsquo;ll take a look and build the right program for your yard. <b>Claim your 50% off first application!</b></p>
-          <div className="btns">
-            <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Get Your Free Quote</a>
-            <button className="btn btn-ghost btn-lg" onClick={openPromo}>Claim 50% Off</button>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

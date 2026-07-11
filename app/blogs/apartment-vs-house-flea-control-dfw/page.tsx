@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -52,14 +51,6 @@ export default function Page() {
         <p>One of the most common ways DFW residents end up with a flea infestation in a new home is by moving from a flea-infested prior residence without addressing the problem before the move. Flea pupae in upholstered furniture, rugs, and other soft items survive the move and emerge in the new space. If you&rsquo;re moving from an infested apartment to a house, or from an infested house to a new rental, treating your belongings before the move — or at minimum treating the new space before moving in — prevents importing the problem. This connects directly to the case for treating a yard before bringing any pet home, which is a step many new homeowners skip entirely.</p>
         <p>Hamann has served DFW homeowners since 2006. If you&rsquo;re dealing with a persistent flea problem in your house and have been treating only indoors, or if you&rsquo;re about to move into a new home and want the yard treated before your pets arrive, our team can assess the situation and put together a plan that addresses the full picture.</p>
 
-        <div className="blog-cta">
-          <h3>Flea Problem That Keeps Coming Back? We&rsquo;ll Find the Loop.</h3>
-          <p>Professional exterior flea treatment for DFW homes — tackling the yard side of the equation. Claim 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

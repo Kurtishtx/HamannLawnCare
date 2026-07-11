@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
         <h2>The Practical Takeaway</h2>
         <p>If you&rsquo;re dealing with a serious flea or tick problem in your Arlington, Grand Prairie, or Mansfield yard, neither product format alone is the answer. Understanding that granulars excel at soil penetration and large-area coverage while liquids excel at targeted application and foliage coverage is the first step. The second step is pairing them intelligently with a follow-up schedule that accounts for North Texas heat, the flea lifecycle, and the specific hotspots on your property. For more detail on how IGRs fit into this equation, see our post on <a href="/blogs/igr-insect-growth-regulator-flea-control">IGRs for Flea Control: What Insect Growth Regulators Do and Why They Matter</a> — the lifecycle-breaking piece that granulars and liquids both need to maximize their impact.</p>
 
-        <div className="blog-cta">
-          <h3>Want the Right Treatment for Your Specific Yard?</h3>
-          <p>We&rsquo;ll assess your property and apply the right mix — granular, liquid, or both. Claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

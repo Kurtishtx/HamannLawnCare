@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <p>For a full overview of how we approach disease management across different lawn conditions, visit our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control</a> service page.</p>
         <p>Also read our related post on <a href="/blogs/brown-patch-peak-season-in-arlington-tx-september-october">brown patch peak season in Arlington TX in September and October</a>, which covers how the transition season creates optimal conditions for <em>Rhizoctonia</em> in St. Augustine lawns across the city.</p>
 
-        <div className="blog-cta">
-          <h3>Shaded St. Augustine Losing Ground After Rain? We Know Exactly What&rsquo;s Happening.</h3>
-          <p><strong>Hamann Lawn Care &amp; Weed Control</strong> has been treating disease in shaded DFW lawns since 2006. Call us and get the right diagnosis, the right fungicide, and a plan to protect your lawn through the summer disease season.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

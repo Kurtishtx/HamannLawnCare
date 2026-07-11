@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -51,14 +50,6 @@ export default function Page() {
         <h2>Refreshing Raised Bed Soil to Reset the Weed Bank</h2>
         <p>If a raised bed has a heavy weed seed bank built up from several seasons of neglect, the most effective reset is a solarization treatment during summer. After the spring crop is done, clear all plant material, water the bed thoroughly, and cover with clear plastic sheeting pulled tight and sealed at the edges. Six to eight weeks of Texas summer sun under clear plastic heats the top four to six inches of soil to weed-killing temperatures, dramatically reducing seed viability for the fall planting season. This is the raised-bed equivalent of the professional soil reset approach, and it works reliably in the DFW climate.</p>
 
-        <div className="blog-cta">
-          <h3>Get Expert Weed Control Advice for Your Beds</h3>
-          <p>From raised garden beds to ornamental flower beds, Hamann has North Texas covered since 2006 &mdash; call us today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

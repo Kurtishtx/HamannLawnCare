@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
 
         <p>A well-timed isoxaben application &mdash; or a professional program that stacks it with complementary products &mdash; is one of the most impactful single investments you can make in your <a href="/flower-bed-weed-control">flower-bed weed control</a> program. If you&rsquo;re evaluating which pre-emergent format works best in North Texas clay, our companion post on <a href="/blogs/fertilizer-pre-emergent-combo-bed-products-dfw">fertilizer and pre-emergent combo products for DFW beds</a> covers the trade-offs between convenience and control in detail. Hamann has been applying professional pre-emergent programs in North Texas beds since 2006 &mdash; call us at {PHONE_DISPLAY} to get on a schedule that actually prevents the weeds before you see them.</p>
 
-        <div className="blog-cta">
-          <h3>Get Broadleaf Weeds Out of Your DFW Flower Beds Before They Start</h3>
-          <p>Professional pre-emergent programs timed for North Texas &mdash; and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

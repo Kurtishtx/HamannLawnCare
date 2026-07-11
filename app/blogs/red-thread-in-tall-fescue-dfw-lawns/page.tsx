@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -77,14 +76,6 @@ export default function Page() {
         <p>Fescue in North Texas requires a different management mindset than fescue in cooler regions. Every care decision &mdash; fertilization timing, irrigation scheduling, mowing height, overseeding dates &mdash; needs to account for the fact that this grass is always somewhat stressed by the climate. Red thread is one of several diseases that exploit that stress. The good news is that fescue managed with consistent nitrogen, proper irrigation, and annual overseeding will be significantly more resistant to red thread than a lawn that gets inconsistent care. Think of disease resistance as a byproduct of overall lawn health, not a separate concern.</p>
         <p>Hamann Lawn Care &amp; Weed Control has been helping DFW homeowners manage fescue and other turf types since 2006. We understand the unique challenges of growing cool-season grass in a warm climate, and we tailor our disease management approach accordingly. If red thread is moving through your fescue this season, we can help you stop it and build a care routine that keeps it from coming back.</p>
 
-        <div className="blog-cta">
-          <h3>Red Thread Spreading Through Your Fescue?</h3>
-          <p>Don&rsquo;t let a nitrogen deficiency cost you your fescue lawn. Call Hamann for professional diagnosis and treatment before the patches spread.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

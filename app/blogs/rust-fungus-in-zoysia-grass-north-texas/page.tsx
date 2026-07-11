@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -83,14 +82,6 @@ export default function Page() {
 
         <p>When in doubt, a professional diagnosis before treatment saves time and money. The wrong fungicide class applied to the wrong disease does nothing except delay effective treatment. We&rsquo;ve seen lawns come to us after two rounds of ineffective DIY treatment where the original problem was still completely active&mdash;and now the homeowner is six weeks further into the season with less recovery time available.</p>
 
-        <div className="blog-cta">
-          <h3>Rust Turning Your Zoysia Orange?</h3>
-          <p>If the orange shoe test just confirmed your worst suspicions, call us before the season gets away from you. Hamann Lawn Care &amp; Weed Control has been diagnosing and treating lawn fungus across Arlington and the DFW area since 2006. We know zoysia&mdash;and we know rust. Let&rsquo;s get your lawn back to green.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>&#128222; Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

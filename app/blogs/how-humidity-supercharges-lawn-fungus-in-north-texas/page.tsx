@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <h2>When Preventive Fungicide Makes Sense</h2>
         <p>If your lawn has had brown patch or other humidity-triggered diseases in previous seasons, preventive fungicide applications before the high-humidity period begins can significantly reduce outbreak severity. Preventive applications keep pathogen populations below the threshold where they can cause visible damage, even when environmental conditions are favorable. This is a fundamentally different approach from waiting for visible disease and then treating it reactively &mdash; and it results in a healthier, better-looking lawn through the worst of summer. Our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control</a> program includes preventive treatment options timed to North Texas seasonal patterns specifically for this reason. Hamann has been protecting Arlington and DFW lawns from summer fungal outbreaks since 2006. Call us before the smoke rings appear.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Wait for Brown Patch to Strike</h3>
-          <p>Preventive and curative lawn fungus treatments built for North Texas summers &mdash; first application is 50% off.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

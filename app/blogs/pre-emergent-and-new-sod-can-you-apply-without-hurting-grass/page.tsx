@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <h2>Building a Program After Establishment</h2>
         <p>Once your sod has fully rooted &mdash; typically confirmed by firm resistance to lifting and visible lateral spreading of the grass &mdash; a normal pre-emergent program can begin. For sod installed in late summer or fall in Arlington, this often means the first real pre-emergent application happens the following spring. That timing works well for targeting summer annual weeds like crabgrass, which is the primary target of most spring pre-emergent treatments in North Texas. Read more in our guide on <a href="/blogs/dithiopyr-dimension-for-early-post-emergent-crabgrass-control-in-dfw">dithiopyr for early post-emergent crabgrass control in DFW</a> about how to handle situations where the first pre-emergent application gets complicated by emerging crabgrass.</p>
 
-        <div className="blog-cta">
-          <h3>New Sod or Established Lawn &mdash; We&rsquo;ve Got a Program for It</h3>
-          <p>Don&rsquo;t guess on timing. Hamann has been protecting Arlington lawns since 2006. Call today and get 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

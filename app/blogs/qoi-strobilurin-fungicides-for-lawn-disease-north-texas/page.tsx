@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -49,14 +48,6 @@ export default function Page() {
         <p>Strobilurins perform best when applied to dry foliage and watered in lightly within 24 hours to move the active ingredient through the thatch. For preventive applications, timing to just before disease-favorable conditions arrive — elevated humidity, extended leaf wetness periods, temperatures in the 70&ndash;90&deg;F range — delivers the best suppressive effect. Curative applications need to happen within days of first symptom appearance; waiting a week with an active Grey Leaf Spot or Brown Patch infection significantly reduces what strobilurins can accomplish.</p>
         <p>We cover the full framework of how these fungicide classes fit together in our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control</a> service. And if you&rsquo;re evaluating DMI fungicides alongside strobilurins, our guide on <a href="/blogs/dmi-fungicides-for-lawn-disease-propiconazole-tebuconazole-guide">propiconazole vs. tebuconazole</a> covers how those tools complement what QoI products do.</p>
 
-        <div className="blog-cta">
-          <h3>Grey Leaf Spot or Brown Patch Moving on Your Lawn?</h3>
-          <p>Hamann applies the right strobilurin chemistry at the right time — and rotates properly so resistance never develops. Call for a professional assessment of your North Texas lawn.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

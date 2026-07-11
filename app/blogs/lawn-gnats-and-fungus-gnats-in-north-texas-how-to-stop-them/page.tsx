@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <p>In very heavy infestations, fungus gnat larvae can damage grass roots in the top inch of soil — especially on new sod and seedlings. If you are seeing unexplained thin patches or yellowing in areas with heavy gnat activity, root feeding may be contributing to the damage. In these cases, addressing the larval population with nematodes or Bti alongside the environmental corrections is warranted.</p>
         <p>For the broader set of lawn conditions that create gnat-friendly environments, see our <a href="/lawn-care-services">professional lawn care programs</a> — proper aeration, thatch management, and drainage correction are all part of what we do. For a related post on another wet-soil problem in DFW yards, read our guide on <a href="/blogs/how-to-fix-standing-water-that-pools-in-your-dfw-backyard-after-rain">how to fix standing water in your DFW backyard after rain</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Gnats Taking Over Your Yard?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control has been solving North Texas lawn problems since 2006 — including the ones that are more than just cosmetic.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

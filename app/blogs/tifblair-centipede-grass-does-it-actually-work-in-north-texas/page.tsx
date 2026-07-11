@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -65,14 +64,6 @@ export default function Page() {
         <h2>The Bottom Line on TifBlair in DFW</h2>
         <p>TifBlair centipede is a genuinely improved variety and the best centipede option if you insist on centipede in North Texas. But insisting on centipede in North Texas is the core problem. The soil chemistry, freeze risk, and summer heat intensity make it a challenging grass to maintain here, and the &ldquo;low-maintenance&rdquo; promise evaporates quickly without active soil management. For most Arlington homeowners, Bermuda, Zoysia, or St. Augustine will deliver a better result with less frustration. Hamann has been helping DFW families choose and care for the right grass since 2006 — call us before you buy sod.</p>
 
-        <div className="blog-cta">
-          <h3>Not Sure Which Grass Is Right for Your Yard?</h3>
-          <p>Get expert advice from a local lawn care team that has seen every grass type perform — and fail — across Arlington and DFW.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off First Service</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -68,14 +67,6 @@ export default function Page() {
         <p>Hamann Lawn Care &amp; Weed Control has been battling aggressive grass weeds like Johnsongrass in Arlington and throughout the DFW metroplex since 2006. We know which products are appropriate for each situation and turf type, how to minimize turf damage during treatment, and how to build a multi-season plan that progressively eliminates the rhizome network. For a close relative that causes similar frustration in DFW lawns, read our post on <a href="/blogs/sandbur-and-grassbur-control-in-north-texas-lawns">sandbur and grassbur control</a>&mdash;another grass weed that requires persistent pre-emergent timing and professional chemistry to beat.</p>
         <p>Johnsongrass is not a weed you beat in a weekend. But with the right program and a multi-season commitment, it can absolutely be brought under control. Call us and let&rsquo;s build a plan for your specific situation.</p>
 
-        <div className="blog-cta">
-          <h3>Johnsongrass Taking Over Your Lawn or Fence Line?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control builds multi-season plans to eliminate aggressive grass weeds across North Texas&mdash;plus 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

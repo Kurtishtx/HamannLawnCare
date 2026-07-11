@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -114,14 +113,6 @@ export default function Page() {
           Hamann Lawn Care &amp; Weed Control has been treating Arlington and DFW-area properties since 2006. We know the local weed calendar, the soil conditions, and which tools work in North Texas beds without collateral damage to the ornamentals you&rsquo;ve invested in.
         </p>
 
-        <div className="blog-cta">
-          <h3>Ready To Reclaim Your Flower Beds?</h3>
-          <p>Get professional flower-bed weed control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

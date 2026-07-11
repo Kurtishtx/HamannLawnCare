@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         <h2>The Practical Path to Your Own Mosquito-Free Yard</h2>
         <p>You can absolutely close most of the gap between your yard and the lucky neighbor down the street. Start with the standing water audit &mdash; walk the yard and eliminate every source you can find. Make landscape adjustments over time to reduce shaded, humid resting habitat. Use fans on the patio. But layer a professional program on top of that habitat work for the results that actually hold. The two together &mdash; source reduction on your end, professional treatment by Hamann &mdash; deliver the yard that looks like it&rsquo;s just naturally mosquito-resistant, because you&rsquo;ve given it every advantage. We&rsquo;ve been making Arlington yards look like the lucky neighbor since 2006.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

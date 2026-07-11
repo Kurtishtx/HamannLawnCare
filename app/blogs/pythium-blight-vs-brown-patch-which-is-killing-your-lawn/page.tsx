@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -72,14 +71,6 @@ export default function Page() {
         <h2>How Hamann Handles Both Diseases</h2>
         <p>Hamann Lawn Care &amp; Weed Control has treated Pythium blight and brown patch outbreaks across Arlington, Grand Prairie, Mansfield, and the surrounding DFW suburbs since 2006. We identify which disease you&rsquo;re dealing with based on symptom pattern, timing, mycelium presence, and spread speed &mdash; then apply the appropriate professional-grade fungicide to the affected zone plus a buffer into surrounding healthy turf. We also help you adjust your irrigation schedule and identify any drainage or compaction issues that are feeding recurring outbreaks. If your lawn is changing rapidly right now, call us today &mdash; with Pythium blight, hours matter.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Stop The Spread?</h3>
-          <p>Don&rsquo;t guess which disease is destroying your lawn. Hamann&rsquo;s lawn disease control team will diagnose and treat it right &mdash; before it takes more turf.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <h2>The Bottom Line for North Texas Homeowners</h2>
         <p>Mosquitoes in Texas don&rsquo;t live especially long as individuals &mdash; but they don&rsquo;t need to. Their rapid breeding cycle, the length of our warm season, and the abundance of breeding habitat in a typical Arlington yard means the population sustains and compounds all season long. The only approach that actually breaks the cycle is a professional program targeting adults, larvae, and resting zones together, applied consistently across the full season. Hamann Lawn Care has been doing exactly that in the DFW area since 2006.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

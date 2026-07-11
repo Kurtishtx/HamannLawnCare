@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <h2>Hamann&rsquo;s Approach to Dollar Spot Control</h2>
         <p>At Hamann Lawn Care &amp; Weed Control, we&rsquo;ve been handling North Texas lawn diseases since 2006 &mdash; including the full range of dollar spot outbreaks that show up each spring and fall across Arlington and the DFW area. We identify the disease correctly, apply the right fungicide product and rate for your grass type, and help you adjust your lawn care program so dollar spot has a harder time getting a foothold next season. If you&rsquo;re seeing those telltale small straw circles in your Bermuda or Zoysia, give us a call before they merge into something much bigger.</p>
 
-        <div className="blog-cta">
-          <h3>Dollar Spot Showing Up In Your Lawn?</h3>
-          <p>Stop it before those small spots merge into large dead patches. Professional treatment, fast results.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

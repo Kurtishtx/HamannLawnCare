@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <h2>Hamann Diagnoses TARR Correctly</h2>
         <p>Hamann Lawn Care &amp; Weed Control has been diagnosing and treating Take-All Root Rot across Arlington and North Texas since 2006. We know what to look for, we know the pull-test technique, and we know the right combination of peat moss, fungicide, and cultural corrections that give your St. Augustine the best chance of recovery. If your lawn is wilting despite adequate water or pulling up easily from the ground, call us before the root system deteriorates further.</p>
 
-        <div className="blog-cta">
-          <h3>Suspect Take-All Root Rot Is Killing Your Lawn?</h3>
-          <p>Get a professional diagnosis and targeted treatment plan before the damage goes any deeper.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

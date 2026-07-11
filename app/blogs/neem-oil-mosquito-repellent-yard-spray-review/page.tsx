@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <p>Neem oil is a legitimate organic tool for garden insect management and has some documented effect on mosquito larvae. As a yard-wide mosquito spray in North Texas summer conditions, its rapid UV degradation and practical application challenges make it a poor replacement for a proper control program. Use it for what it does well &mdash; and for your mosquito problem, call in the right tool for the job.</p>
         <p>Hamann Lawn Care has been protecting Arlington yards since 2006. We use proven, safe products that actually hold up in Texas conditions &mdash; give us a call and we&rsquo;ll tell you exactly what your yard needs.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

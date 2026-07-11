@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         <p>Hamann Lawn Care &amp; Weed Control has been protecting North Texas lawns from winter weeds like chickweed since 2006. Our fall pre-emergent applications are timed specifically for the DFW climate&mdash;not a generic national calendar&mdash;so you get maximum suppression right when the seeds are trying to germinate. For lawns that already have chickweed, our post-emergent treatments target the plants you can see while we set up pre-emergent protection for next season. Check out our post on <a href="/blogs/spotted-spurge-a-summer-weed-that-destroys-dfw-lawn-edges">spotted spurge</a> to see how we handle the summer side of the annual weed calendar too.</p>
         <p>Don&rsquo;t let another winter of chickweed add to the seed bank in your lawn. Early treatment saves you money every year&mdash;and keeps your lawn looking sharp even when the grass is dormant.</p>
 
-        <div className="blog-cta">
-          <h3>Winter Weeds Taking Over Your Lawn?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control handles chickweed and every other winter weed in DFW&mdash;plus 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

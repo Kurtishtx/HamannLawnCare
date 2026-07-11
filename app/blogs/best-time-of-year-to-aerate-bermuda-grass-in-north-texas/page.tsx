@@ -4,7 +4,7 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
+
 
   return (
     <main>
@@ -114,12 +114,7 @@ export default function Page() {
           If you have questions about whether your specific Bermuda lawn needs aeration this season or what to pair with it, our team at Hamann Lawn Care &amp; Weed Control is happy to take a look. Visit our <a href="/lawn-care-services">lawn care services page</a> for details on what we offer in the Arlington and DFW area, or give us a call to schedule an assessment.
         </p>
 
-        <div className="blog-cta">
-          <h3>Ready to Aerate Your Bermuda Lawn This Season?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control serves Arlington and the DFW area with expert aeration, fertilization, and lawn health services. Call us or grab our new-customer offer below.</p>
-          <a href={`tel:${PHONE_TEL}`} className="btn-primary">Call {PHONE_DISPLAY}</a>
-          <button onClick={openPromo} className="btn-secondary">Get 50% Off First Service</button>
-        </div>
+
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

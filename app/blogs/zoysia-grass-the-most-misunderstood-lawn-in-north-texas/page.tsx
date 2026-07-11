@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -54,14 +53,6 @@ export default function Page() {
         <h2>Why Zoysia Rewards Patient, Consistent Care</h2>
         <p>Here&rsquo;s the bottom line on Zoysia: it&rsquo;s not a high-maintenance grass, but it is an unforgiving one. It rewards patience and consistency. Hit your pre-emergent windows. Keep nitrogen modest. Dethatch when needed. Water deeply but infrequently. A Zoysia lawn that&rsquo;s been on a proper program for three or four years is one of the most beautiful, weed-resistant, low-water lawns in North Texas &mdash; a genuine set-it-and-mostly-forget-it situation once the foundation is built.</p>
 
-        <div className="blog-cta">
-          <h3>Let&rsquo;s Build Your Best Zoysia Lawn</h3>
-          <p>Professional care calibrated to Zoysia&rsquo;s unique needs &mdash; and 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

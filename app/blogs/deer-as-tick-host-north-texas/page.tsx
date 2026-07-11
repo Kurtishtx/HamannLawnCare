@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>Layering Your Defense</h2>
         <p>On a property with regular deer traffic, tick pressure is essentially continuous through the warm months. The most effective approach layers professional treatment of deer travel routes with good tick-check habits after any time near the property perimeter, monthly tick preventatives for pets, and consistent habitat management (mowing, leaf removal, brush clearing) along fence lines. Our post on <a href="/blogs/creating-tick-safe-zone-backyard">creating a tick-safe zone in your backyard</a> outlines the full habitat management framework. Hamann has served Arlington and the broader DFW area since 2006, and we know how to build a tick control program around the specific wildlife pressures your property faces.</p>
 
-        <div className="blog-cta">
-          <h3>Deer Traffic Bringing Ticks to Your Yard?</h3>
-          <p>Get professional flea &amp; tick control targeted at the zones deer use — and claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

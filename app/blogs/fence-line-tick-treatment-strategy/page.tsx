@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <h2>How Hamann Approaches Fence-Line Treatment</h2>
         <p>Our fence-line applications are not afterthoughts — they&rsquo;re the anchor of the treatment. We apply along the full fence perimeter, treating fence surfaces, base vegetation, and adjacent shrub and grass corridors with product selected for North Texas heat and humidity conditions. Combined with treatment of shaded interior zones and the lawn-to-ornamental-bed borders, the fence line and property edge get the attention they consistently need. For context on the host animals driving tick pressure at your fence line, our post on <a href="/blogs/rodents-tick-hosts-yard-treatment">rodents as tick hosts</a> explains why the animal traffic using your fence matters as much as the treatment applied to it. Hamann has served Arlington and DFW since 2006, and we back every service with a satisfaction guarantee.</p>
 
-        <div className="blog-cta">
-          <h3>Time to Treat Your Fence Line for Ticks?</h3>
-          <p>Get professional flea &amp; tick treatment targeting the zones that matter most — and claim 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

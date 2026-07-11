@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -73,14 +72,6 @@ export default function Page() {
         <p>Prodiamine carries a higher per-unit cost than pendimethalin, but because it requires lower application rates and often delivers season-long control with one or two applications versus multiple pendimethalin passes, the cost-per-season difference is often smaller than the label price suggests. More important than the product choice itself is the quality of the application: correct rate calibration, proper watering-in within the right window, and accurate timing relative to soil temperature thresholds. An off-rate prodiamine application &mdash; too light, too heavy, or applied without adequate incorporation moisture &mdash; will produce thin spots, weed escapes, or turf injury just as readily as the wrong product choice.</p>
         <p>This is why professional application consistently outperforms homeowner DIY results, even when homeowners purchase the same products. Equipment calibration, soil temperature monitoring, and program timing are the variables that actually drive outcomes on North Texas lawns.</p>
 
-        <div className="blog-cta">
-          <h3>Want The Right Pre-Emergent Applied At The Right Time?</h3>
-          <p>We use professional-grade prodiamine and pendimethalin at precise rates &mdash; matched to your lawn type and DFW&rsquo;s timing windows. 50% off first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

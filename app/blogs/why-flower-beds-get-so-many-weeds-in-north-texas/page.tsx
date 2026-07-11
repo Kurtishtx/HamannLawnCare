@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -69,14 +68,6 @@ export default function Page() {
         </ul>
         <p>If that sounds like a lot to track, that&rsquo;s exactly why professional weed control service exists. Read our companion piece on <a href="/blogs/how-to-control-grassy-weeds-in-flower-beds">how to control grassy weeds in flower beds</a> for a deeper look at the specific products and timing that work best on the most stubborn offenders. Hamann has been doing this in Arlington since 2006 &mdash; we know the North Texas weed calendar like a second language.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Have Cleaner Beds All Year?</h3>
-          <p>Stop chasing weeds season after season &mdash; let Hamann put the right program in place and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

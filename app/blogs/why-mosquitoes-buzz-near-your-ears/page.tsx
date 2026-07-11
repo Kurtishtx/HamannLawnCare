@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -51,14 +50,6 @@ export default function Page() {
         <h2>One Last Buzzing Fact</h2>
         <p>Female mosquitoes of some species, including <em>Culex quinquefasciatus</em> &mdash; the dominant biting species in North Texas &mdash; actually modify their wingbeat frequency when they detect a host. Researchers have found that host-seeking females fly faster and beat their wings at a slightly different frequency than resting or non-host-seeking females. The buzz you hear near your ear may literally be a slightly different tone than you&rsquo;d hear from a mosquito flying in neutral territory. She&rsquo;s excited, and it shows. The best response to that excitement is making sure your yard has as few of them as possible to get excited in the first place.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

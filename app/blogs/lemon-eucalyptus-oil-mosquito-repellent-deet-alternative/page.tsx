@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <p>OLE does a solid job protecting the person wearing it. What it cannot do &mdash; and what no personal repellent can do &mdash; is reduce the mosquito population breeding and living in your yard. Every treatment you apply to your skin is reacting to a problem that started in your standing water, your dense shrubs, and your fence line. Personal repellents are a defensive tool; yard treatment is an offensive one. The most comfortable outdoor experience combines both: a professionally treated yard that keeps overall pressure low, plus a quality repellent for the inevitable times mosquitoes are still present.</p>
         <p>If you want to compare OLE against other DIY mosquito control approaches you might be using alongside it, check out our post on <a href="/blogs/diy-bottle-trap-mosquito-catch-does-it-work">DIY bottle traps for mosquitoes</a> &mdash; another commonly tried method with very different results. Hamann Lawn Care has been keeping DFW families comfortable outdoors since 2006. Call us to find out what professional treatment can do for your mosquito season.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

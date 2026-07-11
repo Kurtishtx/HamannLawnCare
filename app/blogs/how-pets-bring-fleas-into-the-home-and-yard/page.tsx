@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <h2>The Long-Term View: Prevention Beats Treatment</h2>
         <p>Once you&rsquo;ve dealt with an active infestation, the goal shifts to preventing the next one. Consistent outdoor treatment through flea season, combined with year-round pet prevention, keeps the yard population low enough that your pets rarely pick up fleas in the first place. When pet exposure is low, indoor seeding is low, and the loop never gets a chance to start. Read more about <a href="/blogs/the-most-common-flea-hotspots-in-yards-and-why-they-matter">the most common flea hotspots in yards</a> to identify which specific zones in your property are creating the highest pet exposure risk. Hamann has been helping Arlington and DFW families protect their pets and homes from fleas since 2006 &mdash; call us and we&rsquo;ll put a plan together for your yard.</p>
 
-        <div className="blog-cta">
-          <h3>Protect Your Pets and Your Home</h3>
-          <p>Professional yard flea control that cuts off the source &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

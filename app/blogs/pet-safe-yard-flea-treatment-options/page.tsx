@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <p>When we treat a yard with pets in residence, we ask upfront about the animal types in the home, select products accordingly, apply targeted treatments to avoid runoff into any water features, and give you a clear, specific re-entry window before your animals go back outside. We don&rsquo;t use permethrin on properties with cats. We document the products applied so you have that information for your vet if needed. And we know that a yard full of fleas is itself a health risk to your pets — tapeworm transmission, flea allergy dermatitis, and Bartonella are real consequences of heavy flea loads, not abstractions.</p>
         <p>For more detail on the timing side, see our post on <a href="/blogs/granular-vs-liquid-spray-flea-tick-yard">Granular vs Liquid Spray for Yard Flea and Tick Control: When to Use Each</a> — understanding product formats is part of understanding how to manage re-entry safely.</p>
 
-        <div className="blog-cta">
-          <h3>Protect Your Yard and Your Pets</h3>
-          <p>Pet-conscious professional flea and tick control for Arlington and DFW — 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

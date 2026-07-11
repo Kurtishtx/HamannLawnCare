@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <h2>The Bottom Line on Re-Entry Timing</h2>
         <p>In North Texas summer conditions, most professional liquid flea and tick yard treatments are safe for dogs within 1–2 hours. For cats, the answer depends entirely on which product was used. Granulars need to be watered in first. Your professional applicator should tell you exactly which product was applied and give you a specific re-entry window before leaving — if they don&rsquo;t, ask. At Hamann, this is standard practice before we finish every treatment visit.</p>
 
-        <div className="blog-cta">
-          <h3>We&rsquo;ll Tell You Exactly When Your Pets Can Go Back Out</h3>
-          <p>Professional flea and tick yard treatment — safe, effective, and transparent. Claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

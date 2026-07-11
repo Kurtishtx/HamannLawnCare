@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <h2>Protecting Your Family in DFW</h2>
         <p>Because the greatest tick-borne disease risk in North Texas comes from Lone Star ticks and American dog ticks — not primarily deer ticks — yard-focused protection strategies are highly effective at reducing the actual risk you face. Professional <a href="/flea-and-tick-control">flea and tick control</a> targeting the brushy edges, mulch beds, and shaded lawn margins where these ticks quest dramatically reduces your family&rsquo;s exposure across the season. For a deeper look at the Lone Star tick&rsquo;s timing and behavior in DFW, the <a href="/blogs/tick-life-cycle-stages-north-texas">tick life cycle guide for North Texas</a> explains exactly when each stage becomes active and why spring treatment timing matters.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Leave Your Yard Unprotected</h3>
-          <p>Hamann has guarded Arlington families from tick-borne illness risk since 2006. Get professional tick control and claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <h2>Building a Year-Round Bermuda Program</h2>
         <p>The homeowners in Arlington and DFW who have the best-looking Bermuda lawns aren&rsquo;t doing anything exotic &mdash; they&rsquo;re doing the basics on the right schedule, consistently. Pre-emergent in late February. Spring fertilizer after green-up. Summer nitrogen feeding in June and July. Fall potassium and pre-emergent in September. Post-emergent spot treatments as needed throughout the season. It&rsquo;s not complicated, but it requires showing up at the right moments. Our previous post on <a href="/blogs/winter-pre-emergent-why-timing-matters-more-than-product">winter pre-emergent timing</a> explains exactly why consistency beats product selection every time.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Max Out Your Bermuda Lawn?</h3>
-          <p>Get a professional treatment program built for North Texas Bermuda &mdash; and claim 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

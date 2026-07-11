@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -68,14 +67,6 @@ export default function Page() {
         <h2>The Long View</h2>
         <p>Traffic tolerance is not a fixed characteristic of your lawn &mdash; it&rsquo;s a result of accumulated soil health, appropriate species selection, and consistent management. Lawns that handle traffic well year after year have typically been managed with annual aeration, appropriate mowing, consistent fertilization, and good soil organic matter. Those compounding advantages mean the lawn bounces back from regular use instead of slowly wearing away.</p>
 
-        <div className="blog-cta">
-          <h3>Ready for a Lawn That Can Take a Hit and Come Back Strong?</h3>
-          <p>Hamann Lawn Care has been toughening up North Texas turf since 2006. Call us or grab your new-customer deal today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

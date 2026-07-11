@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -46,14 +45,6 @@ export default function Page() {
         <p>This is an important practical point: most pure-SDHI products and the most effective premix SDHI formulations are professional-use products not readily available at retail garden centers. Homeowners can access boscalid-containing premix products like Enclave at some specialty garden retailers, but fluxapyroxad and isofetamid products are essentially professional-tier chemistry. This is one of several reasons why a professional lawn disease program delivers results that DIY programs typically cannot match — access to the full spectrum of effective chemistry, applied at the right rates and timing.</p>
         <p>Our full approach to protecting DFW lawns is described on our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control</a> page. If you are building up your understanding of how these fungicide classes work together, our guide on <a href="/blogs/qoi-strobilurin-fungicides-for-lawn-disease-north-texas">QoI strobilurin fungicides</a> explains how SDHIs and strobilurins complement each other in a resistance-managed rotation.</p>
 
-        <div className="blog-cta">
-          <h3>Access Professional-Grade Disease Protection for Your DFW Lawn</h3>
-          <p>Hamann uses SDHI fungicides, DMIs, and QoIs in strategic rotation to protect North Texas lawns through every disease window. Call for a professional assessment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

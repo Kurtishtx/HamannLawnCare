@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <p>Hamann Lawn Care &amp; Weed Control has been fighting sandburs and grassburs in Arlington and DFW since 2006. We know the local germination timing, which products work on which turf types, and how to build a multi-season program that depletes the seed bank instead of just managing symptoms. For a look at another tough grass weed we tackle in DFW, read our post on <a href="/blogs/wild-onion-and-wild-garlic-identification-and-removal-in-dfw">wild onion and wild garlic</a>&mdash;another perennial that requires multi-season commitment to fully clear.</p>
         <p>Your family and pets deserve a backyard they can use without dreading every step. Let Hamann put the right program in place and take grassburs off your summer worry list for good.</p>
 
-        <div className="blog-cta">
-          <h3>Stepping on Grassburs Every Summer? Let&rsquo;s End That.</h3>
-          <p>Hamann Lawn Care &amp; Weed Control uses proven pre- and post-emergent programs to clear sandburs from North Texas lawns&mdash;plus 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

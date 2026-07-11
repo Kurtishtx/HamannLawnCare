@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
 
         <p>If your scalping was caused by uneven terrain rather than deck height errors, see our guide on <a href="/blogs/repairing-dead-patches-after-a-north-texas-freeze-what-actually-works">repairing dead patches in North Texas lawns</a> for the full landscape-leveling and repair approach. Hamann Lawn Care has been caring for Arlington and DFW lawns since 2006 — we&rsquo;re always happy to talk through what&rsquo;s happening with your turf.</p>
 
-        <div className="blog-cta">
-          <h3>Scalped Patches Stressing Out Your Lawn?</h3>
-          <p>The Hamann team has been fixing North Texas lawns since 2006. Call us and get 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

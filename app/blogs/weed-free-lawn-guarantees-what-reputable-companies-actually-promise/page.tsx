@@ -4,7 +4,7 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
+
 
   return (
     <main>
@@ -77,10 +77,7 @@ export default function Page() {
 
           <p>A good guarantee is not a magic promise. It is a commitment from a company that knows its craft, stands behind its work, and will still be answering your calls three years from now. That is the standard we hold ourselves to, and it&rsquo;s the standard you should hold every lawn care company to before you hand over a dollar.</p>
 
-          <div className="blog-cta">
-            <h3>Work With a Company That Backs Its Word</h3>
-            <p>Hamann Lawn Care &amp; Weed Control has been a family-owned presence in Arlington and across DFW since 2006. We put our callback commitment in writing and we answer when you call. Reach us at <a href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a> or <button className="link-btn" onClick={openPromo}>request a free quote online</button> and let&rsquo;s talk about what a real program looks like for your yard.</p>
-          </div>
+
         </div>
       </article>
 

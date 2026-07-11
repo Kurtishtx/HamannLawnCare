@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         <h2>Getting the Right Program for Your Cultivar</h2>
         <p>Most homeowners don&rsquo;t know which St. Augustine cultivar they&rsquo;re running &mdash; and a lot of lawn care programs don&rsquo;t bother to find out. Our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer service</a> starts with identifying what you have, because the right program for Palmetto isn&rsquo;t identical to the right program for Raleigh. For context on how variety-specific differences extend to hybrid Bermuda, see our post on <a href="/blogs/hybrid-bermuda-varieties-tifway-419-fertilization-needs-in-north-texas">Tifway 419 fertilization needs in North Texas</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Your St. Augustine Deserves a Tailored Program</h3>
-          <p>Palmetto and Raleigh aren&rsquo;t the same &mdash; and we treat them differently. Call us to get started.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <p>The most reliable way to avoid the worry of a bullseye rash is to avoid tick bites in the first place &mdash; through good personal protection habits and professional yard treatment. In North Texas, the lone star tick that causes STARI is densest in the same vegetation zones your family uses every day: the lawn edges, shrubbery borders, and leaf-litter areas around your home. Professional <a href="/flea-and-tick-control">flea and tick control</a> targets those zones directly, killing ticks in the places they actually live and dramatically reducing the population your family encounters.</p>
         <p>Pair yard treatment with the personal protection habits discussed in our post on <a href="/blogs/tick-attachment-sites-on-body">where ticks attach on the body</a> &mdash; knowing the hotspots makes every post-outdoor tick check faster and more effective. Hamann Lawn Care &amp; Weed Control has been treating DFW yards for ticks since 2006. If your family has been dealing with recurring tick encounters, we can help change that.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Wait for the Next Rash Scare</h3>
-          <p>Get professional flea &amp; tick yard control &mdash; 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

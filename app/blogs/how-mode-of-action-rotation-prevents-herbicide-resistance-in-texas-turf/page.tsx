@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <p>A professionally managed lawn program documents which products have been applied, tracks by WSSA group, and plans the following season&rsquo;s applications to introduce different groups where practical. This is harder to do with store-bought products because label information rarely makes group numbers prominent, and most homeowners don&rsquo;t track their application history at this level of detail.</p>
         <p>At Hamann Lawn Care &amp; Weed Control, we&rsquo;ve been applying weed control programs across Tarrant County since 2006. That history of observing which products stay effective over time on specific weed populations &mdash; and which begin to lose efficacy &mdash; is the practical intelligence that resistance management requires. Read more about how product selection intersects with application timing in our post on <a href="/blogs/triclopyr-for-tough-broadleaf-weeds-in-arlington-st-augustine-lawns">triclopyr for tough broadleaf weeds in Arlington St. Augustine lawns</a> for a product-level example of these principles in action.</p>
 
-        <div className="blog-cta">
-          <h3>A Weed Program Built to Stay Effective Long-Term</h3>
-          <p>We rotate modes of action deliberately so your results don&rsquo;t erode year over year. Get 50% off your first service with Hamann.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

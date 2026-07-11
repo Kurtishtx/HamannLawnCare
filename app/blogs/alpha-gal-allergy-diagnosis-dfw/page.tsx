@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <h2>Preventing Alpha-Gal Starts in Your Yard</h2>
         <p>Every alpha-gal case begins with a Lone Star tick bite. Reducing Lone Star tick populations in your yard &mdash; where the majority of tick exposures for suburban families actually occur &mdash; is the most direct way to prevent sensitization. Hamann&rsquo;s barrier spray program targets the shaded vegetation, fence lines, and ground cover where Lone Star ticks shelter and quest, using residual formulas that stay active between treatments. Read our post on <a href="/blogs/lyme-disease-vs-ehrlichiosis-symptoms">Lyme disease vs ehrlichiosis</a> for more on how Lone Star ticks affect North Texas specifically. If you&rsquo;re spending time outside in Tarrant County and the surrounding areas, professional yard treatment is the most reliable foundation of protection.</p>
 
-        <div className="blog-cta">
-          <h3>Keep Lone Star Ticks Out of Your Yard</h3>
-          <p>Hamann has protected Arlington and DFW families from ticks since 2006. Claim 50% off your first yard treatment today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

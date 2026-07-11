@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
         <p>The good news is that the protection plan you build for a new puppy is essentially the same plan your dog will need for life in North Texas. <a href="/blogs/dog-park-flea-tick-risk-dfw">Once your dog starts going to dog parks</a>, on hikes, or visiting friends&rsquo; houses, the ongoing environmental pressure continues. The habits formed in the first months — year-round prevention, regular checks, professional yard treatment — are the habits that keep your dog healthy through every season.</p>
         <p>Hamann has been protecting Arlington families and their pets since 2006. If you&rsquo;ve just brought home a new puppy and want to make sure the yard is treated before they start exploring it, give us a call. Our team can assess your property and get a treatment schedule in place that works for your specific yard and your new dog&rsquo;s needs.</p>
 
-        <div className="blog-cta">
-          <h3>New Puppy Joining the Family? Start the Yard Off Right.</h3>
-          <p>Professional flea and tick yard treatment for North Texas pet owners. Get 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

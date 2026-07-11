@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -72,14 +71,6 @@ export default function Page() {
         <h2>The Hamann Approach to Lawn Recovery</h2>
         <p>We&rsquo;ve been caring for Bermuda lawns in Arlington and the surrounding DFW communities since 2006, and scalping recovery is something our team diagnoses almost every season. We know how to read the damage, match the right feeding program to the recovery stage, and help you avoid the common mistakes that slow the process. If your lawn took a hit and you want an honest assessment, give us a call — we&rsquo;ll tell you straight what it needs and what to expect. For more on common color problems in North Texas Bermuda, read our post on <a href="/blogs/uneven-lawn-color-why-one-section-is-darker-green-than-another">uneven lawn color and what causes one section to stay darker green</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Is Your Lawn Still Yellow From a Scalping? Let&rsquo;s Fix It.</h3>
-          <p>Hamann has been restoring DFW Bermuda lawns since 2006. Call us or grab your new customer discount.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

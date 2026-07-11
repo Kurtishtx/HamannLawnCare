@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <h2>The Honest Companion Planting Verdict for Mosquitoes</h2>
         <p>Marigolds: excellent garden plants, terrible mosquito control. The companion planting reputation is real for soil pests and some garden insects &mdash; it simply doesn&rsquo;t extend to the mosquitoes biting you at dusk. If you want beautiful flower beds and effective mosquito control, do both: plant marigolds because they earn their place in a Texas garden, and get a professional treatment program because marigolds won&rsquo;t do it. No single plant will. Hamann has been giving Arlington homeowners realistic, effective mosquito control since 2006, and we&rsquo;ll keep it straight with you about what works and what doesn&rsquo;t.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

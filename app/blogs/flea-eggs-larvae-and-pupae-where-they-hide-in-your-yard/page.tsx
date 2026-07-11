@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>The Big Picture: Why You Need to Target All Stages</h2>
         <p>If your flea control only targets adults &mdash; the 5% you can see &mdash; the other 95% of the population keeps marching forward. Eggs hatch, larvae develop, pupae wait, and new adults emerge to replace every one you killed. That&rsquo;s the frustrating loop that makes flea problems feel endless. Read more about <a href="/blogs/how-weather-shade-and-wildlife-affect-flea-pressure-in-your-yard">how weather, shade, and wildlife drive flea pressure</a> to understand the full picture of what you&rsquo;re dealing with in your yard. A comprehensive treatment that targets all life stages, focuses on the right microenvironments, and includes residual protection breaks that loop for real.</p>
 
-        <div className="blog-cta">
-          <h3>Stop Fleas at Every Stage</h3>
-          <p>Professional yard flea treatment that targets eggs, larvae, and adults &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

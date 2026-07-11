@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -75,14 +74,6 @@ export default function Page() {
         <p>For a deeper look at how summer specifically affects lawn color and health, see our post on <a href="/blogs/why-your-lawn-turns-brown-even-when-you-water-properly">why your lawn turns brown even when you water properly</a>. Understanding the seasonal threats helps you know which problem to look for at which time of year.</p>
         <p>Hamann Lawn Care has been following this calendar in Arlington and across DFW since 2006. If you&rsquo;re tired of figuring out the timing yourself, we&rsquo;ll handle the whole thing for you.</p>
 
-        <div className="blog-cta">
-          <h3>Let Us Handle the Calendar</h3>
-          <p>Professional lawn care on the right schedule for North Texas &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -30,7 +30,6 @@ const faqs = [
 const RedLine = () => <div style={{ height: 4, width: 64, background: 'var(--red)', borderRadius: 2, margin: '14px auto 0' }} />;
 
 export default function FleaControl() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -42,10 +41,6 @@ export default function FleaControl() {
             <h1>Professional <span className="headline-3d">Flea Control</span> Services</h1>
             <p className="hero-sub" style={{ margin: '20px auto 10px', fontWeight: 700, color: '#fff' }}>We Kill The Adults &amp; Stop The Eggs From Hatching</p>
             <p className="hero-sub" style={{ margin: '0 auto 26px' }}>Fleas reproduce quickly, spread easily, and can take over a yard or home before you even realize what&rsquo;s happening. Our professional flea control service is engineered to eliminate active infestations, break the life cycle, and keep your outdoor spaces protected with <b>long-lasting, premium-grade products</b>. Real results, guaranteed.</p>
-            <div className="hero-cta" style={{ justifyContent: 'center' }}>
-              <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-              <button className="btn btn-ghost btn-lg" onClick={openPromo}>Get 50% Off →</button>
-            </div>
           </div>
         </div>
       </section>
@@ -158,16 +153,6 @@ export default function FleaControl() {
         </div>
       </section>
 
-      <section className="cta-band">
-        <div className="wrap">
-          <h2>Get Professional Flea Control Today</h2>
-          <p>Tired of itchy bites, scratching pets, and recurring flea problems? Take back your yard with flea control that actually works. <b>Claim your 50% off first application!</b></p>
-          <div className="btns">
-            <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Get Your Free Quote</a>
-            <button className="btn btn-ghost btn-lg" onClick={openPromo}>Claim 50% Off</button>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

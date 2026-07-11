@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>Hamann&rsquo;s Approach to New-Construction Bed Programs</h2>
         <p>We work with homeowners across the DFW growth corridor who moved into new construction and discovered the landscape warranty didn&rsquo;t include weed control. Our assessment visits identify which weed species are present, what the fabric and mulch conditions look like, and whether the first priority is a post-emergent reset or immediate pre-emergent application. Then we set up a timed program that depletes the seed bank season by season. The families we start with in year one are typically on a lighter maintenance program by year three because the foundation work was done right. That&rsquo;s the only way the new-construction bed problem actually gets solved.</p>
 
-        <div className="blog-cta">
-          <h3>New Construction Beds Out of Control?</h3>
-          <p>Get a professional flower-bed weed reset built for DFW new construction &mdash; and claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

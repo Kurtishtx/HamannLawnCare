@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
         <p>Hamann Lawn Care &amp; Weed Control has offered lawn, weed control, and pest services to Arlington and DFW homeowners since 2006. Our team knows your property as a whole, not just one corner of it &mdash; and that matters when you&rsquo;re trying to solve problems that span more than one service category. Our <a href="/mosquito-control-services">mosquito control services</a> integrate naturally with our lawn and pest programs for homeowners who want the full picture handled in one place.</p>
         <p>If you&rsquo;re evaluating whether to start with our mosquito program alone or bundle it from the start, our breakdown of <a href="/blogs/monthly-vs-every-21-days-mosquito-service-schedule">monthly vs every-21-days mosquito service schedules</a> helps you understand how our program timing fits with other service visits throughout the season.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

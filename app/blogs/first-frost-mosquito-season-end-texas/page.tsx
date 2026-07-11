@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <h2>Don&rsquo;t Let Fall Fool You</h2>
         <p>The mosquito season in North Texas doesn&rsquo;t end because a frost happened. It winds down through a gradual transition shaped by temperature swings, rainfall, and species-specific survival strategies. Hamann has treated Arlington yards through full seasons since 2006, and we know that customers who stay on program through October consistently report a better fall experience than those who stop after Labor Day. Call us to discuss fall coverage and we&rsquo;ll build a schedule that actually matches how long mosquito season runs in your neighborhood.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Let Fall Mosquitoes Steal Your Patio Season</h3>
-          <p>Get fall mosquito treatment that extends your outdoor comfort &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

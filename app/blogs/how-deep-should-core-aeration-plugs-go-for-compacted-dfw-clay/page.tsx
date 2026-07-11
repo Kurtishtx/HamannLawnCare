@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         </ul>
         <p>For more on combining these techniques, read our post on <a href="/blogs/lawn-roller-when-it-helps-and-when-it-makes-clay-soil-worse">lawn rollers versus clay soil in North Texas</a> — it covers why compaction is such a persistent issue in this region and what actually helps.</p>
 
-        <div className="blog-cta">
-          <h3>Want Deep, Effective Aeration Done Right?</h3>
-          <p>Hamann Lawn Care uses professional-grade equipment to punch past compaction on DFW clay. Call us today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

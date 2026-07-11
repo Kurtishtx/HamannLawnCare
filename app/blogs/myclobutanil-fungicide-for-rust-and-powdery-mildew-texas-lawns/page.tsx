@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -148,14 +147,6 @@ export default function Page() {
           efficacy. Rust and powdery mildew are manageable &mdash; but only if you act before they get ahead of you.
         </p>
 
-        <div className="blog-cta">
-          <h3>Seeing Orange Rust or White Powder on Your Lawn?</h3>
-          <p>Don&rsquo;t wait for the disease to spread &mdash; our North Texas fungicide programs stop lawn rust and powdery mildew fast. Claim your 50% off first treatment today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

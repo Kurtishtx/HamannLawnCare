@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
 
         <p>Mowing height is one part of the cultural picture; see <a href="/blogs/how-much-water-per-week-to-avoid-lawn-fungus-north-texas">how much water per week prevents lawn fungus in North Texas</a> for the irrigation side of the same equation.</p>
 
-        <div className="blog-cta">
-          <h3>Lawn Disease Getting Ahead of You?</h3>
-          <p>Hamann combines cultural advice with professional treatment &mdash; claim your 50% off first application today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

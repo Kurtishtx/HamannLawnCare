@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -52,14 +51,6 @@ export default function Page() {
         <h2>Pairing Dithiopyr With a Season-Long Program</h2>
         <p>Dithiopyr works best as part of a complete crabgrass management strategy, not as a standalone solution. A well-designed DFW program typically involves a late-winter prodiamine application for broad pre-emergent coverage, scouting during March and April for early germination escapes, and a dithiopyr follow-up application if pre-tiller crabgrass is detected. This layered approach &mdash; primary prevention plus a rescue safety net &mdash; dramatically reduces the chance of widespread crabgrass infestation even in years when spring weather throws every curveball imaginable. Read more about depth and clay considerations in our post on <a href="/blogs/pre-emergent-herbicide-barrier-depth-what-matters-in-texas-clay">pre-emergent herbicide barrier depth in Texas clay</a> to see how these products perform under DFW soil conditions.</p>
 
-        <div className="blog-cta">
-          <h3>Crabgrass Already Breaking Through? We Can Help.</h3>
-          <p>Our team knows exactly when and how to deploy dithiopyr for North Texas lawns. Call today and claim 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

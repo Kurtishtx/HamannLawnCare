@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>Putting Bird Feeders in Context</h2>
         <p>Bird feeders are one factor among many that influence tick pressure in your yard. Wooded borders, wildlife corridors, leaf litter accumulation, grass height, and moisture all matter as much or more. The point isn&rsquo;t to panic about your bird feeders — it&rsquo;s to include them in an informed, comprehensive yard management strategy. See our post on <a href="/blogs/sun-exposure-tick-habitat-reduction">using landscape design against ticks</a> for how feeder placement connects to the broader principle of creating sun-exposed, tick-hostile zones in your yard.</p>
 
-        <div className="blog-cta">
-          <h3>Full-Yard Tick Control That Covers Every Angle</h3>
-          <p>Hamann treats the zones birds, wildlife, and vegetation create — claim 50% off your first professional flea &amp; tick service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

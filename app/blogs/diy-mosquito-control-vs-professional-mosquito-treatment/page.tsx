@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>The Bottom Line</h2>
         <p>DIY mosquito control isn&rsquo;t useless &mdash; source elimination especially is genuinely effective and something every homeowner should do. But if you want a yard you can actually use from March through November in North Texas, the gap between DIY sprays and <a href="/mosquito-control-services">professional mosquito treatment</a> is substantial. Better products, better application, better lifecycle coverage, and better residual protection add up to results that home sprays simply can&rsquo;t match. At Hamann, we&rsquo;ve been doing this since 2006 and we back our results with a satisfaction guarantee. The backyard you want is achievable &mdash; it just takes the right approach.</p>
 
-        <div className="blog-cta">
-          <h3>Skip the Store Spray This Season</h3>
-          <p>Get professional mosquito treatment that actually holds up &mdash; and claim 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

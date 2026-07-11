@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -100,16 +99,6 @@ export default function Page() {
           For a professional diagnosis of root rot symptoms in your Arlington or North Texas lawn, visit our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control service page</a>. If you have also noticed mushrooms appearing in your lawn, read our post on <a href="/blogs/mushrooms-growing-in-lawn-fairy-ring-connection-texas">mushrooms and their connection to fairy ring disease in Texas</a>, as fairy ring can sometimes be confused with the dead-zone patterns caused by Type 1 root rot.
         </p>
 
-        <div className="blog-cta">
-          <h3>Is Your DFW Lawn Peeling Up? Root Rot Needs Immediate Attention.</h3>
-          <p>
-            Once root rot destroys the root system, recovery requires the right diagnosis and the right timing. Hamann Lawn Care &amp; Weed Control has treated TARR and Pythium root rot across North Texas since 2006. Call us before the damage spreads further.
-          </p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>&#128222; Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

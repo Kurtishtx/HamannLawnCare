@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -53,14 +52,6 @@ export default function Page() {
         <h2>What Actually Works</h2>
         <p>Effective flea control in North Texas combines veterinarian-recommended pet prevention year-round, professional yard treatment with IGR-containing products that target multiple lifecycle stages, interior vacuuming and targeted indoor treatment when fleas are present, a follow-up yard visit to catch the pupal hatch, and ongoing yard habits (mowing, debris removal, moisture control) that reduce harborage. No myths required.</p>
 
-        <div className="blog-cta">
-          <h3>Get Flea Control That Actually Works</h3>
-          <p>Hamann Lawn Care &amp; Weed Control has been doing this right in North Texas since 2006 &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

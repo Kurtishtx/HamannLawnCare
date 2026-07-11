@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -69,14 +68,6 @@ export default function Page() {
         <h2>Professional Help Makes the Difference</h2>
         <p>Managing summer lawn stress in DFW takes more than just turning on the sprinklers. It requires knowing your soil, your grass variety, your irrigation system&rsquo;s actual output, and how to read color signals before they turn into expensive damage. Our <a href="/lawn-care-services">lawn care services</a> include summer health checks that diagnose wilt, nutrition, and irrigation issues together — so you get the right fix, not just the obvious one. And if you&rsquo;ve ever dealt with your lawn looking worse right after it rained, you&rsquo;ll want to check our post on <a href="/blogs/how-to-fix-scalped-yellow-patches-from-a-lawn-care-company-mistake">how to fix scalped yellow patches left by a lawn care company mistake</a> — a different kind of stress with a different recovery path.</p>
 
-        <div className="blog-cta">
-          <h3>Is Your Bermuda Looking Dull &amp; Gray This Summer?</h3>
-          <p>We diagnose and treat summer lawn stress across Arlington and DFW. Call for a free assessment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

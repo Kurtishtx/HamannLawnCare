@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -51,14 +50,6 @@ export default function Page() {
         <h2>Get Eyes on the Problem Before You Spray</h2>
         <p>The single most costly mistake in DFW lawn disease is spraying the wrong product at the wrong stage. A professional assessment before you spend money on chemistry can tell you whether you&rsquo;re in a preventive window, an early-curative window, or a &ldquo;protect what&rsquo;s left and plan for renovation&rdquo; situation. Hamann has been diagnosing and treating North Texas lawn disease since 2006. We know how fast Brown Patch, Take-All, Pythium, and Grey Leaf Spot move in our climate — and we know when to spray and when to be honest that the spray ship has sailed. Read also our post on <a href="/blogs/watering-in-fungicide-granules-timing-and-technique">watering in fungicide granules</a> for technique details that affect how well any treatment actually works.</p>
 
-        <div className="blog-cta">
-          <h3>Is Your Lawn Past the Point of DIY Fungicide?</h3>
-          <p>Let Hamann assess the damage and recommend the right next step — treatment, renovation, or both. Serving Arlington and all of North Texas since 2006.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

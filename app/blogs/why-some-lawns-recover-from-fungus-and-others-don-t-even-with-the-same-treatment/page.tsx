@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <p>Sometimes the grass is simply dead &mdash; not dormant, not weakened, genuinely dead. If root tissue was destroyed by Take-All Root Rot, if St. Augustine stolons were killed across a large area, or if the lawn was already in poor condition before the outbreak, no amount of treatment and care is going to produce a full recovery. In those situations, the most efficient and cost-effective path is targeted resodding of the affected areas followed by a proper disease management program to protect the new turf.</p>
         <p>An honest lawn care company tells you that upfront rather than letting you spend months waiting for recovery that won&rsquo;t come. Hamann Lawn Care has been giving Arlington-area homeowners straight answers since 2006, and we&rsquo;ll always tell you exactly what your lawn needs &mdash; even when the answer is &ldquo;let&rsquo;s replace this section and start fresh.&rdquo;</p>
 
-        <div className="blog-cta">
-          <h3>Lawn Not Bouncing Back From Fungus?</h3>
-          <p>Let&rsquo;s figure out why and get you a real plan for recovery &mdash; call Hamann today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

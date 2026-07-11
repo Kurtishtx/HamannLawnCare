@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -185,14 +184,6 @@ export default function Page() {
           irrigation management issue that needs direct attention.
         </p>
 
-        <div className="blog-cta">
-          <h3>Unusual Yellowing or Tufted Growth in Your Lawn?</h3>
-          <p>Get the right diagnosis from a team that has served Arlington and DFW since 2006. Claim 50% off your first disease treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

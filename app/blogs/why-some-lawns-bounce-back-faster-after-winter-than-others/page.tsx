@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <p>The best thing you can do for <em>next</em> spring&rsquo;s green-up is make the right moves <em>this</em> fall. But right now, getting your soil and nutrition program dialed in through spring gives your lawn the best shot at finishing the season thick and ready to explode out of the gate next year. Our team at Hamann has been doing this in Arlington since 2006 &mdash; we know exactly what North Texas grass needs and when. Check out our <a href="/lawn-care-services">lawn care services</a> to see how a full-season program sets your yard up to win every spring.</p>
         <p>Want to know how winter habits drive more than just spring recovery? See our post on <a href="/blogs/why-some-lawns-stay-green-longer-into-fall-than-others">why some lawns stay green longer into fall than others</a> &mdash; the two go hand in hand.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Be the First Lawn Green on the Block?</h3>
-          <p>Get a professional lawn care program built for North Texas &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

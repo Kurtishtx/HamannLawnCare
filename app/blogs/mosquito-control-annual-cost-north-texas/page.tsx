@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <h2>Hamann&rsquo;s Pricing Philosophy</h2>
         <p>We don&rsquo;t compete on rock-bottom pricing because we don&rsquo;t use rock-bottom products. Our treatments use the same commercial-grade materials found on golf courses and resort properties, which is why our program runs just 7 visits per year rather than 12&ndash;14. You spend less on visits total, get better results, and your yard stays protected without a technician showing up every three weeks. No surprise fees, no shady contracts, and if mosquitoes come back before your next scheduled visit, we come back too &mdash; that&rsquo;s the guarantee.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

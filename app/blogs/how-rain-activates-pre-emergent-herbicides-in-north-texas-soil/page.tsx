@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -54,14 +53,6 @@ export default function Page() {
         <h2>The Connection Between Activation and Longevity</h2>
         <p>There&rsquo;s an important relationship between how well a product activates and how long it lasts. Pre-emergent that binds properly into moist clay soil in North Texas tends to hold its efficacy longer than product applied to dry, sandy conditions. Good activation creates a tighter chemical bond with soil particles, which translates to a longer-lasting barrier. This is one reason why our clay soil, despite its challenges, actually works in our favor for pre-emergent longevity once the product is properly incorporated.</p>
 
-        <div className="blog-cta">
-          <h3>Get Pre-Emergent Applied Right</h3>
-          <p>We handle timing, weather monitoring, and activation follow-up so you don&rsquo;t have to think about it &mdash; and your first application is 50% off.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

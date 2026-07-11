@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         <h2>Building a Weed Control Program That Protects the Turf</h2>
         <p>The most effective approach for Zoysia weed control combines consistent pre-emergent programs, targeted post-emergent applications within safe temperature windows, and a fertilization and maintenance program that keeps turf density high enough to minimize weed establishment opportunities. Professional programs built specifically for Zoysia avoid the chemistry errors that cause turf damage while still delivering clean, weed-free results. Our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer services</a> page explains how we structure these programs for Zoysia and other North Texas grass types. For additional context on how a well-designed fertilization program ties into weed suppression, our post on the <a href="/blogs/zoysia-grass-fertilization-program-for-north-texas-slower-grower">Zoysia fertilization program for North Texas</a> covers the nutrition side in detail.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Greener, Weed-Free Lawn?</h3>
-          <p>Get professional weed control and fertilization that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -50,14 +49,6 @@ export default function Page() {
         <h2>What You Can Do When Your Lawn Is Losing the Battle</h2>
         <p>Understanding why your lawn is more vulnerable than your neighbor&rsquo;s is the first step toward fixing it, not just treating each outbreak. The goal is to shift enough of these factors &mdash; irrigation timing, nitrogen management, thatch depth, soil drainage, microclimate conditions &mdash; that the threshold for active disease becomes harder to cross. Our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control</a> program is built around this kind of diagnostic approach: figuring out exactly which factors are driving your specific lawn&rsquo;s vulnerability and building a plan that addresses them. Hamann has been working on lawns across Arlington and DFW since 2006. Give us a call and let&rsquo;s figure out what&rsquo;s actually going on in your yard.</p>
 
-        <div className="blog-cta">
-          <h3>Find Out Why Your Lawn Keeps Getting Fungus</h3>
-          <p>Professional diagnosis plus a plan to actually fix it &mdash; and 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

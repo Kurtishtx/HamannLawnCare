@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <h2>Hamann&rsquo;s Fall Mosquito Program</h2>
         <p>We&rsquo;ve been treating Arlington and DFW properties since 2006 and we&rsquo;ve learned that fall treatment is one of the most underrated services we offer. Our customers who stay on program through October consistently get more use out of their outdoor spaces during fall entertaining season &mdash; which in Texas is genuinely good weather time. Call us and we&rsquo;ll tell you exactly where we are in your neighborhood&rsquo;s schedule and what a fall treatment would look like for your yard.</p>
 
-        <div className="blog-cta">
-          <h3>Fall Mosquitoes Are Real &mdash; Let&rsquo;s Handle Them</h3>
-          <p>Extend your outdoor season with a fall treatment &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

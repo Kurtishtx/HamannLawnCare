@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -51,14 +50,6 @@ export default function Page() {
         <p>The alternatives to landscape fabric for North Texas flower beds are straightforward: start with clean beds (remove existing weeds including roots), apply 3 to 4 inches of quality organic mulch, and refresh the depth before spring and fall weed flushes. For beds with persistent rhizomatous weed pressure, pair mulch management with targeted post-emergent treatment at the right timing. For new beds or renovated beds, a pre-emergent application before mulching significantly reduces the first-season seedling pressure.</p>
         <p>This approach requires more knowledge about timing and products than installing fabric, but it produces dramatically better results over a two-to-three-year horizon and is far easier to maintain than a fabric system that has crossed the threshold into full root entanglement. Understanding <a href="/blogs/dyed-mulch-weed-suppression-arlington-tx">how mulch product quality affects weed control</a> is the next step in building a system that actually works season after season.</p>
 
-        <div className="blog-cta">
-          <h3>Struggling With Weeds Coming Through Old Landscape Fabric?</h3>
-          <p>Hamann can assess your beds and put together a real plan. Call today or claim 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

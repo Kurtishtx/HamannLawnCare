@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
 
         <p>Hamann Lawn Care &amp; Weed Control has incorporated humic acid and soil biology programs into North Texas lawn care since 2006. Call us at <a href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a> to discuss whether a humic acid program makes sense for your lawn&rsquo;s specific soil conditions.</p>
 
-        <div className="blog-cta">
-          <h3>Want a Soil Health Program Built for DFW Clay?</h3>
-          <p>Hamann has been improving North Texas lawns from the ground up since 2006. Call or claim your offer.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

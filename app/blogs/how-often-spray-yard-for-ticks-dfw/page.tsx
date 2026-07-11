@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -68,14 +67,6 @@ export default function Page() {
         <h2>Build a Schedule and Stick to It</h2>
         <p>The most common mistake homeowners make is treating reactively &mdash; after a tick is found &mdash; instead of proactively. By the time you find one tick, there are likely hundreds more in various life stages throughout your yard. A structured annual program with treatments timed to each species&rsquo; peak window is always more effective than ad hoc spraying. Hamann has been running exactly these programs across Arlington and Tarrant County since 2006, and we adjust every schedule based on your specific yard conditions and local tick pressure.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Protect Your Yard All Year?</h3>
-          <p>Get a professional tick treatment plan built for North Texas &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

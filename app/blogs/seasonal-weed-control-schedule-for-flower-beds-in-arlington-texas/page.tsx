@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -68,14 +67,6 @@ export default function Page() {
         <h2>Is a Three-Application Pre-Emergent Schedule Really Necessary?</h2>
         <p>In most of the country, two applications (spring and fall) is the standard. But Arlington sits in a climate zone where we get both cool-season and warm-season weed pressure, our winters are mild enough that cool-season weeds can germinaste in January, and our springs arrive fast. Three targeted applications &mdash; late January, early March, and September &mdash; gives you consistent coverage across all three weed seasons. Skip one and you&rsquo;ll notice the gap.</p>
 
-        <div className="blog-cta">
-          <h3>Want This Schedule Handled For You?</h3>
-          <p>Hamann follows a precise seasonal weed control program for Arlington flower beds &mdash; and your first service is 50% off.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

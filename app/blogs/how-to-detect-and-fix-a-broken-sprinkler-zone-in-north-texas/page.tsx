@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <h2>Protect Your Turf Investment Before Summer Peak</h2>
         <p>The best time to test every zone is early spring before the heat arrives. By the time brown patches appear in July, your lawn has already lost ground it may take months to recover. A quick 20-minute manual zone test in March or April catches 90 percent of failures before they cost you anything. Hamann Lawn Care &amp; Weed Control helps Arlington homeowners keep Bermuda lawns thriving all season with treatments that complement a well-functioning irrigation system. For help identifying what&rsquo;s causing lawn stress on your property, check out <a href="/blogs/when-to-water-bermuda-grass-morning-vs-evening-in-texas-heat">when to water Bermuda grass in Texas heat</a> or give us a call.</p>
 
-        <div className="blog-cta">
-          <h3>Lawn Struggling Despite Regular Watering?</h3>
-          <p>Hamann Lawn Care has served Arlington and North Texas since 2006. Call us and get 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
 
         <p>If your Bermuda lawn has developed irregular bronze patches this summer and nothing you&rsquo;ve tried seems to explain it, gray leaf spot deserves serious consideration. See our full <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control</a> page for how Hamann diagnoses and treats fungal disease in North Texas, and read our related post on <a href="/blogs/leaf-spot-in-st-augustine-grass-texas-identification">leaf spot in St. Augustine grass</a> to understand the closely related disease pattern on a different turf type.</p>
 
-        <div className="blog-cta">
-          <h3>Is Gray Leaf Spot Attacking Your Bermuda?</h3>
-          <p>Get the right diagnosis fast — before misidentification lets the disease take weeks more of your lawn.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off First Treatment</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

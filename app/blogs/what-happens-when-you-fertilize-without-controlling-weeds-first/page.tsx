@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -52,14 +51,6 @@ export default function Page() {
         <h2>What Hamann Does Differently</h2>
         <p>At Hamann Lawn Care &amp; Weed Control, we&rsquo;ve been treating lawns in Arlington and surrounding DFW communities since 2006. Our program isn&rsquo;t a bag of weed-and-feed tossed at a problem &mdash; it&rsquo;s a calibrated sequence of pre-emergent, post-emergent, and fertilizer applications timed specifically to North Texas soil temperatures, seasonal weed cycles, and turf type. We know when Bermuda wakes up, when nutsedge surges, and when the window for early broadleaf control opens and closes. That knowledge is why our customers see real turf improvement year over year instead of the same weed fight every spring.</p>
 
-        <div className="blog-cta">
-          <h3>Ready for Weeds Out, Grass In?</h3>
-          <p>Get a lawn treatment program that sequences weed control and fertilizer the right way &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>&#128222; Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

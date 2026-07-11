@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <h2>The Bottom Line on Timing</h2>
         <p>Weed pressure in North Texas is a year-round reality, but it shifts dramatically by season &mdash; and each shift requires a different response. Miss the spring pre-emergent window and you&rsquo;re fighting crabgrass all summer. Skip the fall pre-emergent and your winter lawn fills with henbit and chickweed. React only after you see weeds and you&rsquo;re always behind the biology. Hamann Lawn Care &amp; Weed Control has been managing this seasonal cycle in Arlington and across DFW since 2006. We know when the windows open, when they close, and how to build a program that stays ahead of them all year long.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Healthier Lawn?</h3>
-          <p>Stop reacting to weeds and start staying ahead of them &mdash; 50% off your first treatment when you call today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

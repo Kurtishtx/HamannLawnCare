@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -293,14 +292,6 @@ export default function Page() {
           kind of dense, resilient turf that shuts weeds out on its own.
         </p>
 
-        <div className="blog-cta">
-          <h3>Ready To Test Your Soil And Fight Weeds For Good?</h3>
-          <p>Hamann&rsquo;s professional weed control and fertilizer programs get to the root of the problem &mdash; and your first application is 50% off.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

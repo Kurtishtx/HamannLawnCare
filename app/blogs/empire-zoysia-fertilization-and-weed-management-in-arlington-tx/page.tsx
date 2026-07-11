@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <h2>Protect Your Empire Investment</h2>
         <p>Empire Zoysia sod represents a real financial commitment, and maintaining it properly pays dividends in a thick, weed-resistant, beautiful lawn for years. The fertilization and weed control details that separate Empire from Bermuda programs are exactly the kind of nuances our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer service</a> is built around. We identify your grass type before we touch a sprayer or spreader. For more on how St. Augustine cultivar differences affect your program, see our post on <a href="/blogs/palmetto-st-augustine-vs-raleigh-fertilization-and-weed-control-differences">Palmetto vs. Raleigh fertilization and weed control differences</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Protect Your Empire Zoysia Investment</h3>
-          <p>Arlington&rsquo;s best zoysia lawns are built on the right program &mdash; not a generic spray. Let&rsquo;s build yours.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

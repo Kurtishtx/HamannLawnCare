@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
 
         <p>Hamann Lawn Care &amp; Weed Control has been helping Arlington and DFW homeowners build deeper, healthier lawns since 2006. If your turf struggles every summer no matter how much you water, the problem is almost certainly in how you&rsquo;re watering, not how much. Call us at <a href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a> and we&rsquo;ll assess your lawn&rsquo;s root system and irrigation schedule.</p>
 
-        <div className="blog-cta">
-          <h3>Is Your Lawn&rsquo;s Root System as Deep as It Should Be?</h3>
-          <p>Hamann builds healthy North Texas lawns from the ground up. Call or claim your new-customer offer.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

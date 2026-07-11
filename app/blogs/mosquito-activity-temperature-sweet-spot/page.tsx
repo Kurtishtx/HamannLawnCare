@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <p>Read the previous post for context on how La Ni&ntilde;a and El Ni&ntilde;o climate cycles amplify exactly these conditions: <a href="/blogs/la-nina-el-nino-effect-texas-mosquitoes">how weather patterns affect Texas mosquito seasons</a>.</p>
         <p>At Hamann, we&rsquo;ve been protecting Arlington and DFW yards since 2006. We schedule treatments to stay ahead of the population cycles, hit both breeding sites and resting zones, and keep residual barriers active through the hottest, most active months. You shouldn&rsquo;t have to time your backyard time around the mosquito weather forecast.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

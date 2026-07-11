@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <h2>When To Call a Professional</h2>
         <p>Wild garlic and wild onion are genuinely difficult to control without the right products, surfactants, and timing knowledge. If you&apos;ve been treating on your own without consistent results, or if the infestation has spread to a large portion of your beds, professional treatment is the most effective path. Hamann Lawn Care &amp; Weed Control has been servicing Arlington and the DFW area since 2006, and our flower-bed weed control program is built around the seasonal patterns that drive weed pressure in North Texas &mdash; including the fall and winter timing that&apos;s essential for <em>Allium</em> control. We use professional-grade products with appropriate surfactants and follow up through the season to work down established bulb populations over time.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Reclaim Your Flower Beds?</h3>
-          <p>Get professional flower-bed weed control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

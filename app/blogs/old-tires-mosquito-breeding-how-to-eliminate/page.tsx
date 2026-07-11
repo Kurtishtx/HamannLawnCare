@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <p>Eliminating breeding sites is step one, but it doesn&rsquo;t address the adult mosquitoes already flying around your yard — or the ones drifting in from neighboring properties. A professional barrier spray program targets resting adults in shaded foliage, fence lines, and ground cover, reducing the biting population quickly while source reduction works on the next generation. Together, the two approaches deliver the kind of lasting relief that no single tactic can achieve alone.</p>
         <p>We&rsquo;ve helped Arlington homeowners reclaim their yards since 2006. If tires or containers have been feeding a mosquito population all season, a targeted treatment combined with our barrier program will knock numbers down fast and keep them down through fall. Read more about how we approach different <a href="/blogs/bird-bath-mosquito-control-tips">backyard water features like bird baths</a> that become hidden breeding sites.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works — and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

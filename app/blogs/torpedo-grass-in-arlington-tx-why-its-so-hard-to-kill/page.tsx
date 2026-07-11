@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -76,14 +75,6 @@ export default function Page() {
           <li><strong>Maintain a dense, healthy lawn.</strong> A thick, well-fertilized turf is your best competitive barrier. Torpedo grass establishes most readily where the existing lawn is thin, patchy, or stressed.</li>
         </ul>
 
-        <div className="blog-cta">
-          <h3>Torpedo Grass Doesn&rsquo;t Have to Win</h3>
-          <p>Let Hamann Lawn Care &amp; Weed Control assess your lawn and build a multi-season treatment plan &mdash; claim your 50% off first treatment now.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>&#128222; Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

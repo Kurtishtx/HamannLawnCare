@@ -4,7 +4,7 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
+
 
   return (
     <main>
@@ -125,12 +125,7 @@ export default function Page() {
           For professional dethatching, aeration, and full-season lawn health programs in Arlington and across DFW, reach out to our team. Visit our <a href="/lawn-care-services">lawn care services page</a> for a full list of what we offer, or call us directly to schedule a spring lawn assessment before the prime dethatching window passes.
         </p>
 
-        <div className="blog-cta">
-          <h3>Need Help Dethatching Your St. Augustine Lawn?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control has served Arlington and DFW since 2006. We know exactly how to dethatch St. Augustine safely without risking your lawn. Call us or claim our new-customer offer.</p>
-          <a href={`tel:${PHONE_TEL}`} className="btn-primary">Call {PHONE_DISPLAY}</a>
-          <button onClick={openPromo} className="btn-secondary">Get 50% Off First Service</button>
-        </div>
+
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

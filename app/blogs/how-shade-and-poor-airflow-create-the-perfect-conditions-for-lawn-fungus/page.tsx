@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <h2>When Professional Treatment Is Needed</h2>
         <p>Improving shade and airflow conditions helps prevent future outbreaks, but if fungal disease is already active, it generally needs professional fungicide treatment to stop the spread and allow the grass to recover. Waiting and hoping the conditions improve while disease spreads just makes recovery harder and more expensive. This connects directly to the soil health factors we cover in our post on <a href="/blogs/the-role-of-soil-health-in-preventing-lawn-disease">the role of soil health in preventing lawn disease</a> &mdash; a combination of good cultural practices and timely treatment is what actually delivers long-term results. Hamann has been treating lawn disease in Arlington and DFW since 2006. Call us when you see the early signs.</p>
 
-        <div className="blog-cta">
-          <h3>Got Fungus in the Shady Spots?</h3>
-          <p>We&rsquo;ll treat what&rsquo;s there and help you stop it from coming back &mdash; first application is 50% off.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

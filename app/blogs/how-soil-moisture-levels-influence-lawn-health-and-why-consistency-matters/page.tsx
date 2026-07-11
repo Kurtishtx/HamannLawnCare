@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <h2>The Takeaway</h2>
         <p>Your grass doesn&rsquo;t just need water — it needs water at the right pace, at the right times, in a way that keeps the soil in a stable range rather than bouncing between extremes. In North Texas, achieving that means understanding your soil type, adjusting for seasonal changes, accounting for zone-by-zone differences across your property, and using tools that can respond to weather variability automatically. It&rsquo;s more involved than setting a timer and walking away — but the payoff is a lawn that&rsquo;s genuinely more resilient all year long.</p>
 
-        <div className="blog-cta">
-          <h3>Want a Lawn That Stays Healthy Through the Texas Summer?</h3>
-          <p>We&rsquo;ll build a care program around your actual soil and site conditions. Call us or grab your first-service offer.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

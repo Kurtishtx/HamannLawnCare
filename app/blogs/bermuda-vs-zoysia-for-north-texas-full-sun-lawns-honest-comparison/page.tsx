@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -54,14 +53,6 @@ export default function Page() {
         <h2>Hamann&rsquo;s Recommendation After Two Decades in Arlington</h2>
         <p>We maintain both Bermuda and Zoysia lawns across Tarrant County — and we genuinely love both when they&rsquo;re properly cared for. The &ldquo;best&rdquo; grass is the one that matches your specific yard conditions, your maintenance style, and your expectations. If you&rsquo;re debating between the two, give us a call. We&rsquo;ll walk your property, assess your sun exposure and soil conditions, and give you a straight answer rather than a sales pitch. Hamann has served Arlington and DFW since 2006, and our goal is always a lawn that performs for you long term.</p>
 
-        <div className="blog-cta">
-          <h3>Bermuda or Zoysia — We&rsquo;ll Help You Decide and Deliver Results</h3>
-          <p>Get expert lawn evaluation and a program built for your specific grass type — claim 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off First Service</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

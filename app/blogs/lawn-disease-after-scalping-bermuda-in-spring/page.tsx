@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -86,14 +85,6 @@ export default function Page() {
         <p>This connects back to the advice we share with homeowners who are also navigating spring disease on recently installed turf &mdash; for example, in our post on <a href="/blogs/lawn-disease-in-newly-sodded-bermuda-or-st-augustine">lawn disease in newly sodded Bermuda or St. Augustine</a>, the mowing and moisture management principles overlap more than most people expect. Whether your Bermuda is two years old or twenty, the post-scalp window and the post-sod window share the same core vulnerability: exposed tissue, compromised canopy, and unfavorable moisture conditions.</p>
         <p>Scalping is worth doing. It&rsquo;s a legitimate spring practice that genuinely helps Bermuda lawns green up faster and look better through the summer. But it&rsquo;s not without risk &mdash; and that risk spikes when timing is off, weather turns wet, or the lawn isn&rsquo;t supported with the right follow-up care. Pay attention to the two-to-three weeks after you scalp. If something looks wrong, don&rsquo;t wait six weeks to call. Early treatment is the difference between a minor setback and a lawn that struggles all season.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Protect Your Lawn?</h3>
-          <p>Get professional lawn disease treatment &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

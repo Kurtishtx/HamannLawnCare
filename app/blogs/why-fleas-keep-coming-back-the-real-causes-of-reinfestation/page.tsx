@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <h2>The Bottom Line</h2>
         <p>Fleas don&rsquo;t keep coming back because they&rsquo;re indestructible. They come back because the lifecycle has gaps in coverage: surviving pupae, untreated zones, unprotected pets, or continuous external resupply. Identify which of these is your weak link &mdash; or let a professional assess your specific situation &mdash; and you can stop the reinfestation cycle for good.</p>
 
-        <div className="blog-cta">
-          <h3>Stop the Reinfestation Cycle</h3>
-          <p>Hamann Lawn Care &amp; Weed Control closes every gap in flea control &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

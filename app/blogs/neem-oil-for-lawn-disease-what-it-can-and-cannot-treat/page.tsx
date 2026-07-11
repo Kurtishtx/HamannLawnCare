@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -44,14 +43,6 @@ export default function Page() {
         <h2>What to Use Instead for Real DFW Lawn Disease</h2>
         <p>The same money and effort spent on repeated neem oil applications to active Brown Patch or Grey Leaf Spot would deliver dramatically better results spent on a labeled fungicide. Our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control</a> program uses chemistry specifically calibrated for each pathogen, applied at the right timing, combined with cultural corrections that address the conditions driving the outbreak. You can also read our post on <a href="/blogs/baking-soda-for-lawn-fungus-myth-vs-reality">baking soda for lawn fungus</a> to understand why home remedies consistently fail against the diseases that dominate North Texas turf — the core issue is the same whether the remedy is baking soda or neem oil: it doesn&rsquo;t reach the pathogen where it lives.</p>
 
-        <div className="blog-cta">
-          <h3>Getting the Wrong Treatment While Your Lawn Loses Ground?</h3>
-          <p>Hamann diagnoses the actual disease and applies chemistry that works. Call for a professional assessment of your North Texas lawn — serving Arlington and the entire DFW area since 2006.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

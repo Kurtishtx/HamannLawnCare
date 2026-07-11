@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <p>Sometimes a stress event kills enough crowns that natural recovery won&rsquo;t fill in the damage in a reasonable timeframe. Signs that you&rsquo;re past the recovery threshold include: large areas (more than 30&ndash;40% of the lawn) with no new green growth 4&ndash;6 weeks after conditions improved, bare spots that&rsquo;ve been occupied by weeds rather than grass, and soil that&rsquo;s completely hydrophobic (water beads and runs off even after aeration). At that point, sodding, sprigging, or plugging the affected areas is the practical path forward.</p>
         <p>The good news is that with the right professional program, most North Texas lawns recover from even significant stress events by the next full growing season. Hamann has been helping Arlington-area homeowners through exactly these situations since 2006. Our <a href="/lawn-care-services">lawn care services</a> include stress recovery assessments and programs designed specifically for what North Texas grass goes through. And if you&rsquo;ve been dealing with rain-related lawn stress specifically, our post on <a href="/blogs/why-some-lawns-stay-healthy-during-heavy-rain-while-others-fall-apart">why some lawns stay healthy during heavy rain while others fall apart</a> covers the conditions that make recovery easier or harder.</p>
 
-        <div className="blog-cta">
-          <h3>Let&rsquo;s Get Your Lawn Back on Track</h3>
-          <p>Expert lawn recovery programs built for North Texas &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

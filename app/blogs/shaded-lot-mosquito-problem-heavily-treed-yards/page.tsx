@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <h2>Love Your Trees, Beat Your Mosquitoes</h2>
         <p>You shouldn&rsquo;t have to choose between a beautiful shaded yard and a comfortable one. The right combination of professional treatment, targeted vegetation management, standing water elimination, and smart outdoor space setup gives you the shade and the usability. Hamann Lawn Care has been helping Arlington and DFW homeowners with exactly this challenge since 2006. Call us at {PHONE_DISPLAY} &mdash; we understand shaded lots, we know the right treatment approach, and we&rsquo;ll get your yard back to being the outdoor living space it should be.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
 
         <p>Hamann has treated sunken dead patches and root rot diseases across Arlington and DFW since 2006. Our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control</a> program starts with identifying what&rsquo;s actually happening below the surface — because that&rsquo;s where these diseases live and where treatment has to reach.</p>
 
-        <div className="blog-cta">
-          <h3>Sunken Dead Patches in Your Lawn?</h3>
-          <p>Root rot diseases don&rsquo;t fix themselves. Get the right diagnosis and a treatment plan before more turf collapses.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off First Treatment</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
 
         <p>Once your freeze patches are repaired and the new turf or sod is established, see our guide on <a href="/blogs/how-long-does-new-sod-take-to-root-in-north-texas-heat">how long new sod takes to root in North Texas summer heat</a> for a week-by-week care timeline. Hamann Lawn Care has been helping Arlington and DFW homeowners recover from freeze events and drought damage since 2006 — we&rsquo;re here when you need a second opinion on a patch that just won&rsquo;t come back.</p>
 
-        <div className="blog-cta">
-          <h3>Freeze Damage Leaving Dead Patches in Your Lawn?</h3>
-          <p>Get expert lawn repair in Arlington and the DFW area — plus 50% off your first service with Hamann.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <h2>Hamann&rsquo;s Approach to Flea Season Coverage</h2>
         <p>We set up our flea control programs to match the rhythm of North Texas seasons, not a one-size calendar. If you&rsquo;re starting with an active infestation, we&rsquo;ll plan the initial two-treatment sequence and then move you onto a preventive schedule that makes sense for your specific yard and pressure level. Hamann has been protecting Arlington and DFW families from fleas since 2006 &mdash; give us a call and we&rsquo;ll put together a plan that keeps your yard protected all season long.</p>
 
-        <div className="blog-cta">
-          <h3>Stay Ahead of Fleas All Season</h3>
-          <p>Seasonal flea protection that doesn&rsquo;t leave gaps &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

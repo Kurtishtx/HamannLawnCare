@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <p>Hamann Lawn Care &amp; Weed Control has been treating flower beds in Arlington and across the DFW area since 2006. Our pre-emergent program uses prodiamine- and pendimethalin-based products timed to actual soil temperature data — not calendar dates — with spring and fall applications timed to hit both cool-season and warm-season weed pressure windows. We follow up with post-emergent spot treatments to address anything that establishes through the barrier, so beds stay clean through the full season.</p>
         <p>If you&apos;ve been relying on Preen and still fighting weeds through midsummer, it&apos;s usually a combination of timing and residual breakdown in our heat. Professional-grade products applied at the right time make a measurable difference in this climate. You can also read our detailed guide on <a href="/blogs/weed-control-around-ornamental-grasses-dfw">weed control around ornamental grasses in DFW beds</a> if you&apos;re managing mixed plantings where application restrictions are tighter.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For Professional-Grade Weed Prevention?</h3>
-          <p>Skip the Preen and get the real thing &mdash; professional pre-emergent for your flower beds, plus 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <h2>Setting Up a Fast Green-Up Next Spring — Starting Now</h2>
         <p>The best thing you can do for next spring&rsquo;s green-up is make the right moves this fall. A potassium-rich winterizer application, a well-timed fall pre-emergent, and a winter weed cleanup visit set up a clean, well-nourished turf that wakes up fast and uniform in February. Everything in a professional lawn program connects — and spring green-up is where all that fall and winter work pays off visibly. If last spring&rsquo;s green-up was slow or weedy, the fix starts <a href="/blogs/why-skipping-one-lawn-treatment-sets-back-your-entire-year-in-dfw">with not skipping your fall treatment this year</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Get a Greener Spring — Starting This Fall</h3>
-          <p>Hamann&rsquo;s professional program builds the lawn through every season. Call to get started or claim 50% off your first visit.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

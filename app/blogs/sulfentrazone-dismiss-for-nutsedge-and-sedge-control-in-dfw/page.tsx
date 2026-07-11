@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -74,14 +73,6 @@ export default function Page() {
         <h2>Hamann&rsquo;s Approach to Nutsedge Control in the DFW Area</h2>
         <p>At Hamann Lawn Care &amp; Weed Control, we&rsquo;ve been treating North Texas lawns since 2006. Nutsedge is something we see constantly across Arlington, Mansfield, Grand Prairie, and the surrounding communities — and we know exactly what a heavily infested clay-soil lawn looks like and what it takes to bring it back. Our program is built around professional-grade products like Dismiss, properly timed applications, and realistic expectations communicated clearly to every customer. We don&rsquo;t promise one-and-done miracles. We deliver consistent, improving results season over season — and our clients see their nutsedge populations decline year after year.</p>
 
-        <div className="blog-cta">
-          <h3>Nutsedge Taking Over Your Yard?</h3>
-          <p>Get a professional evaluation and a treatment plan built for North Texas clay soils &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

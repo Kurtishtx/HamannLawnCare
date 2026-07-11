@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -65,14 +64,6 @@ export default function Page() {
 
         <p>Also check out our post on <a href="/blogs/winter-rye-overseeding-pros-cons-for-north-texas-bermuda-lawns">winter rye overseeding pros and cons for North Texas Bermuda lawns</a> if you&apos;re thinking about a temporary cover between growing seasons.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Renovate Your Lawn the Right Way?</h3>
-          <p>Call Hamann Lawn Care &amp; Weed Control for expert site prep and lawn renovation guidance in Arlington and DFW.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off First Service</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

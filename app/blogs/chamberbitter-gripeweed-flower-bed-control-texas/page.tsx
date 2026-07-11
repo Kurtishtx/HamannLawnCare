@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <h2>How Hamann Handles Chamberbitter</h2>
         <p>Our flower-bed program includes a spring pre-emergent timed to local soil temperatures, with a midsummer follow-up in beds with heavy history. We inspect for emerging chamberbitter during service visits and spot-treat young plants before they can set seed. If you&rsquo;ve got a bed that&rsquo;s been overrun for more than one season, we can assess your seed bank pressure and put together a realistic multi-season reduction plan. Hamann has been serving Arlington and surrounding DFW communities since 2006 &mdash; call us at {PHONE_DISPLAY} to get started.</p>
 
-        <div className="blog-cta">
-          <h3>Chamberbitter Taking Over Your Flower Beds?</h3>
-          <p>Professional flower-bed weed control that targets chamberbitter before it seeds &mdash; 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

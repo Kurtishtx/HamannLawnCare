@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <h2>The Bottom Line</h2>
         <p>July is peak mosquito month in North Texas, with August close behind. It&rsquo;s driven by accumulated populations, minimal overnight temperature drops, simultaneous multi-species activity, and storm-driven breeding surges. The way to handle peak month is not to react to it in July &mdash; it&rsquo;s to run a professional program that&rsquo;s been suppressing populations since spring so that July is manageable rather than catastrophic. Hamann has been running that kind of program for Arlington homeowners since 2006. Give us a call before March, get ahead of the curve, and actually enjoy your summer yard this year.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

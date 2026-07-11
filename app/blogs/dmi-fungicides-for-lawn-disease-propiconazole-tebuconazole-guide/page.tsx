@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         </ul>
         <p>Our full approach to these paired solutions is detailed on our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control</a> page. And if you&rsquo;ve been working through the home remedy approaches first, our post on <a href="/blogs/neem-oil-for-lawn-disease-what-it-can-and-cannot-treat">neem oil for lawn disease</a> explains why those alternatives consistently fall short of what a systemic DMI can accomplish.</p>
 
-        <div className="blog-cta">
-          <h3>Let the Right Fungicide Do the Right Job</h3>
-          <p>Hamann knows which DMI works for which disease in DFW conditions — and how to pair it with a cultural program that makes the chemistry last. Call for a professional assessment of your lawn.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

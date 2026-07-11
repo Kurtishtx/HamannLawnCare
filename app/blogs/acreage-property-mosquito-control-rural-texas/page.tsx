@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -79,14 +78,6 @@ export default function Page() {
         <p>If you moved to your property from a suburban neighborhood, our post on <a href="/blogs/new-construction-home-mosquito-pressure-texas">why new construction homes face extra mosquito pressure</a> covers some overlapping themes &mdash; particularly around how external sources like detention ponds and unmanaged land drive pressure that you can&rsquo;t fully control from your own property.</p>
         <p>Hamann Lawn Care has been serving Arlington and the surrounding North Texas area since 2006, including homeowners with larger rural and semi-rural properties. Call us at {PHONE_DISPLAY} and we&rsquo;ll put together a plan that makes sense for your land.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

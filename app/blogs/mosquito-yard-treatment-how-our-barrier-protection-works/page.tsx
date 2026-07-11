@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <h2>The Result: Your Yard Back</h2>
         <p>A professional barrier treatment isn&rsquo;t just about fewer bites &mdash; it&rsquo;s about reclaiming your outdoor space. Evenings on the patio, kids in the backyard, weekend cookouts that don&rsquo;t get ruined by swarms. Hamann has been protecting Arlington and DFW homes since 2006, and barrier treatment is the backbone of everything we do for mosquito control. It works because it&rsquo;s built around how mosquitoes actually live &mdash; not just how they look when they&rsquo;re buzzing in your face.</p>
 
-        <div className="blog-cta">
-          <h3>Get Your Yard Barrier Treatment Scheduled</h3>
-          <p>Professional mosquito protection that keeps working all season &mdash; 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

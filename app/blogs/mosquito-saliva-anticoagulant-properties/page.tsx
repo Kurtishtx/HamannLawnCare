@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -50,14 +49,6 @@ export default function Page() {
         <h2>Protecting Your Family This Season</h2>
         <p>The mosquitoes in your Arlington-area yard are carrying saliva right now, and every one of them is equipped with the same anticoagulant toolkit that makes mosquitoes such effective feeders. Professional treatment reduces the population dramatically and keeps it down through regular applications. Personal repellents help when you&rsquo;re outside, but they don&rsquo;t address the mosquitoes resting in your vegetation waiting for the next opportunity. A layered approach &mdash; professional barrier control plus repellent on skin when needed &mdash; is the most effective way to protect your family throughout the long North Texas mosquito season.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

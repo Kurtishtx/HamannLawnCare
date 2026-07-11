@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <h2>When Hand-Watering Isn&rsquo;t Enough</h2>
         <p>Hand-watering works well for temporary gaps in automated irrigation, spot-treating stressed areas, or supplementing a system with known coverage gaps. It&rsquo;s not a sustainable primary strategy for a full DFW lawn in July. The physics work against you: covering 5,000 square feet with a hose to deliver 1 inch of water takes 312 gallons and 45&ndash;60 minutes of careful, methodical work — every few days. If you&rsquo;re hand-watering because your irrigation system is down or has coverage gaps, the better long-term solution is repairing or upgrading the system rather than relying on the hose through a 90-day North Texas summer.</p>
 
-        <div className="blog-cta">
-          <h3>Hamann Has Kept Arlington Lawns Green Since 2006</h3>
-          <p>From weed control to irrigation advice, we&rsquo;re your local lawn experts. Call us today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -54,14 +53,6 @@ export default function Page() {
         <p>Mowing at the right height doesn&rsquo;t eliminate the need for herbicide programs &mdash; especially in established weed-pressure situations. But it changes the balance of what herbicide has to accomplish. A lawn that&rsquo;s dense, properly mowed, and well-fed needs fewer chemical interventions to stay clean than a thin, improperly mowed lawn. The canopy suppression, root competition, and plant health created by correct mowing are all working against weed establishment continuously, without any additional product cost.</p>
         <p>This is why integrated weed management programs that combine mowing practices, fertility, and targeted herbicide applications outperform herbicide-only approaches over time. For a deeper look at how professional treatments tie the whole picture together, our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer services</a> page explains how we structure programs for St. Augustine, Bermuda, and Zoysia in North Texas. And for how professional-grade applications deliver results that store-bought products often can&rsquo;t, see the previous post on <a href="/blogs/why-professional-lawn-treatments-deliver-better-longer-lasting-weed-control">why professional lawn treatments deliver better longer lasting weed control</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Weed-Free Lawn?</h3>
-          <p>Get professional weed control &amp; fertilizer treatments &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

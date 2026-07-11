@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>Hamann&rsquo;s Take: Match the Grass to the Light, Not the Preference</h2>
         <p>We see homeowners fight shade conditions with the wrong grass every season. The temptation is understandable — you love Bermuda everywhere else and want consistency. But the most beautiful lawns we maintain are ones where the homeowner made the practical choice: Bermuda in the sun, Zoysia or St. Augustine in the shade, with clean transition lines. The result is consistently better than forcing a shade-stressed Bermuda stand to limp along. Hamann has been making these calls for Arlington homeowners since 2006. Call us before you make a significant investment in sod or a conversion — we&rsquo;ll help you get it right.</p>
 
-        <div className="blog-cta">
-          <h3>Struggling With Bermuda in Your Shade Zones?</h3>
-          <p>Get honest advice from a DFW lawn care team that has seen every shade scenario — call today and claim 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off First Service</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

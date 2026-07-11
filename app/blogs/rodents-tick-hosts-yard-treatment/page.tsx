@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <h2>Hamann&rsquo;s Approach to Tick Host Management in DFW</h2>
         <p>When we assess a property, we look for signs of rodent activity as part of understanding why tick pressure is high. We can recommend where to focus rodent control efforts as part of a comprehensive tick reduction strategy. Combined with professional barrier treatment of the vegetation zones where ticks quest, addressing the rodent-tick connection is one of the most effective steps DFW homeowners can take. Hamann has served Arlington and surrounding communities since 2006, and we understand the specific wildlife dynamics of the North Texas suburban environment.</p>
 
-        <div className="blog-cta">
-          <h3>Struggling With Persistent Tick Problems?</h3>
-          <p>Get professional flea &amp; tick control that addresses the full picture — and claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

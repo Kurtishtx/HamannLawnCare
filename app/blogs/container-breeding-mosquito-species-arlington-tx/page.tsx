@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -82,14 +81,6 @@ export default function Page() {
         <p>A complete mosquito control program combines larviciding of permanent water sources with barrier treatments that kill adult mosquitoes resting in foliage. Together, these approaches cut the population from both ends &mdash; preventing the next generation while eliminating the current one. That&rsquo;s how you get lasting results across a full Texas season rather than temporary relief that fades after a week.</p>
         <p>Arlington&rsquo;s combination of suburban density, mature landscaping, warm weather, and active irrigation makes it one of the most challenging areas in DFW for mosquito control &mdash; but it&rsquo;s also an area where consistent professional management delivers real, noticeable results. You don&rsquo;t have to give up your backyard to <em>Aedes aegypti</em> and tiger mosquitoes. You just need the right plan.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

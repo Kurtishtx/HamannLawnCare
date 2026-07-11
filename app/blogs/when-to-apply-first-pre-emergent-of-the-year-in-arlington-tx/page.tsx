@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -53,14 +52,6 @@ export default function Page() {
         <h2>What Happens If You Miss the Window</h2>
         <p>If pre-emergent is applied too late and crabgrass has already germinated, the remaining options shift entirely to post-emergent chemistry. Early post-emergent applications of dithiopyr can still kill pre-tiller crabgrass, but the window for that is also narrow. Once crabgrass has produced multiple tillers (lateral shoots), post-emergent options become progressively less effective and more turf-damaging. Read more about that rescue strategy in our guide on <a href="/blogs/isoxaben-gallery-for-broadleaf-weed-pre-emergent-in-north-texas">isoxaben Gallery for broadleaf weed pre-emergent in North Texas</a>, which covers the complementary broadleaf side of a complete fall-through-spring prevention program.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Miss the Window This Year</h3>
-          <p>We track soil temps and time every application to the Arlington season. Call Hamann today and get 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

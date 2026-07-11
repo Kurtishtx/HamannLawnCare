@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -65,14 +64,6 @@ export default function Page() {
         <p>North Texas mosquito pressure is specific. DFW&rsquo;s clay soil holds water in ways that create persistent breeding sites even when it hasn&rsquo;t rained in weeks. Warm winters mean earlier season starts. The combination of heat and humidity from April through October demands products and schedules calibrated for this climate, not a national template. Companies with real local experience &mdash; like ours, having served Arlington and surrounding communities since 2006 &mdash; know these conditions and have dialed in their programs accordingly.</p>
         <p>For a full look at what we offer and how we approach this differently, visit our <a href="/mosquito-control-services">mosquito control services</a> page. We&rsquo;re happy to answer every question on this list when you call.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

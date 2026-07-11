@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>How Hamann Diagnoses Halo Lesions</h2>
         <p>When a Hamann technician arrives to evaluate halo lesions, the process starts with grass type, then blade-level inspection. We look at lesion shape, width relative to the blade, center color, border character, and morning mycelium before making any product recommendation. We also evaluate the irrigation schedule, recent fertilization history, and soil conditions, because cultural factors often explain why the disease is present in the first place. A correct diagnosis paired with a management plan is what produces lasting results &mdash; not just a spray and a hope.</p>
 
-        <div className="blog-cta">
-          <h3>Halo Lesions on Your Grass Blades in DFW?</h3>
-          <p>Don&rsquo;t guess between dollar spot and helminthosporium. Hamann Lawn Care &amp; Weed Control has diagnosed and treated North Texas lawn diseases since 2006 &mdash; we&rsquo;ll get it right.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

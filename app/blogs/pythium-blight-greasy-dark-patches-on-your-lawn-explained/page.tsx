@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <p>Even after treatment, recovery is not instantaneous. Dead turf killed by Pythium doesn&rsquo;t spring back. Bermuda and St. Augustine will fill in from the edges through stolons over several weeks to months depending on the damage size. If the crowns were destroyed, you&rsquo;re looking at re-sodding. This is why getting on it within hours of the first symptom is not an overreaction &mdash; it&rsquo;s the only way to avoid a much larger and more expensive problem.</p>
         <p>Hamann Lawn Care &amp; Weed Control has been diagnosing and treating Pythium blight and other North Texas lawn diseases since 2006. We use professional-grade Mefenoxam-based fungicide applications and understand the DFW climate patterns that trigger outbreaks. If you saw greasy patches this morning, call us today.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Protect Your Lawn?</h3>
-          <p>Get professional lawn disease control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

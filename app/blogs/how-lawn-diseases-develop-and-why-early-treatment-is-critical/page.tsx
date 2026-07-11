@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -153,18 +152,6 @@ export default function Page() {
           call early, treat accurately, and don&rsquo;t give the disease time to get ahead of them.
         </p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Healthier Lawn?</h3>
-          <p>
-            Hamann Lawn Care &amp; Weed Control has been treating North Texas lawns since 2006. If you&rsquo;re seeing
-            unusual brown spots, thinning patches, or gray lesions on your grass, don&rsquo;t wait &mdash; call us now and
-            let&rsquo;s stop it before it spreads.
-          </p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

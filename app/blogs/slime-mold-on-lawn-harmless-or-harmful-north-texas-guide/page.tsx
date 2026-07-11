@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -70,14 +69,6 @@ export default function Page() {
         <h2>The Bottom Line for North Texas Homeowners</h2>
         <p>Slime mold is one of the least threatening things that can show up on your lawn, despite looking genuinely alarming. It&rsquo;s not eating your grass, it&rsquo;s not infecting it, and it will usually resolve on its own once conditions dry out. Sweep it off, cut back your irrigation, and let the sun do the rest. Where slime mold becomes a problem is when it sits long enough to shade out stressed turf or when it signals a recurring drainage issue that&rsquo;s creating conditions for other, more serious diseases. For the worst-case scenarios or if you&rsquo;re ever unsure what you&rsquo;re looking at, read our guide on <a href="/blogs/fairy-ring-types-in-texas-which-kind-is-killing-your-grass">fairy ring types in Texas and which kind is killing your grass</a> &mdash; another unusual-looking problem that homeowners frequently confuse with each other. And when in doubt, call us. Hamann Lawn Care &amp; Weed Control has been diagnosing and treating North Texas lawn problems since 2006, and we&rsquo;ll tell you straight whether what you&rsquo;re seeing needs treatment or just a stiff broom.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Protect Your Lawn?</h3>
-          <p>Get professional lawn disease control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

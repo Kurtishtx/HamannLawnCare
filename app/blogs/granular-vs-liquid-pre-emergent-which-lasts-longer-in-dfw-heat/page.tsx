@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <h2>The Bottom Line for DFW Lawns</h2>
         <p>In the hands of a professional, liquid pre-emergent applied at the correct rate with a calibrated sprayer tends to produce the most consistent, even barrier &mdash; and consistent coverage is what translates to consistent weed control. But the most important factor in pre-emergent longevity in DFW heat isn&rsquo;t granular vs. liquid &mdash; it&rsquo;s the active ingredient choice, the application rate, proper activation, and the use of a split-application strategy to maintain barrier strength through the peak germination window.</p>
 
-        <div className="blog-cta">
-          <h3>The Right Product, Applied Right</h3>
-          <p>We match formulation and timing to your specific lawn conditions. Get 50% off your first weed control application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

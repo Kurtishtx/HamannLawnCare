@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
 
         <p>Also worth reading: <a href="/blogs/gypsum-for-clay-soil-lawns-in-dfw-does-it-actually-help">Gypsum for Clay Soil Lawns in DFW: Does It Actually Break Up Compaction</a> — a companion deep-dive on one of the most debated soil amendments in North Texas.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Fix Your Lawn&rsquo;s Drainage?</h3>
-          <p>Hamann has been improving DFW lawns since 2006. Call today or claim your new-customer offer.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

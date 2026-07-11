@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -51,14 +50,6 @@ export default function Page() {
         <p>Winter annual weeds in DFW go through a predictable lifecycle. They germinate in October and November, grow slowly through December and January, and then bolt and mature rapidly in February and March as day length increases. The post-emergent window for dormant-Bermuda applications targets weeds in their small, young stage (December &ndash; January) when they are easiest to kill and before they have produced seed. By late February, henbit and chickweed that were not controlled earlier are often large, mature, and more difficult to kill with the same product rates.</p>
         <p>This is why the best dormant-Bermuda weed programs treat early &mdash; not when weeds become visually dominant in late winter, but proactively in December and January when weeds are small and the Bermuda is safely dormant. Read more about the temperature and stage factors that govern post-emergent effectiveness in our related post on <a href="/blogs/how-mode-of-action-rotation-prevents-herbicide-resistance-in-texas-turf">how mode-of-action rotation prevents herbicide resistance in Texas turf</a> for additional context on why product choice matters across seasons.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Miss the Dormant-Season Weed Window</h3>
-          <p>We time dormant Bermuda treatments precisely to protect your turf and eliminate winter weeds before they set seed. Get 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <h2>Professional Control Is the Reliable Solution</h2>
         <p>Because American dog ticks arrive continuously via wildlife and maintain a population in the soil and vegetation, one-time DIY sprays won&rsquo;t hold. Hamann&rsquo;s recurring barrier program treats the fence lines, grass edges, and vegetation borders where American dog ticks actually quest, using residual products that stay active between visits. Keeping those harborage zones treated consistently is what drives tick populations down to near zero over a full season. For more on tick biology and control principles, see our post on <a href="/blogs/lone-star-tick-identification-north-texas">how to identify the Lone Star tick in North Texas</a> &mdash; the habitat overlap is significant.</p>
 
-        <div className="blog-cta">
-          <h3>Keep American Dog Ticks Out of Your Yard</h3>
-          <p>Hamann has protected Arlington and DFW families from ticks and fleas since 2006. Call today and get 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

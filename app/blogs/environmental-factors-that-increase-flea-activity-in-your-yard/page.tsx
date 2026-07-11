@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -54,14 +53,6 @@ export default function Page() {
         <h2>Putting It All Together</h2>
         <p>If your yard has mature trees, dense shrubs, St. Augustine or Bermuda turf with a thick thatch layer, any drainage or moisture issues, and wildlife traffic &mdash; which describes a large percentage of North Texas properties &mdash; you have the full recipe for a serious flea problem. Knowing this also explains why reading about <a href="/blogs/how-seasonal-weather-changes-flea-activity-throughout-the-year">how seasonal weather changes flea activity</a> is the next logical step: those environmental conditions interact differently with temperature and humidity across the seasons, shifting where and how intensely fleas concentrate throughout the year.</p>
 
-        <div className="blog-cta">
-          <h3>Let&rsquo;s Assess Your Yard&rsquo;s Flea Risk</h3>
-          <p>Hamann has been solving North Texas flea problems since 2006 &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

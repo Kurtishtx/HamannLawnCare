@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <p>Synthetic fertilizers deliver higher nutrient concentrations and are more predictable in timing, but they don&rsquo;t contribute to the soil food web the way organics do. Many professional programs use <strong>hybrid products</strong> that blend synthetic nitrogen (for predictable feeding) with organic materials (for soil health and slow-release effect). For DFW homeowners who want the best of both worlds, a hybrid fertilizer with 40 to 50% slow-release nitrogen and a listed organic matter content is an excellent choice for summer applications.</p>
         <p>The bottom line: don&rsquo;t get swayed by the word &ldquo;organic&rdquo; on the front of a bag without reading the guaranteed analysis. A low-nitrogen organic product won&rsquo;t green up your hungry bermuda lawn the way a balanced professional-grade blend will &mdash; and a high-nitrogen synthetic applied at the wrong rate or time will damage the same lawn. The label always tells the real story.</p>
 
-        <div className="blog-cta">
-          <h3>Stop Guessing at the Garden Center.</h3>
-          <p>Our team picks the right fertilizer for your specific lawn and soil &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

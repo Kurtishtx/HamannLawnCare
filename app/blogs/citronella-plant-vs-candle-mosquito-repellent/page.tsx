@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <h2>The Honest Verdict</h2>
         <p>Between the two, citronella candles outperform citronella plants in real outdoor settings, because at least the candle is actively releasing the compound (plus heat and smoke) rather than waiting to be physically crushed. But neither is a meaningful stand-alone mosquito solution for a North Texas yard in summer. They&rsquo;re accessories, not strategies. If you want your patio to actually be usable from April through November, you need a program that works at the scale of your whole property &mdash; not a two-foot radius around a jar candle. Hamann has been doing exactly that for Arlington families since 2006.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <h2>The Hamann Approach to Mixed-Bed Properties</h2>
         <p>Most properties we service in Arlington and the broader DFW area have a mix of established perennial ornamental beds, seasonal annual color beds, and in some cases edible gardens. We develop a treatment plan that accounts for each bed type &mdash; the right pre-emergent at the right time, selective post-emergent where needed, and coordination around seasonal planting schedules so applications don&rsquo;t conflict with new transplants. A single weed control program applied uniformly across all bed types misses this critical distinction and leaves you fighting weeds that a targeted approach would stop at the source. We&rsquo;ve been getting this right for North Texas homeowners since 2006.</p>
 
-        <div className="blog-cta">
-          <h3>A Smarter Weed Control Plan for Every Bed on Your Property</h3>
-          <p>Tailored professional weed control for perennial and annual beds in North Texas &mdash; call Hamann and get 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

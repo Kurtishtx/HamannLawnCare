@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <p>Hamann Lawn Care &amp; Weed Control has been correctly identifying and treating both goosegrass and crabgrass in Arlington and across DFW since 2006. We split-time our pre-emergent applications to cover both germination windows, select herbicides appropriate for the specific weed and turf type, and return for post-emergent follow-up when needed. For a look at another aggressive summer grass weed we handle, read our post on <a href="/blogs/johnsongrass-invasion-how-to-treat-this-aggressive-grass-weed-in-texas">Johnsongrass invasion in Texas</a>&mdash;a perennial grass weed that requires an entirely different control approach but is just as destructive in DFW lawns.</p>
         <p>Whether you&rsquo;ve got crabgrass, goosegrass, or both&mdash;which is more common than most people realize&mdash;we can put together a program that cleans your lawn up this season and keeps it clean next year. Give us a call.</p>
 
-        <div className="blog-cta">
-          <h3>Not Sure What&rsquo;s Growing in Your Lawn? We&rsquo;ll Figure It Out.</h3>
-          <p>Hamann Lawn Care &amp; Weed Control identifies and treats goosegrass, crabgrass, and every other summer grass weed in DFW&mdash;plus 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

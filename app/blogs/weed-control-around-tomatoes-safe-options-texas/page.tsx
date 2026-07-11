@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <h2>When to Call Hamann for Adjacent Bed Treatment</h2>
         <p>If you have ornamental flower beds adjacent to or surrounding your vegetable garden, professional pre-emergent treatment of those ornamental areas can significantly reduce the weed seed pressure that blows or walks into your vegetable space. We use products appropriate for ornamental zones and apply with full awareness of adjacent edible gardens. Our team has worked around edible plantings in Arlington and surrounding DFW communities since 2006 and knows exactly how to manage the chemistry boundary between ornamental and edible spaces on residential properties.</p>
 
-        <div className="blog-cta">
-          <h3>Protect Your Garden and Your Ornamental Beds</h3>
-          <p>Professional weed control that respects your edible zones &mdash; call Hamann and get 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

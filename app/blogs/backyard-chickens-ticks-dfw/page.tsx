@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
         <p>At Hamann, we work with homeowners who have backyard chickens and need effective tick control without harming their flocks. Our program uses products and application methods appropriate for properties with poultry, so your birds stay safe and your yard stays protected. We&rsquo;ve been serving the Arlington and DFW communities since 2006, and we back our work with a satisfaction guarantee.</p>
         <p>Your chickens are great for eggs. For ticks, call the professionals.</p>
 
-        <div className="blog-cta">
-          <h3>Have Backyard Chickens and a Tick Problem? We Handle Both.</h3>
-          <p>Professional flea &amp; tick yard treatment safe for properties with poultry — and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

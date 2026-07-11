@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>How Hamann Times Pre-Emergent Applications</h2>
         <p>Our technicians use local soil temperature monitoring to schedule applications for every customer, not a one-size-fits-all calendar date. Because different parts of DFW warm up at slightly different rates depending on proximity to bodies of water, tree cover, and soil composition, we build in flexibility to hit each lawn at the right moment. That precision is one of the biggest advantages of working with a local company that knows North Texas conditions inside and out.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Miss Your Window</h3>
-          <p>Get on our pre-emergent program and let us handle the soil temperature monitoring &mdash; plus 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

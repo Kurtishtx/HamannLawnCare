@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -70,14 +69,6 @@ export default function Page() {
         <p>For most North Texas flea and tick control applications, bifenthrin has the edge on balance. Its longer residual, superior UV stability, and stronger soil binding make it better suited to the DFW climate than permethrin&rsquo;s faster but shorter-lived action. The residual difference is particularly meaningful in summer, when the heat that accelerates both products&rsquo; breakdown is most intense and the flea reproductive rate is highest.</p>
         <p>That said, permethrin has a legitimate role in the rotation &mdash; particularly for applications where fast knockdown of an established infestation is the priority, or as part of a resistance management approach that alternates compounds. The ideal answer is not one product used exclusively, but a professional program that uses product selection as a variable rather than a constant.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Protect Your Yard From Fleas &amp; Ticks?</h3>
-          <p>Professional flea &amp; tick control built for North Texas &mdash; claim your 50% off first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

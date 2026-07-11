@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -52,14 +51,6 @@ export default function Page() {
         <h2>The Bottom Line on Grass ID</h2>
         <p>Correct grass identification is the foundation of every decision that follows: when to fertilize, what pre-emergent to apply, which post-emergents are safe, and how to time your treatment windows with the growing season. In North Texas&rsquo;s warm, weed-heavy climate, the wrong call on grass ID can undo months of effort and hundreds of dollars. Take five minutes to identify your turf before you treat anything &mdash; your lawn will thank you for it.</p>
 
-        <div className="blog-cta">
-          <h3>Not Sure What Grass You Have? We&rsquo;ll Figure It Out</h3>
-          <p>We ID your turf before we treat it &mdash; always. Call us for a free lawn assessment and the right program for your yard.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

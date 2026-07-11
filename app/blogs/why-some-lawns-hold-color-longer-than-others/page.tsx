@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <h2>The Practical Summary</h2>
         <p>The lawns that hold color longest in North Texas share a common profile: they&rsquo;re on timed, consistent fertilization schedules that include iron; they&rsquo;re watered deeply but not daily; they&rsquo;re mowed at appropriate heights; and their soil is actively managed for health. None of those things are complicated individually &mdash; but doing all of them consistently is where most homeowners fall short. Getting a professional lawn program in place handles the timing and inputs so you&rsquo;re not guessing. That&rsquo;s usually the single biggest change that tips a fading lawn into one that stays green.</p>
 
-        <div className="blog-cta">
-          <h3>Want Your Lawn to Hold That Deep Green All Season?</h3>
-          <p>Hamann Lawn Care builds color-retention programs tailored to your grass type and North Texas conditions. Call us or claim your new-customer offer today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

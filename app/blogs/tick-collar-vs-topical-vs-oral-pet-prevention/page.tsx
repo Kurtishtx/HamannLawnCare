@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <p>Even the most effective on-pet tick prevention does not reduce the tick population in your yard. A treated dog will kill the ticks that bite it, but it doesn&rsquo;t prevent those ticks from also crawling off onto family members, dropping onto carpets, or making their way onto untreated pets. The environmental tick load in your yard matters, and that&rsquo;s what professional <a href="/flea-and-tick-control">flea and tick control</a> addresses.</p>
         <p>Barrier treatment applied to your yard&rsquo;s tick zones &mdash; fence lines, shrub borders, leaf-litter areas, landscape beds &mdash; kills ticks where they actually live. Combined with thorough post-walk tick checks (see our guide on <a href="/blogs/pet-tick-check-after-walks">how to check your dog or cat for ticks</a>) and a veterinarian-recommended on-pet prevention product, professional yard treatment gives you a layered defense that addresses the problem at every level. Hamann Lawn Care &amp; Weed Control has been treating DFW yards for fleas and ticks since 2006 &mdash; we know North Texas tick season intimately and can help you build a plan that actually works.</p>
 
-        <div className="blog-cta">
-          <h3>Protect Your Pets and Your Yard Together</h3>
-          <p>Get professional flea &amp; tick yard control &mdash; 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

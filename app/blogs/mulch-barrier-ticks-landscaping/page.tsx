@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <h2>Ready to Protect Your Arlington Yard From Ticks?</h2>
         <p>A mulch barrier is smart, low-cost habitat modification that every DFW homeowner with a wooded border or weedy fence line should implement. Pair it with professional tick treatment and you&rsquo;ve built a yard that&rsquo;s genuinely hostile to tick populations. Hamann Lawn Care &amp; Weed Control has been serving Arlington, Mansfield, Grand Prairie, and the surrounding DFW communities since 2006. We know North Texas tick species, peak activity windows, and which treatment zones matter most in our local landscape.</p>
 
-        <div className="blog-cta">
-          <h3>Get a Tick-Free Yard This Season</h3>
-          <p>Professional flea &amp; tick control paired with expert habitat advice — claim your 50% off first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

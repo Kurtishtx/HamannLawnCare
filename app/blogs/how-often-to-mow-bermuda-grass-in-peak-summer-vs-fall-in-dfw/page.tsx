@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -72,14 +71,6 @@ export default function Page() {
         <h2>Put It All Together</h2>
         <p>Proper mowing frequency is one leg of the stool that supports a consistently healthy Bermuda lawn in North Texas &mdash; the other legs being correct irrigation timing and volume, and a professional fertilization and weed control program. When all three are dialed in together, Bermuda grass in Arlington and surrounding DFW communities can look and perform at a genuinely exceptional level even through the harshest summer months. <a href="/lawn-care-services">Hamann&rsquo;s lawn care programs</a> are built for North Texas conditions and complement everything you do on your own to maintain the lawn.</p>
 
-        <div className="blog-cta">
-          <h3>Let&rsquo;s Make This the Best-Looking Lawn on Your Block</h3>
-          <p>Hamann Lawn Care has served Arlington families since 2006. Call today and get 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

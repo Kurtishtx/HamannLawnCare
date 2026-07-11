@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -73,14 +72,6 @@ export default function Page() {
 
         <p>A professional <a href="/flower-bed-weed-control">flower-bed weed control</a> program eliminates the formulation guesswork by pairing the right product format with the right timing and the right active ingredient for each season. If you want to compare these approaches against fully organic alternatives, our companion post covers <a href="/blogs/using-cardboard-shield-herbicide-beds">using a cardboard shield or spray guard when applying herbicide in crowded flower beds</a> for safer application around sensitive ornamentals. Hamann has been working in North Texas beds since 2006 and knows what each season demands &mdash; call us at {PHONE_DISPLAY} to get on a program that matches your specific beds.</p>
 
-        <div className="blog-cta">
-          <h3>Get the Right Pre-Emergent Program for Your DFW Flower Beds</h3>
-          <p>Professional timing, professional products &mdash; and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

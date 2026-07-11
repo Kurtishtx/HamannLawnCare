@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <p>For a full professional evaluation of what is happening below your lawn&rsquo;s surface, our <a href="/lawn-care-services">lawn care programs</a> include soil and turf assessments that identify underlying organic matter and drainage issues before they become bigger problems.</p>
         <p>For a related soil surface issue, see our guide on <a href="/blogs/algae-crust-on-lawn-soil-in-dfw-causes-and-how-to-fix-it">algae crust on DFW lawn soil</a> — another post-rain phenomenon with overlapping causes.</p>
 
-        <div className="blog-cta">
-          <h3>Not Sure What&rsquo;s Growing in Your Yard?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control has served Arlington and DFW since 2006 — call us and get a straight answer.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

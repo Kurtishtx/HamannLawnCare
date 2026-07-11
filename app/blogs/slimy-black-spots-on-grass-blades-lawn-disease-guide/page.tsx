@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <h2>When Black Spotting Is Serious vs. Cosmetic</h2>
         <p>Slime mold and sooty mold are cosmetic issues. They look alarming but do not damage turf directly, and they resolve without fungicide. Helminthosporium leaf spot is a real but manageable disease &mdash; moderate infections can be controlled with fungicide and cultural changes, and most healthy lawns recover well with proper treatment. Pythium is the emergency: if you see rapid collapse of turf with slimy dark blades and early-morning white growth, call a professional that day. Pythium can turn a modest outbreak into a large dead zone within 48 hours under DFW summer conditions.</p>
 
-        <div className="blog-cta">
-          <h3>Black Spots on Your Grass and Not Sure What&rsquo;s Causing Them?</h3>
-          <p>Let Hamann Lawn Care &amp; Weed Control diagnose the problem and give you the right treatment &mdash; not a guess. Serving Arlington and all of North Texas since 2006.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

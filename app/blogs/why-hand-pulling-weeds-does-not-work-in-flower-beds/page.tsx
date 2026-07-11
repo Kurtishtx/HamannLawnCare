@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <h2>Stop Treating the Symptom, Treat the Problem</h2>
         <p>The fundamental issue with hand-pulling is that it responds to visible weeds rather than addressing the conditions that create them. Seeds in your soil bank, lack of pre-emergent coverage, inadequate mulch, and perennial root systems underground are the real problem &mdash; and none of them are solved by pulling the plants you can see. Hamann Lawn Care has been helping North Texas homeowners break the weekend-pulling cycle since 2006 with programs that actually address the root causes of flower-bed weed pressure.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Stop Pulling Weeds Every Weekend?</h3>
-          <p>Let Hamann set up a real weed control program for your flower beds. Call us for a free quote today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

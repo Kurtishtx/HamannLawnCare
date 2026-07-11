@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <h2>When to Call a Professional</h2>
         <p>If you&rsquo;ve been fighting the same thin, struggling turf under your trees for years without improvement, a professional assessment can identify whether it&rsquo;s primarily a light issue, a root competition issue, a soil issue, or some combination of all three. Hamann Lawn Care has been working in Arlington and DFW since 2006, and we know these yards well. Sometimes the right answer is a management adjustment; sometimes it&rsquo;s a species change; sometimes it&rsquo;s mulch. We&rsquo;ll give you the honest answer either way.</p>
 
-        <div className="blog-cta">
-          <h3>Tired of Thin Turf Around Your Trees?</h3>
-          <p>Get a real assessment from a North Texas lawn team that understands the full picture &mdash; and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

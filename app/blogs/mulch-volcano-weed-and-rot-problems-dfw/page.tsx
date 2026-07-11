@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -47,14 +46,6 @@ export default function Page() {
         <p>Correcting an existing volcano is straightforward but must be done carefully. Pull all excess mulch away from the trunk until you can see the root flare clearly at the soil surface. If years of mulch accumulation have buried the root flare entirely, excavate carefully by hand until you reach the original soil grade. Do not use power tools at the base; any cut to surface roots or bark causes additional injury. Once the root flare is visible and mulch is pulled back 3 to 6 inches from the trunk, spread the excess material evenly outward across the root zone rather than removing it. You may end up with exactly the right flat depth across a wider area simply by redistributing what was piled up in the volcano.</p>
         <p>For trees that have had volcanoes for multiple seasons, check the exposed bark carefully for soft spots, discoloration, or cracking that may indicate rot or canker. These warrant an arborist evaluation. Correcting the mulching will stop ongoing damage, but it cannot reverse injury that has already occurred. Timing this correction to align with a broader <a href="/blogs/when-to-refresh-mulch-prevent-weeds-north-texas">seasonal mulch refresh and weed control plan</a> lets you address the whole property systematically rather than reactively.</p>
 
-        <div className="blog-cta">
-          <h3>Want Your Trees and Beds Managed the Right Way?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control has served Arlington and DFW since 2006. Call or get 50% off your first service today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

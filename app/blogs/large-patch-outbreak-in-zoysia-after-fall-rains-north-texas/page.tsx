@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <p><strong>Hamann Lawn Care &amp; Weed Control</strong> has been treating zoysia lawns in Arlington and DFW since 2006, and large patch outbreaks are something our team recognizes immediately. We time preventive applications to the fall transition window and provide curative treatment for lawns already showing symptoms. If your zoysia is showing the telltale orange-ringed circles after fall rains, call us before the disease spreads further. We can also assess whether the outbreak is contained enough to recover naturally or whether more aggressive intervention is needed.</p>
         <p>For more context on how fungal diseases spread and why early treatment changes outcomes, read our post on <a href="/blogs/disease-during-bermuda-dormancy-how-spring-dead-spot-starts">disease during Bermuda dormancy and how spring dead spot gets started in winter</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Large Patch Circling Your Zoysia? Stop It Now.</h3>
-          <p>Fall is the window for large patch in North Texas. Call <strong>Hamann Lawn Care &amp; Weed Control</strong> and get professional fungicide treatment before the disease spreads further into your yard.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

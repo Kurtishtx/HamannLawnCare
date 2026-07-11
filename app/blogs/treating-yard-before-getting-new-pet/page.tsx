@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <p>Not all new pets arrive clean. Shelter animals, rescues from outdoor environments, and pets from households with flea problems can arrive with fleas or flea eggs already in their coat. Pets from rural areas in North Texas frequently carry ticks. The first veterinary visit within 24–48 hours of arrival, combined with a pre-treated yard, is the combination that catches both the yard-side and the pet-side of the problem before it has time to compound. Ask your vet to check for parasites at that first visit if you have any concern about the pet&rsquo;s source environment.</p>
         <p>Hamann has served Arlington families and the broader DFW area since 2006. If you&rsquo;re expecting a new pet and want to make sure your yard is ready for them, we can schedule a pre-arrival treatment and set up a seasonal program that keeps the yard protected for the life of your pet.</p>
 
-        <div className="blog-cta">
-          <h3>New Pet on the Way? Let&rsquo;s Get the Yard Ready First.</h3>
-          <p>Professional pre-arrival flea and tick treatment for North Texas homeowners. Claim 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

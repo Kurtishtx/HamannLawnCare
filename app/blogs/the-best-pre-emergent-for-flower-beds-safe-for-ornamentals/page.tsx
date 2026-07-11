@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <h2>What a Complete Program Looks Like</h2>
         <p>The cleanest flower beds in North Texas follow a predictable rhythm: pre-emergent in late January or February, again in March, post-emergent spot treatments for anything that escapes in spring and summer, pre-emergent again in September, and maintained mulch depth through both seasons. It&rsquo;s not complicated once you know the schedule &mdash; but missing any piece of it opens the door to a weed invasion. Read more about the specific weed pressure driving all of this in our post on <a href="/blogs/why-flower-beds-get-so-many-weeds-in-north-texas">why flower beds get so many weeds in North Texas</a>. Hamann has been running this program across Arlington and the surrounding DFW area since 2006, and the results speak for themselves.</p>
 
-        <div className="blog-cta">
-          <h3>Want Pre-Emergent Applied on the Right North Texas Schedule?</h3>
-          <p>Let Hamann handle the timing, product selection, and application &mdash; and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

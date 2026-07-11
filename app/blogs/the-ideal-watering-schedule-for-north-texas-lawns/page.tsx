@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <p>For a complete picture of how timing and strategy combine, our post on <a href="/blogs/the-complete-north-texas-lawn-care-schedule">the complete North Texas lawn care schedule</a> lays out the full year-round framework that watering fits into.</p>
         <p>Hamann Lawn Care has been serving Arlington and the surrounding DFW area since 2006. If you&rsquo;re not sure whether your watering program is helping or hurting, we&rsquo;re happy to take a look and give you a straight answer.</p>
 
-        <div className="blog-cta">
-          <h3>Get the Watering &mdash; and Everything Else &mdash; Right</h3>
-          <p>Professional lawn care with expert guidance for North Texas conditions &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

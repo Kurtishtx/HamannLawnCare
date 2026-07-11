@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -65,14 +64,6 @@ export default function Page() {
         <p>DFW&rsquo;s aerial and truck mosquito spray programs are a valuable community-level public health tool that meaningfully reduces West Nile virus transmission risk across the region. They are not a substitute for property-level mosquito control. If you&rsquo;re counting on the county to handle your mosquito problem, you&rsquo;ll be disappointed every summer. For the protection that lets your family actually use your yard, a professional barrier spray program for your specific property is the answer. For more on the larvicide tools that help address the breeding side of the problem, see our overview of <a href="/blogs/spinosad-mosquito-larvicide-organic-option">spinosad as a mosquito larvicide</a> &mdash; a great complement to any adult treatment program.</p>
         <p>Hamann Lawn Care &amp; Weed Control has been protecting Arlington and DFW families from mosquitoes since 2006. Give us a call and let&rsquo;s put together a program that actually works for your yard.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

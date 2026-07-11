@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -83,16 +82,6 @@ export default function Page() {
           For professional diagnosis and treatment of purple-tipped grass and lawn disease in North Texas, visit our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control service page</a> to learn about our diagnostic process and treatment programs.
         </p>
 
-        <div className="blog-cta">
-          <h3>Purple Tips on Your DFW Lawn? Get a Professional Diagnosis</h3>
-          <p>
-            Whether it&rsquo;s anthracnose, a nutrient deficiency, or cold stress damage, Hamann Lawn Care &amp; Weed Control has been diagnosing and treating North Texas lawn diseases since 2006. We know the difference — and we know how to fix it.
-          </p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>&#128222; Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

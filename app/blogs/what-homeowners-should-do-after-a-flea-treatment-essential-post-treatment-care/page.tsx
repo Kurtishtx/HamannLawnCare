@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <h2>Schedule Your Follow-Up Treatment</h2>
         <p>North Texas flea pressure doesn&rsquo;t let up after one treatment. A single application is a great start, but a recurring program through the warmer months (which in DFW means roughly March through November) keeps populations from rebuilding between visits. If your pet has flea allergy dermatitis, year-round coverage is often worth discussing with both your vet and your pest control provider.</p>
 
-        <div className="blog-cta">
-          <h3>Need a Follow-Up or Starting Fresh?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control has protected North Texas yards since 2006 &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

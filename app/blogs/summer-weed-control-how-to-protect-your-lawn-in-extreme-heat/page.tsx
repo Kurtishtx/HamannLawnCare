@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
         <p>If crabgrass or nutsedge has already established significant coverage, trying to manage it with hardware-store products in July heat often produces disappointing results and real risk of turf injury. Professional programs use commercial-grade chemistry, calibrated equipment, and timing protocols that reduce those risks while improving control rates significantly. Hamann&rsquo;s <a href="/weed-control-and-fertilizer-services">weed control and fertilizer program</a> is built specifically for North Texas summer conditions, and we know which products, which rates, and which timing windows deliver the best results for your turf without putting it at risk. For context on how soil conditions affect weed invasions in the heat, read our guide on <a href="/blogs/how-soil-structure-impacts-weed-growth-and-lawn-color">how soil structure impacts weed growth and lawn color</a>.</p>
         <p>Call Hamann at {PHONE_DISPLAY} and let&rsquo;s talk through what&rsquo;s happening in your lawn this summer before the problem gets any larger or harder to control.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Let Summer Weeds Win</h3>
-          <p>Professional summer weed control built for North Texas heat &mdash; and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

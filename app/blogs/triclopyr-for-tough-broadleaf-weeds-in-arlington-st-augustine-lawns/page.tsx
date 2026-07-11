@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <h2>The Value of Professional Application</h2>
         <p>The difference between a triclopyr application that kills wild violet without touching your St. Augustine and one that leaves a patchwork of yellowed, stunted grass is often in the details: correct dilution, accurate coverage, appropriate timing on the weather calendar, and knowledge of where your specific lawn&rsquo;s stress points are. These are not details that homeowners applying a bottle from a garden center are typically equipped to manage consistently. Read more about timing considerations in our post on <a href="/blogs/post-emergent-timing-why-temperature-and-weed-stage-matter-in-dfw">post-emergent timing: why temperature and weed stage matter in DFW</a> for the broader framework behind these decisions.</p>
 
-        <div className="blog-cta">
-          <h3>Tough Broadleaf Weeds in Your St. Augustine Lawn?</h3>
-          <p>We select and apply the right chemistry for your grass type &mdash; no guesswork, no turf injury. Get 50% off your first service today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

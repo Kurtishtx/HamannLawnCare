@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <p>Texas mosquitoes range from beneficial giants that eat their own kind to microscopic-looking biters that carry serious disease. The scary-looking ones often aren&rsquo;t the dangerous ones. The dangerous ones often go unnoticed until the itch sets in. What matters isn&rsquo;t which ones look the most alarming &mdash; it&rsquo;s reducing the overall population of all species in your yard so none of them get the chance to bite in the first place.</p>
         <p>Hamann Lawn Care &amp; Weed Control has served Arlington and the greater DFW area since 2006. Our mosquito programs target the species that actually matter in North Texas, using treatments timed to the season and conditions in your specific yard. We&rsquo;ve seen every species on this list, and we know exactly how to address them.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

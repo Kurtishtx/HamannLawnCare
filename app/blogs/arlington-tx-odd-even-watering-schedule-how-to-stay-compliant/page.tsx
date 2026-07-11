@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <h2>Stay Compliant, Stay Green</h2>
         <p>The homeowners who keep the best-looking lawns in Arlington during drought summers are not breaking the rules &mdash; they&rsquo;re just smarter about how they use their permitted days. Early morning watering, proper runtime calibration, cycle-and-soak for clay soil, and coordinating treatments with watering windows all add up to a lawn that looks dramatically better than its neighbors on the same restrictions. Hamann Lawn Care &amp; Weed Control has been helping Arlington families maintain beautiful yards within the rules since 2006. Give us a call.</p>
 
-        <div className="blog-cta">
-          <h3>Want a Greener Lawn Without Wasting Water?</h3>
-          <p>Hamann helps Arlington homeowners maximize every permitted watering day. Call us and get 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

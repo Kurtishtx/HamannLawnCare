@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <h2>Build a Layered Defense</h2>
         <p>The most effective mosquito prevention strategy stacks multiple approaches: eliminate standing water, manage vegetation, use fans on the patio, and back it all with professional barrier treatment through mosquito season. Any one layer helps a little. All of them together can transform a swarming backyard into a space your whole family actually wants to use. Hamann has been helping Arlington and DFW homeowners build that kind of layered defense since 2006 &mdash; and we can help you put the whole picture together.</p>
 
-        <div className="blog-cta">
-          <h3>Combine Prevention With Professional Protection</h3>
-          <p>Get the barrier treatment that backs up everything you&rsquo;re already doing &mdash; and claim 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>When Mowing Habits Alone Aren&rsquo;t the Full Explanation</h2>
         <p>Good mowing habits reduce disease pressure significantly, but they don&rsquo;t eliminate every risk. If your lawn has a history of recurring fungal issues, the real answer usually involves a combination of factors &mdash; soil health, irrigation timing, drainage, thatch management, and sometimes professional fungicide applications. Our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control</a> service is built around identifying exactly which factors are driving your specific problem, not just treating the same patch over and over. Hamann has been doing this in Arlington and across DFW since 2006 &mdash; give us a call and we&rsquo;ll get to the bottom of it.</p>
 
-        <div className="blog-cta">
-          <h3>Lawn Disease Giving You Trouble?</h3>
-          <p>Our North Texas specialists will diagnose and treat it right &mdash; and your first application is 50% off.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

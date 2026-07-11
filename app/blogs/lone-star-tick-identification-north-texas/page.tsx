@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <h2>Why Your Yard Needs Professional Tick Control</h2>
         <p>Keeping Lone Star ticks out of your yard requires more than occasional yard work. These ticks reproduce in large numbers and travel in on wildlife. A single treatment rarely holds. Hamann&rsquo;s barrier spray program targets the shaded vegetation and fence-line brush where ticks actually shelter, using a residual formula that stays active between visits. Combined with consistent treatment timing that addresses both adult and nymph seasons, it dramatically reduces the tick pressure on your property all year long. Read more about our approach in our post on <a href="/blogs/why-some-homes-keep-getting-fleas">why some homes keep getting fleas</a> &mdash; many of the same harborage dynamics apply to ticks.</p>
 
-        <div className="blog-cta">
-          <h3>Tired of Dodging Ticks in Your Own Backyard?</h3>
-          <p>Hamann has protected Arlington and DFW families from fleas and ticks since 2006. Claim your 50% off first treatment today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

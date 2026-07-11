@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -50,14 +49,6 @@ export default function Page() {
         <h2>Which Should You Choose?</h2>
         <p>For the vast majority of North Texas residential lawns — Bermuda, St. Augustine, or Zoysia on standard Blackland clay — rotary-style heads deliver better results: lower runoff, deeper infiltration, and more even distribution. Fixed spray heads still have a role in tight spaces and narrow strips, but they should not be the default for large turf zones in DFW. If your current system relies entirely on fixed sprays and you&rsquo;re seeing runoff into the street, brown stripes between heads, or turf that&rsquo;s always either soggy or dry, a rotary upgrade is worth evaluating before the next watering season begins.</p>
 
-        <div className="blog-cta">
-          <h3>Want a Lawn That&rsquo;s Green All Summer?</h3>
-          <p>Hamann has served Arlington and North Texas since 2006. Call us for expert lawn care advice and service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

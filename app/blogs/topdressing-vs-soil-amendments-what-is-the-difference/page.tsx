@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -76,14 +75,6 @@ export default function Page() {
         <h2>Building a Better Lawn From the Ground Up</h2>
         <p>Topdressing and soil amendments are two different tools for two different situations. For most established North Texas lawns on heavy clay, annual compost topdressing paired with aeration is the most practical, highest-return soil health investment you can make. It won&rsquo;t transform your lawn overnight, but over a few seasons it changes the underlying conditions in a way that makes every other input &mdash; water, fertilizer, weed control &mdash; work more effectively. Hamann Lawn Care has been advising Arlington and DFW homeowners on soil health since 2006. If you&rsquo;re ready to start actually improving the soil under your lawn instead of just working around it, give us a call.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Build a Better Lawn From the Ground Up?</h3>
-          <p>Get soil-savvy lawn advice from a North Texas team that&rsquo;s been doing this since 2006 &mdash; and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

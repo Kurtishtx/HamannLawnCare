@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <p>These are the conditions that make professional treatment not just a convenience but a meaningful difference in outcomes. Our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer services</a> page explains exactly how we structure programs for North Texas turf types and conditions.</p>
         <p>If you want to understand more about how timing drives professional program success, the previous post on <a href="/blogs/how-lawn-spraying-targets-weeds-at-the-right-time-for-maximum-effectiveness">how lawn spraying targets weeds at the right time</a> walks through the pre-emergent and post-emergent windows in detail.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Weed-Free Lawn?</h3>
-          <p>Get professional weed control &amp; fertilizer treatments &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

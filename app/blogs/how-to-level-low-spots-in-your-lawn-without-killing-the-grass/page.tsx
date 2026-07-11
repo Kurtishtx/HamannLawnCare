@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -69,14 +68,6 @@ export default function Page() {
         <h2>When to Call a Professional</h2>
         <p>If you have multiple low spots across a large area, recurring depressions that keep coming back, or any spot associated with suspected drainage problems, a professional assessment is worth the call. Hamann Lawn Care &amp; Weed Control has been diagnosing and correcting North Texas turf issues since 2006. Read our post on <a href="/blogs/liquid-aeration-products-do-they-actually-work-on-texas-black-clay">liquid aeration products and whether they work on Texas black clay</a> for more background on how DFW soil behaves and what actually helps it.</p>
 
-        <div className="blog-cta">
-          <h3>Got Low Spots or an Uneven Lawn?</h3>
-          <p>Hamann has the tools and North Texas experience to level your yard without damaging your grass. Call us.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

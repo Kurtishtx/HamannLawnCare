@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <p>If a patch is still small and you caught it early, cultural adjustments (better watering timing, reduced nitrogen, improved airflow) can slow things down while you get treatment scheduled. But if the infected area is growing week over week, multiple patches are appearing, or the grass is thinning out significantly, don&rsquo;t wait. Fungal damage can kill turf to the point where it won&rsquo;t recover without resodding, and the longer you wait, the more lawn you&rsquo;ll be replacing.</p>
         <p>Hamann Lawn Care has been treating North Texas lawns since 2006. We know what Brown Patch looks like on St. Augustine in August, we know what Gray Leaf Spot does to Zoysia after a wet stretch, and we know how to stop it fast.</p>
 
-        <div className="blog-cta">
-          <h3>Fungus Spreading? Let&rsquo;s Stop It Now.</h3>
-          <p>Call Hamann for a diagnosis and professional treatment before that patch takes over your whole lawn.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

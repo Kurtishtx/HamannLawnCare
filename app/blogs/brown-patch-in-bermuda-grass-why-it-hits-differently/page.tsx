@@ -2,7 +2,6 @@
 
 const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
-const openPromo = () => (window as any).__openPromo?.();
 
 export default function Page() {
   const blogPostingJsonLd = {
@@ -118,14 +117,6 @@ export default function Page() {
           For a direct comparison with how brown patch behaves in St. Augustine &mdash; including the differences in patch size, smoke-ring visibility, and recovery rate &mdash; read our companion post on <a href="/blogs/brown-patch-fungus-in-st-augustine-arlington-tx">brown patch fungus in St. Augustine grass: the Arlington TX homeowner guide</a>.
         </p>
 
-        <div className="blog-cta">
-          <h3>Irregular Brown Patches in Your Bermuda That Won&rsquo;t Go Away?</h3>
-          <p>Spotted a problem in your lawn? <strong>Hamann Lawn Care &amp; Weed Control</strong> has served Arlington and the DFW area since 2006. We diagnose bermuda brown patch correctly and apply the right treatment protocol for your specific grass and soil conditions.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get a Free Quote</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

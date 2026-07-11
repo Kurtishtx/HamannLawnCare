@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -70,14 +69,6 @@ export default function Page() {
         <p>At Hamann, we don&rsquo;t glance at a weather app the morning of your service and hope for the best. Our team checks multi-day forecasts, hourly precipitation probability, soil moisture conditions, and wind patterns before scheduling any herbicide application. We know which products are more volatile at high temps, which require longer dry windows, and how to adjust rates or formulations based on seasonal turf stress. That&rsquo;s the kind of knowledge that comes from nearly two decades of treating North Texas lawns &mdash; not from the back of a box at Home Depot.</p>
         <p>If you&rsquo;ve been spraying and not seeing results, weather-related application errors are often the culprit. And before you spray again, it&rsquo;s worth understanding whether you&rsquo;re even <a href="/blogs/misidentifying-weeds-the-costly-mistake-that-makes-dfw-treatments-fail">targeting the right weeds with the right chemistry</a> &mdash; because product mismatch is the other major reason treatments fail.</p>
 
-        <div className="blog-cta">
-          <h3>Stop Wasting Herbicide on Weeds That Keep Coming Back</h3>
-          <p>Let Hamann&rsquo;s licensed applicators handle the timing, the chemistry, and the conditions &mdash; and claim your 50% off first treatment today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

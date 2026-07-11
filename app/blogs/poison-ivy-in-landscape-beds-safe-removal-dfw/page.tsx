@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -83,14 +82,6 @@ export default function Page() {
         <p>At Hamann Lawn Care &amp; Weed Control, we&rsquo;ve been serving Arlington and the broader DFW area since 2006. We know exactly how North Texas poison ivy behaves &mdash; the way it re-sprouts from deep roots in our clay soil, the way it exploits shaded beds along fences, the timing needed to get ahead of it before it spreads. If you&rsquo;re unsure whether what you&rsquo;re looking at is poison ivy, or if it&rsquo;s already established throughout your beds, calling a professional is the safest move you can make.</p>
         <p>If you&rsquo;re dealing with other stubborn broadleaf invaders in your beds at the same time, our guide on <a href="/blogs/wild-violets-flower-bed-control-arlington-tx">wild violets in Arlington flower beds</a> covers another notoriously difficult-to-control weed that often shows up alongside poison ivy in shaded North Texas landscapes.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Reclaim Your Flower Beds?</h3>
-          <p>Get professional flower-bed weed control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

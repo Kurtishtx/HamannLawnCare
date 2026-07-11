@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <p>Your shade trees are an asset. They add value to your property, reduce cooling costs, and make your backyard livable during a Texas summer &mdash; at least in theory. With the right combination of habitat management and professional treatment, you get the best of both: the cool shade without the swarms. Hamann has been helping Arlington and DFW homeowners protect their outdoor spaces since 2006, and we know exactly how to work around the tree-heavy yards that are everywhere in this part of Texas.</p>
         <p>We also covered the myth about birds solving your mosquito problem in our look at <a href="/blogs/purple-martin-house-mosquito-control-myth">purple martin houses and mosquito control</a> &mdash; worth a read if you&rsquo;ve been tempted to go that route.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

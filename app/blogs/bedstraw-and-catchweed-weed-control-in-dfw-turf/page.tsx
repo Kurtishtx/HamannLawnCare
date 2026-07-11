@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -80,14 +79,6 @@ export default function Page() {
         <p>Hamann Lawn Care &amp; Weed Control treats bedstraw and catchweed as part of our year-round weed management program for North Texas turf. Our fall pre-emergent applications are calibrated specifically to DFW soil temperature patterns&mdash;not a generic national schedule&mdash;so you get barrier protection in place before the September and October germination flush that sets up winter infestations. For properties already dealing with established bedstraw, our post-emergent treatments target plants at the right growth stage with the right product combination to achieve clean results and reduce the seed bank going into next fall.</p>
         <p>Don&rsquo;t let bedstraw build its seed bank in your lawn another season. The fall pre-emergent window is the highest-leverage opportunity of the year to get ahead of it&mdash;and that window is where professional timing pays off most.</p>
 
-        <div className="blog-cta">
-          <h3>Bedstraw Taking Over Your DFW Turf?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control handles bedstraw, catchweed, and every other cool-season invader in North Texas&mdash;plus 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
 
         <p>If dollarweed is your primary problem, there&rsquo;s a good chance other moisture-loving weeds are sharing your beds. Read about <a href="/blogs/yellow-nutsedge-vs-purple-nutsedge-flower-beds">yellow and purple nutsedge in DFW flower beds</a> &mdash; nutsedge and dollarweed often co-occur in the same wet, poorly drained spots. Hamann has been managing these problem weeds in Arlington and DFW landscape beds since 2006. Call us at {PHONE_DISPLAY} and we&rsquo;ll assess your beds, identify the moisture problem, and put a targeted treatment plan in place.</p>
 
-        <div className="blog-cta">
-          <h3>Dollarweed Spreading Through Your Flower Beds?</h3>
-          <p>Professional diagnosis and targeted flower-bed weed control for North Texas &mdash; 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <h2>Hamann Has Handled This Many Times in DFW</h2>
         <p>Move-in flea infestations are a routine call for Hamann Lawn Care &amp; Weed Control. We&rsquo;ve been serving the Arlington, Grand Prairie, Mansfield, and wider Tarrant County area since 2006, and we know exactly how to attack the residual population in an empty or newly occupied home. If you&rsquo;re moving into a property with flea history, call us before move-in day &mdash; it&rsquo;s always easier and less expensive to prevent a flea explosion than to manage one after the fact.</p>
 
-        <div className="blog-cta">
-          <h3>Moving Into a Home With Flea History?</h3>
-          <p>Get ahead of it with a pre-move-in yard treatment &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

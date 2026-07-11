@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <h2>Professional Yard Treatment Reduces the Chances You Ever Need This</h2>
         <p>The best outcome is one where tick removal technique never becomes relevant because ticks are not making it into your yard in numbers that result in bites. Professional barrier treatment targets the fence lines, shaded ornamental beds, shrub borders, and lawn-to-woods transition zones where ticks live and quest. A treated yard has dramatically fewer viable ticks than an untreated one, and fewer ticks means fewer bites, which means removal — correct or otherwise — becomes a rare event rather than a summer ritual.</p>
 
-        <div className="blog-cta">
-          <h3>Keep Ticks Out of Your Yard Entirely</h3>
-          <p>Professional flea &amp; tick barrier control for Arlington and the DFW area — get 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

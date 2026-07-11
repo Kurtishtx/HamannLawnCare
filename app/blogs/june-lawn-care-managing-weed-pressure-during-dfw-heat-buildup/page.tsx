@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <p>One of the practical advantages of a professional <a href="/blogs/may-fertilization-kickoff-fueling-bermuda-and-st-augustine-in-north-texas">weed control program like the one we dial in starting in May</a> is that timing adjustments are built into the process. Our crews are on lawns in the early morning hours when temperatures are safe for effective herbicide application. We use product selections calibrated for summer conditions — choosing formulations that are effective at lower rates and less likely to cause turf phytotoxicity in heat. And because we&rsquo;re watching your lawn on a scheduled basis, we catch weed problems at the early stage when treatment is safest and most effective, rather than waiting until they&rsquo;ve become established infestations that require heavier intervention in dangerous heat.</p>
         <p>If your lawn is starting to show the classic signs of June weed pressure — spreading nutsedge, spurge filling bare patches, or crabgrass thickening along the edges — call us now before the heat of July makes treatment significantly more complicated. The earlier you act in summer, the better the results and the safer the application.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Let June Weeds Get Ahead of You</h3>
-          <p>Get professional weed control and summer lawn care timed for DFW heat — and claim 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

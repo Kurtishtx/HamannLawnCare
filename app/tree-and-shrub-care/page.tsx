@@ -31,7 +31,6 @@ const faqs = [
 const RedLine = () => <div style={{ height: 4, width: 64, background: 'var(--red)', borderRadius: 2, margin: '14px auto 0' }} />;
 
 export default function TreeAndShrubCare() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -43,10 +42,6 @@ export default function TreeAndShrubCare() {
             <h1>Expert <span className="headline-3d">Tree &amp; Shrub Care</span> Services</h1>
             <p className="hero-sub" style={{ margin: '20px auto 10px', fontWeight: 700, color: '#fff' }}>Pruning • Fertilization • Pest Control • Healthy, Beautiful Landscapes</p>
             <p className="hero-sub" style={{ margin: '0 auto 26px' }}>Welcome to Hamann Weed Control &amp; Exterior Pest Control — your trusted partner for professional tree and shrub care. From shrub trimming and tree pruning to disease suppression and fertilization, we deliver <b>precision, protection, and seasonally timed treatments built around real horticultural science</b>.</p>
-            <div className="hero-cta" style={{ justifyContent: 'center' }}>
-              <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-              <button className="btn btn-ghost btn-lg" onClick={openPromo}>Get 50% Off →</button>
-            </div>
           </div>
         </div>
       </section>
@@ -142,16 +137,6 @@ export default function TreeAndShrubCare() {
       </section>
 
       {/* CTA */}
-      <section className="cta-band">
-        <div className="wrap">
-          <h2>Ready To Elevate Your Landscape?</h2>
-          <p>Don&rsquo;t let pests, poor pruning, or nutrient deficiencies compromise your curb appeal. Get a free ornamental health assessment and a custom tree and shrub care plan. <b>Claim your 50% off first application!</b></p>
-          <div className="btns">
-            <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Get Your Free Quote</a>
-            <button className="btn btn-ghost btn-lg" onClick={openPromo}>Claim 50% Off</button>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

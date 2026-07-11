@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
 
         <p>Managing weeds in gravel and DG is an extension of the same pre-emergent logic that governs <a href="/flower-bed-weed-control">flower-bed weed control</a> throughout North Texas landscapes. Timing and product selection matter, the seed bank needs to be starved over multiple seasons, and physical installation decisions made at the start determine how hard you&rsquo;ll work for years afterward. Our companion post on <a href="/blogs/isoxaben-pre-emergent-flower-beds-north-texas">isoxaben pre-emergent for North Texas flower beds</a> covers the broadleaf-specific chemistry that complements gravel path programs. Hamann has managed DFW landscapes since 2006 &mdash; call us at {PHONE_DISPLAY} if you want a professional assessment of your gravel or DG situation.</p>
 
-        <div className="blog-cta">
-          <h3>Get Long-Term Weed Control in Your DFW Gravel Paths</h3>
-          <p>Professional pre-emergent programs that actually hold &mdash; and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <p>Your pool is a feature, not a problem &mdash; and with proper cover management it doesn&rsquo;t have to contribute to the mosquito population on your property at all. The pool water itself is fine. It&rsquo;s the roof of stagnant rainwater sitting on top of the cover that turns a backyard amenity into a breeding factory. Address that, and you&rsquo;ve removed one of the largest potential sources on your property.</p>
         <p>If you suspect your AC condensate drain is also contributing standing water to the yard, check out our post on <a href="/blogs/ac-condensate-drain-mosquito-larvae">AC condensate drains as a hidden mosquito breeding source</a> &mdash; it&rsquo;s another source that runs continuously through the entire North Texas summer.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

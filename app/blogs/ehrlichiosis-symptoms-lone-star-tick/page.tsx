@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -74,14 +73,6 @@ export default function Page() {
         <p>Because the Lone Star tick is the exclusive vector for ehrlichiosis in North Texas, reducing Lone Star tick populations in and around your yard is the most direct way to lower your family&rsquo;s disease risk. Professional <a href="/flea-and-tick-control">flea and tick control</a> targeting the shrubby margins, tall grass edges, and shaded turf zones where Lone Stars quest provides a residual barrier that protects through the season. Combined with tick-preventative products for pets and basic personal protective habits — tucking pants into socks in high-risk areas, doing tick checks after outdoor activity — a treated yard makes the difference between a season with no bites and one with repeated exposure events.</p>
         <p>For a full picture of Lyme disease risk versus ehrlichiosis risk in our specific region, our post on <a href="/blogs/lyme-disease-risk-texas-reality">Lyme disease in Texas and the real risk for DFW residents</a> explains exactly why local tick-borne disease priorities differ from the national conversation.</p>
 
-        <div className="blog-cta">
-          <h3>Reduce Ehrlichiosis Risk in Your Yard This Season</h3>
-          <p>Hamann has protected Arlington and North Texas families from Lone Star ticks since 2006. Call today — and get 50% off your first professional tick treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

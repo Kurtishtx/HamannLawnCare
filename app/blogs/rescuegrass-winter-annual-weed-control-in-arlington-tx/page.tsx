@@ -2,7 +2,6 @@
 const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
   return (
     <main>
       <header className="blog-hero honey">
@@ -152,14 +151,6 @@ export default function Page() {
           even one fall treatment cycle can set you back two to three years of progress as the seed bank rebuilds.
         </p>
 
-        <div className="blog-cta">
-          <h3>Stop Rescuegrass Before It Starts</h3>
-          <p>Get on a professional weed control program that hits rescuegrass at the right time &mdash; and claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>&#128222; Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

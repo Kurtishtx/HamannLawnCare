@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <h2>The Short Answer for DFW Homeowners</h2>
         <p>If you have fleas in North Texas, assume they are cat fleas. That assumption will be correct more than 95% of the time. Treat the yard with a professional-grade adulticide plus IGR combination, address the pet with your veterinarian&rsquo;s recommended prevention, and don&rsquo;t let product labels that say &ldquo;dog flea&rdquo; or &ldquo;cat flea&rdquo; convince you that you need a different product. The biology is nearly identical, the treatment chemistry is the same, and what separates a successful flea control outcome from a frustrating cycle of retreatment is thoroughness and timing &mdash; not species-level precision.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Protect Your Yard From Fleas &amp; Ticks?</h3>
-          <p>Professional flea &amp; tick control built for North Texas &mdash; claim your 50% off first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

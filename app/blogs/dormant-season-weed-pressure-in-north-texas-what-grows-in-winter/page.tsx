@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -48,14 +47,6 @@ export default function Page() {
         <h2>How to Stop Winter Weeds Before They Start</h2>
         <p>The answer is always the same: a well-timed fall pre-emergent applied before soil temperatures cool below 70&deg;F — typically in October across DFW. Pre-emergent creates a chemical barrier in the soil that prevents germinating seeds from establishing roots. Combined with a winter post-emergent visit in December to clean up any weeds that slipped through in thin coverage areas, this is how professionally managed lawns stay clean while neighboring untreated lawns turn green (with weeds) all winter. The <a href="/blogs/spring-green-up-timeline-what-to-expect-week-by-week-in-arlington">spring green-up payoff</a> from a clean winter lawn is substantial — less weed competition means faster, more uniform Bermuda green-up when temperatures rise.</p>
 
-        <div className="blog-cta">
-          <h3>Stop Winter Weeds Before They Take Over</h3>
-          <p>Hamann&rsquo;s fall pre-emergent and winter treatment visits keep your dormant lawn clean all season. Call today or get 50% off your first visit.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

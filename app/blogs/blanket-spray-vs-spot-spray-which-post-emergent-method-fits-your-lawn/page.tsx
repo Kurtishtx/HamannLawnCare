@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -85,14 +84,6 @@ export default function Page() {
         <h2>Let Hamann Make The Call For You</h2>
         <p>At Hamann Lawn Care &amp; Weed Control, every treatment visit starts with a weed pressure assessment. We don&rsquo;t default to the same method every time&mdash;we look at what your lawn actually needs in that window, choose the right technique and product, and calibrate accordingly. Whether your Bermuda lawn in Arlington needs a hard winter blanket reset or your St. Augustine in Mansfield needs surgical spot treatments through the summer, we have the equipment, training, and product knowledge to do it right.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Get Ahead Of Weeds This Season?</h3>
-          <p>Get professional weed control tailored to your lawn&rsquo;s actual weed pressure&mdash;and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

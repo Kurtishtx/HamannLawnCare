@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -68,14 +67,6 @@ export default function Page() {
         <h2>How This Drives Hamann&rsquo;s Treatment Timing</h2>
         <p>Because tick species and life stages rotate throughout the year, effective yard protection can&rsquo;t be a single spring spray and done. Hamann&rsquo;s program is timed to hit the highest-risk windows &mdash; early spring adult emergence, late spring nymph buildup, summer peak &mdash; with residual products that stay active between visits. A recurring treatment schedule from March through November gives DFW families the best possible protection across the full arc of tick activity. For a detailed look at the life stage most likely to go undetected and cause disease, see our post on <a href="/blogs/lone-star-tick-nymph-what-it-looks-like">what a Lone Star tick nymph looks like and why it&rsquo;s hard to spot</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Year-Round Tick Risk Deserves Year-Round Protection</h3>
-          <p>Hamann has kept Arlington and DFW families protected from ticks and fleas since 2006. Get 50% off your first treatment today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <h2>What Hamann Does Differently in DFW Clay</h2>
         <p>At Hamann Lawn Care &amp; Weed Control, we&rsquo;ve been applying pre-emergent products across Tarrant County clay lawns since 2006. We select active ingredients based on local soil conditions, calibrate rates to account for clay binding, and advise homeowners on post-application watering specific to their irrigation setup. If your lawn has a history of pre-emergent failure, the answer is almost never &ldquo;just buy more product&rdquo; &mdash; it&rsquo;s understanding your soil and matching the program to it. Read more about <a href="/blogs/fall-pre-emergent-for-winter-annual-weeds-in-north-texas">fall pre-emergent for winter annual weeds in North Texas</a> for seasonal timing details that pair with proper barrier-depth strategy.</p>
 
-        <div className="blog-cta">
-          <h3>Get a Pre-Emergent Program Built for North Texas Clay</h3>
-          <p>Stop guessing on timing and rates. Our team calibrates every application to your lawn&rsquo;s soil and season &mdash; claim 50% off your first service today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

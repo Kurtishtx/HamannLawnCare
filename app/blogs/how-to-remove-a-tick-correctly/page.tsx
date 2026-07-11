@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -81,14 +80,6 @@ export default function Page() {
         <h2>Making Tick Removal Rare With Professional Yard Treatment</h2>
         <p>Correct tick removal is an important skill — but the goal is to need it as rarely as possible. Professional yard treatment creates a treated barrier across the zones where ticks live and quest: fence lines, shrub borders, ornamental beds, shaded corners, and the transition zone where maintained lawn meets natural vegetation. Hamann&rsquo;s tick control treatments use residual products that continue working for weeks, dramatically reducing the number of viable ticks in your yard between services. Families who treat consistently throughout spring and fall find that tick encounters drop sharply — which means the removal technique above stays knowledge you rarely have to use.</p>
 
-        <div className="blog-cta">
-          <h3>Reduce Tick Encounters Before They Start</h3>
-          <p>Professional flea &amp; tick control for Arlington and DFW yards — claim 50% off your first treatment today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

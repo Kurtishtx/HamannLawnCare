@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -76,14 +75,6 @@ export default function Page() {
         <p>A well-designed program doesn&rsquo;t just treat the weeds you can see today. It combines pre-emergent herbicides to prevent new weed seeds from germinating with post-emergent synthetic auxin applications timed to the specific weeds active in each season. Over the course of a full program year, weed pressure drops significantly because you&rsquo;re attacking the population from both ends &mdash; killing what&rsquo;s growing now and preventing what would grow next.</p>
         <p>In North Texas, Bermuda, St. Augustine, and Zoysia lawns all respond well to properly timed synthetic auxin programs when applications respect temperature windows and labeled rates. The result is a noticeably thicker, cleaner lawn that the weeds can&rsquo;t compete with.</p>
 
-        <div className="blog-cta">
-          <h3>Ready for a Cleaner, Weed-Free Lawn?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control serves Arlington and the surrounding DFW communities with professional, science-backed weed control programs. Get your first treatment at 50% off.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

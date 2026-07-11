@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -70,14 +69,6 @@ export default function Page() {
 
         <p>If you&rsquo;re battling recurring lawn disease problems or have areas that never quite look right despite your efforts, pairing good cultural practices with professional oversight makes a real difference. The lawn care approach that works in full sun doesn&rsquo;t always translate to every corner of a yard, and small adjustments &mdash; watering timing, mowing height, fertilizer rates, pruning decisions &mdash; stack up over a season. You might also find it useful to read about <a href="/blogs/how-to-stop-lawn-from-growing-into-flower-beds-in-arlington-tx">how to stop lawn from growing into flower beds in Arlington TX</a> if turf encroachment is complicating your border management alongside the disease issue.</p>
 
-        <div className="blog-cta">
-          <h3>White Powder on Your Bermuda Grass? Let&rsquo;s Fix It.</h3>
-          <p>We&rsquo;ve been treating DFW lawns since 2006 and we know exactly what powdery mildew looks like &mdash; and what it takes to clear it up for good. Give us a call or grab your 50% off first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

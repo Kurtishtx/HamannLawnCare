@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <h2>Let a Professional Handle the Hard Part</h2>
         <p>Getting the timing and product selection right for tall fescue is genuinely more complicated than managing a Bermuda lawn. One mistimed fertilizer application or wrong herbicide choice and you&rsquo;re raking out dead grass in August. Our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer service</a> is tailored to the grass type in your yard &mdash; we don&rsquo;t spray a one-size-fits-all program and call it done. Whether you&rsquo;re running a cool-season fescue lawn or a warm-season Bermuda, we build the right calendar for your turf, starting with a lawn assessment and continuing all the way through to a thick, weed-free result. And if you want more on managing specific varieties, check out our previous post on <a href="/blogs/controlling-weeds-in-zoysia-without-damaging-the-turf">controlling weeds in Zoysia without damaging the turf</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Get a Program Built for Your Grass Type</h3>
-          <p>Stop guessing with tall fescue &mdash; call us and we&rsquo;ll build the right weed control and fertilization plan for your lawn.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

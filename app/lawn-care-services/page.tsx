@@ -29,7 +29,6 @@ const faqs = [
 const RedLine = () => <div style={{ height: 4, width: 64, background: 'var(--red)', borderRadius: 2, margin: '14px auto 0' }} />;
 
 export default function LawnCareServices() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -41,10 +40,6 @@ export default function LawnCareServices() {
             <h1>Premium <span className="headline-3d">Lawn Care</span> Services</h1>
             <p className="hero-sub" style={{ margin: '20px auto 10px', fontWeight: 700, color: '#fff' }}>Advanced Lawn Treatments • No Mowing • Science-Driven Results</p>
             <p className="hero-sub" style={{ margin: '0 auto 26px' }}>We don&rsquo;t mow — we transform. Hamann Lawn Care &amp; Weed Control delivers a modern, science-based approach that strengthens roots, improves soil health, boosts turf density, and builds a lawn that stays <b>green, thick, and resilient all year long</b>. Want a lawn that looks professionally maintained without ever touching a mower? You&rsquo;re in the right place.</p>
-            <div className="hero-cta" style={{ justifyContent: 'center' }}>
-              <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-              <button className="btn btn-ghost btn-lg" onClick={openPromo}>Get 50% Off →</button>
-            </div>
           </div>
         </div>
       </section>
@@ -168,16 +163,6 @@ export default function LawnCareServices() {
         </div>
       </section>
 
-      <section className="cta-band">
-        <div className="wrap">
-          <h2>Get The Lawn Your Neighbors Wish They Had</h2>
-          <p>Skip the mower and let science do the work. <b>Claim your 50% off first application!</b></p>
-          <div className="btns">
-            <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Get Your Free Quote</a>
-            <button className="btn btn-ghost btn-lg" onClick={openPromo}>Claim 50% Off</button>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <p>Thermacell is a real product that does what it says under the right conditions. In North Texas those conditions &mdash; still air, moderate mosquito pressure, small coverage area &mdash; exist maybe 30% of the time. For a yard that backs up to greenspace, gets afternoon wind, or hosts gatherings larger than a dinner table, it&rsquo;s not enough on its own. If you want to check out what we covered in our last post on <a href="/blogs/mosquito-net-bed-canopy-outdoor-use-effectiveness">mosquito nets and canopies for outdoor use</a>, you&rsquo;ll find a similar pattern: these products have real value in the right scenario, but North Texas mosquito pressure tends to expose their limits fast.</p>
         <p>Hamann has been protecting Arlington and the surrounding DFW area since 2006. We&rsquo;re happy to give you an honest assessment of what your yard actually needs &mdash; no upsell, no pressure.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

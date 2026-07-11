@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -90,14 +89,6 @@ export default function Page() {
         <p>December is the only true off-month for lawn treatment in North Texas. Grass is dormant, weed activity is low, and your main job is keeping foot traffic off frozen or frost-heaved turf. Use this time to review what worked this year and order product for the spring pre-emergent window. The March window arrives faster than it feels like it should, and being unprepared is the most common reason homeowners end up fighting crabgrass all summer.</p>
         <p>Read more about <a href="/blogs/centipede-grass-in-north-texas-rare-but-different-fertilization-and-weed-rules">centipede grass in North Texas</a> if your lawn includes unusual grass varieties that require a different seasonal approach from the bermuda and St. Augustine calendar above.</p>
 
-        <div className="blog-cta">
-          <h3>Let Hamann Handle Your Year-Round Program</h3>
-          <p>Stop tracking every application window yourself. Our scheduled weed control and fertilizer program keeps your North Texas lawn on the right treatment at the right time &mdash; claim 50% off your first service today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

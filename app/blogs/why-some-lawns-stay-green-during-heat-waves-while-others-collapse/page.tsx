@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         </ul>
         <p>Our <a href="/lawn-care-services">lawn care services</a> at Hamann are designed around North Texas conditions specifically &mdash; including the brutal stretches of heat that define our summers. We know what to apply, when, and how to build a lawn that holds up when conditions get extreme. If you&rsquo;re dealing with a lawn that collapses every time the thermometer spikes, that&rsquo;s a solvable problem with the right year-round approach. And for a related read on summer lawn performance, check out our post on <a href="/blogs/why-some-lawns-stay-thick-through-summer-while-others-thin-out">why some lawns stay thick through summer while others thin out</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Let&rsquo;s Build a Lawn That Handles Texas Heat</h3>
-          <p>Professional care built for North Texas summers &mdash; claim your 50% off first application today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

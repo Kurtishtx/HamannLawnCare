@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -53,14 +52,6 @@ export default function Page() {
         <p>The previous post on <a href="/blogs/back-to-school-mosquito-protection-august-texas">protecting kids from mosquitoes in August</a> covers the peak-season end of the problem &mdash; but the takeaway from both posts is the same: in Texas, there&rsquo;s no truly safe season to ignore mosquito management.</p>
         <p>At Hamann Lawn Care &amp; Weed Control, we&rsquo;ve been serving Arlington and the surrounding DFW communities since 2006. We understand North Texas mosquito behavior through every month of the year, and we can help you build a plan that doesn&rsquo;t leave you surprised by a January bite.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

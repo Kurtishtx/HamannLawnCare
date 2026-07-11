@@ -4,8 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
-
   return (
     <main>
       <header className="blog-hero honey">
@@ -108,12 +106,6 @@ export default function Page() {
           Hamann Lawn Care &amp; Weed Control has been navigating North Texas soil chemistry since 2006. We know this ground because we work it every week. Give us a call at <a href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a> and let&rsquo;s talk about what&rsquo;s really going on in your yard.
         </p>
 
-        <div className="blog-cta">
-          <h3>Ready for a Lawn That Actually Responds to Fertilizer?</h3>
-          <p>Stop fighting your soil alone. Our DFW fertilizer programs are built for alkaline clay &mdash; the right nutrients, the right forms, the right timing.</p>
-          <button onClick={openPromo} className="btn-primary">See Current Specials</button>
-          <a href={`tel:${PHONE_TEL}`} className="btn-secondary">{PHONE_DISPLAY}</a>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

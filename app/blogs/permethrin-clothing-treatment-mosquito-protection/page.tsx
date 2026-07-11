@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         <p>Let&rsquo;s be clear about what permethrin clothing is and isn&rsquo;t. It&rsquo;s an excellent personal protection tool &mdash; particularly for outdoor workers, gardeners, and anyone spending extended time in brushy or heavily vegetated areas. But it does nothing to reduce the mosquito population in your yard. Every mosquito that flies into your treated shirt and dies is one that already flew in from your overgrown fence line, your neighbor&rsquo;s standing water, or your own clogged gutters. Permethrin clothing protects you; it doesn&rsquo;t fix the underlying problem.</p>
         <p>For homeowners in Arlington dealing with a real backyard mosquito issue, permethrin clothing is a useful supplement to professional treatment &mdash; not a replacement for it. If you want to see how other popular repellent tools stack up, our post on <a href="/blogs/mosquito-coils-incense-effectiveness-safety">mosquito coils and incense effectiveness</a> covers another widely used option and its real-world limitations. Hamann Lawn Care has been helping DFW families reclaim their outdoor spaces since 2006. Call us to find out what a full-season mosquito program looks like for your yard.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

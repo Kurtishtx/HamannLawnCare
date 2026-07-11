@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <h2>Don&rsquo;t Skip the Fall Application</h2>
         <p>We&rsquo;ve been treating Arlington lawns since 2006, and the single most common pattern we see in customers with persistent weed problems is inconsistent fall applications. Spring pre-emergent every year with no fall follow-up slowly allows winter annual seed banks to build up to the point where spring cleanup becomes overwhelming. The fall application is your reset button &mdash; it keeps winter annual populations suppressed year over year so that each spring starts from a position of low weed pressure rather than playing catch-up.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Let Winter Weeds Take Over</h3>
-          <p>Get your fall pre-emergent on the calendar before September. Claim 50% off your first application with Hamann.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

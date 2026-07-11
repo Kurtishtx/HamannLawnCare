@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -54,14 +53,6 @@ export default function Page() {
         <p>We won&rsquo;t say weed-and-feed products are completely useless. If a homeowner has a lawn dominated by active, mid-season broadleaf weeds and simply cannot afford a professional service, a spring weed-and-feed on an established Bermuda lawn &mdash; applied correctly with dew present and temperatures below 85&deg;F &mdash; will do <em>something</em>. It&rsquo;s better than nothing. But &ldquo;better than nothing&rdquo; is a low bar. Our previous post on <a href="/blogs/fertilizer-analysis-numbers-decoded-for-north-texas-homeowners">fertilizer analysis numbers decoded for North Texas homeowners</a> explains why product selection matters far more than most people realize.</p>
         <p>The homeowners we see with consistently clean, thick, weed-free Bermuda lawns in Arlington aren&rsquo;t the ones who grab a bag of weed-and-feed every spring. They&rsquo;re the ones running a structured, season-appropriate program &mdash; whether professionally managed or carefully self-applied. If you want results that look genuinely different from your neighbors&rsquo; yards, the weed-and-feed aisle isn&rsquo;t where you find them.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Greener, Weed-Free Lawn?</h3>
-          <p>Get professional weed control and fertilization that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

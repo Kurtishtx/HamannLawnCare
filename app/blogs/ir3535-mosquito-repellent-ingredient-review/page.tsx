@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <p>IR3535 is a legitimately useful tool, and it handily beats the citronella candles and mosquito incense your neighbors are relying on. But all personal repellents &mdash; including DEET, picaridin, and IR3535 &mdash; share a fundamental limitation: they protect the person wearing them, not the yard. The mosquito population in your outdoor space keeps breeding and growing regardless of what you apply to your skin. If you want to see how another popular personal-protection approach compares, our post on <a href="/blogs/permethrin-clothing-treatment-mosquito-protection">treating clothing with permethrin</a> covers the fabric-treatment method and its tradeoffs.</p>
         <p>Real yard-wide mosquito control requires attacking the population at the source &mdash; the resting zones, the breeding water, the lifecycle itself. That&rsquo;s what Hamann Lawn Care does for homeowners across Arlington and the DFW Metroplex. We&rsquo;ve been protecting North Texas families since 2006. Call us and let&rsquo;s talk about what your yard actually needs.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

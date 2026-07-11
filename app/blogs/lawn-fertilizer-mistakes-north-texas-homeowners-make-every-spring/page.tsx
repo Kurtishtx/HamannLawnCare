@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -70,14 +69,6 @@ export default function Page() {
         <p>We&rsquo;ve been taking care of Arlington, Mansfield, Grand Prairie, and surrounding DFW lawns since 2006. Every fertilizer application we make is calibrated to what the grass type, soil conditions, and North Texas climate actually call for &mdash; not what a national product label suggests. No burn. No wasted applications. No timing guesses that cost you a whole season of results.</p>
         <p>If your lawn has been on the wrong end of any of these mistakes, the good news is that most of them are recoverable with the right program and the right timing going forward. Spring is short in North Texas. Getting the fertilizer strategy right from the start makes everything that follows easier.</p>
 
-        <div className="blog-cta">
-          <h3>Stop Guessing With Your Fertilizer Program</h3>
-          <p>Let Hamann handle the timing, the product selection, and the application &mdash; and claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

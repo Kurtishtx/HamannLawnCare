@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <h2>Know Your Property&rsquo;s Risk Factors</h2>
         <p>Some yards carry higher inherent flea risk than others based on their features &mdash; mature tree cover, thick turf, proximity to green belts or drainage channels, known wildlife activity. Understanding your yard&rsquo;s specific risk profile helps you decide how proactive to be. If you want a detailed look at what makes certain yards worse, reviewing <a href="/blogs/environmental-factors-that-increase-flea-activity-in-your-yard">the environmental factors that increase flea activity</a> gives you the full picture of what to watch for on your property.</p>
 
-        <div className="blog-cta">
-          <h3>Get Ahead of Fleas This Season</h3>
-          <p>Prevention is easier than elimination &mdash; claim your 50% off first professional treatment today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

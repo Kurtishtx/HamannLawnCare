@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <h2>When to Call a Professional for Dog Run Treatment</h2>
         <p>If your dog is on flea preventatives and still picking up fleas consistently when released from the run, or if you&rsquo;re seeing flea dirt and live fleas in the run after DIY treatment, it&rsquo;s time for a professional assessment. Dog run environments are among the most concentrated flea zones we treat across Arlington and Tarrant County, and getting the product, concentration, and timing right makes a substantial difference in outcomes. We&rsquo;ve been treating these specific environments since 2006 — there&rsquo;s a meaningful difference between a professional program and a store-bought spray applied to the surface.</p>
 
-        <div className="blog-cta">
-          <h3>Heavy Flea Pressure in Your Dog Run?</h3>
-          <p>Professional treatment for dog runs, kennels, and the full yard — 50% off your first visit.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

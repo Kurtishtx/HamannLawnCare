@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <p>At Hamann, our technicians will note obvious drainage issues during treatment visits and can help you prioritize which improvements will have the biggest impact on your specific mosquito pressure. We&rsquo;ve been serving Arlington and the DFW area since 2006, and we understand North Texas drainage challenges as well as anyone.</p>
         <p>See also: <a href="/blogs/outdoor-lighting-mosquito-attraction-led-vs-yellow">outdoor lighting choices that affect mosquito activity</a> &mdash; another structural change that, like drainage improvement, delivers ongoing benefit without requiring ongoing effort.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         </ul>
         <p>For a complete approach to lawn recovery and soil health in DFW, our <a href="/lawn-care-services">professional lawn care programs</a> address both pest pressure and turf restoration. For more on a related surface problem that also damages grass roots and soil structure, see our post on <a href="/blogs/mushrooms-in-north-texas-lawns-when-to-worry-and-when-to-ignore">mushrooms growing in North Texas lawns</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Fire Ants Taking Over Your Yard?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control has protected Arlington and DFW lawns from fire ants and more since 2006.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

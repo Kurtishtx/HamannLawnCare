@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -54,14 +53,6 @@ export default function Page() {
         <p>It also means pairing weed control with a <strong>fertilizer program</strong> that keeps your Bermuda, St. Augustine, or Zoysia thick and competitive through the growing season. A dense, healthy turf is the best long-term defense against any weed — fewer gaps mean fewer footholds for dandelion seeds to establish. Also check out our post on <a href="/blogs/poa-annua-annual-bluegrass-winter-weed-problems-in-north-texas">Poa Annua Annual Bluegrass Winter Weed Problems in North Texas</a> for a look at the other cool-season weed that shows up at the same time of year and needs its own targeted approach.</p>
         <p>If dandelions have taken hold in your lawn, don&rsquo;t waste the season on hand-pulling and store-bought sprays that won&rsquo;t reach the root. Get on a program that hits them at the right time, with the right products, consistently — and take your yard back for good.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Weed-Free Lawn?</h3>
-          <p>Get professional weed control that actually works — and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -73,14 +72,6 @@ export default function Page() {
         <p>If you&rsquo;ve been battling a persistent flea problem and you&rsquo;re confident your pets are treated, take a hard look at the squirrel activity in your yard. Those fast little animals are doing more damage to your flea control efforts than you might realize. The good news: targeted professional treatment breaks the cycle, and Hamann backs our work with a satisfaction guarantee so you know we stand behind the results. Call us and let&rsquo;s build a plan around what&rsquo;s actually driving the fleas in your specific yard.</p>
         <p>You can also check out our post on <a href="/blogs/treating-yard-before-getting-new-pet">treating your yard before bringing home a new pet</a> for more on resetting a flea-contaminated yard from scratch.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Stop the Flea Cycle for Good?</h3>
-          <p>Professional flea &amp; tick yard treatment that targets the wildlife hot spots driving your infestation — and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         <h2>The Catnip Bottom Line</h2>
         <p>Of all the plants covered in the &ldquo;natural mosquito repellent&rdquo; conversation, catnip has the best science behind it. The compound is real, the mechanism is confirmed, and the skin-application repellency is legitimate if short-lived. Grow it, enjoy it, and use the crushed leaves as a backup repellent in a pinch. But don&rsquo;t expect a catnip garden bed to protect your backyard barbecue. For that, you need a program built for North Texas conditions and scaled to the size of your yard. Hamann has been delivering exactly that in Arlington since 2006.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

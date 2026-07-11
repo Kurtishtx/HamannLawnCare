@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -70,14 +69,6 @@ export default function Page() {
         <p>When our team shows up for <a href="/weed-control-and-fertilizer-services">weed control and fertilizer services</a> in Arlington, drift prevention is baked into every application. We check wind conditions before we start. We select formulations with lower volatility when weather is warm. We use professional-grade nozzles calibrated for the job &mdash; not the same pressure-washer-style tips that come with a $20 store sprayer. We identify sensitive areas before we apply anything and adjust our buffer accordingly. And if the wind comes up mid-job, we stop and reschedule rather than push through and create a neighbor problem.</p>
         <p>We&rsquo;ve been doing this in the Arlington and Tarrant County area since 2006. In nearly two decades, keeping drift off neighbor properties has been a point of professional pride. Your yard gets treated. Your neighbor&rsquo;s garden stays safe. That&rsquo;s the way it should work.</p>
 
-        <div className="blog-cta">
-          <h3>Get Drift-Safe Weed Control in Arlington</h3>
-          <p>Professional application that keeps herbicide exactly where it belongs &mdash; on your weeds, not your neighbor&rsquo;s plants. Claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>&#128222; Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

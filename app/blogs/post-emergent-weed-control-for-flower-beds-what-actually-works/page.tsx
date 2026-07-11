@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <p>The variables involved in post-emergent treatment in flower beds &mdash; correct product selection for the weed species present, safe chemistry for your specific ornamental palette, proper application technique to avoid drift and contact injury, and timing within the growing season &mdash; are genuinely complex. Getting any one of those factors wrong can mean killing weeds ineffectively, damaging plants you want to keep, or wasting money on a product that doesn&rsquo;t fit the problem.</p>
         <p>Hamann Lawn Care has been navigating exactly these challenges in Arlington and DFW flower beds since 2006. We identify your weed species, select the appropriate post-emergent chemistry, apply it with the precision that ornamental beds demand, and can set up a complete program that combines pre-emergent timing with targeted post-emergent treatments so your beds stay clean through every season.</p>
 
-        <div className="blog-cta">
-          <h3>Weeds Already Up in Your Beds?</h3>
-          <p>Let Hamann handle the post-emergent treatment &mdash; safely, precisely, and without harming your plants.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -52,14 +51,6 @@ export default function Page() {
         </ul>
         <p>Hamann has been managing North Texas lawns through exactly these conditions since 2006. Rain events, heat waves, drought &mdash; our programs are built around what DFW actually throws at your lawn, not generic lawn care advice. Explore our full <a href="/lawn-care-services">lawn care services</a> to see how a professional program keeps your turf healthy through whatever the season brings. And if you&rsquo;re thinking about how heat stress and rain stress are related, read our post on <a href="/blogs/why-some-lawns-stay-green-during-heat-waves-while-others-collapse">why some lawns stay green during heat waves while others collapse</a> &mdash; the underlying lawn health principles are closely connected.</p>
 
-        <div className="blog-cta">
-          <h3>Ready for a Lawn That Handles Whatever Texas Throws at It?</h3>
-          <p>Professional lawn care built for North Texas weather &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

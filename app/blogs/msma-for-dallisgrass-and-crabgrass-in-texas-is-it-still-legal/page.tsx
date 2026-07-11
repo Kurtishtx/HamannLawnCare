@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -75,14 +74,6 @@ export default function Page() {
         <p>At Hamann Lawn Care &amp; Weed Control, we&rsquo;ve adapted our grassy weed programs for the post-MSMA era. We start with accurate identification &mdash; because the right product at the right time depends entirely on what weed you&rsquo;re actually dealing with. From there, we build a treatment plan that targets the weed&rsquo;s growth stage, respects your specific grass type, and works within the realistic expectations of what current chemistry can deliver. For dallisgrass, that often means a multi-season suppression strategy paired with a healthy, dense turf program that gives your Bermudagrass the competitive edge it needs to crowd weeds out over time.</p>
         <p>We serve Arlington, Mansfield, Burleson, Grand Prairie, and surrounding areas of Tarrant and Johnson County.</p>
 
-        <div className="blog-cta">
-          <h3>Struggling With Dallisgrass or Crabgrass?</h3>
-          <p>Get a professional grassy weed evaluation and treatment plan &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

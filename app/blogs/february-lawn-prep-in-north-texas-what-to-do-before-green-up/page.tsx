@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -65,14 +64,6 @@ export default function Page() {
         <h2>February Is Quieter But Never Wasted</h2>
         <p>The homeowners who consistently have the best-looking Bermuda yards in Arlington in June are the ones who didn&rsquo;t wait until March to start thinking about their lawn. They had pre-emergent down, equipment serviced, and a plan in place by the last week of February. Hamann Lawn Care &amp; Weed Control has been helping DFW families get ahead of the season since 2006. Call us and we&rsquo;ll make sure your February setup is solid.</p>
 
-        <div className="blog-cta">
-          <h3>Get a Jump on the Season Before Everyone Else</h3>
-          <p>Professional spring lawn prep built for North Texas &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

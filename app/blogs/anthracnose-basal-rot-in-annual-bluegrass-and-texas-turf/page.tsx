@@ -2,7 +2,6 @@
 
 const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
-const openPromo = () => (window as any).__openPromo?.();
 
 export default function Page() {
   const blogPostingJsonLd = {
@@ -118,14 +117,6 @@ export default function Page() {
           For more on related Pythium diseases that also cause rapid crown and root decline in summer, read our previous post on <a href="/blogs/pythium-root-rot-vs-pythium-blight-two-different-diseases">Pythium root rot vs. Pythium blight: two different diseases, two different fixes</a>.
         </p>
 
-        <div className="blog-cta">
-          <h3>Crowns Rotting Out in the July Heat? Don&rsquo;t Wait.</h3>
-          <p>Spotted a problem in your lawn? <strong>Hamann Lawn Care &amp; Weed Control</strong> has served Arlington and the DFW area since 2006. We diagnose anthracnose correctly and apply the right fungicide program before your turf reaches the point of no return.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get a Free Quote</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

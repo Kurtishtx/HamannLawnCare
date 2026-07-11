@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <p>One treatment won&rsquo;t eliminate every mosquito on the block &mdash; and any company promising that is overselling. Mosquitoes are mobile. They drift in from neighboring yards, green belts, and drainage areas constantly. What a professional treatment does is dramatically reduce the population on your property, eliminate active breeding sites, and create a chemical barrier that kills incoming mosquitoes on contact. The result is a yard that goes from unusable at dusk to genuinely enjoyable &mdash; and that&rsquo;s the honest, reasonable outcome to expect.</p>
         <p>If you&rsquo;re not sure you&rsquo;ve chosen the right company heading into your first visit, our guide on <a href="/blogs/how-to-choose-mosquito-control-company-texas">how to choose a mosquito control company in North Texas</a> gives you the specific questions to ask before you book. And when you&rsquo;re ready, our <a href="/mosquito-control-services">mosquito control services</a> page covers exactly what our program includes.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

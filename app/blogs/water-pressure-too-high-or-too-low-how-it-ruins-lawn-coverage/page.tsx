@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <h2>When Your Coverage Problem Isn&rsquo;t Just Pressure</h2>
         <p>If pressure tests out fine but you still have uneven green areas across the lawn, the issue may be head spacing, nozzle mismatch (different precipitation rates on the same zone), or head-to-head coverage gaps from original design. Pairing a properly pressurized system with consistent professional lawn treatments is what keeps Bermuda grass uniformly green from curb to back fence. Read our guide on <a href="/blogs/how-to-detect-and-fix-a-broken-sprinkler-zone-in-north-texas">detecting and fixing a broken irrigation zone</a> to rule out mechanical failures before blaming pressure.</p>
 
-        <div className="blog-cta">
-          <h3>Is Uneven Watering Hurting Your Lawn?</h3>
-          <p>Hamann Lawn Care has helped Arlington homeowners build healthier lawns since 2006. Call us to get started.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

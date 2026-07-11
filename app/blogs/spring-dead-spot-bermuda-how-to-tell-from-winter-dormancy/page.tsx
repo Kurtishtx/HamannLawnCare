@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
 
         <p>If your Bermuda lawn woke up this spring with circular dead patches that everyone around them greened up fine, don&rsquo;t assume it&rsquo;s just slow recovery. Get it looked at now, start planning your fall prevention program, and stop the cycle before next spring brings bigger patches. Our full <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control</a> program addresses SDS from both the fall prevention and spring recovery angles. Also see our post on <a href="/blogs/gray-leaf-spot-bermuda-grass-texas-misidentification">gray leaf spot in Bermuda grass</a> for another commonly confused Bermuda disease.</p>
 
-        <div className="blog-cta">
-          <h3>Circular Dead Patches After Green-Up?</h3>
-          <p>Don&rsquo;t wait until next spring to find out how much bigger they&rsquo;ll be. Start your SDS prevention program this fall.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off First Treatment</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

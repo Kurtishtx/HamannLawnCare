@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         </ul>
         <p>Our <a href="/lawn-care-services">lawn care services</a> address these combined tree-zone challenges with a site-specific plan rather than a one-size-fits-all program. If you&rsquo;ve also noticed your lawn smelling off after irrigation, you may have an overlapping issue with soil health — read our piece on <a href="/blogs/why-bermuda-grass-turns-straw-colored-after-aerating-and-how-to-recover">why Bermuda turns straw-colored after aerating and how to recover fast</a> for more context on post-treatment soil recovery.</p>
 
-        <div className="blog-cta">
-          <h3>Bare Spots Under Your Oaks &amp; Ants Taking Over?</h3>
-          <p>We&rsquo;ve helped Arlington homeowners manage these exact problems since 2006. Get your free assessment today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

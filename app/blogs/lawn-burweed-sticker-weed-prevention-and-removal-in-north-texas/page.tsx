@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -71,14 +70,6 @@ export default function Page() {
         <p>The homeowner DIY challenge with lawn burweed is timing. Life gets busy, October arrives, and suddenly it&rsquo;s mid-November and the pre-emergent window has passed. A professional lawn care program removes that variable entirely. Hamann Lawn Care &amp; Weed Control monitors soil temperature data for the DFW area and schedules fall pre-emergent applications specifically around that 70&deg;F threshold. We handle the timing so you don&rsquo;t have to&mdash;and you get to walk barefoot in your yard come April without dreading every step.</p>
         <p>For lawns already dealing with an established burweed problem, we combine fall pre-emergent with early winter post-emergent follow-up to attack both the seedlings that slipped through and the seed bank for future seasons. The goal is reducing the burweed population year over year until it&rsquo;s no longer a meaningful problem in your yard.</p>
 
-        <div className="blog-cta">
-          <h3>Stop Stickers Before They Start</h3>
-          <p>Don&rsquo;t let another October pass without protecting your lawn. Hamann Lawn Care &amp; Weed Control handles pre-emergent timing for DFW homeowners so burweed doesn&rsquo;t ruin another spring&mdash;plus 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>&#128222; Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

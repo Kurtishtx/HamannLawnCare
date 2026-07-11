@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
           <li><strong>Treat the outdoor source consistently</strong> through tick season so re-infestation from yard wildlife doesn&rsquo;t continuously reload the cycle. See our related post on <a href="/blogs/what-is-flea-dirt-how-to-identify">identifying flea dirt</a> to understand what the evidence of an active infestation looks like before you start treatment.</li>
         </ul>
 
-        <div className="blog-cta">
-          <h3>Break the Flea Cycle in Your Yard</h3>
-          <p>Hamann&rsquo;s flea &amp; tick treatments are timed to the actual life cycle, not just a calendar. Claim 50% off your first professional service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

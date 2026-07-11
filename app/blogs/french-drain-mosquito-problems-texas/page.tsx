@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -52,14 +51,6 @@ export default function Page() {
         <p>Drainage repairs take time to diagnose, quote, and schedule. Meanwhile, the mosquitoes aren&rsquo;t waiting. If your French drain area is suspected of contributing to mosquito pressure, Bti (Bacillus thuringiensis israelensis) granules or dunks can be applied to the wet gravel and any visible pooling to kill larvae immediately. This won&rsquo;t fix the drainage problem but it stops the drain from producing the next generation of biting adults while repairs are underway.</p>
         <p>A professional barrier spray program targets the adult mosquitoes resting in shaded vegetation throughout your yard, delivering fast relief regardless of what&rsquo;s happening below ground. Also see our guide on identifying <a href="/blogs/tree-holes-cavities-mosquito-breeding-yards">tree holes as hidden mosquito nurseries</a> — often overlooked when investigating persistent mosquito problems.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works — and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

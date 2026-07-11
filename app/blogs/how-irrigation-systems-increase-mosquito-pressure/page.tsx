@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <h2>Control That Accounts for Your Irrigation Reality</h2>
         <p>An irrigated yard needs a mosquito control program calibrated to the fact that you are consistently maintaining moisture levels. That means heavier emphasis on treating resting zones where humidity-loving mosquitoes shelter, larvicide applications where standing water is a recurring presence, and treatment intervals appropriate for a yard that doesn&rsquo;t dry out between visits. Hamann Lawn Care has been treating irrigated North Texas properties for nearly two decades and designs programs that account for the realities of the yards we actually treat.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

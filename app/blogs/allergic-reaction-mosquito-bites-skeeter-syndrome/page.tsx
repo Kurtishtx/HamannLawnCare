@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -74,14 +73,6 @@ export default function Page() {
         <h2>Let&rsquo;s Make Your Yard the Safest Spot on the Block</h2>
         <p>Skeeter Syndrome makes what is already an annoying insect a genuinely significant health issue. Hamann has been protecting North Texas families from mosquitoes since 2006, and our barrier program is built to deliver season-long relief. We back every treatment with a satisfaction guarantee &mdash; if mosquitoes come back between visits, so do we.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <p>For families with children, we recommend starting the season program in early spring and maintaining it through October. August is the worst month to have a gap in coverage. If you haven&rsquo;t started yet, a mid-summer treatment still makes a dramatic difference for the remaining hot months and into fall.</p>
         <p>See also: <a href="/blogs/mosquito-activity-temperature-sweet-spot">the temperature sweet spot where mosquitoes are most active</a> &mdash; understanding the mechanics helps you see why evening outdoor time is when your kids are most exposed.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

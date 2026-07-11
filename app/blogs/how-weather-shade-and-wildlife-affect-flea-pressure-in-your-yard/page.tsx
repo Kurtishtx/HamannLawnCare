@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <h2>When to Call a Professional</h2>
         <p>If your yard has heavy shade, a wildlife corridor, or sits in a low area that stays humid after rain, DIY flea control is going to be an uphill battle. Professional-grade products have longer residuals and better turf penetration than consumer options, and a trained eye can identify the specific hot spots in your yard that deserve extra attention. Hamann has been protecting Arlington and DFW families from fleas since 2006, and we know how North Texas yards behave across the seasons. Give us a call when the fleas are winning &mdash; we&rsquo;ll tip the scales back in your favor.</p>
 
-        <div className="blog-cta">
-          <h3>Let&rsquo;s Take Back Your Yard</h3>
-          <p>Professional flea treatment built for North Texas conditions &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

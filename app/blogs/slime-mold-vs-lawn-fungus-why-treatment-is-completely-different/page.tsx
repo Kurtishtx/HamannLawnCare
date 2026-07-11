@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -180,14 +179,6 @@ export default function Page() {
           quickly and one that loses turf to misdiagnosed disease treatment all season.
         </p>
 
-        <div className="blog-cta">
-          <h3>Weird Stuff Growing In Your Lawn?</h3>
-          <p>Get a professional lawn disease evaluation &mdash; we&rsquo;ll tell you exactly what it is and whether it needs treatment. Claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

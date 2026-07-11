@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -74,14 +73,6 @@ export default function Page() {
         <h2>A Sharp Blade Is the Cheapest Lawn Care Investment You Can Make</h2>
         <p>A file costs $8. A bench grinder costs $50 to $80. Professional blade sharpening at a small engine shop runs $10 to $20 per blade. Compared to what most North Texas homeowners spend on fertilizer, weed control, or irrigation over a season, these are negligible costs that produce outsized improvements in turf health. Make blade sharpening a seasonal ritual &mdash; once before April, once around the Fourth of July &mdash; and you&rsquo;ll see the difference in your lawn within two mowing cycles. The brownish post-mow color disappears. The grass stands taller and looks crisper. And every treatment you apply to that lawn works better because the turf underneath is healthier.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Greener Lawn?</h3>
-          <p>Get professional lawn care that delivers real results &mdash; and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

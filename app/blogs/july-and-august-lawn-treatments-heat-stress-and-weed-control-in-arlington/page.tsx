@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -84,14 +83,6 @@ export default function Page() {
         <h2>How Hamann Handles July and August</h2>
         <p>At Hamann Lawn Care &amp; Weed Control, we adjust our protocols specifically for the July and August heat window. All weed control applications are scheduled for early-morning time slots &mdash; typically before 9 a.m. &mdash; to avoid herbicide volatilization and minimize turf stress. We assess heat and drought stress levels before applying anything, and we hold off on applications when turf is visibly heat-compromised. For customers seeing active nutsedge, crabgrass, or spurge this time of year, we recommend targeted post-emergent treatment now while plants are still actively growing, combined with a comprehensive fall program starting in September to prevent winter annual weeds. If you missed last June&rsquo;s overview, you can catch up on <a href="/blogs/june-lawn-care-managing-weed-pressure-during-dfw-heat-buildup">managing weed pressure during DFW heat buildup</a> for the full context.</p>
 
-        <div className="blog-cta">
-          <h3>Beat the Heat Before It Beats Your Lawn</h3>
-          <p>Hamann&rsquo;s summer weed control treatments are scheduled early morning &mdash; claim your 50% off first treatment now.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -68,14 +67,6 @@ export default function Page() {
         <h2>Reducing the Tick Population in Your Yard</h2>
         <p>The most effective way to reduce tick bite risk long-term isn&rsquo;t more repellent &mdash; it&rsquo;s fewer ticks in the yard. <a href="/blogs/deet-vs-picaridin-tick-repellent">Personal repellents</a> protect you during an activity window, but they don&rsquo;t affect the ticks waiting in your shrubs for the next person. Hamann Lawn Care &amp; Weed Control has been treating DFW yards for ticks since 2006. Our barrier program targets the areas where North Texas ticks concentrate, giving you a yard where the odds of a tick encounter are dramatically lower from the start.</p>
 
-        <div className="blog-cta">
-          <h3>Fewer Ticks in Your Yard Means Fewer on Your Body</h3>
-          <p>Get professional flea &amp; tick barrier control &mdash; 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

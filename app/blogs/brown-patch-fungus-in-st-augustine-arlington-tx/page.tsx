@@ -2,7 +2,6 @@
 
 const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
-const openPromo = () => (window as any).__openPromo?.();
 
 export default function Page() {
   const blogPostingJsonLd = {
@@ -111,14 +110,6 @@ export default function Page() {
           For a side-by-side look at how the same pathogen behaves differently in bermudagrass, read our companion post on <a href="/blogs/smut-diseases-flag-smut-stripe-smut-in-texas-lawns">smut diseases in Texas lawns: flag smut and stripe smut explained</a>.
         </p>
 
-        <div className="blog-cta">
-          <h3>Brown Patches Spreading Across Your St. Augustine?</h3>
-          <p>Spotted a problem in your lawn? <strong>Hamann Lawn Care &amp; Weed Control</strong> has served Arlington and the DFW area since 2006. We diagnose brown patch correctly and apply the right fungicide program to stop it before it takes over your lawn.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get a Free Quote</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

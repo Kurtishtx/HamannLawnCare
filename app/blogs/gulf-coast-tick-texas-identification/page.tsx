@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -53,14 +52,6 @@ export default function Page() {
         <h2>Control Strategies That Work for Gulf Coast Ticks</h2>
         <p>The same habitat modifications and professional barrier spray treatments that reduce Lone Star and American dog tick populations are effective against Gulf Coast ticks. Keeping grass mowed short, eliminating tall weed strips near fence lines, and reducing wildlife harborage all cut tick exposure. Hamann&rsquo;s recurring treatment program targets the grassy borders and vegetation edges where adult Gulf Coast ticks quest, giving your yard ongoing protection against this species alongside the more familiar ones. For more on how DFW tick species compare in behavior and appearance, see our guide on <a href="/blogs/blacklegged-deer-tick-north-texas">the blacklegged deer tick in North Texas</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Know Your Ticks. Control Your Yard.</h3>
-          <p>Hamann has protected Arlington and DFW families from every North Texas tick species since 2006. Get 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <h2>How Hamann Approaches Root Disease in St. Augustine</h2>
         <p>Hamann Lawn Care &amp; Weed Control has worked with St. Augustine lawns in the Arlington area since 2006. When homeowners describe thinning or yellowing that doesn&rsquo;t respond to watering, we start with the tug test and root inspection before recommending any treatment. Root disease requires a different approach than foliar disease: the fungicide needs to reach the root zone, soil conditions need to be addressed, and treatment zones need to extend beyond visible damage. Getting the diagnosis right before applying product saves time, money, and turf.</p>
 
-        <div className="blog-cta">
-          <h3>St. Augustine Thinning and Won&rsquo;t Respond to Watering?</h3>
-          <p>Root-level fungal disease may be the cause. Call Hamann for a professional lawn disease diagnosis in Arlington and DFW.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

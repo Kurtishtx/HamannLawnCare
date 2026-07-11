@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -71,14 +70,6 @@ export default function Page() {
         <h2>When to Call for Help</h2>
         <p>If you&rsquo;re coming out of a drought and large patches aren&rsquo;t greening back up within 2&ndash;3 weeks of regular rain and irrigation, those areas may be genuinely dead &mdash; not dormant. That&rsquo;s the time to have a professional assess whether you need resodding, soil amendment, or an irrigation audit. Hamann Lawn Care has been serving Arlington and DFW since 2006, and we know what North Texas lawns look like after a rough summer. We can help you figure out what&rsquo;s salvageable and build a recovery plan.</p>
 
-        <div className="blog-cta">
-          <h3>Lawn Struggling Through the Drought?</h3>
-          <p>Get expert lawn care advice and a free assessment from a team that knows North Texas &mdash; and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

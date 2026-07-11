@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -118,14 +117,6 @@ export default function Page() {
           If your lawn has visible thin strips and worn paths, don&rsquo;t wait until the weeds have fully taken over. The earlier you address compaction and apply weed control, the less turf you lose and the faster the recovery. North Texas summers move fast, and so does weed pressure once the soil is exposed.
         </p>
 
-        <div className="blog-cta">
-          <h3>Ready To Recover Your Worn-Down Lawn?</h3>
-          <p>Hamann&rsquo;s professional weed control and fertilizer programs help thin spots recover fast &mdash; and your first application is 50% off.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

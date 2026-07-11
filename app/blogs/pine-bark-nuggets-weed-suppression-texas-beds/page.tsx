@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         </ul>
         <p>For most residential flower beds in Arlington and the surrounding DFW area &mdash; especially those with mixed perennials, ornamental grasses, or any history of annual weed pressure &mdash; mini-chips outperform large nuggets on both the weed suppression and stability metrics that matter most through a North Texas season. Pairing mini-chips at the right depth with a consistent <a href="/blogs/hardwood-vs-cedar-mulch-weed-control-dfw">mulch selection strategy for your specific bed conditions</a> keeps beds clean with less ongoing effort.</p>
 
-        <div className="blog-cta">
-          <h3>Tired of Fighting Weeds in Your Flower Beds?</h3>
-          <p>Hamann handles flower-bed weed control across Arlington and DFW. Call today or get 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

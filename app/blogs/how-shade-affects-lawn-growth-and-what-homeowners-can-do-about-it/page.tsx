@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -65,14 +64,6 @@ export default function Page() {
         <p>One thing homeowners don&rsquo;t often consider is how shade interacts with the effectiveness of lawn treatments. Weed control applied to a thin, shaded lawn may eliminate weeds but leave behind bare soil with nothing to fill in &mdash; which just creates conditions for the next round of weeds. The herbicide did its job, but the turf wasn&rsquo;t healthy enough to compete and reclaim the space. Similarly, <a href="/blogs/how-thatch-buildup-affects-lawn-health-and-when-to-remove-it">thatch buildup</a> can be worse in shaded areas where slow growth accumulates organic matter faster than it breaks down. For this reason, shaded lawns sometimes need a modified treatment approach rather than a one-size-fits-all program designed for full-sun turf.</p>
         <p>If you&rsquo;re not sure whether your shade situation is manageable or already past the point of no return for grass, an honest site assessment is the right starting point. Shade problems are solvable in most yards &mdash; sometimes with pruning, sometimes with adjusted care practices, and sometimes by rethinking what belongs under the trees. The goal is a yard that looks good and stays healthy, and that means working with your conditions rather than against them.</p>
 
-        <div className="blog-cta">
-          <h3>Struggling With Shade In Your Yard?</h3>
-          <p>We can help you figure out what&rsquo;s possible and build a lawn care plan that works with your yard&rsquo;s unique conditions.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

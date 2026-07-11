@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <h2>When to Call in Professional Help</h2>
         <p>If you&rsquo;ve treated the carpet, your pets are on flea prevention, and you&rsquo;re still seeing activity at four weeks, the infestation has almost certainly moved beyond what consumer products can address. Hamann Lawn Care &amp; Weed Control serves Arlington, Grand Prairie, Mansfield, and the surrounding DFW communities with professional flea control programs that target the full life cycle &mdash; outdoor barrier, indoor guidance, and follow-up scheduling timed to the pupal hatch window. Call us and let&rsquo;s get ahead of it before the Texas summer heat makes things worse.</p>
 
-        <div className="blog-cta">
-          <h3>Fleas Living Deep in Your Carpet?</h3>
-          <p>Professional treatment that targets the full life cycle &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

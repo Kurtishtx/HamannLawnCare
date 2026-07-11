@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         <h2>The Bottom Line</h2>
         <p>Bug zappers are satisfying. They produce a lot of impressive-sounding kills. And they do essentially nothing to protect you from mosquitoes, which is the one thing you bought them to do. Save the counter space, stop funding an insect execution machine that favors moths over the mosquitoes biting your ankles, and invest in control methods that actually target the species you&rsquo;re fighting. Hamann has been protecting Arlington yards since 2006 with programs built on the science &mdash; not the theater &mdash; of mosquito control.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

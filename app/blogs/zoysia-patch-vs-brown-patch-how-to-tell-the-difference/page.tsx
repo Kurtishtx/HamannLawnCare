@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -80,14 +79,6 @@ export default function Page() {
         <h2>How Hamann Can Help</h2>
         <p>Hamann Lawn Care &amp; Weed Control has been diagnosing and treating North Texas lawn diseases since 2006. We work with zoysia and St. Augustine lawns throughout the Arlington and DFW area, and we know which diseases are active in which seasons. Whether you&rsquo;re looking at a spring mystery patch in zoysia or a fast-spreading summer circle in St. Augustine, we can give you an accurate diagnosis and a treatment plan that actually targets the right disease at the right time.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Protect Your Lawn?</h3>
-          <p>Get professional lawn disease control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

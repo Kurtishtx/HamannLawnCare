@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
 
         <p>If you&rsquo;re also dealing with bare patches in your Bermuda heading into the overseeding season, get those repaired before fall — see our guide on <a href="/blogs/how-to-fix-scalped-lawn-spots-from-mowing-too-low-in-dfw">fixing scalped lawn spots from mowing too low</a>. Repairing damage before overseeding creates a more uniform winter lawn and a cleaner spring transition. Hamann Lawn Care has been helping Arlington and DFW homeowners navigate every season of lawn care since 2006.</p>
 
-        <div className="blog-cta">
-          <h3>Thinking About Winter Rye This Fall?</h3>
-          <p>Get expert advice from the Hamann team — and 50% off your first professional lawn service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

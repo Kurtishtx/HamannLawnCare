@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -69,14 +68,6 @@ export default function Page() {
         <p>The most effective approach is to schedule your yard treatment within the same week as your vet visit for deworming. Your pet gets cleared of current tapeworm load; the yard gets treated to cut off the next exposure. Maintain monthly flea prevention on all pets in the household, including any that seem unaffected &mdash; a pet without visible symptoms can still carry fleas into the home from the yard. Schedule follow-up yard treatments on a regular cycle through the warm months, with at least one treatment in early spring before flea populations begin climbing.</p>
         <p>In North Texas, this kind of coordinated approach is not overcaution &mdash; it is the only approach that consistently breaks the flea-tapeworm cycle before it repeats itself through another season.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Protect Your Yard From Fleas &amp; Ticks?</h3>
-          <p>Professional flea &amp; tick control built for North Texas &mdash; claim your 50% off first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

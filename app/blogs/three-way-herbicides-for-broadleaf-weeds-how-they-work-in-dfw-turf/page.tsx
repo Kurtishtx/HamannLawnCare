@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <h2>How Three-Way Herbicides Fit Into a Complete DFW Program</h2>
         <p>Three-way herbicides are post-emergent tools &mdash; they address weeds that have already emerged. They work alongside, not instead of, pre-emergent barriers. The most effective North Texas broadleaf weed control programs use pre-emergent isoxaben (Gallery) applications in fall to prevent winter annual germination, paired with three-way post-emergent applications in late winter or early spring to clean up any escapes that germinated despite the pre-emergent barrier. That one-two approach keeps henbit, chickweed, and clover from ever establishing a foothold. Read more about how selectivity principles apply across the herbicide spectrum in our post on <a href="/blogs/selective-vs-non-selective-herbicides-choosing-right-for-north-texas">selective vs non-selective herbicides for North Texas lawns</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Broadleaf Weeds Don&rsquo;t Stand a Chance Against the Right Program</h3>
-          <p>Hamann uses professional three-way formulas matched to your grass type and the DFW season. Call today for 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <p>If your dog goes to a dog park regularly, you are consistently reintroducing flea and tick pressure into your home environment. This is exactly the situation where a professional yard treatment program proves its value. A one-time treatment can knock down an established population, but a recurring program with treatments every 4–8 weeks through the warm season keeps any newly introduced parasites from establishing a new population before the next application.</p>
         <p>The <a href="/blogs/ticks-on-hiking-trails-near-dfw">same principle applies to trail hiking with dogs</a> — external pressure requires ongoing yard protection, not just a single treatment when you notice a problem. Hamann has been serving the Arlington area and broader DFW since 2006, and our team knows the local tick and flea season timing needed to keep dog owners protected.</p>
 
-        <div className="blog-cta">
-          <h3>Dog Park Regular? Let&rsquo;s Protect Your Yard From What Comes Home.</h3>
-          <p>Professional flea and tick yard treatment for DFW dog owners. Get 50% off your first application today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

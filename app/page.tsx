@@ -32,11 +32,11 @@ const faqs = [
   { q: 'How often should you treat a lawn for weeds?', a: 'We treat your lawn every 5–7 weeks to keep weeds under control year-round and maintain consistent protection.' },
   { q: 'Is it safe for children and pets?', a: 'Yes. Once the application has dried, the lawn is safe for children and pets to return to. Most applications dry within 1–2 hours.' },
   { q: 'What if weeds come back between visits?', a: 'If weeds pop up between visits, we come back and treat them at no extra charge. We provide free service calls to retreat problem areas and keep your lawn weed-free.' },
-  { q: 'How long do mosquito treatments last?', a: 'Most mosquito treatments last around 21–30 days depending on weather, rainfall, and mosquito pressure. Monthly applications provide consistent protection.' },
+  { q: 'How long do mosquito treatments last?', a: 'Most mosquito treatments last around 5–7 weeks depending on weather, rainfall, and mosquito pressure. We return every 5–7 weeks for consistent, season-long protection.' },
   { q: 'Do you treat St. Augustine, Bermuda, and Zoysia lawns?', a: 'Yes. We service St. Augustine, Bermuda, and Zoysia lawns with grass-specific product selections and timing for healthy growth without damage.' },
   { q: 'How soon will I see results?', a: 'Fertilization results typically appear within 1–2 weeks, while weed control results vary by weed type but generally begin within 7–14 days.' },
   { q: 'Can I mow after a weed control treatment?', a: "It's best to wait 24–48 hours before mowing so the product has time to fully absorb." },
-  { q: 'How do you control fleas and ticks?', a: 'We apply targeted outdoor treatments that eliminate adult fleas and ticks while disrupting their life cycles. Treatments focus on shaded areas, pet activity zones, and high-risk locations.' },
+  { q: 'How do you control fleas and ticks?', a: 'We apply targeted outdoor treatments that eliminate adult fleas and ticks while disrupting their life cycles. We also use insect growth regulators (IGRs) to stop eggs from hatching, breaking the cycle before the next generation emerges. We spray your whole lawn for even, complete coverage.' },
 ];
 
 const areas = ['Arlington', 'Mansfield', 'Grand Prairie', 'Hurst', 'Euless', 'Bedford', 'Colleyville', 'North Richland Hills', 'Richland Hills', 'Watauga', 'Haltom City', 'Kennedale'];
@@ -44,7 +44,6 @@ const areas = ['Arlington', 'Mansfield', 'Grand Prairie', 'Hurst', 'Euless', 'Be
 const RedLine = () => <div style={{ height: 4, width: 64, background: 'var(--red)', borderRadius: 2, margin: '14px auto 0' }} />;
 
 export default function Home() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,10 +54,6 @@ export default function Home() {
             <span className="hero-kick" style={{ borderColor: 'var(--red)' }}>⭐ Lawn Care • Weed Control • Pest Control • Mosquito Control ⭐</span>
             <h1>Welcome To <span className="headline-3d">Hamann Lawn Care &amp; Weed Control</span></h1>
             <p className="hero-sub">North Texas&apos;s trusted name for expert lawn care, weed control, pest control, and mosquito control. We&apos;re local, we&apos;re reliable, and we&apos;re ready to treat your property with <b>science-driven precision</b>.</p>
-            <div className="hero-cta">
-              <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-              <button className="btn btn-ghost btn-lg" onClick={openPromo}>Get 50% Off →</button>
-            </div>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 22, color: '#c9bba4', fontSize: 14, fontWeight: 700 }}>
               <span>✔ Licensed &amp; Insured</span>
               <span>✔ Locally Owned</span>
@@ -191,16 +186,6 @@ export default function Home() {
       </section>
 
       {/* CTA BAND */}
-      <section id="contact" className="cta-band">
-        <div className="wrap">
-          <h2>💬 Ready For A Lawn That Works As Hard As You Do?</h2>
-          <p>Whether you want a lawn that turns heads or a backyard that&apos;s safe for pets and kids, Hamann Lawn Care &amp; Weed Control has you covered. Friendly customer service is always here to help — email, text, or call. Give us a try… you won&apos;t regret it. <b>Claim your 50% off first application!</b></p>
-          <div className="btns">
-            <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Get Your Free Quote</a>
-            <button className="btn btn-ghost btn-lg" onClick={openPromo}>Claim 50% Off</button>
-          </div>
-        </div>
-      </section>
 
       {/* PARENT NETWORK LINK — homepage only, passes authority to IndustryBossPro */}
       <div style={{ textAlign: 'center', padding: '20px 16px', fontSize: 14, color: '#9a8c76', background: '#15100a' }}>

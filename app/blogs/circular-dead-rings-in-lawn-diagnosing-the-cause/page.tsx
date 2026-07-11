@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
 
         <p>If you&rsquo;re looking at a circular dead zone in your DFW lawn this season, don&rsquo;t guess. Our team at Hamann has diagnosed these patterns in Arlington and surrounding communities since 2006. Start with our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control</a> page to understand how we approach fungal diagnosis and treatment, and get the right answer before the circle gets any bigger.</p>
 
-        <div className="blog-cta">
-          <h3>Circular Dead Ring in Your Lawn?</h3>
-          <p>The right treatment starts with the right diagnosis. Let Hamann identify the cause and stop the spread.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off First Treatment</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

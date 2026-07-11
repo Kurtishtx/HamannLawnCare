@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <p>April is the month where everything happens at once, and sequencing matters. Our approach for Arlington and DFW lawns in April runs broadleaf post-emergent treatments first, while temperatures are still in the ideal spray range and before weeds set seed. Nutsedge monitoring begins in early April, with first treatments applied as soon as plants are confirmed present and actively growing. Fertilizer is held until green-up confirms the turf is ready, typically mid-to-late April for Bermuda. Pre-emergent status is evaluated to determine whether a follow-up application is warranted to extend residual coverage into the summer window.</p>
         <p>For lawns on our full-season <a href="/weed-control-and-fertilizer-services">weed control and fertilizer services</a> program, April treatments are sequenced automatically within the annual visit schedule. If you missed the March pre-emergent window and want to understand what options remain, see our post on <a href="/blogs/march-lawn-treatment-timing-for-north-texas-spring-green-up">March lawn treatment timing for North Texas spring green-up</a> for context on how the spring program builds across both months.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Let April Weeds Get Ahead of You</h3>
-          <p>Hamann Lawn Care &amp; Weed Control handles broadleaf spray, nutsedge treatment, and spring fertilizer timing for Arlington and DFW lawns&mdash;plus 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

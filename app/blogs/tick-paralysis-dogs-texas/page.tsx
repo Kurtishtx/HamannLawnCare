@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         </ul>
         <p>Professional yard treatment is particularly valuable for dog owners because dogs spend far more time in the yard than most humans do, and they cannot tell you when they&rsquo;ve found a tick. Reducing the tick density in the yard reduces exposure before prevention products even come into play. For more on the full range of tick threats your dog faces in North Texas, read our post on <a href="/blogs/anaplasmosis-north-texas-tick-disease">anaplasmosis in North Texas</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Protect Your Dog From Tick Paralysis and More</h3>
-          <p>Professional flea &amp; tick control for Arlington and DFW. Protect your yard and your pets — call now for 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

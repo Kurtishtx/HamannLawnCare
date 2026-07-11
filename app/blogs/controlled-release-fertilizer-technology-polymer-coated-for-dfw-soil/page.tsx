@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -49,14 +48,6 @@ export default function Page() {
         <p>Many retail &ldquo;slow-release&rdquo; products contain only 20&ndash;30% slow-release nitrogen, with the rest as quick-release. Professional-grade turf products typically carry 50% or more in controlled-release form. The difference in sustained performance is significant. Our previous post on <a href="/blogs/weed-and-feed-products-why-they-rarely-work-well-in-north-texas">weed-and-feed products and why they rarely work well in North Texas</a> covers how retail product formulations often fall short of what the marketing suggests &mdash; the same principle applies here.</p>
         <p>If you&rsquo;re evaluating fertilizer products on your own, check the guaranteed analysis panel for the percentage listed as &ldquo;slowly available water-soluble nitrogen&rdquo; or &ldquo;controlled-release nitrogen.&rdquo; The higher that percentage, the more sustained and predictable the feeding. In a climate as extreme as North Texas, predictable is the most valuable word in lawn care.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Greener, Weed-Free Lawn?</h3>
-          <p>Get professional weed control and fertilization that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

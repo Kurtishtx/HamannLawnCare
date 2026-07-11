@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -53,14 +52,6 @@ export default function Page() {
         <h2>Seasonal Adjustments for DFW&rsquo;s Climate Swings</h2>
         <p>North Texas weather doesn&rsquo;t ease gradually between seasons — it lurches. A smart controller set for peak July demand will overwater in October and underwater in a late-June heat dome. Most smart controllers handle this automatically through ET data, but it&rsquo;s worth manually reviewing your seasonal adjustment settings in early spring (when Bermuda breaks dormancy), mid-summer (when heat demand peaks), and late fall (when warm-season grasses slow down before dormancy). Also remember: watering restrictions often ease in winter, giving you more scheduling flexibility during the months when your lawn actually needs the least water.</p>
 
-        <div className="blog-cta">
-          <h3>Let Hamann Handle the Hard Part</h3>
-          <p>We&rsquo;ve kept North Texas lawns healthy since 2006. Call us for service, advice, and a free estimate.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

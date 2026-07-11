@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -71,14 +70,6 @@ export default function Page() {
         <p>pH correction in DFW clay isn&rsquo;t complicated, but it is easy to get wrong in ways that waste money or damage the lawn. Over-applying sulfur causes its own set of problems — it can create acidic hot spots, stress turf, or interact poorly with other applications. Getting the rate right requires knowing your actual starting pH (not guessing), understanding your soil texture, and calibrating expectations for how quickly the process will work in your specific yard.</p>
         <p>Hamann Lawn Care &amp; Weed Control has been working with North Texas soil since 2006. We know the pH quirks of Arlington clay, the difference between a lawn that needs sulfur and one that needs chelated iron as a bridge, and how to build a fertilizer program that works with your soil chemistry instead of against it. If your lawn has been underperforming despite treatment, there&rsquo;s a good chance the answer is underground — and it&rsquo;s a problem we know how to fix.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Get Your Soil pH Under Control?</h3>
-          <p>We&rsquo;ll assess what&rsquo;s going on with your soil and build a program that actually works. Grab your new-customer offer below.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

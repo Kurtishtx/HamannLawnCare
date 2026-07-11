@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -75,14 +74,6 @@ export default function Page() {
         <p>Lespedeza control fits naturally within a structured <a href="/weed-control-and-fertilizer-services">weed control and fertilizer program</a> that addresses both the weed and the underlying turf conditions driving it. A professional program applies pre-emergent in the correct window each spring, monitors for early summer germination that warrants post-emergent follow-up, and pairs weed control with fertilization that supports turf density &mdash; so that each year&rsquo;s pressure is a little less than the year before. For a related summer weed with a similar prevention-focused approach, our post on <a href="/blogs/lawn-burweed-sticker-weed-prevention-and-removal-in-north-texas">lawn burweed sticker weed prevention and removal in North Texas</a> covers how early-season timing makes all the difference with annual weed species.</p>
         <p>If you&rsquo;re seeing lespedeza in your Arlington lawn this summer, call Hamann at {PHONE_DISPLAY}. We&rsquo;ll identify what&rsquo;s happening, explain the timing and treatment options that make sense for your turf, and get you on a program that addresses the weed and the conditions behind it.</p>
 
-        <div className="blog-cta">
-          <h3>Identify and Eliminate Lespedeza This Summer</h3>
-          <p>Professional weed identification and control built for Arlington lawns &mdash; and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

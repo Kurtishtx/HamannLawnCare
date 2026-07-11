@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <h2>What to Do After a Damaging Rainfall Event</h2>
         <p>If a significant storm hits shortly after a pre-emergent application, the best approach is to scout the lawn closely during the following four to six weeks. Early crabgrass emergence &mdash; particularly in lower-lying areas where runoff concentrates or in zones that had visible puddling &mdash; indicates barrier disruption. Catching crabgrass at the pre-tiller stage allows a dithiopyr rescue application before the problem escalates. Read more in our companion post on <a href="/blogs/when-to-apply-first-pre-emergent-of-the-year-in-arlington-tx">when to apply the first pre-emergent of the year in Arlington TX</a> for how seasonal timing decisions interact with these rainfall considerations.</p>
 
-        <div className="blog-cta">
-          <h3>Weather Changes. Your Weed Coverage Shouldn&rsquo;t.</h3>
-          <p>Hamann monitors conditions and adjusts programs to DFW&rsquo;s unpredictable weather. Call today and get 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -68,14 +67,6 @@ export default function Page() {
         <h2>Bottom Line: Save the Bracelet Budget</h2>
         <p>Mosquito repellent bracelets &mdash; particularly the natural oil varieties that dominate the market &mdash; do not provide meaningful protection against mosquito biting. The research is consistent and damning. If you like the look or want the peace of mind for a low-mosquito-pressure situation (indoor space, low season, quick errand outdoors), the risk of harm from the product itself is low. But for real protection in a Texas summer, rely on skin-applied EPA-registered repellents and professional yard treatment that reduces the population before it reaches you. Hamann has been doing that work in Arlington since 2006.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -70,14 +69,6 @@ export default function Page() {
         <h2>Why Yard Treatment Is a Frontline Defense</h2>
         <p>Personal repellents and tick checks catch some exposures but miss others, especially in active kids and dogs who spend long hours outside. A professionally applied tick barrier treatment — targeting the shaded, humid areas where ticks wait for a host — dramatically reduces the tick population on your property and cuts the odds of an exposure that could turn into an RMSF case. For Arlington and DFW homeowners, that treatment is a genuinely meaningful layer of protection against a disease with real, life-threatening stakes. Learn more about what triggers these diseases in our post on <a href="/blogs/ehrlichiosis-symptoms-lone-star-tick">ehrlichiosis and the Lone Star tick</a>, another serious North Texas threat.</p>
 
-        <div className="blog-cta">
-          <h3>Protect Your Family From Tick-Borne Disease</h3>
-          <p>Professional flea &amp; tick barrier treatments for Arlington and DFW. Call now and claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

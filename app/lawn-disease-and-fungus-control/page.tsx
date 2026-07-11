@@ -31,7 +31,6 @@ const faqs = [
 const RedLine = () => <div style={{ height: 4, width: 64, background: 'var(--red)', borderRadius: 2, margin: '14px auto 0' }} />;
 
 export default function LawnDiseaseAndFungusControl() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -43,10 +42,6 @@ export default function LawnDiseaseAndFungusControl() {
             <h1>Professional <span className="headline-3d">Disease &amp; Fungus</span> Control</h1>
             <p className="hero-sub" style={{ margin: '20px auto 10px', fontWeight: 700, color: '#fff' }}>Advanced Fungus Treatments • Fast Recovery • Science-Driven Turf Protection</p>
             <p className="hero-sub" style={{ margin: '0 auto 26px' }}>Lawn diseases spread fast — often overnight. Hamann Lawn Care delivers advanced, science-based fungus control that <b>stops disease at the source and restores your lawn&rsquo;s health</b> for healthy, resilient turf.</p>
-            <div className="hero-cta" style={{ justifyContent: 'center' }}>
-              <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-              <button className="btn btn-ghost btn-lg" onClick={openPromo}>Get 50% Off →</button>
-            </div>
           </div>
         </div>
       </section>
@@ -156,16 +151,6 @@ export default function LawnDiseaseAndFungusControl() {
         </div>
       </section>
 
-      <section className="cta-band">
-        <div className="wrap">
-          <h2>Ready To Stop Lawn Disease Fast?</h2>
-          <p>Stop disease at the source and restore your turf with science-driven fungus control that actually works. <b>Claim your 50% off first application!</b></p>
-          <div className="btns">
-            <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Get Your Free Quote</a>
-            <button className="btn btn-ghost btn-lg" onClick={openPromo}>Claim 50% Off</button>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

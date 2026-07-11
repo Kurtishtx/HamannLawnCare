@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -65,14 +64,6 @@ export default function Page() {
         </ul>
         <p>Our <a href="/lawn-care-services">lawn care services</a> cover the full picture of North Texas lawn repair, including high-traffic zone recovery and soil health programs. If you&rsquo;re also dealing with dog urine damage alongside compaction, read our guide on <a href="/blogs/how-to-fix-dog-potty-zones-in-bermuda-lawns-without-fencing-it-off">how to fix dog potty zones in Bermuda lawns without fencing off the area</a> — the two problems often overlap and respond to many of the same corrective steps.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Reclaim That Worn-Out Path Across Your Yard?</h3>
-          <p>Hamann has fixed tough lawn problems across Arlington and DFW since 2006. Call or get your new customer deal.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -125,14 +124,6 @@ export default function Page() {
           If your zoysia developed large patch last fall, this year is the time to get proactive. Don&rsquo;t wait for the orange circles to show up again.
         </p>
 
-        <div className="blog-cta">
-          <h3>Worried About Large Patch In Your Zoysia?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control has protected Arlington-area zoysia lawns from large patch since 2006. Call us now or grab our new-customer discount &mdash; we&rsquo;ll get your fall fungus plan in place before the damage starts.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

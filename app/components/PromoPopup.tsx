@@ -37,8 +37,8 @@ export default function PromoPopup() {
           <div className="sub">Your First Application</div>
         </div>
         <div className="promo-body">
-          <p>New customers in North Texas save <b>50% on their first service</b> &mdash; weed control, mosquito, flea &amp; tick, and more. Mention this offer when you call!</p>
-          <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
+          <p>New customers in North Texas save <b>50% on their first service</b> &mdash; weed control, mosquito, flea &amp; tick, and more. Claim it with your free estimate!</p>
+          <a className="btn btn-orange btn-lg" href="/free-estimate" onClick={() => setOpen(false)}>🌿 Get a Free Estimate</a>
           <p className="promo-fine">Locally owned in Arlington since 2006 &middot; New customers only</p>
         </div>
       </div>

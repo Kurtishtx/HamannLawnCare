@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <h2>The Bottom Line</h2>
         <p>Rest periods aren&rsquo;t arbitrary rules &mdash; they&rsquo;re built around the biology of how systemic herbicides work. Skipping them or shortening them wastes product, reduces results, and can mean the difference between a weed that dies completely and one that comes back stronger next season. If your current provider doesn&rsquo;t mention post-treatment mowing windows, that&rsquo;s worth asking about.</p>
 
-        <div className="blog-cta">
-          <h3>Treatments That Actually Finish the Job</h3>
-          <p>Get a program built around timing, not just showing up &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>&#128222; Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

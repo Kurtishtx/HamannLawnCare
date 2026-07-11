@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <h2>Preparing Your Lawn to Handle Summer Better</h2>
         <p>The best summer is one your lawn enters in good shape. That means deep roots built through correct spring fertilization, pre-emergent coverage that kept summer weeds from competing, and a soil profile that isn&rsquo;t compacted or excessively thatched. Everything that happens in the <a href="/blogs/how-dfw-freeze-events-affect-spring-lawn-treatment-scheduling">spring transition and early season treatment program</a> sets the table for how well the turf handles the North Texas summer. A lawn that entered summer with thin turf, shallow roots, and heavy weed competition will always struggle more in August than one that was well-managed from February onward.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Guess — Get an Expert Assessment</h3>
-          <p>Hamann can tell you whether your summer lawn is dormant or stressed and treat it correctly either way. Call today or claim 50% off your first visit.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

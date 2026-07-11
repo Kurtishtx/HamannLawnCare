@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
 
         <p>Whether you go fully organic or prefer professional <a href="/flower-bed-weed-control">flower-bed weed control</a> with targeted synthetics, a layered routine beats any single-product approach every time. If you want to compare organic with conventional pre-emergent options, our companion post covers <a href="/blogs/granular-vs-liquid-pre-emergent-flower-beds-texas">granular vs liquid pre-emergents in North Texas clay soil</a> in detail. Hamann has been working in Arlington flower beds since 2006, and we&rsquo;re happy to help you build the right routine for your specific situation.</p>
 
-        <div className="blog-cta">
-          <h3>Want a Clean Arlington Flower Bed Without the Weekly Battle?</h3>
-          <p>Professional weed control programs that fit your priorities &mdash; and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

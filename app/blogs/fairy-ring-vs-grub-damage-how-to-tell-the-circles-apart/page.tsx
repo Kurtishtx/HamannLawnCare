@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>What Hamann Does Differently</h2>
         <p>Hamann Lawn Care &amp; Weed Control diagnoses before treating. We identify whether you&rsquo;re dealing with fungal activity or insect pressure, confirm the specific type, and apply the right product at the right time. Fairy ring responds to a completely different protocol than grub damage, and applying a fungicide to a grub problem or a soil insecticide to fairy ring accomplishes nothing. If you&rsquo;ve been treating circles in your lawn for a season or more without results, it&rsquo;s very likely you&rsquo;ve been treating the wrong problem.</p>
 
-        <div className="blog-cta">
-          <h3>Not Sure What&rsquo;s Making Those Circles?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control provides professional diagnosis for fairy ring, grub damage, and other lawn problems in North Texas. We identify the real cause before recommending any treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

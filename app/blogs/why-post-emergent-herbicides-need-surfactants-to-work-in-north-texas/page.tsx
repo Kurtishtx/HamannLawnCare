@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <h2>Get It Right the First Time With Professional Weed Control</h2>
         <p>Surfactant selection, mixing ratios, application timing, and product pairing are all professional knowledge that takes years of field experience to master in North Texas conditions. Getting it wrong doesn&rsquo;t just waste product &mdash; it gives weeds extra time to mature, set seed, and deepen their root systems. At Hamann Lawn Care &amp; Weed Control, every post-emergent application is built around the right product, the right adjuvant, and the right conditions. The result is weed control that actually performs the way it should on your Arlington or DFW area lawn.</p>
 
-        <div className="blog-cta">
-          <h3>Tired of Herbicides That Don&rsquo;t Seem to Work?</h3>
-          <p>Get professional weed control that accounts for every variable &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

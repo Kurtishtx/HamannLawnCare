@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <p>Fortunately, the habitat controls and treatment approaches that work against American dog ticks also address deer tick risk when it does occur. Keeping turf mowed, maintaining clear zones between lawn and woody brush, reducing leaf litter accumulation, and applying professional <a href="/flea-and-tick-control">flea and tick control</a> to yard perimeters all reduce exposure to both species.</p>
         <p>Tick prevention on your pets through veterinarian-recommended products is equally important, since pets are often the most common way ticks enter a home and yard. If you want to understand the full identification picture for common DFW ticks, our comparison of the <a href="/blogs/female-lone-star-tick-white-dot-meaning">Lone Star tick&rsquo;s white dot and what it means</a> walks through the most commonly encountered species in our area in detail.</p>
 
-        <div className="blog-cta">
-          <h3>Protect Your Yard From Every Tick Species in DFW</h3>
-          <p>Hamann has treated North Texas yards since 2006. Get professional tick control — and 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

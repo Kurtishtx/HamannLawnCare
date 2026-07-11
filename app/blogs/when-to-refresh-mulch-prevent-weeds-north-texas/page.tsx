@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -53,14 +52,6 @@ export default function Page() {
         <p>The most effective weed control in North Texas flower beds combines mulch timing with pre-emergent herbicide applied at the right soil temperature threshold. The pre-emergent handles weed seeds at the soil level; the mulch layer adds light exclusion above the soil. Neither is fully effective alone; together they address the problem from two directions simultaneously.</p>
         <p>Pre-emergent applied under fresh mulch before the spring flush is more protected from UV breakdown than pre-emergent applied to bare soil &mdash; the mulch layer shields the product and extends its residual activity. This is one of the underappreciated reasons why a freshly mulched bed treated with pre-emergent outperforms a bare-soil pre-emergent treatment in DFW&rsquo;s high-UV environment. Understanding <a href="/blogs/mulch-over-landscape-fabric-weed-problem">why fabric-based systems fail</a> and replacing them with timed mulch management is the foundation of a genuinely clean flower bed over a multi-year horizon.</p>
 
-        <div className="blog-cta">
-          <h3>Let Hamann Handle Your Mulch Timing and Weed Control</h3>
-          <p>We have been keeping North Texas beds clean since 2006. Call today or grab 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

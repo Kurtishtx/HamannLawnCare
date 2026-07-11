@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <p>A professional program comes with professional accountability. If a treatment produces insufficient control, the company returns and retreats without a second charge. That guarantee has real dollar value &mdash; it eliminates the retreatment cost risk that quietly inflates DIY budgets every single season. It also eliminates the risk of phytotoxicity damage: if a licensed applicator causes turf damage through misapplication, they carry liability insurance that covers the repair. A homeowner who burns their own lawn buying and misapplying a product owns 100% of that repair bill.</p>
         <p>The numbers favor professional service far more than most Arlington homeowners realize when they sit down and do the full accounting &mdash; including time, failures, and the chemical efficacy gap between consumer and professional-grade products. Explore the full approach at <a href="/weed-control-and-fertilizer-services">Hamann&rsquo;s weed control and fertilizer services</a>, and read about the timing mistakes that derail DIY programs in our post on <a href="/blogs/over-the-counter-pre-emergent-timing-errors-that-let-weeds-through">over-the-counter pre-emergent timing errors that let weeds through</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Get Professional Results Without the DIY Headaches</h3>
-          <p>Hamann&rsquo;s full weed control programs protect Arlington lawns all year &mdash; with professional-grade products, guaranteed results, and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

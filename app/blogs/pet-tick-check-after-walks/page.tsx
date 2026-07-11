@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
         <p>A daily pet tick check is a good habit, but it&rsquo;s reactive. The proactive step is reducing the tick population in your yard so that fewer ticks are transferring to your pets in the first place. Ticks in a DFW yard concentrate along fence lines, shrub borders, leaf-litter piles, and the transitional zones between mowed grass and taller vegetation &mdash; the exact paths your dog likely walks every day.</p>
         <p>Professional <a href="/flea-and-tick-control">flea and tick control</a> treats those zones with a residual barrier that kills ticks on contact and keeps working between visits. Combined with a monthly on-pet tick prevention product recommended by your vet, professional yard treatment dramatically reduces what your dog or cat brings back indoors. See our post on <a href="/blogs/tick-bite-bullseye-rash-meaning">what a bullseye rash after a tick bite means</a> for context on why prompt tick management &mdash; for both pets and people &mdash; matters medically in North Texas. Hamann Lawn Care &amp; Weed Control has been serving Arlington and the DFW area since 2006, and we know exactly what it takes to get tick activity under control in North Texas conditions.</p>
 
-        <div className="blog-cta">
-          <h3>Reduce What Your Pets Bring Indoors</h3>
-          <p>Get professional flea &amp; tick barrier treatment &mdash; 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

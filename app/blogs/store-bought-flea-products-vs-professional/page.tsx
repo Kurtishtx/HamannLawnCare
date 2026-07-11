@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -54,14 +53,6 @@ export default function Page() {
         <p>Consumer flea products aren&rsquo;t useless — they just have a narrow appropriate use case. A light, early-season flea problem caught before populations establish, a single isolated area needing spot treatment between professional visits, or a supplemental quick-kill application to a specific zone are all reasonable uses for a consumer product. The mistake is relying on them as the primary treatment for an established North Texas flea population during peak season.</p>
         <p>For more on the lifecycle-level treatment that separates effective programs from temporary knockdowns, see our post on <a href="/blogs/treating-dog-runs-kennels-for-fleas">Treating Dog Runs and Kennels for Fleas: Products and Timing That Work</a> — a specific environment where the professional vs consumer formulation gap is most obvious.</p>
 
-        <div className="blog-cta">
-          <h3>Stop Buying Products That Don&rsquo;t Hold</h3>
-          <p>Professional-grade flea and tick treatment with real residual — 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

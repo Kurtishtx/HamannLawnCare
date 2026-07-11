@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <h2>How Hamann Times Your Spring Program</h2>
         <p>Our <a href="/lawn-care-services">lawn care program</a> for DFW is built around soil temperature triggers, not calendar dates. We monitor conditions and time pre-emergent, scalp recommendations, and first fertilizer applications based on what&rsquo;s actually happening in the soil &mdash; not what the calendar says. That&rsquo;s how you get a lawn that greens up fast, stays clean of weeds, and carries momentum through the whole growing season. Hamann has been doing this in Arlington and across DFW since 2006.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For the Fastest, Healthiest Spring Green-Up Yet?</h3>
-          <p>Get professional spring lawn care timed for North Texas &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

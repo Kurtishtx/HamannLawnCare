@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -68,14 +67,6 @@ export default function Page() {
         <h2>The Case for Yard-Level Control</h2>
         <p>Because nymphs are so easy to miss, the only reliable strategy is reducing tick populations in your yard before they get the chance to attach. A professional barrier spray program that targets the peak nymph season &mdash; April through July &mdash; dramatically cuts the number of nymphs questing in your grass and vegetation. That&rsquo;s far more effective than relying on tick checks alone. For a species-by-species look at when each North Texas tick life stage is most active, see our post on <a href="/blogs/gulf-coast-tick-texas-identification">Gulf Coast tick identification</a> and the broader North Texas tick picture.</p>
 
-        <div className="blog-cta">
-          <h3>Tiny Ticks, Big Risk &mdash; Let&rsquo;s Knock Them Down</h3>
-          <p>Hamann targets peak nymph season to protect your Arlington and DFW family all summer long. Get 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

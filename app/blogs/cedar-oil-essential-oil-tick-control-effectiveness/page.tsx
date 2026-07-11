@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         <h2>Bottom Line on Essential Oils and Texas Ticks</h2>
         <p>Cedar oil and other essential oils are not snake oil. They have genuine, documented tick-killing properties. But their real-world residual window &mdash; measured in hours to days rather than weeks &mdash; makes them inadequate as a primary yard treatment strategy against the volume and aggression of tick species found in Tarrant and Dallas counties. For a family with pets and children who use the yard regularly, they do not provide the consistent, reliable protection that a properly structured professional program delivers. Use them as a personal repellent supplement or a low-risk zone addition, but build your yard protection on something that stays active long enough to matter.</p>
 
-        <div className="blog-cta">
-          <h3>Get Protection That Actually Lasts</h3>
-          <p>Professional tick treatment with real residual &mdash; not two days of coverage. Claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

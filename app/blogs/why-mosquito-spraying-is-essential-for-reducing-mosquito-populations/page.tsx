@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -48,14 +47,6 @@ export default function Page() {
         <p>Spraying is essential, but it&rsquo;s not a complete solution in isolation. Mosquitoes breed in water, and no amount of foliage treatment eliminates that source. Clogged gutters, standing water in plant saucers, low spots in the yard, and drainage areas will keep producing new adults that fly into treated zones. A well-rounded program pairs barrier spraying with larval source reduction &mdash; eliminating or treating standing water so larvae never develop. Spraying knocks down the current population; source reduction limits the next wave.</p>
         <p>Together, they&rsquo;re the most effective combination available for residential mosquito control. And in a place like North Texas &mdash; where the combination of summer heat, irrigation, and year-round landscaping creates near-ideal mosquito habitat &mdash; that combination makes a real, measurable difference in how much you enjoy your own backyard.</p>
 
-        <div className="blog-cta">
-          <h3>Let&rsquo;s Reduce the Mosquito Population in Your Yard</h3>
-          <p>Professional barrier spraying that works all season &mdash; and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
 
         <p>For a related technique when patches are caused by physical damage rather than thin growth, see our guide on <a href="/blogs/plugging-vs-sprigging-bermuda-grass-which-is-better-for-dfw-repairs">plugging vs. sprigging Bermuda for DFW repairs</a>. Both methods can complement overseeding depending on patch size and cause. Hamann Lawn Care has been helping Arlington and DFW homeowners build thick, healthy Bermuda lawns since 2006 — call us anytime.</p>
 
-        <div className="blog-cta">
-          <h3>Struggling With Bare Patches in Your Bermuda Lawn?</h3>
-          <p>Get professional lawn care in Arlington and the DFW area — plus 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

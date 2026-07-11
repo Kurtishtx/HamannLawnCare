@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -67,14 +66,6 @@ export default function Page() {
         <h2>Don&rsquo;t Let the Season Sneak Up on You</h2>
         <p>Every year we take calls in September and October from homeowners who canceled their mosquito service after summer and are now getting hammered. The pattern is consistent: the first cool week of September gives them false hope, they drop the service, and then a warm rainy stretch in mid-September or early October brings back full-season activity and they&rsquo;re scrambling. Staying on program through October is genuinely worth it for the outdoor comfort it buys during some of the best weather of the year &mdash; fall evenings in North Texas are actually pleasant once you&rsquo;re not being bitten. Hamann has been treating Arlington properties since 2006 and we&rsquo;ll tell you straight: September and October treatment is not optional if you want to enjoy your yard in the fall. Call us and we&rsquo;ll make sure your season ends on your terms, not the mosquitoes&rsquo;.</p>
 
-        <div className="blog-cta">
-          <h3>Labor Day Shouldn&rsquo;t Mean Bites &mdash; We Can Fix That</h3>
-          <p>Get late-season mosquito control through fall &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

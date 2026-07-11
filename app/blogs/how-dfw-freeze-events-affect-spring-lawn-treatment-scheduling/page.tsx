@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <h2>The Bottom Line on Freeze Events and Your Spring Schedule</h2>
         <p>DFW freeze events are not emergencies — they&rsquo;re a normal part of the North Texas spring that a well-run program anticipates and builds around. The danger comes from rigid, calendar-only scheduling that can&rsquo;t flex when weather doesn&rsquo;t cooperate, or from homeowners who push spring treatments too early because they&rsquo;re impatient. Working with a local professional who tracks local soil temperatures and weather patterns — not a national service with a fixed schedule — is the best insurance against freeze-related timing mistakes. If last spring&rsquo;s green-up was patchy and slow, a late-winter freeze combined with misaligned treatments was likely a contributing factor, which is exactly <a href="/blogs/dormant-season-weed-pressure-in-north-texas-what-grows-in-winter">why managing your dormant lawn correctly</a> matters so much going into spring.</p>
 
-        <div className="blog-cta">
-          <h3>Let Hamann Handle the Timing Decisions</h3>
-          <p>We track local conditions and adjust your program around DFW weather — no rigid calendar, no missed windows. Call today or get 50% off your first visit.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -54,14 +53,6 @@ export default function Page() {
 
         <p>Nutsedge pressure in DFW beds is often closely tied to moisture management. Read about <a href="/blogs/bermuda-grass-creeping-into-flower-beds">bermuda grass invading flower beds</a> to understand how we handle the perennial grassy weed challenge alongside nutsedge in the same beds. Hamann has been fighting nutsedge in Arlington and DFW landscape beds since 2006 &mdash; call us at {PHONE_DISPLAY} to get a nutsedge treatment plan in place.</p>
 
-        <div className="blog-cta">
-          <h3>Nutsedge Winning in Your Flower Beds?</h3>
-          <p>Professional sedge-specific treatment for North Texas landscape beds &mdash; 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

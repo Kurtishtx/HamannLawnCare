@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -70,14 +69,6 @@ export default function Page() {
         <h2>The Bottom Line on Spinosad for Texas Homeowners</h2>
         <p>Spinosad is a legitimate, organically derived mosquito larvicide that outperforms Bti in key areas: UV stability, performance in turbid water, and overall residual duration under Texas summer conditions. It belongs in the toolkit of any North Texas homeowner doing serious DIY mosquito source reduction. It&rsquo;s not a perfect replacement for Bti in all situations &mdash; but for sun-exposed standing water and murky outdoor containers, it&rsquo;s the stronger performer. Combined with a professional adult mosquito barrier program, spinosad larval control gives you genuine lifecycle coverage against the mosquitoes making your yard miserable from March through November.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

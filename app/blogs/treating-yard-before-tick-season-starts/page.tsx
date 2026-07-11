@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -69,14 +68,6 @@ export default function Page() {
         </ul>
         <p>Homeowners who start early and stay consistent through fall dramatically outperform those who treat only once or twice reactively. Hamann Lawn Care &amp; Weed Control has been running this type of structured annual tick program across Arlington since 2006. Starting before tick season gives your yard the best possible foundation for a low-tick year.</p>
 
-        <div className="blog-cta">
-          <h3>Get Ahead of Tick Season &mdash; Before It Starts</h3>
-          <p>Pre-season treatment is the highest-value investment in your tick control year. Claim 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

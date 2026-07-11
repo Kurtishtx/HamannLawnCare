@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         </ul>
         <p>Hamann Lawn Care &amp; Weed Control has been helping Arlington and DFW families shut down stubborn flea problems since 2006. If fleas keep coming back no matter what you try, the answer is almost always one of the gaps above &mdash; and we&rsquo;re good at finding them.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Break The Flea Cycle For Good?</h3>
-          <p>Get professional flea and tick control that stops reinfestations &mdash; and claim your 50% off first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

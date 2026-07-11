@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -65,14 +64,6 @@ export default function Page() {
         <h2>Let Hamann Help You Get the Timing Right</h2>
         <p>Proper watering timing is the foundation that every lawn treatment &mdash; fertilization, weed control, pre-emergent &mdash; is built on. If your Bermuda is struggling despite regular irrigation, the issue may be in the schedule, not the volume. Hamann Lawn Care &amp; Weed Control has been dialing in <a href="/lawn-care-services">North Texas lawn care</a> for Arlington homeowners since 2006. We know DFW soil, Bermuda grass, and summer heat. Let us help you build a program that works.</p>
 
-        <div className="blog-cta">
-          <h3>Get a Healthier Lawn Starting This Week</h3>
-          <p>Call Hamann for a free lawn evaluation and claim your 50% off first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

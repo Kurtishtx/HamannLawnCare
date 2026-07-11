@@ -10,7 +10,6 @@ const faqs = [{"q":"How do I know if my lawn has fungus?","a":"Common signs are 
 const RedLine = () => <div style={{ height: 4, width: 64, background: 'var(--red)', borderRadius: 2, margin: '14px auto 0' }} />;
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
   return (
     <main>
       <section className="hero honey" style={{ paddingBottom: 96 }}>
@@ -19,10 +18,6 @@ export default function Page() {
             <span className="hero-kick" style={{ borderColor: 'var(--red)' }}>🍄 Serving {CITY} & North Texas Since 2006</span>
             <h1>{SERVICE} In <span className="headline-3d">{CITY}, Texas</span></h1>
             <p className="hero-sub" style={{ margin: '20px auto 26px' }}>Stop brown patch, dollar spot, and root decline before they spread. Hamann&rsquo;s full-rate fungicide program protects Grand Prairie lawns from costly turf disease — local since 2006.</p>
-            <div className="hero-cta" style={{ justifyContent: 'center' }}>
-              <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-              <button className="btn btn-ghost btn-lg" onClick={openPromo}>Get 50% Off →</button>
-            </div>
           </div>
         </div>
       </section>
@@ -64,16 +59,6 @@ export default function Page() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }) }} />
       </section>
 
-      <section className="cta-band">
-        <div className="wrap">
-          <h2>Save Your Grand Prairie Lawn From Fungus</h2>
-          <p>Stop brown patch and turf disease before it spreads. <b>Claim your 50% off first application!</b></p>
-          <div className="btns">
-            <a className="btn btn-orange btn-lg" href={`tel:${PHONE_TEL}`}>📞 Get Your Free Quote</a>
-            <button className="btn btn-ghost btn-lg" onClick={openPromo}>Claim 50% Off</button>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

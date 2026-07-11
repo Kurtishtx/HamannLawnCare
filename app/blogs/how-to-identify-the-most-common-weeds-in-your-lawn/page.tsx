@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         </ul>
         <p>Correct identification is step one, but correct timing and product selection are what actually get results. Most homeowners find that a professionally managed weed control program is far more effective than spot-treating with off-the-shelf products &mdash; because it combines the right chemistry, the right timing (pre-emergent before germination, post-emergent at the right growth stage), and the right application rate. Find out how our full weed program works at our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer services</a> page. And if you&rsquo;re curious how your soil health is contributing to weed pressure in the first place, read our post on <a href="/blogs/how-poor-soil-structure-leads-to-weeds-and-thin-grass">how poor soil structure leads to weeds and thin grass</a> &mdash; it&rsquo;s often the root cause.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Take Back Your Lawn From Weeds?</h3>
-          <p>Professional weed control built for North Texas &mdash; claim your 50% off first application today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

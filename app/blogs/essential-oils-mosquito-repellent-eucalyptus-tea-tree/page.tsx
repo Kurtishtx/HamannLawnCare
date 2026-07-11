@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         <p>All personal repellents &mdash; natural or synthetic &mdash; protect only the person wearing them. Your yard, your pet, your guests who didn&rsquo;t apply repellent, and your kids who missed a spot on their ankles are all still exposed unless the mosquito population at your property is actually reduced. Professional barrier spray treatment and source reduction accomplish what no topical repellent can: they reduce the number of mosquitoes that are present and hunting in your outdoor space. In North Texas from April through October, that&rsquo;s the difference between a comfortable backyard and one you avoid after 6 p.m.</p>
         <p>Hamann has been doing that work for Arlington and Tarrant County residents since 2006. We know the local species, the local breeding pressure, and how to time treatments for maximum seasonal impact. Essential oils and DEET protect you individually &mdash; a professional program protects your entire property.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

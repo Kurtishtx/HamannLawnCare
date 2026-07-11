@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
         <h2>Maintenance and Common Failures</h2>
         <p>Rain sensors require almost no maintenance, but two issues appear consistently in DFW installations. First, debris accumulation — spider webs, cottonwood fluff, and dust can clog the hygroscopic disk stack and cause the sensor to stay in the &ldquo;wet&rdquo; position even after drying out, blocking irrigation on dry days. Rinse the sensor head with clean water at the start of each irrigation season. Second, disk deterioration — hygroscopic disks eventually crack and lose their ability to expand fully. Replacement disks are inexpensive and available at any irrigation supply; replace them every 5&ndash;7 years or whenever you notice the sensor stays triggered longer than it should after comparable rainfall.</p>
 
-        <div className="blog-cta">
-          <h3>Need a Hand With Your Irrigation System?</h3>
-          <p>Hamann has served Arlington and North Texas since 2006. We know DFW lawns inside and out.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

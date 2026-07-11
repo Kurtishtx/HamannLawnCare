@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         <p>The optimal time to begin or resume flea control in the DFW area is <strong>late February to early March</strong> &mdash; before flea populations fully rebound from winter, before the first warm weekend that causes a hatching surge, and before your pets bring the first fleas of the season indoors. Starting early keeps you ahead of the curve all season instead of playing catch-up once infestations are established. Read more about <a href="/blogs/fleas-after-moving-into-new-home">why vacant homes are especially high-risk for dormant flea populations</a> that wait through winter and hatch all at once when hosts arrive.</p>
         <p>Hamann Lawn Care &amp; Weed Control has protected Arlington and DFW homes from year-round flea pressure since 2006. If you&rsquo;ve been waiting on winter to handle the fleas for you, give us a call &mdash; let&rsquo;s get your yard treated before spring makes things exponentially harder.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Wait on Winter &mdash; Protect Your Yard Year-Round</h3>
-          <p>Professional flea control built for North Texas&rsquo;s long season &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

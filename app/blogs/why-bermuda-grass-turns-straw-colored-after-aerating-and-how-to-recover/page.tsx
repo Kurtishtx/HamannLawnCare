@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -69,14 +68,6 @@ export default function Page() {
         </ul>
         <p>Our professional <a href="/lawn-care-services">lawn care services</a> include post-aeration follow-up assessments so you know if the recovery is on track or if a secondary issue needs to be addressed. For more on diagnosing summer color problems in Bermuda, see our post on <a href="/blogs/dull-gray-green-lawn-color-in-summer-what-it-means-and-what-to-do">dull gray-green lawn color in summer and what it means</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Lawn Looking Rough After Aeration? We Can Help.</h3>
-          <p>Hamann has cared for Arlington and DFW Bermuda lawns since 2006. Call or claim your new customer offer.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

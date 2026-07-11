@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -53,14 +52,6 @@ export default function Page() {
         <p>A particularly common commercial scenario in the DFW area is HOA-managed common areas: pools, pocket parks, walking trails, ponds, and landscaped entries. These areas are high-visibility and heavily used, making mosquito pressure a community relations issue as well as a health concern. HOA programs need to balance effectiveness with community transparency &mdash; residents should know what&rsquo;s being applied and when, especially near water features or children&rsquo;s play areas.</p>
         <p>Our <a href="/mosquito-control-services">mosquito control services</a> cover both residential and commercial properties across Arlington and the broader DFW metro. For a clearer sense of how service guarantees apply in commercial contexts, see our breakdown of <a href="/blogs/mosquito-service-guarantee-what-it-means">mosquito service guarantees: what they cover and what to watch out for</a> &mdash; the same principles apply, with even higher stakes for commercial clients.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

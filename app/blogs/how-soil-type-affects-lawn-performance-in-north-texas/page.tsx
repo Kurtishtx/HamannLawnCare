@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <h2>The Bottom Line</h2>
         <p>Your lawn&rsquo;s performance ceiling is set by what&rsquo;s under it. Knowing your soil type &mdash; and managing accordingly &mdash; is the difference between a lawn program that produces consistently great results and one that produces frustrating inconsistency despite correct inputs. Hamann Lawn Care has been navigating North Texas soil diversity since 2006. If you&rsquo;re not sure what type of soil you&rsquo;re working with or why your current program isn&rsquo;t delivering the results you expect, we can help you figure it out.</p>
 
-        <div className="blog-cta">
-          <h3>Not Sure What&rsquo;s Under Your Lawn?</h3>
-          <p>Let a North Texas expert assess your soil and build a program that actually fits it &mdash; and claim your 50% off first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

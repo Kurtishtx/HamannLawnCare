@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         </ul>
         <p>For additional context on the most severe SFGR disease in Texas and what to do if you suspect exposure, read our detailed post on <a href="/blogs/ehrlichiosis-in-dogs-north-texas">ehrlichiosis in North Texas dogs</a> — because many of the same tick species that put your pets at risk also put you at risk for SFGR disease.</p>
 
-        <div className="blog-cta">
-          <h3>Reduce Tick Exposure for Your Whole Family</h3>
-          <p>Professional flea &amp; tick barrier treatments for Arlington and DFW. Call Hamann today and claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

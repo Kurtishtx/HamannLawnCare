@@ -4,7 +4,7 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
+
 
   return (
     <main>
@@ -72,10 +72,7 @@ export default function Page() {
 
           <p>As we covered in our breakdown of <a href="/blogs/herbicide-label-violations-what-can-happen-if-you-misapply-in-texas">herbicide label violations in Texas</a>, using the wrong product at the wrong time is not just ineffective &mdash; it can damage your turf and create legal exposure. The overlap between timing errors, product selection errors, and application rate errors is exactly where DIY single-application approaches tend to fail hardest.</p>
 
-          <div className="blog-cta">
-            <h3>Ready to Stop the Spray-and-Pray Cycle?</h3>
-            <p>Hamann Lawn Care &amp; Weed Control has served Arlington and the greater DFW area since 2006. Our year-round program is built around how DFW weeds actually grow &mdash; not how you wish they did. Call us at <a href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a> or <button className="link-btn" onClick={openPromo}>grab a free quote online</button> and let&rsquo;s build a plan that lasts all season long.</p>
-          </div>
+
         </div>
       </article>
 

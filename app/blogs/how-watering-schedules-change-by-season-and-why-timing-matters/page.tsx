@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -72,14 +71,6 @@ export default function Page() {
         </ul>
         <p>Watering well is one of the highest-impact habits a North Texas homeowner can build. It affects disease pressure, fertilizer efficiency, root depth, heat tolerance, and how quickly your lawn bounces back from any setback. Get it right and everything else gets easier. Hamann has been helping Arlington and DFW homeowners dial in their lawn care since 2006 — and we&rsquo;re always happy to give straight advice about what your specific lawn actually needs.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Stop Guessing and Start Getting Results?</h3>
-          <p>Our team brings 20 years of North Texas experience. Call us or claim your first-service offer below.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

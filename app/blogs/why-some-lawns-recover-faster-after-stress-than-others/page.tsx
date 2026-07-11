@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -56,14 +55,6 @@ export default function Page() {
         <h2>Building the Resilience Before the Stress Hits</h2>
         <p>Ultimately, the lawns that recover fastest aren&rsquo;t just lucky &mdash; they were built to be resilient through consistent management before the stress occurred. Proper mowing heights, deep watering schedules, consistent fertilization, annual aeration, and soil health management all compound over seasons to create turf that bounces back instead of breaking down. For more on what drives sustained lawn quality over time, check out our post on <a href="/blogs/why-some-lawns-stay-thick-all-year-while-others-constantly-thin-out">why some lawns stay thick all year while others constantly thin out</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Build a Lawn That Bounces Back</h3>
-          <p>Hamann Lawn Care has been making North Texas lawns more resilient since 2006. Call us or grab your new-customer discount today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

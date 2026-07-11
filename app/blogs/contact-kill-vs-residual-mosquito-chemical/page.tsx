@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -65,14 +64,6 @@ export default function Page() {
         <p>Understanding contact vs residual action helps you ask better questions when evaluating any mosquito control program. Does the application target resting zones where residual will hold? What&rsquo;s the re-treatment schedule, and does it account for North Texas degradation conditions? Is larvicide included to attack the population before it reaches biting age? These questions separate programs that deliver real results from those that just sound good. Learn more about how professionals decide where to spray in our post about <a href="/blogs/mosquito-trap-propane-octenol-effectiveness">propane mosquito traps and their real-world effectiveness</a>.</p>
         <p>At Hamann, we use professional-grade pyrethroid formulations targeted at the foliage zones where DFW mosquitoes actually rest &mdash; not just the open air. That means the residual keeps working long after we leave your driveway.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

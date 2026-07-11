@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <p>If you&rsquo;re fertilizing yourself, granular products are generally more forgiving and easier to apply correctly. They&rsquo;re less likely to burn your lawn if you misread the application rate slightly, they last longer between applications, and a quality spreader delivers consistent coverage. Liquid products give faster results but demand more precision with rates, timing, and temperature &mdash; mistakes show up within days as streaks or burned areas.</p>
         <p>For the most effective seasonal program, working with a professional who selects the right form at the right time takes the decision-making off your plate entirely and consistently produces better results than either form alone. To understand how professional fertilizer programs fit into a broader weed control strategy, explore Hamann&rsquo;s <a href="/weed-control-and-fertilizer-services">weed control and fertilizer services</a>, and read our breakdown of <a href="/blogs/nitrogen-phosphorus-potassium-understanding-lawn-fertilizer-labels">nitrogen, phosphorus, and potassium &mdash; understanding lawn fertilizer labels</a> to decode what the numbers on any fertilizer bag actually mean.</p>
 
-        <div className="blog-cta">
-          <h3>Get the Right Fertilizer Applied at the Right Time</h3>
-          <p>Professional programs using the right form, the right product, the right timing &mdash; and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

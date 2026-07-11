@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -63,14 +62,6 @@ export default function Page() {
         <p>Because fall brown patch follows a predictable seasonal pattern in Arlington, <strong>Hamann Lawn Care &amp; Weed Control</strong> structures our disease control program around the transition window. We can apply preventive fungicide before the September outbreak season and provide rapid response curative treatment when active disease is present. Arlington homeowners who have had brown patch in prior years should not wait for symptoms &mdash; the preventive window in late August is the most cost-effective intervention available. For more on our disease control services, visit our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control</a> page.</p>
         <p>You can also read about what happened the month prior in our post on <a href="/blogs/pythium-blight-outbreak-after-100-degree-heat-and-night-rain">pythium blight after 100-degree heat and night rain</a>, which covers the most acute summer disease scenario in DFW lawns.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Wait for September Patches to Appear.</h3>
-          <p>Preventive treatment in late August is the best defense against Arlington&rsquo;s fall brown patch season. Call <strong>Hamann Lawn Care &amp; Weed Control</strong> and protect your lawn before the damage starts.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

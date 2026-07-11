@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>The Neighborhood-Wide Picture</h2>
         <p>Storm drain mosquito production is a shared problem with shared consequences. If your HOA can organize a conversation with the city about targeted larviciding in your neighborhood&rsquo;s inlets, it&rsquo;s worth pursuing. In the meantime, consistent professional treatment on private properties combined with good source elimination practices is the most effective approach available to individual homeowners. Hamann has been helping Arlington and DFW neighborhoods fight mosquitoes since 2006 &mdash; and we know exactly how to build a program that accounts for off-property breeding pressure.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

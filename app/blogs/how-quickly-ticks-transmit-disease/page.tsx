@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -51,14 +50,6 @@ export default function Page() {
         <h2>The Bottom Line for North Texas Families</h2>
         <p>In the DFW Metroplex, the diseases your ticks can transmit — RMSF, ehrlichiosis, anaplasmosis, and more — do not all give you 48 hours of safety after a bite. Some of them give you significantly less. Remove ticks promptly, watch for symptoms diligently, and reduce the number of bites that happen in the first place with a yard treatment program from a company that has been protecting North Texas families since 2006.</p>
 
-        <div className="blog-cta">
-          <h3>Fewer Ticks Means Fewer Bites — Period</h3>
-          <p>Professional flea &amp; tick yard control for Arlington and the DFW Metroplex. Call today and claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

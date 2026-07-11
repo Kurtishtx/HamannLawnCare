@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -54,14 +53,6 @@ export default function Page() {
         <p>The interaction between soil type, grass species, seasonal timing, and product chemistry is genuinely complex. Doing it right requires understanding your specific turf species, reading what your lawn is telling you about its nutrient status, and adjusting applications based on real conditions rather than a generic calendar. That&rsquo;s exactly what Hamann&rsquo;s <a href="/weed-control-and-fertilizer-services">weed control and fertilizer program</a> delivers for North Texas homeowners. For a deeper look at how professional treatments are applied and why they outperform DIY, read our breakdown of <a href="/blogs/how-professional-weed-control-applications-actually-work">how professional weed control applications actually work</a>.</p>
         <p>We&rsquo;ve been doing lawn treatments in Arlington and across DFW since 2006 &mdash; let&rsquo;s put a science-backed program together for your lawn this season.</p>
 
-        <div className="blog-cta">
-          <h3>Give Your Lawn the Nutrition It Actually Needs</h3>
-          <p>Professional fertilization dialed in for North Texas turf &mdash; and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
         <h2>The Bottom Line</h2>
         <p>Preventive fungicides work by blocking new infections before they start. Curative fungicides stop active infections that are already spreading. In North Texas, with Bermuda and St. Augustine lawns under intense disease pressure from late spring through fall, you need both &mdash; applied in the right sequence, at the right time, per label. Starting preventive in late April and being ready to pivot to curative at the first symptom is the most cost-effective approach available. Calling for professional help at first symptom, rather than after the disease has run for two weeks, saves significant turf and money.</p>
 
-        <div className="blog-cta">
-          <h3>Not Sure Which Fungicide You Need? We&rsquo;ll Tell You.</h3>
-          <p>Hamann diagnoses the disease, selects the right product, and gets it down at the right time &mdash; preventive or curative, whatever your lawn needs right now.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

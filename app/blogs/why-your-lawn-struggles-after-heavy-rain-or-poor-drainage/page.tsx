@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <p>For more on diagnosing whether your lawn is getting too much water or too little, our post on <a href="/blogs/how-to-tell-if-your-lawn-is-underwatered-or-overwatered">how to tell if your lawn is underwatered or overwatered</a> walks through the specific signs for each scenario.</p>
         <p>Hamann Lawn Care has been navigating North Texas weather and its effects on lawns across Arlington and the surrounding DFW area since 2006. If a recent storm left your yard in rough shape, we&rsquo;re glad to take a look and help you figure out the fastest path to recovery.</p>
 
-        <div className="blog-cta">
-          <h3>Storm Damage or Drainage Problems?</h3>
-          <p>Get professional help diagnosing and fixing your North Texas lawn &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

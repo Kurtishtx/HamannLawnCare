@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -61,14 +60,6 @@ export default function Page() {
         </ul>
         <p>Many DFW dog owners do not realize that the most significant tick exposure their dog faces is the backyard itself — not the hiking trail or the dog park. Cutting the tick density at home cuts the exposure risk before prevention products even need to work. For a broader look at tick threats affecting DFW pets, see our overview of <a href="/blogs/tick-borne-disease-symptoms-pets">tick-borne disease symptoms in pets</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Protect Your Dog From Ehrlichiosis and Other Tick Diseases</h3>
-          <p>Professional flea &amp; tick yard treatments for Arlington and DFW. Call now and claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

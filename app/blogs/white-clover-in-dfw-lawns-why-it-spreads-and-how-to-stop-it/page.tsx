@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <p>It also means follow-through across multiple applications, because perennial clover with an established seed bank doesn&rsquo;t surrender after one spray. Year-over-year consistency is what actually drives clover populations down rather than just knocking them back temporarily. If you&rsquo;re already familiar with how persistent broadleaf weeds behave, check out our post on <a href="/blogs/how-to-kill-henbit-before-it-takes-over-your-north-texas-lawn">How to Kill Henbit Before It Takes Over Your North Texas Lawn</a> &mdash; a lot of the same timing principles apply, and many DFW homeowners are fighting both at once.</p>
         <p>If white clover is spreading across your Arlington or DFW lawn and mowing it down isn&rsquo;t cutting it, a professional program that pairs weed control with proper fertilization is the most reliable path to a clover-free lawn &mdash; and keeping it that way.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Weed-Free Lawn?</h3>
-          <p>Stop white clover before it takes over &mdash; professional weed control with 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

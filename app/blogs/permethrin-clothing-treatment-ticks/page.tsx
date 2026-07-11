@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -65,14 +64,6 @@ export default function Page() {
         <h2>Reduce the Source, Not Just Your Exposure</h2>
         <p>Personal protection measures are exactly that &mdash; personal. They protect you during the window you&rsquo;re wearing them. What actually reduces the tick burden in your yard long-term is professional barrier treatment applied to the vegetation zones where ticks live. Hamann Lawn Care &amp; Weed Control has treated Arlington and DFW yards for ticks since 2006. Our program targets the fence lines, shrub borders, and leaf-litter areas where North Texas ticks actually concentrate, and the residual protection keeps working between visits. If your yard is producing ticks every time you step outside, we can change that.</p>
 
-        <div className="blog-cta">
-          <h3>Reduce Ticks in Your Yard, Not Just on Your Clothes</h3>
-          <p>Get professional flea &amp; tick control &mdash; 50% off your first yard treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

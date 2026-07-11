@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -78,14 +77,6 @@ export default function Page() {
         <p>Some yellowing situations resolve on their own with a watering adjustment. Others &mdash; active fungal disease, severe nutrient deficiency, widespread poor soil contact, or heat damage that&rsquo;s killed large sections &mdash; need professional diagnosis and treatment. If your sod is still yellowing or declining after a week of corrective watering, if you&rsquo;re seeing spreading dead patches, or if root development at the two-week mark is minimal to nonexistent, it&rsquo;s time to bring in help.</p>
         <p>Hamann Lawn Care has been working with North Texas lawns since 2006. We&rsquo;ve seen every version of this problem, and we know how to tell the difference between transplant shock that&rsquo;s going to resolve and active damage that needs treatment. If you&rsquo;re concerned about issues beyond yellowing &mdash; like powdery coatings on your Bermuda blades &mdash; our post on <a href="/blogs/what-causes-white-powdery-coating-on-bermuda-grass-blades-in-dfw">what causes a white powdery coating on Bermuda grass blades in DFW</a> covers that in detail.</p>
 
-        <div className="blog-cta">
-          <h3>New Sod Turning Yellow? Let&rsquo;s Fix It.</h3>
-          <p>Hamann Lawn Care has diagnosed North Texas lawns since 2006 &mdash; we&rsquo;ll tell you exactly what&rsquo;s wrong and fix it fast. Claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <h2>When to Call a Professional</h2>
         <p>If your yard has had recurring flea problems despite pet treatment, or if you&rsquo;ve noticed cats regularly moving through your property, don&rsquo;t wait for the problem to compound through summer. The longer a flea population establishes in your soil, the harder it is to break the cycle. Hamann has been serving Arlington and surrounding DFW communities since 2006, and our technicians know exactly which yard zones to focus on for persistent, source-driven flea pressure.</p>
 
-        <div className="blog-cta">
-          <h3>Fleas Keep Coming Back? Let&rsquo;s Break the Cycle.</h3>
-          <p>Professional yard treatment that targets every life stage — not just the adults. Claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

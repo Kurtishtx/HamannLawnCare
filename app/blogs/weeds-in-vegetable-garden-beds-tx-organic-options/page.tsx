@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -79,14 +78,6 @@ export default function Page() {
 
         <p>Hamann Lawn Care &amp; Weed Control serves Arlington and the broader DFW area with expertise in ornamental and landscape bed weed control. We can advise on integrated approaches for properties where vegetable gardens and ornamental beds share the same yard — keeping the non-edible areas professionally managed while you handle the organic work inside the garden fence.</p>
 
-        <div className="blog-cta">
-          <h3>Need Help Keeping Beds Weed-Free?</h3>
-          <p>Professional weed control keeps your garden beds clean all season — claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <p>For your yard, <a href="/flea-and-tick-control">professional flea and tick control</a> is the most reliable way to reduce both species significantly. Targeted barrier treatments applied to the shaded turf edges, brush lines, and wood-pile perimeters where these ticks rest and quest can cut populations dramatically through the season.</p>
         <p>For more on which species are active month-by-month, read our guide on <a href="/blogs/tick-species-active-each-season-dfw">which tick species are active in each season around DFW</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Ticks in Your Yard? Let&rsquo;s Handle It.</h3>
-          <p>Hamann has protected Arlington and North Texas families from ticks since 2006. Call us or grab 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

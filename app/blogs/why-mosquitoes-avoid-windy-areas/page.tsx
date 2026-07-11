@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -69,14 +68,6 @@ export default function Page() {
         <p>Fans and airflow management are excellent supplemental tools, but they don&rsquo;t address the mosquitoes resting in your yard during the day, breeding in standing water, or entering from neighboring properties. They make your immediate sitting area more comfortable, but the underlying population in your yard continues to build without professional intervention.</p>
         <p>Think of fans as reducing the pressure at the point of contact &mdash; while a professional barrier treatment handles the source. Together, they give you genuinely comfortable outdoor evenings instead of just marginally less miserable ones.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works — and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

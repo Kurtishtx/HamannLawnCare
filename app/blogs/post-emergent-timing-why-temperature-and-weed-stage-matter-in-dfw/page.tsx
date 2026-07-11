@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <h2>Why Professional Timing Beats Calendar-Based DIY Applications</h2>
         <p>Most homeowners apply post-emergents when they see weeds, not when conditions are optimal to kill them. A professional program accounts for current temperatures, recent rainfall, weed stage, and turf stress before making the call to treat. That judgment &mdash; built from years of treating North Texas lawns &mdash; is what produces consistent results season after season. Read more about our broader approach on the <a href="/blogs/why-weeds-come-back-after-spraying-herbicide-resistance-in-north-texas">why weeds come back after spraying: herbicide resistance in North Texas</a> post for additional context on why repeat applications sometimes fail even with correct timing.</p>
 
-        <div className="blog-cta">
-          <h3>Get Post-Emergent Treatments Timed for DFW Conditions</h3>
-          <p>Stop applying product at the wrong time. Our team applies post-emergent herbicides in the correct temperature window, at the right weed stage &mdash; and 50% off your first service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

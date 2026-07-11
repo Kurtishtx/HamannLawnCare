@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -51,14 +50,6 @@ export default function Page() {
         <h2>Our Honest Take After Two Decades in North Texas Lawns</h2>
         <p>Biofungicides have a role in a sophisticated, integrated disease management program. They are not a replacement for synthetic fungicides when a fast-moving infection is threatening a DFW lawn in summer heat. Homeowners who reach for Serenade or a competing product as their primary tool against Brown Patch, Pythium, or Grey Leaf Spot in hot conditions and then watch their St. Augustine collapse have not been served well by the products&rsquo; marketing. Hamann&rsquo;s approach to <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control</a> uses the right tool for the specific pathogen, the season, and the conditions — which sometimes includes biological supplements and always includes cultural corrections. You can also read our post on <a href="/blogs/when-fungicide-wont-work-disease-too-advanced-to-spray">when fungicide won&rsquo;t work</a> for context on timing any treatment correctly.</p>
 
-        <div className="blog-cta">
-          <h3>Not Sure What Your Lawn Actually Needs?</h3>
-          <p>Hamann&rsquo;s disease diagnosis takes the guesswork out of treatment. We&rsquo;ll tell you exactly what pathogen you&rsquo;re dealing with and the most effective way to stop it — biologically, chemically, or both.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

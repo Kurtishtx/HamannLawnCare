@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -65,14 +64,6 @@ export default function Page() {
         <p>Clothing and repellent are personal protection &mdash; they protect you for the duration of the task. What actually reduces the tick population you&rsquo;re dealing with week after week is <a href="/flea-and-tick-control">professional flea and tick control</a> applied to your yard. Barrier treatment along fence lines, shrub borders, and leaf-litter zones kills ticks where they live and creates a residual that keeps working between visits. For homeowners who spend regular time doing yard work in North Texas, combining proper clothing habits with professional yard treatment is the most complete approach available.</p>
         <p>Hamann Lawn Care &amp; Weed Control has been treating DFW yards for ticks since 2006. If you&rsquo;re tired of finding ticks on yourself or your family after every weekend in the yard, we can help.</p>
 
-        <div className="blog-cta">
-          <h3>Stop Finding Ticks After Every Yard Session</h3>
-          <p>Get professional flea &amp; tick treatment for your yard &mdash; 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

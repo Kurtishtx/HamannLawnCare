@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -68,14 +67,6 @@ export default function Page() {
         <h2>Pay Attention to What Your Yard Is Telling You</h2>
         <p>Your lawn communicates its stress pretty clearly if you know what to look for. Consistent thinning or browning in the same area year after year, wilting that appears in one part of the yard while the rest looks fine, or color differences between zones that receive the same care — all of these are signals that environmental exposure is creating unequal conditions. Responding to those signals with targeted adjustments rather than blanket treatment changes is what separates a reactive approach from one that actually solves the underlying problem.</p>
 
-        <div className="blog-cta">
-          <h3>Is Your Yard Fighting Its Own Environment?</h3>
-          <p>We&rsquo;ll walk your property and figure out exactly what&rsquo;s going on. Call us or grab your first-service deal.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

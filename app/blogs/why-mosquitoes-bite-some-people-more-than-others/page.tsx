@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -51,14 +50,6 @@ export default function Page() {
         <p>That last part is where professional yard treatment makes the most difference. Knocking the mosquito population in your yard down by 80&ndash;90% means that even if you&rsquo;re a top-five mosquito target on a biological level, the sheer number of opportunities for bites drops dramatically. You can read more about what drives mosquito timing and peak activity in our post on <a href="/blogs/how-often-should-you-treat-for-mosquitoes-in-texas">how often you should treat for mosquitoes in Texas</a>.</p>
         <p>Hamann Lawn Care &amp; Weed Control has been helping Arlington and DFW homeowners reclaim their yards since 2006. Whether you&rsquo;re a confirmed mosquito magnet or just trying to protect your family through a North Texas summer, we build treatment programs around results — not guesswork.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Fight Back Against Mosquitoes?</h3>
-          <p>Even if the mosquitoes love you, they don&rsquo;t have to find you — claim your 50% off first professional application today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

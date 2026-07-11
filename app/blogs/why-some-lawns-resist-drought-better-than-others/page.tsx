@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <h2>Building Drought Resilience Is a Seasonal Project</h2>
         <p>The good news is that every one of these factors is improvable with the right management over time. Deep irrigation training, soil improvement through aeration and compost, appropriate fertilization timing, and correct mowing practice all compound across seasons to create genuinely drought-resilient turf. For more on how foot traffic &mdash; another form of physical stress &mdash; affects lawn resilience, see our post on <a href="/blogs/why-some-lawns-handle-foot-traffic-better-than-others">why some lawns handle foot traffic better than others</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Build a Lawn That Survives North Texas Summers?</h3>
-          <p>Hamann Lawn Care has been helping Arlington homeowners drought-proof their turf since 2006. Call us or grab your new-customer deal today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -77,14 +76,6 @@ export default function Page() {
         <p>Professional lawn care programs in North Texas are increasingly built around soil health rather than just surface treatment. Correcting pH is one piece of that approach, alongside proper mowing height, irrigation timing, and targeted fertilization. A lawn that starts from a foundation of healthy, balanced soil requires less reactive treatment — fewer fungicide applications, more consistent color, and faster recovery after weather stress.</p>
         <p>At Hamann Lawn Care &amp; Weed Control, we serve homeowners throughout Arlington, Mansfield, Burleson, Grand Prairie, and surrounding Tarrant and Dallas County communities. If your lawn has been fighting recurring fungal problems, a soil pH test is one of the first things we recommend — because treating the disease without fixing the environment that created it is a cycle that never ends.</p>
 
-        <div className="blog-cta">
-          <h3>Is Soil pH Fueling Lawn Disease in Your Yard?</h3>
-          <p>Get professional lawn disease treatment and soil health guidance for your North Texas lawn — and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

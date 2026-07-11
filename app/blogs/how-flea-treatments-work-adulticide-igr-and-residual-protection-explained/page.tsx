@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -64,14 +63,6 @@ export default function Page() {
         <p>For most North Texas homes with pets, the standard professional recommendation during flea season is treatments spaced 4&ndash;6 weeks apart through the active season. The first treatment knocks down the adult population and puts IGR into the environment. Follow-up treatments maintain residual coverage and continue disrupting the reproductive cycle as new eggs are introduced by wildlife, neighboring yards, or pets that spend time off the property.</p>
         <p>Homes with heavy shade, wooded buffers, or wildlife pressure (squirrels, raccoons, feral cats) may need closer spacing during peak summer months. A professional can assess your specific yard conditions and recommend a schedule that matches your actual risk level &mdash; not a one-size-fits-all calendar.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Wipe Out Fleas For Good?</h3>
-          <p>Get professional flea and tick control that targets every stage &mdash; and claim your 50% off first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

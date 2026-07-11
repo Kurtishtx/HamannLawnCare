@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         </ul>
         <p>A missed pre-emergent window doesn&rsquo;t just mean you have weeds now &mdash; it means you&rsquo;re fighting weeds reactively with post-emergent herbicides for the next four to six months, which is slower, more expensive, and less effective than prevention. Explore our full approach at <a href="/weed-control-and-fertilizer-services">Hamann&rsquo;s weed control and fertilizer services</a>, and see why concentration matters as much as timing in our post on <a href="/blogs/why-store-bought-weed-killer-concentrations-are-too-low-to-work">why store-bought weed killer concentrations are too low to work</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Let Timing Errors Hand the Season to Weeds</h3>
-          <p>Hamann tracks real DFW soil temperatures and applies pre-emergents at the right moment &mdash; not the calendar date on a bag. Get 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

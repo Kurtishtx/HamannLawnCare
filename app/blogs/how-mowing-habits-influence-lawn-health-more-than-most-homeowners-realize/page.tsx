@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -71,14 +70,6 @@ export default function Page() {
         <p>In July and August in North Texas, air temperatures regularly hit triple digits. Mowing in the heat of the day &mdash; between 11 a.m. and 4 p.m. &mdash; stresses both the operator and the turf. Freshly cut grass loses moisture faster when temperatures are high, and the combination of cutting stress plus heat stress can push already-hot-season turf into a more prolonged recovery period. Mow in the early morning or early evening when temperatures are lower. The grass recovers more easily, and you avoid the worst of the heat exposure.</p>
         <p>If you&rsquo;re on a professional lawn care program that includes fertilization, weed control, and seasonal treatments, your mowing habits either amplify or undermine everything that program does for your lawn. The right height, the right frequency, sharp blades, and good timing aren&rsquo;t lawn care extras &mdash; they&rsquo;re the foundation everything else builds on.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Healthier Lawn?</h3>
-          <p>Professional lawn treatments work better when your mowing game is on point &mdash; call us to put a complete program together.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

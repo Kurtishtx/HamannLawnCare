@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <p>A DFW yard in summer is a mosquito-production machine if you don&rsquo;t actively manage it. Heat accelerates the breeding cycle to less than a week. Irrigation and rain leave standing water everywhere. Dense landscaping gives mosquitoes all the daytime shade they need. The only approach that genuinely controls this is a professional program that targets resting zones with residual barrier treatment, eliminates larvae in water sources, and runs on a consistent schedule throughout the season. That&rsquo;s what <a href="/mosquito-control-services">professional mosquito control</a> delivers &mdash; and it&rsquo;s what coils and incense simply cannot replicate.</p>
         <p>If you&rsquo;ve been burning through coils and wondering why your mosquito problem isn&rsquo;t getting better, check out our breakdown of <a href="/blogs/home-fogger-mosquito-bomb-aerosol-effectiveness">home fogger bombs for mosquitoes</a> &mdash; another popular product with similar limitations. Hamann Lawn Care has served Arlington and DFW since 2006. Call us and let&rsquo;s build a plan that actually works.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

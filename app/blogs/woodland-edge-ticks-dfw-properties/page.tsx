@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <h2>Hamann&rsquo;s Approach to Edge Properties</h2>
         <p>When we treat a woodland-edge property, our focus is heavily weighted toward the transition zones rather than the open lawn. We apply along fence lines, at the lawn-to-brush boundary, around deck perimeters and woodpiles, and through ornamental planting beds that border natural areas. We also look at <a href="/blogs/leaf-litter-tick-habitat-control">leaf litter accumulation</a> during every visit and note areas where habitat management between treatments would improve results. Hamann has protected Arlington and DFW families from ticks since 2006, and we understand the specific challenges these high-exposure properties present.</p>
 
-        <div className="blog-cta">
-          <h3>Does Your Property Back Up to Natural Areas?</h3>
-          <p>Get tick control built for high-exposure woodland-edge lots — and claim 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

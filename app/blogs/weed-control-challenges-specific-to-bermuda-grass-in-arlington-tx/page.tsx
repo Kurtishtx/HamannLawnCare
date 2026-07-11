@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -52,14 +51,6 @@ export default function Page() {
         <p>Our full approach to Bermuda lawn management, including how we address these challenges season by season, is covered on our <a href="/weed-control-and-fertilizer-services">weed control and fertilizer services</a> page. And if you want to understand the complete annual fertilization picture that keeps Bermuda dense enough to resist weed pressure naturally, our previous post on the <a href="/blogs/bermuda-grass-annual-fertilization-schedule-for-north-texas">Bermuda grass annual fertilization schedule for North Texas</a> walks through every seasonal application in detail.</p>
         <p>Managing Bermuda effectively isn&rsquo;t about any single product or application &mdash; it&rsquo;s about staying ahead of the calendar, understanding what the grass can tolerate, and addressing each weed type with the right tool at the right moment. That&rsquo;s what nearly twenty years in Arlington has taught us, and it&rsquo;s the foundation of every program we run.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Greener, Weed-Free Lawn?</h3>
-          <p>Get professional weed control and fertilization that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -106,14 +105,6 @@ export default function Page() {
           For DFW lawns with persistent necrotic ring spot problems, professional disease management is typically more cost-effective than repeated DIY treatment attempts with incorrect timing or products. Our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control service</a> includes timed fall and spring fungicide applications specifically designed for the infection cycle of root-rotting pathogens like Ophiosphaerella korrae. For context on another root-attacking disease with a similar delayed-symptom pattern, read our post on <a href="/blogs/helminthosporium-leaf-spot-in-north-texas-turf">Helminthosporium leaf spot and melting out</a>.
         </p>
 
-        <div className="blog-cta">
-          <h3>Dead Rings in Your DFW Fescue or Cool-Season Turf That Won&rsquo;t Recover?</h3>
-          <p>Necrotic ring spot is a root-level disease that requires timed fungicide applications in fall and spring &mdash; not summer when the damage is visible. Hamann Lawn Care &amp; Weed Control has served Arlington and North Texas DFW since 2006 and knows exactly how to time treatment for this disease&rsquo;s unique infection cycle.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

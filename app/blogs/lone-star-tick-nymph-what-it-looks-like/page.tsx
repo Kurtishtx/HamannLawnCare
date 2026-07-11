@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         <h2>Yard-Level Prevention Is the Only Reliable Defense</h2>
         <p>Because nymphs are so easy to miss on a tick check, reducing their population in your yard before exposure is far more effective than relying on post-exposure detection alone. Hamann&rsquo;s barrier spray treatments target the shaded vegetation, fence lines, and leaf litter where Lone Star tick nymphs shelter and quest. Treatments timed to the April&ndash;July nymph peak hit the population when it&rsquo;s most dangerous. For a broader look at how nymph size and behavior compare across all North Texas tick species, see our post on <a href="/blogs/tick-nymph-vs-adult-size-comparison">tick nymphs vs adult ticks and why the tiny ones are more dangerous</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Stop Nymphs Before They Find Your Family</h3>
-          <p>Hamann&rsquo;s barrier treatments protect Arlington and DFW yards during peak nymph season. Get 50% off your first treatment.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

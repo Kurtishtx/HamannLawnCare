@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <h2>The Payoff for Patience</h2>
         <p>The lawns on any DFW street that look genuinely weed-free in July are almost always on their second or third year of a consistent program. That&rsquo;s not luck and it&rsquo;s not magic product &mdash; it&rsquo;s the compound effect of annual pre-emergent barriers, timely post-emergent follow-up, and fertilizer that builds turf thick enough to do its own suppressive work. The first year is the hardest. Stick with it.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Start the Program That Actually Pays Off?</h3>
-          <p>Get a lawn treatment plan built for the long game &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>&#128222; Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

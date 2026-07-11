@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>The Bottom Line</h2>
         <p>Seeing fleas after a flea treatment is normal for the first two to three weeks. It doesn&rsquo;t mean the treatment failed &mdash; it means you&rsquo;re watching the pupal hatch cycle play out while the residual product does its job. Keep your pets on prevention, keep vacuuming indoors, and give the treatment time to work. By week three you should be seeing a clear downward trend. If you&rsquo;re not &mdash; or if the problem seems to be getting worse past day fourteen &mdash; call Hamann and let&rsquo;s take a closer look. We&rsquo;ve been handling flea problems in Arlington and DFW since 2006, and we know when something needs a different approach.</p>
 
-        <div className="blog-cta">
-          <h3>Got Fleas? Let&rsquo;s Fix It.</h3>
-          <p>Professional flea treatment with a real residual barrier &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

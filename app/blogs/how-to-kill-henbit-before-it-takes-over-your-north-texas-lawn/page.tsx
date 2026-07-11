@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
         <p>A professional program removes that timing burden entirely. We track soil temperatures, monitor weed pressure across DFW, and make sure pre-emergent goes down when it will actually work &mdash; not when someone finally gets around to buying a bag at the home improvement store. If henbit or any other broadleaf weed does establish, we handle post-emergent applications at the growth stage where they&rsquo;re most effective. Year over year, that consistent timing is what drives henbit populations down rather than just managing the bloom each spring.</p>
         <p>If your lawn turned purple again this year and you&rsquo;re done watching it happen, let&rsquo;s get ahead of it before next fall. The time to act is before the seeds even think about sprouting.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Weed-Free Lawn?</h3>
-          <p>Stop henbit before it blooms &mdash; professional weed control with 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

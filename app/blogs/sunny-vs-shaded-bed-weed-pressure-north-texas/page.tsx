@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <h2>Tree-Root Competition in Shaded Beds</h2>
         <p>One additional factor unique to shaded beds: large tree root systems compete aggressively with both ornamentals and weed control products for water and nutrients. Shallow live oak and Bradford pear roots make granular pre-emergent application in shaded beds less reliable, because roots intercept moisture before it carries the product into the germination zone. Liquid pre-emergent formulations activated by targeted irrigation often perform better in dense tree-root zones than dry granular applications. See also our breakdown of <a href="/blogs/new-construction-bed-weed-problems-dfw">new-construction bed weed problems in DFW</a> &mdash; young neighborhoods without established tree shade often flip their weed pressure dramatically as the landscape matures and shade patterns change.</p>
 
-        <div className="blog-cta">
-          <h3>Different Beds, Different Weeds &mdash; We Treat Them Differently Too</h3>
-          <p>Get flower-bed weed control that accounts for your specific sun, shade, and weed mix. Claim 50% off your first professional treatment today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

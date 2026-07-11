@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -209,14 +208,6 @@ export default function Page() {
           <li>Call a professional for recurring, severe, or widespread chlorosis that doesn&rsquo;t respond to DIY treatment</li>
         </ul>
 
-        <div className="blog-cta">
-          <h3>Stop Guessing. Get Your St. Augustine Fixed Right.</h3>
-          <p>We&rsquo;ve been treating North Texas lawns since 2006 &mdash; and we know exactly how to handle iron chlorosis in DFW&rsquo;s alkaline clay soil. Call us or grab your 50% off first treatment today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

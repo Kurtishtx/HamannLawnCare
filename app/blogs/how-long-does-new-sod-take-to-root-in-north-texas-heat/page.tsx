@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
 
         <p>For more on the installation process that sets up rooting success, see our detailed guide on <a href="/blogs/how-to-overseed-bare-patches-in-bermuda-without-killing-existing-grass">overseeding bare Bermuda patches without harming existing grass</a>. Hamann Lawn Care has been installing and caring for North Texas lawns since 2006 — call us at {PHONE_DISPLAY} with any question about your new sod.</p>
 
-        <div className="blog-cta">
-          <h3>Just Installed Sod and Have Questions?</h3>
-          <p>The Hamann team knows North Texas lawns. Call us — and get 50% off your first professional lawn service.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

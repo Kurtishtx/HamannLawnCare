@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <h2>Brown Isn&rsquo;t Always a Crisis &mdash; But It&rsquo;s Never Just Normal Either</h2>
         <p>Some browning is expected and temporary &mdash; especially on Bermuda going into winter dormancy or warm-season grasses during an extreme heat stretch. But unexplained or spreading brown patches that don&rsquo;t respond to water deserve investigation, not more irrigation. Hamann Lawn Care has been diagnosing North Texas lawns since 2006. If your lawn is browning despite doing everything right, give us a call and let us figure out what&rsquo;s actually going on.</p>
 
-        <div className="blog-cta">
-          <h3>Brown Patches You Can&rsquo;t Explain?</h3>
-          <p>We&rsquo;ll diagnose the real cause and fix it &mdash; claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

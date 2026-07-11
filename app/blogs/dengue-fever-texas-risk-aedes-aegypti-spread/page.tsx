@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         <h2>The Bottom Line</h2>
         <p>Dengue is not a North Texas crisis today. But the conditions for local transmission &mdash; vector presence, warm climate, international travel volume &mdash; exist here in a way they didn&rsquo;t twenty years ago. The appropriate response isn&rsquo;t panic; it&rsquo;s smart, consistent mosquito control. Hamann has been protecting Arlington families since 2006, and our programs target the full spectrum of mosquito pressure that comes with living in DFW. Call us and let&rsquo;s talk about what your property needs.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

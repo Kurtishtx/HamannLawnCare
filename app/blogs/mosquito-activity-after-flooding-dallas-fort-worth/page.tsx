@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -75,14 +74,6 @@ export default function Page() {
         <p>The most effective post-flood intervention happens before the first wave peaks &mdash; ideally on days 5&ndash;7 after the flood event. Treating this early catches adult mosquitoes just starting to emerge, before the population has had a chance to reach full density and before second-generation breeding is well underway. Waiting until you&rsquo;re already overwhelmed means treating a much larger, more established population with each subsequent generation adding more to the problem.</p>
         <p>Hamann has been responding to post-flood mosquito surges in Arlington and across DFW since 2006. When a major rain or flood event hits, we prioritize rapid response for both existing customers and new customers who need emergency treatment. Call us as soon as waters recede and we&rsquo;ll build a post-flood treatment plan that intercepts both waves before they peak.</p>
 
-        <div className="blog-cta">
-          <h3>Flooding Just Hit? Don&rsquo;t Wait for the Surge</h3>
-          <p>Get rapid-response mosquito treatment after a flood event &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

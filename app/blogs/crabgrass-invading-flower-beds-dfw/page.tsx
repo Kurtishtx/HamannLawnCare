@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -58,14 +57,6 @@ export default function Page() {
 
         <p>If crabgrass is a consistent problem in your DFW flower beds, read about <a href="/blogs/henbit-chickweed-winter-weeds-flower-beds-texas">henbit and chickweed control for the winter season</a> to see how we manage the opposite end of the annual weed calendar. A year-round program keeps your beds clean regardless of which weed is in season. Call Hamann at {PHONE_DISPLAY} to build a plan for your beds.</p>
 
-        <div className="blog-cta">
-          <h3>Keep Crabgrass Out of Your Flower Beds</h3>
-          <p>Professional grassy weed control for DFW landscape beds &mdash; 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

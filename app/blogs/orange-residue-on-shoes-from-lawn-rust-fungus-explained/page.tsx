@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
 
         <p>Orange-dusted shoes are a low-stress way to discover a rust problem while it&rsquo;s still easy to address. If the orange is showing up consistently across your lawn rather than in isolated spots, or if the turf is also looking thin or off-color, it&rsquo;s worth getting a professional set of eyes on it. Our <a href="/lawn-disease-and-fungus-control">lawn disease and fungus control</a> program evaluates the full picture — disease pressure, soil health, and cultural factors — to give you a treatment plan that actually addresses the root cause. Also see our post on <a href="/blogs/white-gray-mycelium-on-grass-in-the-morning-what-it-means">mycelium on grass in the morning</a> to understand the other common visible fungal symptom DFW homeowners encounter.</p>
 
-        <div className="blog-cta">
-          <h3>Orange Shoes Every Time You Walk the Lawn?</h3>
-          <p>Rust is telling you your turf is stressed. Hamann can diagnose the cause and get your lawn back on track.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off First Treatment</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

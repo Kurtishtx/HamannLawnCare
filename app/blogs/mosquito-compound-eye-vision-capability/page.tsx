@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -57,14 +56,6 @@ export default function Page() {
         <p>Mosquito compound eyes are a finely tuned system built for low-light, wide-field motion detection &mdash; exactly what a creature that hunts at dusk in cluttered vegetation needs. They&rsquo;re most sensitive to the reds and oranges that match human skin, and they hand off to heat and chemical cues for the final approach. Knowing how mosquitoes find you makes it easier to understand why professional barrier treatments &mdash; targeting the vegetation resting zones those compound eyes are watching from &mdash; deliver results that store-bought foggers simply can&rsquo;t match. Hamann has been protecting Arlington and DFW since 2006, and we know this territory&rsquo;s mosquitoes from compound eye to stinger.</p>
         <p>Curious about what else draws mosquitoes straight to you? Check out our post on <a href="/blogs/why-mosquitoes-buzz-near-your-ears">why mosquitoes buzz near your ears</a> for the biology behind that maddening sound.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

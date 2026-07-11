@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -62,14 +61,6 @@ export default function Page() {
         <p>If your flea treatments keep &ldquo;failing,&rdquo; there&rsquo;s a good chance they never included an IGR component. Adulticides alone are fighting 5% of the problem. Adding an IGR — the right one, applied correctly, with a proper follow-up schedule — is what turns a temporary knockdown into lasting control. For Arlington and DFW homeowners, that means working with a professional who understands how our local climate, wildlife, and flea pressure interact, and who builds treatments around the full flea lifecycle rather than just the adults you can see.</p>
         <p>Call <a href="/blogs/bifenthrin-vs-permethrin-yard-treatment">Bifenthrin vs Permethrin for Yard Flea and Tick Treatment: Which Is More Effective?</a> to dig into the adulticide side of the equation — or give us a call and we&rsquo;ll put together the right program for your property.</p>
 
-        <div className="blog-cta">
-          <h3>Ready To Break the Flea Cycle for Good?</h3>
-          <p>Professional flea treatments with IGR protection — and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

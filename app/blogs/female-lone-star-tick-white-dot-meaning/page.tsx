@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -60,14 +59,6 @@ export default function Page() {
         <p>Remove it promptly with fine-tipped tweezers, grasping as close to the skin as possible. Pull steadily upward. Clean the site with isopropyl alcohol. Save the tick in a sealed container if you want it tested or identified. Watch for a rash (including any bull&rsquo;s-eye pattern), fever, headache, or fatigue in the following 1&ndash;2 weeks — and contact your physician immediately if symptoms appear. Do not wait to see if symptoms resolve on their own.</p>
         <p>For your yard, professional <a href="/flea-and-tick-control">flea and tick control</a> targeting the brushy edges, shaded turf zones, and woodland transition areas where Lone Stars quest is the most effective way to reduce your family&rsquo;s exposure. Combined with a tick-preventative from your vet for pets, it creates multiple layers of protection. For more on the egg-laying stage that sets population size each season, see our guide on <a href="/blogs/tick-egg-mass-identification-yard">what tick egg masses look like and where to find them in your yard</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Lone Star Ticks Don&rsquo;t Wait — Neither Should You</h3>
-          <p>Hamann has protected North Texas families from tick exposure since 2006. Claim 50% off your first yard treatment today.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

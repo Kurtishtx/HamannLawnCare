@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -55,14 +54,6 @@ export default function Page() {
         <h2>The Bottom Line</h2>
         <p>Weed control and fertilization aren&rsquo;t two separate lawn care services you can pick between. They&rsquo;re two halves of the same strategy, and running them together &mdash; on the right schedule, with the right products, by someone who knows North Texas turf &mdash; is what actually produces a lawn you&rsquo;re proud of. Give us a call and let&rsquo;s talk through what your lawn needs this season.</p>
 
-        <div className="blog-cta">
-          <h3>Ready to Stop Fighting Weeds and Start Winning?</h3>
-          <p>Get a coordinated weed control and fertilizer program built for North Texas &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

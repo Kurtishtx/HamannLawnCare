@@ -4,7 +4,7 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
+
 
   return (
     <main>
@@ -127,12 +127,7 @@ export default function Page() {
           If you&rsquo;re not sure which tool is right for your specific lawn&mdash;or whether your thatch buildup warrants mechanical intervention at all&mdash;our team at Hamann Lawn Care &amp; Weed Control can assess your lawn and recommend the right approach. Visit our <a href="/lawn-care-services">lawn care services page</a> to learn more about our spring lawn health services in Arlington and across DFW.
         </p>
 
-        <div className="blog-cta">
-          <h3>Not Sure Which Dethatching Approach Is Right for Your Lawn?</h3>
-          <p>Hamann Lawn Care &amp; Weed Control has been caring for Arlington and DFW lawns since 2006. We&rsquo;ll assess your grass type, thatch depth, and soil conditions and recommend the right solution. Call us or grab our new-customer offer.</p>
-          <a href={`tel:${PHONE_TEL}`} className="btn-primary">Call {PHONE_DISPLAY}</a>
-          <button onClick={openPromo} className="btn-secondary">Get 50% Off First Service</button>
-        </div>
+
       </article>
 
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>

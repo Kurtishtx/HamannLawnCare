@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -59,14 +58,6 @@ export default function Page() {
         <p>A lawn that gets a well-timed spring program develops the density it needs to outcompete late-season weed pressure, withstand summer heat stress, and enter fall in a stronger position for winterization. The benefits compound across the entire season. A lawn that misses the spring window typically struggles from March through October: patchy, weed-invaded, thin in high-traffic areas, and always one rain event away from a new flush of crabgrass.</p>
         <p>Put simply, the spring treatment is the most leveraged investment you make in your lawn all year. Getting it right does not just fix this spring. It sets the trajectory for the full growing season and makes every subsequent application more effective.</p>
 
-        <div className="blog-cta">
-          <h3>Don&rsquo;t Miss Your Spring Window</h3>
-          <p>Get professional spring lawn treatment locked in early &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

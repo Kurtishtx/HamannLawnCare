@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -48,14 +47,6 @@ export default function Page() {
         <h2>Connecting Soil Health to Weed Pressure: The Practical Picture</h2>
         <p>Here&rsquo;s what this looks like in a real North Texas lawn over time. A homeowner with compacted, high-pH clay applies pre-emergent and post-emergent herbicides every year and still battles persistent weeds. The herbicides work short-term but the underlying conditions keep recruiting new weed pressure. A second homeowner on the same street aerates annually, addresses pH gradually with sulfur amendments, fixes a drainage low spot, and maintains a consistent fertilization schedule. Within two to three seasons, their weed pressure drops dramatically &mdash; not because they&rsquo;re spraying more, but because their turf no longer leaves gaps for weeds to exploit. The connection between turf growth cycles and weed vulnerability is explored further in our post on <a href="/blogs/warm-season-turf-growth-cycles-and-how-they-affect-weed-pressure">warm-season turf growth cycles</a>.</p>
 
-        <div className="blog-cta">
-          <h3>Start With Healthier Soil, Get a Healthier Lawn</h3>
-          <p>Professional treatments that address the root causes of weed pressure &mdash; and 50% off your first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>

@@ -4,7 +4,6 @@ const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
 
 export default function Page() {
-  const openPromo = () => (window as any).__openPromo?.();
 
   return (
     <main>
@@ -66,14 +65,6 @@ export default function Page() {
         <p>Our <a href="/mosquito-control-services">mosquito control program</a> is designed to start early in the season precisely because that&rsquo;s when intervention is most effective. Combining a clean yard from good fall habits with an early first treatment in March or April gives you the best possible start to the mosquito season.</p>
         <p>For the full picture on how shrub management pairs with leaf litter removal to reduce harborage throughout your yard, read our guide on <a href="/blogs/dense-shrubs-mosquito-harborage-trimming">why dense shrubs create mosquito harborage and how trimming helps</a> &mdash; both tasks are most impactful when done together in the fall.</p>
 
-        <div className="blog-cta">
-          <h3>Ready For A Mosquito-Free Yard?</h3>
-          <p>Get professional mosquito control that actually works &mdash; and claim your 50% off first application.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-orange" href={`tel:${PHONE_TEL}`}>📞 Call {PHONE_DISPLAY}</a>
-            <button className="btn btn-ghost" onClick={openPromo}>Get 50% Off</button>
-          </div>
-        </div>
       </article>
       <div className="blog-share wrap" style={{ maxWidth: 760 }}>
         <span>Share:</span>
