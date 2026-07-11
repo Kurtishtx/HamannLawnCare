@@ -11,7 +11,9 @@ const anton = Anton({ subsets: ["latin"], weight: "400", variable: "--font-anton
 export const metadata: Metadata = {
   title: "Hamann Lawn Care & Weed Control | Arlington & North Texas Since 2006",
   description: "Family-owned lawn care, weed control, fertilization, mosquito, and flea & tick control serving Arlington and all of North Texas since 2006. Greener lawns, fewer weeds, zero skeeters — guaranteed. Call (682) 408-9013.",
-  icons: { icon: "/pig.png" },
+  // Favicons are provided by the file-based convention: app/favicon.ico (48x48),
+  // app/icon.png (512x512 square), app/apple-icon.png (180x180). Square = required
+  // for browser tabs and Google's search-result favicon.
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
