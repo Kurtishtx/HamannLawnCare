@@ -120,10 +120,13 @@ function SignupForm() {
       <p style={{ color: 'var(--muted)', fontSize: 13, marginBottom: 14 }}>🔒 Secured by Stripe. Your card number is never stored on our website. You are not charged today — only after each service, once we email your invoice.</p>
 
       <input type="text" name="website_url" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{ position: 'absolute', left: -9999 }} />
-      <label style={{ display: 'flex', gap: 10, alignItems: 'flex-start', margin: '4px 0 14px', fontSize: 13, color: 'var(--muted)', lineHeight: 1.5 }}>
+      <label style={{ display: 'flex', gap: 10, alignItems: 'flex-start', margin: '4px 0 10px', fontSize: 14, color: 'var(--ink)', lineHeight: 1.5, fontWeight: 600 }}>
         <input type="checkbox" name="sms_consent" style={{ marginTop: 3, flexShrink: 0, width: 16, height: 16, accentColor: 'var(--orange)' }} />
-        <span>I agree to receive automated SMS messages from Hamann Lawn Care at the number provided. Message frequency varies; msg &amp; data rates may apply. Reply STOP to cancel, HELP for help. Consent is not a condition of purchase. See our <a href="/terms" style={{ color: 'var(--orange-dk)', fontWeight: 700 }}>Terms</a> &amp; <a href="/privacy" style={{ color: 'var(--orange-dk)', fontWeight: 700 }}>Privacy Policy</a>.</span>
+        <span>I agree to receive SMS messages from Hamann Lawn Care.</span>
       </label>
+      <p style={{ color: 'var(--muted)', fontSize: 12.5, lineHeight: 1.5, margin: '0 0 14px' }}>
+        By submitting this form, you agree to receive automated SMS messages from Hamann Lawn Care. Message frequency varies. Reply STOP to cancel, HELP for help. Consent is not a condition of purchase. See our <a href="/terms" style={{ color: 'var(--orange-dk)', fontWeight: 700 }}>Terms &amp; Conditions</a> and <a href="/privacy" style={{ color: 'var(--orange-dk)', fontWeight: 700 }}>Privacy Policy</a>.
+      </p>
       {err && <p style={{ color: 'var(--red)', fontWeight: 700, marginBottom: 10 }}>{err}</p>}
       <button type="submit" className="btn btn-orange btn-lg" style={{ width: '100%' }} disabled={status === 'sending' || !cardReady}>
         {status === 'sending' ? 'Saving…' : !cardReady ? 'Loading secure card field…' : '🌿 Complete Sign Up'}
