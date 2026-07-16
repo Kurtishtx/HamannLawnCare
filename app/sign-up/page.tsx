@@ -19,6 +19,7 @@ function SignupForm() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'done'>('idle');
   const [err, setErr] = useState('');
   const [cardReady, setCardReady] = useState(false);
+  const [bizName, setBizName] = useState('Hamann Lawn Care'); // auto-filled from company_info via signup_intent
   const stripeRef = useRef<any>(null);
   const cardRef = useRef<any>(null);
   const csRef = useRef<string>('');
@@ -38,6 +39,7 @@ function SignupForm() {
           if (cancelled) return;
           if (d.error || !d.publishable_key) { setErr('Card setup is temporarily unavailable. Please call us at (682) 408-9013.'); return; }
           csRef.current = d.client_secret; custRef.current = d.stripe_customer_id;
+          if (d.company_name) setBizName(d.company_name);
           const stripe = window.Stripe(d.publishable_key);
           stripeRef.current = stripe;
           const elements = stripe.elements();
@@ -123,11 +125,11 @@ function SignupForm() {
       {/* Stand-alone SMS consent — each opt-in is its own choice, NOT tied to submitting the form (TFV requirement) */}
       <label style={{ display: 'flex', gap: 10, alignItems: 'flex-start', margin: '4px 0 10px', fontSize: 13.5, color: 'var(--ink)', lineHeight: 1.5, fontWeight: 600 }}>
         <input type="checkbox" name="sms_consent_transactional" style={{ marginTop: 3, flexShrink: 0, width: 16, height: 16, accentColor: 'var(--orange)' }} />
-        <span>I agree to receive account &amp; service text messages from Hamann Lawn Care at the phone number provided &mdash; appointment reminders, on-my-way alerts, service updates, important service announcements, and billing/account notifications. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out, HELP for help.</span>
+        <span>I agree to receive account &amp; service text messages from {bizName} at the phone number provided &mdash; appointment reminders, on-my-way alerts, service updates, important service announcements, and billing/account notifications. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out, HELP for help.</span>
       </label>
       <label style={{ display: 'flex', gap: 10, alignItems: 'flex-start', margin: '4px 0 12px', fontSize: 13.5, color: 'var(--ink)', lineHeight: 1.5, fontWeight: 600 }}>
         <input type="checkbox" name="sms_consent_marketing" style={{ marginTop: 3, flexShrink: 0, width: 16, height: 16, accentColor: 'var(--orange)' }} />
-        <span>I agree to receive promotional/marketing text messages from Hamann Lawn Care. Msg &amp; data rates may apply. Reply STOP to opt out, HELP for help. <em style={{ fontWeight: 500, color: 'var(--muted)' }}>(Optional)</em></span>
+        <span>I agree to receive promotional/marketing text messages from {bizName}. Msg &amp; data rates may apply. Reply STOP to opt out, HELP for help. <em style={{ fontWeight: 500, color: 'var(--muted)' }}>(Optional)</em></span>
       </label>
       <p style={{ color: 'var(--muted)', fontSize: 12.5, lineHeight: 1.5, margin: '0 0 14px' }}>
         Consent to receive texts is not a condition of purchase. See our <a href="/terms" style={{ color: 'var(--orange-dk)', fontWeight: 700 }}>Terms &amp; Conditions</a> and <a href="/privacy" style={{ color: 'var(--orange-dk)', fontWeight: 700 }}>Privacy Policy</a>.
