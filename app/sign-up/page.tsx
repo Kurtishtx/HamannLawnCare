@@ -120,12 +120,17 @@ function SignupForm() {
       <p style={{ color: 'var(--muted)', fontSize: 13, marginBottom: 14 }}>🔒 Secured by Stripe. Your card number is never stored on our website. You are not charged today — only after each service, once we email your invoice.</p>
 
       <input type="text" name="website_url" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{ position: 'absolute', left: -9999 }} />
-      <label style={{ display: 'flex', gap: 10, alignItems: 'flex-start', margin: '4px 0 10px', fontSize: 14, color: 'var(--ink)', lineHeight: 1.5, fontWeight: 600 }}>
-        <input type="checkbox" name="sms_consent" style={{ marginTop: 3, flexShrink: 0, width: 16, height: 16, accentColor: 'var(--orange)' }} />
-        <span>I agree to receive SMS messages from Hamann Lawn Care.</span>
+      {/* Stand-alone SMS consent — each opt-in is its own choice, NOT tied to submitting the form (TFV requirement) */}
+      <label style={{ display: 'flex', gap: 10, alignItems: 'flex-start', margin: '4px 0 10px', fontSize: 13.5, color: 'var(--ink)', lineHeight: 1.5, fontWeight: 600 }}>
+        <input type="checkbox" name="sms_consent_transactional" style={{ marginTop: 3, flexShrink: 0, width: 16, height: 16, accentColor: 'var(--orange)' }} />
+        <span>I agree to receive account &amp; service text messages from Hamann Lawn Care at the phone number provided &mdash; appointment reminders, on-my-way alerts, service updates, and billing/account notifications. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out, HELP for help.</span>
+      </label>
+      <label style={{ display: 'flex', gap: 10, alignItems: 'flex-start', margin: '4px 0 12px', fontSize: 13.5, color: 'var(--ink)', lineHeight: 1.5, fontWeight: 600 }}>
+        <input type="checkbox" name="sms_consent_marketing" style={{ marginTop: 3, flexShrink: 0, width: 16, height: 16, accentColor: 'var(--orange)' }} />
+        <span>I agree to receive promotional/marketing text messages from Hamann Lawn Care. Msg &amp; data rates may apply. Reply STOP to opt out, HELP for help. <em style={{ fontWeight: 500, color: 'var(--muted)' }}>(Optional)</em></span>
       </label>
       <p style={{ color: 'var(--muted)', fontSize: 12.5, lineHeight: 1.5, margin: '0 0 14px' }}>
-        By submitting this form, you agree to receive automated SMS messages from Hamann Lawn Care at the phone number provided. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to cancel, HELP for help. Consent is not a condition of purchase. See our <a href="/terms" style={{ color: 'var(--orange-dk)', fontWeight: 700 }}>Terms &amp; Conditions</a> and <a href="/privacy" style={{ color: 'var(--orange-dk)', fontWeight: 700 }}>Privacy Policy</a>.
+        Consent to receive texts is not a condition of purchase. See our <a href="/terms" style={{ color: 'var(--orange-dk)', fontWeight: 700 }}>Terms &amp; Conditions</a> and <a href="/privacy" style={{ color: 'var(--orange-dk)', fontWeight: 700 }}>Privacy Policy</a>.
       </p>
       {err && <p style={{ color: 'var(--red)', fontWeight: 700, marginBottom: 10 }}>{err}</p>}
       <button type="submit" className="btn btn-orange btn-lg" style={{ width: '100%' }} disabled={status === 'sending' || !cardReady}>
