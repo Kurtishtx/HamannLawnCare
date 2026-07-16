@@ -123,7 +123,7 @@ function SignupForm() {
       {/* Stand-alone SMS consent — each opt-in is its own choice, NOT tied to submitting the form (TFV requirement) */}
       <label style={{ display: 'flex', gap: 10, alignItems: 'flex-start', margin: '4px 0 10px', fontSize: 13.5, color: 'var(--ink)', lineHeight: 1.5, fontWeight: 600 }}>
         <input type="checkbox" name="sms_consent_transactional" style={{ marginTop: 3, flexShrink: 0, width: 16, height: 16, accentColor: 'var(--orange)' }} />
-        <span>I agree to receive account &amp; service text messages from Hamann Lawn Care at the phone number provided &mdash; appointment reminders, on-my-way alerts, service updates, and billing/account notifications. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out, HELP for help.</span>
+        <span>I agree to receive account &amp; service text messages from Hamann Lawn Care at the phone number provided &mdash; appointment reminders, on-my-way alerts, service updates, important service announcements, and billing/account notifications. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out, HELP for help.</span>
       </label>
       <label style={{ display: 'flex', gap: 10, alignItems: 'flex-start', margin: '4px 0 12px', fontSize: 13.5, color: 'var(--ink)', lineHeight: 1.5, fontWeight: 600 }}>
         <input type="checkbox" name="sms_consent_marketing" style={{ marginTop: 3, flexShrink: 0, width: 16, height: 16, accentColor: 'var(--orange)' }} />
