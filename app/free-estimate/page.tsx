@@ -69,10 +69,6 @@ function EstimateForm() {
         <input type="checkbox" name="sms_consent_transactional" style={{ marginTop: 3, flexShrink: 0, width: 16, height: 16, accentColor: 'var(--orange)' }} />
         <span>I agree to receive account &amp; service text messages from Hamann Lawn Care at the number provided &mdash; appointment reminders, on-my-way alerts, service updates, important service announcements, and billing/account notifications. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out, HELP for help.</span>
       </label>
-      <label style={{ display: 'flex', gap: 10, alignItems: 'flex-start', margin: '4px 0 10px', fontSize: 13, color: 'var(--muted)', lineHeight: 1.5 }}>
-        <input type="checkbox" name="sms_consent_marketing" style={{ marginTop: 3, flexShrink: 0, width: 16, height: 16, accentColor: 'var(--orange)' }} />
-        <span>I agree to receive promotional/marketing text messages from Hamann Lawn Care. Msg &amp; data rates may apply. Reply STOP to opt out, HELP for help. <em style={{ fontStyle: 'normal', color: 'var(--muted)' }}>(Optional)</em></span>
-      </label>
       <p style={{ color: 'var(--muted)', fontSize: 12.5, lineHeight: 1.5, margin: '0 0 14px' }}>
         Consent to receive texts is not a condition of purchase. See our <a href="/terms" style={{ color: 'var(--orange-dk)', fontWeight: 700 }}>Terms</a> &amp; <a href="/privacy" style={{ color: 'var(--orange-dk)', fontWeight: 700 }}>Privacy Policy</a>.
       </p>
