@@ -77,10 +77,31 @@ function SignupForm() {
       d[i.name] = i.type === 'checkbox' ? (i.checked ? 'true' : 'false') : i.value;
     });
 
-    const res = await stripeRef.current.confirmCardSetup(csRef.current, {
-      payment_method: { card: cardRef.current, billing_details: { name: d.name || '', email: d.email || '' } },
-    });
-    if (res.error) { setErr(res.error.message || 'Your card could not be saved. Please check the details.'); setStatus('idle'); return; }
+    // Build billing_details with ONLY non-empty fields. Passing an empty-string
+    // name/email here makes Stripe.js fail client-side with a generic "processing
+    // error" that never reaches Stripe (matches the working onboarding form, which
+    // omits billing_details entirely).
+    const billing: Record<string, string> = {};
+    if (d.name && d.name.trim()) billing.name = d.name.trim();
+    if (d.email && d.email.trim()) billing.email = d.email.trim();
+    const pm: Record<string, unknown> = { card: cardRef.current };
+    if (Object.keys(billing).length) pm.billing_details = billing;
+
+    let res: any;
+    try {
+      res = await stripeRef.current.confirmCardSetup(csRef.current, { payment_method: pm });
+    } catch (ex: any) {
+      console.error('confirmCardSetup threw', ex);
+      setErr('Could not save your card (unexpected error). Please try again, or call us at (682) 408-9013. [js-exception]');
+      setStatus('idle'); return;
+    }
+    if (res.error) {
+      const e = res.error;
+      console.error('confirmCardSetup error', e);
+      const tag = e.code || e.decline_code || e.type || 'card_error';
+      setErr((e.message || 'Your card could not be saved. Please check the details.') + ' [' + tag + ']');
+      setStatus('idle'); return;
+    }
 
     d.stripe_customer_id = custRef.current;
     d.card_brand = brandRef.current;
