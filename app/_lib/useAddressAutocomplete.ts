@@ -4,14 +4,16 @@ import { useEffect, useRef } from 'react';
 // PropertiesAdd.html: type a street address, pick from the dropdown, and it
 // auto-fills the street + city/state/zip fields. Works on any <form> that has
 // inputs named address / city / state / zip (uncontrolled).
-const PKEY = 'AIzaSyCvA2wotDpOcWeKfEpv3ZsamxDaK1DQzmM';
+// Key comes from NEXT_PUBLIC_GOOGLE_MAPS_KEY (set in Vercel + .env.local). If it
+// is missing, autocomplete quietly stays off and the address field works normally.
+const PKEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY || '';
 
 export function useAddressAutocomplete<T extends HTMLElement = HTMLFormElement>() {
   const ref = useRef<T>(null);
 
   useEffect(() => {
     const root = ref.current;
-    if (!root) return;
+    if (!root || !PKEY) return;
     const input = root.querySelector<HTMLInputElement>('input[name="address"]');
     if (!input) return;
 
