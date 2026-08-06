@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { useAddressAutocomplete } from '../_lib/useAddressAutocomplete';
 
 const PHONE_DISPLAY = '(682) 408-9013';
 const PHONE_TEL = '6824089013';
@@ -14,6 +15,7 @@ const inputStyle: React.CSSProperties = {
 function EstimateForm() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'done'>('idle');
   const [err, setErr] = useState('');
+  const formRef = useAddressAutocomplete<HTMLFormElement>();
 
   async function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -43,7 +45,7 @@ function EstimateForm() {
   }
 
   return (
-    <form onSubmit={submit} style={{ background: 'var(--paper)', border: '3px solid var(--ink)', borderRadius: 18, boxShadow: '6px 6px 0 var(--orange-dk)', padding: '26px 24px' }}>
+    <form ref={formRef} onSubmit={submit} style={{ background: 'var(--paper)', border: '3px solid var(--ink)', borderRadius: 18, boxShadow: '6px 6px 0 var(--orange-dk)', padding: '26px 24px' }}>
       <input style={inputStyle} type="text" name="name" placeholder="Full Name *" required />
       <input style={inputStyle} type="email" name="email" placeholder="Email *" required />
       <input style={inputStyle} type="tel" name="phone" placeholder="Phone *" required />

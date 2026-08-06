@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
+import { useAddressAutocomplete } from '../_lib/useAddressAutocomplete';
 
 const SIGNUP_ACCOUNT = '951ab5cd-c78a-4d90-9015-30f7c2197ac5';
 const SUPA = 'https://knjdbgroiyhvqwrpqzcx.supabase.co';
@@ -20,6 +21,7 @@ function SignupForm() {
   const [err, setErr] = useState('');
   const [cardReady, setCardReady] = useState(false);
   const [bizName, setBizName] = useState('Hamann Lawn Care'); // auto-filled from company_info via signup_intent
+  const formRef = useAddressAutocomplete<HTMLFormElement>();
   const stripeRef = useRef<any>(null);
   const cardRef = useRef<any>(null);
   const csRef = useRef<string>('');
@@ -124,7 +126,7 @@ function SignupForm() {
   }
 
   return (
-    <form onSubmit={submit} style={{ background: 'var(--paper)', border: '3px solid var(--ink)', borderRadius: 18, boxShadow: '6px 6px 0 var(--orange-dk)', padding: '26px 24px' }}>
+    <form ref={formRef} onSubmit={submit} style={{ background: 'var(--paper)', border: '3px solid var(--ink)', borderRadius: 18, boxShadow: '6px 6px 0 var(--orange-dk)', padding: '26px 24px' }}>
       <input style={inputStyle} type="text" name="name" placeholder="Full Name *" required />
       <input style={inputStyle} type="email" name="email" placeholder="Email *" required />
       <input style={inputStyle} type="tel" name="phone" placeholder="Phone *" required />
