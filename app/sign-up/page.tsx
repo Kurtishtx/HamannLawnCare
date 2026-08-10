@@ -70,6 +70,17 @@ function SignupForm() {
     e.preventDefault();
     setErr('');
     if (!cardReady || !stripeRef.current || !csRef.current) { setErr('The card field is still loading — please try again in a moment.'); return; }
+    // Hard email guard — the browser's `required` attribute can be bypassed by autofill on some
+    // mobile browsers, which once let a signup through with no email (we bill by emailed invoice,
+    // so a blank email is useless). Enforce a real address BEFORE we save the card, so we never
+    // create a card-on-file customer we can't invoice.
+    const emailEl = e.currentTarget.elements.namedItem('email') as HTMLInputElement | null;
+    const emailVal = (emailEl?.value || '').trim();
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(emailVal)) {
+      setErr('Please enter a valid email address — that’s where we send your invoices.');
+      emailEl?.focus();
+      return;
+    }
     setStatus('sending');
     const form = e.currentTarget;
     const d: Record<string, string> = { account: SIGNUP_ACCOUNT, source: 'signup' };
