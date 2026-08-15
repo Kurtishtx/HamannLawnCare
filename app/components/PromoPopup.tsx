@@ -11,7 +11,12 @@ const SUPPRESS_ON = ['/sign-up'];
 export default function PromoPopup() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
-  const suppressed = SUPPRESS_ON.includes(pathname);
+  // Never interrupt inside an embed. This site is framed as a live preview on officebosspro.com,
+  // where a discount popup covering the page is confusing at best — and a popup you cannot click
+  // (the frame is pointer-events:none) is worse. Belongs here rather than in the embedding site,
+  // because it is true of every embed anywhere.
+  const framed = typeof window !== 'undefined' && window.self !== window.top;
+  const suppressed = SUPPRESS_ON.includes(pathname) || framed;
 
   useEffect(() => {
     if (suppressed) return;
