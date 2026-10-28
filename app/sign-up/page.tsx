@@ -81,12 +81,21 @@ function SignupForm() {
       emailEl?.focus();
       return;
     }
+    // Text heads-up needs the text consent box (it is its own choice, never required to sign up).
+    const nextEl = e.currentTarget.querySelector('input[name="next_alert"]:checked') as HTMLInputElement | null;
+    const smsEl = e.currentTarget.elements.namedItem('sms_consent_transactional') as HTMLInputElement | null;
+    if (nextEl && (nextEl.value === 'text' || nextEl.value === 'both') && !smsEl?.checked) {
+      setErr('To get the heads-up by text, please tick the text message box below (or pick Email).');
+      smsEl?.focus();
+      return;
+    }
     setStatus('sending');
     const form = e.currentTarget;
     const d: Record<string, string> = { account: SIGNUP_ACCOUNT, source: 'signup' };
     Array.from(form.elements).forEach((el) => {
       const i = el as HTMLInputElement;
       if (!i.name) return;
+      if (i.type === 'radio' && !i.checked) return;
       d[i.name] = i.type === 'checkbox' ? (i.checked ? 'true' : 'false') : i.value;
     });
 
@@ -149,6 +158,18 @@ function SignupForm() {
       </div>
       <input style={inputStyle} type="text" name="service_interest" placeholder="Service(s) you want" />
       <textarea style={{ ...inputStyle, minHeight: 80 }} name="message" placeholder="Anything else we should know? (gate code, pets, problem areas…)" />
+
+      <div style={{ ...inputStyle, padding: '14px 15px' }}>
+        <div style={{ fontWeight: 800, color: 'var(--ink)', marginBottom: 4 }}>🔔 Want a heads-up when we&rsquo;re at the property before yours?</div>
+        <div style={{ color: 'var(--muted)', fontSize: 14, marginBottom: 10 }}>We&rsquo;ll let you know when our tech is one stop away, so you can open the gate or bring the pets in.</div>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px 18px' }}>
+          {[['text', 'Text'], ['email', 'Email'], ['both', 'Both'], ['none', 'No thanks']].map(([v, l]) => (
+            <label key={v} style={{ display: 'flex', alignItems: 'center', gap: 6, fontWeight: 700, color: 'var(--ink)', cursor: 'pointer' }}>
+              <input type="radio" name="next_alert" value={v} style={{ width: 16, height: 16, accentColor: 'var(--orange)' }} /> {l}
+            </label>
+          ))}
+        </div>
+      </div>
 
       <label style={{ display: 'block', fontFamily: 'var(--font-anton), sans-serif', fontSize: 18, color: 'var(--ink)', margin: '6px 0 8px' }}>💳 Card on File *</label>
       <div id="card-element" style={{ ...inputStyle, padding: '14px 15px', marginBottom: 6 }} />
